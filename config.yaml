@@ -11,6 +11,7 @@ params:
   domain_kubedb: https://kubedb-v2-hugo.web.app
   domain_kubevault: https://kubevault-v1-hugo.web.app
   domain_kubeform: https://kubeform-v1-hugo.web.app
+  domain_pharmer: https://pharmer-v1-hugo.web.app
   domain_kubeci: https://kubeci-v1-hugo.web.app
   domain_kubeshield: https://kubeshield-v1-hugo.web.app
   domain_bytebuilders: https://byte.builders
