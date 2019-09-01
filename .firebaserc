@@ -6,7 +6,7 @@
     "kubedb-new-e7965": {
       "hosting": {
         "hugo": [
-          "kubedb-v2-hugo"
+          "kubeform-v1-hugo"
         ]
       }
     }
