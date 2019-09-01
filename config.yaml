@@ -59,15 +59,15 @@ menu:
     - name: GitHub
       identifier: github
       parent: community
-      url: "https://github.com/kubedb"
+      url: "https://github.com/kubeform"
       weight: 1
     - name: Twitter
       identifier: twitter
       parent: community
-      url: "https://twitter.com/KubeDB"
+      url: "https://twitter.com/Kubeform"
       weight: 2
     - name: Slack
       identifier: slack
       parent: community
-      url: "http://slack.kubernetes.io/"
+      url: "https://slack.appscode.com"
       weight: 3
