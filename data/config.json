@@ -1,6 +1,6 @@
 {
   "products": [
-    "kubedb"
+    "kubeform"
   ],
   "mainMenu": {
     "c0": ["kubedb", "stash", "kubevault", "guard"],
