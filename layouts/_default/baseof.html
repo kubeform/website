@@ -283,7 +283,7 @@
                         <a class="navbar-link">{{ .Name }}</a>
                         <div class="ac-dropdown">
                           {{ range .Children }}
-                            {{ if eq .Parent "database" }}
+                            {{ if eq .Parent "providers" }}
                               <a class="navbar-item" href="/docs/{{ $p.latestVersion }}/guides/{{ .Identifier }}/">{{ .Name }}</a>
                             {{ else }}
                               <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>

@@ -1,4 +1,4 @@
-title: Run production-grade databases easily on Kubernetes
+title: Provision and manage any cloud provider resource using Kubernetes CRDs & Terraform
 baseurl: https://kubeform-v1-hugo.web.app
 languageCode: en-us
 assetDir: static
@@ -27,8 +27,8 @@ params:
   contact_phone: +1(650)241-8486
 menu:
   main:
-    - name: "Database"
-      identifier: database
+    - name: "Providers"
+      identifier: providers
       weight: 15
       url: https://kubedb.com/docs/latest/setup/install/
     - name: "Documentation"
@@ -36,30 +36,26 @@ menu:
     - name: "Community"
       identifier: community
       weight: 25
-    - name: Elasticsearch
-      identifier: elasticsearch
-      parent: database
+    - name: AWS
+      identifier: aws
+      parent: providers
       weight: 10
-    - name: Memcached
-      identifier: memcached
-      parent: database
+    - name: Azure
+      identifier: azure
+      parent: providers
       weight: 20
-    - name: MongoDB
-      identifier: mongodb
-      parent: database
+    - name: Google Cloud
+      identifier: google
+      parent: providers
       weight: 30
-    - name: MySQL
-      identifier: mysql
-      parent: database
+    - name: DigitalOcean
+      identifier: digitalocean
+      parent: providers
       weight: 40
-    - name: PostgreSQL
-      identifier: postgres
-      parent: database
+    - name: Linode
+      identifier: linode
+      parent: providers
       weight: 50
-    - name: Redis
-      identifier: redis
-      parent: database
-      weight: 60
     - name: GitHub
       identifier: github
       parent: community
