@@ -1,0 +1,14 @@
+{
+  "key": "stash-mongodb",
+  "name": "MongoDB",
+  "tagline": "MongoDB backup and restore plugin for Stash by AppsCode",
+  "published": true,
+  "repoURL": "https://github.com/stashed/mongodb",
+  "starRepo": "stashed/stash",
+  "docRepo": "stashed/mongodb",
+  "versions": [
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "3.4", "hostDocs": true, "show": true }
+  ],
+  "latestVersion": "3.4"
+}

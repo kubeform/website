@@ -238,7 +238,7 @@
                         ><img
                           src="/assets/images/icon/chat.png"
                           alt=""/></span
-                      >Support
+                      >Support Portal
                     </a>
                   </div>
                 </div>
@@ -283,7 +283,7 @@
                         <a class="navbar-link">{{ .Name }}</a>
                         <div class="ac-dropdown">
                           {{ range .Children }}
-                            {{ if eq .Parent "providers" }}
+                            {{ if eq .Parent $.Site.Params.main_menu_dropdown_item }}
                               <a class="navbar-item" href="/docs/{{ $p.latestVersion }}/guides/{{ .Identifier }}/">{{ .Name }}</a>
                             {{ else }}
                               <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>

@@ -1,0 +1,14 @@
+{
+  "key": "stash-mysql",
+  "name": "MySQL",
+  "tagline": "MySQL backup and restore plugin for Stash by AppsCode",
+  "published": true,
+  "repoURL": "https://github.com/stashed/mysql",
+  "starRepo": "stashed/stash",
+  "docRepo": "stashed/mysql",
+  "versions": [
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "5.7", "hostDocs": true, "show": true }
+  ],
+  "latestVersion": "5.7"
+}
