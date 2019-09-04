@@ -1,15 +1,15 @@
 {
   "key": "bytebuilders",
   "name": "ByteBuilders",
-  "tagline": "Cloud reimagined for the age of Kubernetes",
-  "summary": "",
+  "tagline": "Cloud reimagined <br />for the age of Kubernetes",
+  "summary": "Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, <br />scaling, and management of containerized applications.",
   "published": true,
   "website": {
     "domainKey": "domain_bytebuilders",
     "path": ""
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders-hero.png",
+    "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders-hero.gif",
     "alt": "ByteBuilders"
   },
   "logo": {
@@ -135,36 +135,8 @@
   ],
   "solutions": [
     {
-      "title": "Machine Learning",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/leave-2.png",
-        "alt": ""
-      },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
-      "description": ""
-    },
-    {
-      "title": "Data Analytics",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/dribble.png",
-        "alt": ""
-      },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
-      "description": ""
-    },
-    {
-      "title": "Internet of Things",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
+      "title": "Highly Available Postgres",
+      "link": "https://kubedb.com/docs/latest/guides/postgres/clustering/ha_cluster/",
       "image": {
         "src": "",
         "alt": ""
@@ -173,12 +145,12 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/telegram.png",
         "alt": ""
       },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
+      "summary": "Run a Highly Available (HA) PostgreSQL database on any Kubernetes cluster using KubeDB",
       "description": ""
     },
     {
-      "title": "Serverless Computing",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
+      "title": "Multi-node Elasticsearch",
+      "link": "https://kubedb.com/docs/latest/guides/elasticsearch/clustering/topology/",
       "image": {
         "src": "",
         "alt": ""
@@ -187,40 +159,40 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/shield-1.png",
         "alt": ""
       },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
+      "summary": "Run a multi-node Elasticsearch database on any Kubernetes cluster using KubeDB",
       "description": ""
     },
     {
-      "title": "Storage Windows",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
+      "title": "Stash with Amazon EKS",
+      "link": "https://appscode.com/products/stash/latest/guides/latest/platforms/eks/",
       "image": {
         "src": "",
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/trending.png",
+        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/leave-2.png",
         "alt": ""
       },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
+      "summary": "Use Stash to backup and restore volumes of a Kubernetes workload running in Amazon EKS",
       "description": ""
     },
     {
-      "title": "Enterprise Applications",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
+      "title": "Auto Backup with Stash",
+      "link": "https://appscode.com/products/stash/latest/guides/latest/auto-backup/overview/",
       "image": {
         "src": "",
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/friends.png",
+        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/dribble.png",
         "alt": ""
       },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
+      "summary": "Automatically backup of any workloads in your cluster and stay prepared for any disaster",
       "description": ""
     },
     {
-      "title": "Containers",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
+      "title": "L4 & L7 Load Balancing",
+      "link": "https://appscode.com/products/voyager/latest/guides/ingress/",
       "image": {
         "src": "",
         "alt": ""
@@ -229,12 +201,12 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/start-up.png",
         "alt": ""
       },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
+      "summary": "Use Voyager — a HAProxy backed secure L7 and L4 ingress controller for Kubernetes",
       "description": ""
     },
     {
-      "title": "Workloads",
-      "link": "https://appscode-v3-hugo.web.app/products/stash/v0.9.0-rc.0/guides/latest/platforms/eks/",
+      "title": "Free SSL certificates",
+      "link": "https://appscode.com/products/voyager/latest/guides/certificate/",
       "image": {
         "src": "",
         "alt": ""
@@ -243,7 +215,35 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/home.png",
         "alt": ""
       },
-      "summary": "Build self-managed multi-host cloud contianer in minutes just with a single",
+      "summary": "Provision and refresh free SSL certificates from Let's Encrypt using Voyager",
+      "description": ""
+    },
+    {
+      "title": "K8s Authentication server",
+      "link": "https://appscode.com/products/guard/latest/guides/",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "icon": {
+        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/friends.png",
+        "alt": ""
+      },
+      "summary": "Guard your Kubernetes cluster using GitHub, Gitlab, Google, Azure or LDAP",
+      "description": ""
+    },
+    {
+      "title": "HashiCorp Vault on K8s",
+      "link": "https://kubevault.com/docs/latest/guides/platforms/eks/",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "icon": {
+        "src": "https://cdn.appscode.com/images/products/bytebuilders/solutions/trending.png",
+        "alt": ""
+      },
+      "summary": "Deploy and manage HashiCorp Vault server  Amazon EKS using KubeVault operator",
       "description": ""
     }
   ]

@@ -17,7 +17,7 @@ aliases:
 
 This guide will show you how to provision a AWS RDS (Relational Database Service) using Kubeform.
 
-> Examples used in this guide can be found [here](/docs/v0.0.1/examples/aws).
+> Examples used in this guide can be found [here](https://github.com/kubeform/docs/tree/v0.0.1/docs/examples/aws).
 
 Look at the `Terraform` configuration below:
 
