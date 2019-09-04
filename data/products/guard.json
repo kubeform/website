@@ -70,18 +70,18 @@
     }
   ],
   "versions": [
-    { "branch": "master", "hostDocs": false, "v-dropdown": true },
-    { "branch": "0.4.0", "hostDocs": true, "v-dropdown": true },
-    { "branch": "0.3.0", "hostDocs": true, "v-dropdown": true },
-    { "branch": "0.2.1", "hostDocs": true, "v-dropdown": true },
-    { "branch": "0.2.0", "hostDocs": true },
-    { "branch": "0.1.4", "hostDocs": true },
-    { "branch": "0.1.3", "hostDocs": true },
-    { "branch": "0.1.2", "hostDocs": true },
-    { "branch": "0.1.1", "hostDocs": true },
-    { "branch": "0.1.0", "hostDocs": true },
-    { "branch": "0.1.0-rc.5", "hostDocs": true },
-    { "branch": "0.1.0-rc.4", "hostDocs": false }
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "0.4.0", "hostDocs": true, "show": true },
+    { "version": "0.3.0", "hostDocs": true, "show": true },
+    { "version": "0.2.1", "hostDocs": true, "show": true },
+    { "version": "0.2.0", "hostDocs": true },
+    { "version": "0.1.4", "hostDocs": true },
+    { "version": "0.1.3", "hostDocs": true },
+    { "version": "0.1.2", "hostDocs": true },
+    { "version": "0.1.1", "hostDocs": true },
+    { "version": "0.1.0", "hostDocs": true },
+    { "version": "0.1.0-rc.5", "hostDocs": true },
+    { "version": "0.1.0-rc.4", "hostDocs": false }
   ],
   "latestVersion": "0.4.0",
   "socialLinks": {

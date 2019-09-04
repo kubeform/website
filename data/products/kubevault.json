@@ -109,9 +109,9 @@
     }
   ],
   "versions": [
-      { "branch": "master", "hostDocs": false, "v-dropdown": true },
-      { "branch": "0.1.0", "hostDocs": true, "v-dropdown": true },
-      { "branch": "0.2.0", "hostDocs": true, "v-dropdown": true }
+      { "version": "master", "hostDocs": false, "show": true },
+      { "version": "0.1.0", "hostDocs": true, "show": true },
+      { "version": "0.2.0", "hostDocs": true, "show": true }
   ],
   "latestVersion": "0.2.0",
   "socialLinks": {

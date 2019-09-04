@@ -1,0 +1,14 @@
+{
+  "key": "stash-elasticsearch",
+  "name": "Elasticsearch",
+  "tagline": "Elasticsearch backup and restore plugin for Stash by AppsCode",
+  "published": true,
+  "repoURL": "https://github.com/stashed/elasticsearch",
+  "starRepo": "stashed/stash",
+  "docRepo": "stashed/elasticsearch",
+  "versions": [
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "6.8", "hostDocs": true, "show": true }
+  ],
+  "latestVersion": "6.8"
+}

@@ -108,8 +108,8 @@
     }
   ],
   "versions": [
-    { "branch": "master", "hostDocs": false, "v-dropdown": true },
-    { "branch": "v0.0.1", "hostDocs": true, "v-dropdown": true }
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "v0.0.1", "hostDocs": true, "show": true }
   ],
   "latestVersion": "v0.0.1",
   "socialLinks": {
