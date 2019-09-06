@@ -1,23 +1,24 @@
 title: Provision and manage any cloud provider resource using Kubernetes CRDs & Terraform
-baseurl: https://kubeform-v1-hugo.web.app
+baseurl: https://kubeform.com
 languageCode: en-us
 assetDir: static
+googleAnalytics: UA-141868403-3
 disableKinds:
 - taxonomy
 - taxonomyTerm
 params:
   product_key: kubeform
   main_menu_dropdown_item: clouds
-  domain_appscode: https://appscode-v3-hugo.web.app
-  domain_kubedb: https://kubedb-v2-hugo.web.app
-  domain_kubevault: https://kubevault-v1-hugo.web.app
-  domain_kubeform: https://kubeform-v1-hugo.web.app
-  domain_pharmer: https://pharmer-v1-hugo.web.app
-  domain_kubeci: https://kubeci-v1-hugo.web.app
-  domain_kubeshield: https://kubeshield-v1-hugo.web.app
+  domain_appscode: https://appscode.com
+  domain_kubedb: https://kubedb.com
+  domain_kubevault: https://kubevault.com
+  domain_kubeform: https://kubeform.com
+  domain_pharmer: https://pharmer.io
+  domain_kubeci: https://kube.ci
+  domain_kubeshield: https://kubeshield.com
   domain_bytebuilders: https://byte.builders
   domain_marketplace: https://marketplace.byte.builders
-  search_engine_ID: 015199383701854252104:8mvwy0fek2e
+  search_engine_ID: 015199383701854252104:kzq6dsbkp21
   search_api_key: AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM
   blog_url: https://blog.byte.builders
   slack_url: https://slack.appscode.com

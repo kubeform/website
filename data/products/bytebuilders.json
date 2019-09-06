@@ -22,14 +22,17 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders-icon.png",
-    "alt": "ByteBuilders"
+    "alt": "ByteBuilders",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/bytebuilders/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/bytebuilders",
   "starRepo": "bytebuilders/community",
   "docRepo": "bytebuilders/community",
   "features": [
     {
-      "title": "Find the right tools",
+      "title": "Kubernetes anywhere",
       "image": {
         "src": "",
         "alt": ""
@@ -38,11 +41,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/dribble.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Provision and upgrade Kubernetes cluster on any cloud on on-premises infrastructure",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "Kubernetes for everybody",
       "image": {
         "src": "",
         "alt": ""
@@ -51,11 +54,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/fire.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "On-board every member of your team on the cloud native journey using informative dashboards",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "L4 & L7 Load Balancing",
       "image": {
         "src": "",
         "alt": ""
@@ -64,11 +67,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/home.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Voyager ingress controller provides L7 & L4 load balancing, high availability, sticky sessions using HAProxy",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "Production-grade databases",
       "image": {
         "src": "",
         "alt": ""
@@ -77,11 +80,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/leave.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Run popular databases like, Postgres, Elasticsearch, Redis, MongoDB, MySQL, Memcached etc. on K8s using KubeDB",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "Better Safe Than Sorry",
       "image": {
         "src": "",
         "alt": ""
@@ -90,11 +93,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/rocket.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "Protect secrets in Vault",
       "image": {
         "src": "",
         "alt": ""
@@ -103,11 +106,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/send.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Use KubeVault to provision HashiCorp Vault on Kubernetes and manage secrets in a Kubernetes native way",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "Terraform the K8s way",
       "image": {
         "src": "",
         "alt": ""
@@ -116,11 +119,11 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/sheild.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Use Kubeform to provision and manage any cloud provider resources using Kubernetes CRDs & Terraform",
       "description": ""
     },
     {
-      "title": "Find the right tools",
+      "title": "Guard Kubernetes Cluster",
       "image": {
         "src": "",
         "alt": ""
@@ -129,7 +132,7 @@
         "src": "https://cdn.appscode.com/images/products/bytebuilders/features/user.png",
         "alt": ""
       },
-      "summary": "Your news feed helps you keep up with recent activity on repositories you watch and",
+      "summary": "Use Guard as a Kubernetes Webhook Authentication server to login users via Google, GitHub, Azure, LDAP, etc.",
       "description": ""
     }
   ],

@@ -22,12 +22,15 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/kubeshield/kubeshield-icon.png",
-    "alt": "Kubeshield"
+    "alt": "Kubeshield",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/kubeshield/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/kubeshield/scanner",
   "starRepo": "kubeshield/scanner",
   "docRepo": "kubeshield/scanner",
-  "datasheetFormID": "88a60e55c210a9789b1760b3be1b61860a84c626df4fa3019227034be1e0b92f",
+  "datasheetFormID": "",
   "features": [
     {
       "title": "Automatic Initialization & Unsealing",

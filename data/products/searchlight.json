@@ -22,12 +22,15 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/searchlight/searchlight-icon.png",
-    "alt": "Searchlight"
+    "alt": "Searchlight",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/searchlight/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/searchlight/searchlight",
   "starRepo": "searchlight/searchlight",
   "docRepo": "searchlight/searchlight",
-  "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
+  "datasheetFormID": "",
   "features": [
     {
       "title": "Monitor Kubernetes",

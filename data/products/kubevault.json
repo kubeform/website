@@ -22,12 +22,15 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/kubevault/kubevault-icon.png",
-    "alt": "KubeVault"
+    "alt": "KubeVault",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/kubevault/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/kubevault/docs",
   "starRepo": "kubevault/operator",
   "docRepo": "kubevault/docs",
-  "datasheetFormID": "88a60e55c210a9789b1760b3be1b61860a84c626df4fa3019227034be1e0b92f",
+  "datasheetFormID": "",
   "features": [
     {
       "title": "Automatic Initialization & Unsealing",
@@ -36,7 +39,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubevault/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/features/unlock.png",
         "alt": "http"
       },
       "summary": "",
@@ -49,7 +52,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubevault/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/features/courthouse.png",
         "alt": "http"
       },
       "summary": "",
@@ -62,7 +65,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubevault/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/features/aws.png",
         "alt": "http"
       },
       "summary": "",
@@ -75,7 +78,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubevault/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/features/azure.png",
         "alt": "http"
       },
       "summary": "",
@@ -88,7 +91,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubevault/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/features/google-cloud.png",
         "alt": "http"
       },
       "summary": "",
@@ -101,7 +104,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubevault/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/features/database-view.png",
         "alt": "http"
       },
       "summary": "",
