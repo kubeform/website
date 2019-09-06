@@ -1,5 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/</link><description>Recent content in What is Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubeform Architecture</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/architecture/</guid><description>Kubeform Architecture The following diagram shows how Kubeform creates a resource on a Cloud Provider (GCP, AWS, etc.).
-Fig: Kubeform Architecture The Resource Creation Process of Kubeform consists of the following steps:
-At first, a user creates a secret with access credentials of the Cloud provider where the resource will be created.
-Then, he creates a CRD of the resource that specifies the information of the Cloud Resource.</description></item><item><title>Kubeform Overview</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/overview/</guid><description>Kubeform Kubeform by AppsCode is a Kubernetes operator for terrafrom. If you need to create a cloud infrastructure from kubernetes to use it with any kubernetes workloads or CRD you might want to create it from kubernetes. Kubeform allows you to create cloud infrastructure from kubernetes. You can just write a CRD for a cloud infrastructure, apply it and Kubeform will create it!
-Features Native Kubernetes Support Standard Kubernetes is all you need.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>What is Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</title>
+    <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/</link>
+    <description>Recent content in What is Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubeform Architecture</title>
+      <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/architecture/</guid>
+      <description>Kubeform Architecture The following diagram shows how Kubeform creates a resource on a Cloud Provider (GCP, AWS, etc.).
+Fig: Kubeform Architecture  The Resource Creation Process of Kubeform consists of the following steps:
+ At first, a user creates a secret with access credentials of the Cloud provider where the resource will be created.
+ Then, he creates a CRD of the resource that specifies the information of the Cloud Resource.</description>
+    </item>
+    
+    <item>
+      <title>Kubeform Overview</title>
+      <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/overview/</guid>
+      <description>Kubeform Kubeform by AppsCode is a Kubernetes operator for terrafrom. If you need to create a cloud infrastructure from kubernetes to use it with any kubernetes workloads or CRD you might want to create it from kubernetes. Kubeform allows you to create cloud infrastructure from kubernetes. You can just write a CRD for a cloud infrastructure, apply it and Kubeform will create it!
+Features  Native Kubernetes Support Standard Kubernetes is all you need.</description>
+    </item>
+    
+  </channel>
+</rss>

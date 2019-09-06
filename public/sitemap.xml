@@ -1,1 +1,145 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/acknowledgement/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/aws/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/aws/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/azure/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/azure/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/contributing/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/developer-guide/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/developer-guide/overview/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/digitalocean/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/digitalocean/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/datasheet/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/features/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/google/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/google/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/install/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/architecture/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/overview/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/reference/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/developer-guide/release/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/releases/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/schedule-demo/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/pricing/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/support/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/uninstall/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/</loc></url><url><loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/acknowledgement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/azure/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/azure/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/contributing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/developer-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/developer-guide/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/digitalocean/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/digitalocean/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/datasheet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/google/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/google/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/install/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/developer-guide/release/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/releases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/meet-expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/support/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/uninstall/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/welcome/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kubeform-v1-hugo.web.app/docs/v0.0.1/concepts/what-is-kubeform/</loc>
+  </url>
+  
+</urlset>

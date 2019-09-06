@@ -1,5 +1,6 @@
 {
   "projects": {
+    "prod": "appscode-domains",
     "default": "kubedb-new-e7965"
   },
   "targets": {
@@ -7,6 +8,13 @@
       "hosting": {
         "hugo": [
           "kubeform-v1-hugo"
+        ]
+      }
+    },
+    "appscode-domains": {
+      "hosting": {
+        "hugo": [
+          "kubeform-prod"
         ]
       }
     }

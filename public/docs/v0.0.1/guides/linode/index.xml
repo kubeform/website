@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linode on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</link><description>Recent content in Linode on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/index.xml" rel="self" type="application/rss+xml"/><item><title>Linode</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</guid><description>Linode This guide will show you how to provision a Linode Instance using Kubeform.
-Examples used in this guide can be found here.
-Look at the Terraform configuration below:
-provider &amp;quot;linode&amp;quot; { token = &amp;quot;LINODE_API_TOKEN&amp;quot; } resource &amp;quot;linode_instance&amp;quot; &amp;quot;instance-test1&amp;quot; { image = &amp;quot;linode/ubuntu18.04&amp;quot; label = &amp;quot;instance-test1&amp;quot; region = &amp;quot;us-east&amp;quot; root_pass = &amp;quot;password&amp;quot; stackscript_data = { user = &amp;quot;John Doe&amp;quot; } stackscript_id = 553057 } This config creates a Linode Instance.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linode on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</title>
+    <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</link>
+    <description>Recent content in Linode on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linode</title>
+      <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/guides/linode/</guid>
+      <description>Linode This guide will show you how to provision a Linode Instance using Kubeform.
+ Examples used in this guide can be found here.
+ Look at the Terraform configuration below:
+provider &amp;quot;linode&amp;quot; { token = &amp;quot;LINODE_API_TOKEN&amp;quot; } resource &amp;quot;linode_instance&amp;quot; &amp;quot;instance-test1&amp;quot; { image = &amp;quot;linode/ubuntu18.04&amp;quot; label = &amp;quot;instance-test1&amp;quot; region = &amp;quot;us-east&amp;quot; root_pass = &amp;quot;password&amp;quot; stackscript_data = { user = &amp;quot;John Doe&amp;quot; } stackscript_id = 553057 }  This config creates a Linode Instance.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -52,14 +52,14 @@ body.fixed-nav header{
 }
 
 .button.for-chat:hover {
-  background-color: #36C6F0;
+  background-color: #4A154B;
   color: $white-color;
 }
 .button.for-support:hover{
   background-color: #9D0A0E;
   color: $white-color;
   img{
-    filter: invert(1);
+    filter: brightness(100);
   }
 }
 
@@ -239,6 +239,29 @@ body.fixed-nav .fixed-menu {
   margin-top: 56px;
 }
 
+.play-buttons {
+  margin-top: 30px;
+  a {
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 600;
+    span.video-icon {
+      height: 54px;
+      width: 54px;
+      border: 1px solid $primary-color;
+      display: inline-block;
+      font-size: 14px;
+      color: $primary-color;
+      text-align: center;
+      line-height: 54px;
+      margin-right: 20px;
+      border-radius: 50%;
+      i.fa {
+        padding-left: 5px;
+      }
+    }
+  }
+}
 /* Feature area start */
 .section-title h2 {
   font-size: 36px;
@@ -580,7 +603,6 @@ a.play-icon .fa {
   font-weight: 600;
   color: $heading-color;
   display: block;
-  margin-bottom: 10px;
   font-family: $font-heading;
 }
 
@@ -616,7 +638,7 @@ a.play-icon .fa {
   color: $white-color !important;
 }
 .subscription-form {
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .subscription-form input[type="email"]:focus,
@@ -799,7 +821,7 @@ p.spam-message {
   margin-bottom: 30px;
   color: $heading-color;
   font-weight: 600;
-  line-height: 58px;
+  line-height: 68px;
 }
 
 .support-page .section-title h2 {
@@ -1287,35 +1309,42 @@ body.fixed-nav .documentation-menu {
   padding: 0 20px;
 }
 
-.full-info h1 {
-  font-size: 32px;
-  color: $heading-color;
-  margin-bottom: 18px;
-  font-weight: 700;
-  border-bottom: 1px solid #ebebeb;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-}
-.full-info h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: $heading-color;
-  margin-bottom: 16px;
-  margin-top: 40px;
-}
-.full-info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: $heading-color;
-  margin-bottom: 16px;
-  margin-top: 40px;
-}
-.full-info h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: $heading-color;
-  margin-bottom: 16px;
-  margin-top: 40px;
+.full-info {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 40px;
+    font-weight: 700;
+    color: $heading-color;
+    margin-bottom: 10px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 13px;
+  }
 }
 .full-info h2 span.share-icon {
   color: #6b6b6b;
@@ -1435,7 +1464,7 @@ ul li b {
   opacity: 0.7;
   font-size: 14px;
   font-family: $font-paragraph;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -2084,7 +2113,7 @@ p.intro {
 /* image style start */
 .full-info img {
   border: 1px solid #a9e9e9;
-  padding: 50px;
+  padding: 20px;
   border-radius: 4px;
 }
 /* image style end */
@@ -2108,7 +2137,7 @@ table th {
   border-bottom: 1px solid #a9e9e9;
   padding: 8px 20px;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   font-size: $font-regular;
 }
 table tr:nth-child(even) {

@@ -1,6 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Setup | Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</link><description>Recent content in Setup | Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/index.xml" rel="self" type="application/rss+xml"/><item><title>Install | Kubeform</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/install/</guid><description>Installation Guide Kubeform controller can be installed via Helm.
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup | Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</title>
+    <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</link>
+    <description>Recent content in Setup | Kubeform on Provision and manage any cloud provider resource using Kubernetes CRDs &amp; Terraform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install | Kubeform</title>
+      <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/install/</guid>
+      <description>Installation Guide Kubeform controller can be installed via Helm.
 Using Helm Kubeform can be installed via Helm using the chart from AppsCode Charts Repository. To install the chart with the release name my-release:
-$ helm repo add appscode https://charts.appscode.com/stable/ $ helm repo update $ helm search appscode/kubeform NAME CHART VERSION APP VERSION DESCRIPTION appscode/kubeform v0.1.0 v0.1.0 Kubeform by AppsCode - Build Cloud Infrastructure from Kubernetes $ helm install appscode/kubeform --name kfc --version v0.</description></item><item><title>Table of Contents | Setup</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</guid><description> Setup Setup contains instructions for installing the Kubeform and its various components in Kubernetes.
-Install Kubeform. Installation instructions for Kubeform. Uninstall Kubeform. Instructions for uninstallating Kubeform. Developer Guide Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Kubeform. Release process. Steps for releasing a new version of Kubeform.</description></item><item><title>Uninstall | Kubeform</title><link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/uninstall/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/uninstall/</guid><description> Uninstall Kubeform To uninstall kubeform installed using helm, use the following command.
-$ helm delete kfc If you want to remove the release from the store and make its name free for later use, Then provide the --purge flag:
-$ helm delete kfc --purge</description></item></channel></rss>
+$ helm repo add appscode https://charts.appscode.com/stable/ $ helm repo update $ helm search appscode/kubeform NAME CHART VERSION APP VERSION DESCRIPTION appscode/kubeform v0.1.0 v0.1.0 Kubeform by AppsCode - Build Cloud Infrastructure from Kubernetes $ helm install appscode/kubeform --name kfc --version v0.</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents | Setup</title>
+      <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/</guid>
+      <description> Setup Setup contains instructions for installing the Kubeform and its various components in Kubernetes.
+ Install Kubeform. Installation instructions for Kubeform. Uninstall Kubeform. Instructions for uninstallating Kubeform. Developer Guide  Overview. Outlines everything you need to know from setting up your dev environment to how to build and test Kubeform. Release process. Steps for releasing a new version of Kubeform.   </description>
+    </item>
+    
+    <item>
+      <title>Uninstall | Kubeform</title>
+      <link>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubeform-v1-hugo.web.app/docs/v0.0.1/setup/uninstall/</guid>
+      <description> Uninstall Kubeform To uninstall kubeform installed using helm, use the following command.
+$ helm delete kfc  If you want to remove the release from the store and make its name free for later use, Then provide the --purge flag:
+$ helm delete kfc --purge  </description>
+    </item>
+    
+  </channel>
+</rss>
