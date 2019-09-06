@@ -1,0 +1,75 @@
+title: Provision and manage any cloud provider resource using Kubernetes CRDs & Terraform
+baseurl: https://kubeform-v1-hugo.web.app
+languageCode: en-us
+assetDir: static
+googleAnalytics: UA-141868403-3
+disableKinds:
+- taxonomy
+- taxonomyTerm
+params:
+  product_key: kubeform
+  main_menu_dropdown_item: clouds
+  domain_appscode: https://appscode-v3-hugo.web.app
+  domain_kubedb: https://kubedb-v2-hugo.web.app
+  domain_kubevault: https://kubevault-v1-hugo.web.app
+  domain_kubeform: https://kubeform-v1-hugo.web.app
+  domain_pharmer: https://pharmer-v1-hugo.web.app
+  domain_kubeci: https://kubeci-v1-hugo.web.app
+  domain_kubeshield: https://kubeshield-v1-hugo.web.app
+  domain_bytebuilders: https://byte.builders
+  domain_marketplace: https://marketplace.byte.builders
+  search_engine_ID: 015199383701854252104:kzq6dsbkp21
+  search_api_key: AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM
+  blog_url: https://blog.byte.builders
+  slack_url: https://slack.appscode.com
+  github_url: https://github.com/appscode
+  twitter_url: https://twitter.com/AppsCodeHQ
+  facebook_url: https://www.facebook.com/appscode
+  youtube_url: https://www.youtube.com/c/AppsCodeInc
+  contact_email: support@appscode.com
+  contact_phone: +1(650)241-8486
+menu:
+  main:
+  - name: Clouds
+    identifier: clouds
+    weight: 15
+  - name: Documentation
+    weight: 20
+  - name: Community
+    identifier: community
+    weight: 25
+  - name: AWS
+    identifier: aws
+    parent: clouds
+    weight: 10
+  - name: Azure
+    identifier: azure
+    parent: clouds
+    weight: 20
+  - name: Google Cloud
+    identifier: google
+    parent: clouds
+    weight: 30
+  - name: DigitalOcean
+    identifier: digitalocean
+    parent: clouds
+    weight: 40
+  - name: Linode
+    identifier: linode
+    parent: clouds
+    weight: 50
+  - name: GitHub
+    identifier: github
+    parent: community
+    url: https://github.com/kubeform
+    weight: 1
+  - name: Twitter
+    identifier: twitter
+    parent: community
+    url: https://twitter.com/Kubeform
+    weight: 2
+  - name: Slack
+    identifier: slack
+    parent: community
+    url: https://slack.appscode.com
+    weight: 3

@@ -22,7 +22,10 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-icon.png",
-    "alt": "Kubeform"
+    "alt": "Kubeform",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/kubeform/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/kubeform/docs",
   "starRepo": "kubeform/kubeform",

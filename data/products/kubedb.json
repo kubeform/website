@@ -22,12 +22,15 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-icon.png",
-    "alt": "KubeDB"
+    "alt": "KubeDB",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/kubedb/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/kubedb/docs",
   "starRepo": "kubedb/cli",
   "docRepo": "kubedb/docs",
-  "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
+  "datasheetFormID": "",
   "features": [
     {
       "title": "Lower administrative burden",
@@ -36,7 +39,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/dumbbell.png",
         "alt": "http"
       },
       "summary": "",
@@ -49,7 +52,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/kubernetes.png",
         "alt": "http"
       },
       "summary": "",
@@ -62,7 +65,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/muscle.png",
         "alt": "http"
       },
       "summary": "",
@@ -75,7 +78,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/last-24-hours.png",
         "alt": "http"
       },
       "summary": "",
@@ -88,7 +91,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/security-lock.png",
         "alt": "http"
       },
       "summary": "",
@@ -101,7 +104,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/prometheus.svg",
         "alt": "http"
       },
       "summary": "",
@@ -114,7 +117,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/low-price.png",
         "alt": "http"
       },
       "summary": "",
@@ -127,7 +130,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/teamwork.png",
         "alt": "http"
       },
       "summary": "",
@@ -136,6 +139,7 @@
   ],
   "versions": [
       { "version": "master", "hostDocs": false, "show": true },
+      { "version": "v0.13.0-rc.0", "hostDocs": true, "show": true },
       { "version": "0.12.0", "hostDocs": true, "show": true },
       { "version": "0.11.0", "hostDocs": true, "show": true },
       { "version": "0.10.0", "hostDocs": true, "show": true },
@@ -150,7 +154,7 @@
       { "version": "0.7.1", "hostDocs": false },
       { "version": "0.6.0", "hostDocs": false, "show": true }
   ],
-  "latestVersion": "0.12.0",
+  "latestVersion": "v0.13.0-rc.0",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubedb/cli",

@@ -22,12 +22,15 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/voyager/voyager-icon.png",
-    "alt": "Voyager"
+    "alt": "Voyager",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/voyager/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/appscode/voyager",
   "starRepo": "appscode/voyager",
   "docRepo": "appscode/voyager",
-  "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
+  "datasheetFormID": "",
   "features": [
     {
       "title": "HTTP & TCP",
