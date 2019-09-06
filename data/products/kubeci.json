@@ -3,7 +3,7 @@
   "name": "KubeCI",
   "tagline": "Run production-grade databases <br />easily on <strong>Kubernetes</strong>",
   "summary": "",
-  "published": true,
+  "published": false,
   "website": {
     "domainKey": "domain_kubeci",
     "path": ""
@@ -22,7 +22,10 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/kubeci/kubeci-icon.png",
-    "alt": "KubeCI"
+    "alt": "KubeCI",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/kubeci/icons/android-icon-192x192.png"
+    }
   },
   "repoURL": "https://github.com/kube-ci/docs",
   "starRepo": "kube-ci/engine",
@@ -153,5 +156,5 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/kube-ci"
   },
-  "stripeProductID": "prod_FFi3FtILZ6xXV0"
+  "stripeProductID": ""
 }

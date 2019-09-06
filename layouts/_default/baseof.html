@@ -3,17 +3,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {{ template "_internal/google_analytics_async.html" . }}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#2D9AED" />
     <title>{{$p.name}} Home</title>
+    <meta name="description" content="{{ $.Site.Data.products.appscode.summary | plainify }}">
+    <meta name="author" content="AppsCode Inc.">
+    <meta name="keywords" content="application monitoring, attic, build docker image, cloud app, cloud deployment, cloud hosting, container applications, continuous deployment, deployment automation, git hosting, kubernetes autoscaling, nagios, network monitor, repository hosting, source code repository">
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/products/appscode/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/products/appscode/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/products/appscode/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/products/appscode/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/products/appscode/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/products/appscode/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/products/appscode/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/products/appscode/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/products/appscode/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/products/appscode/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/products/appscode/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/products/appscode/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/products/appscode/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/products/appscode/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/products/appscode/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- twitter -->
+    <!--
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@KubeDB">
+    <meta name="twitter:title" content="KubeDB">
+    <meta name="twitter:creator" content="@KubeDB">
+    <meta name="twitter:description" content="{{ $.Site.Data.products.kubedb.summary | plainify }}">
+    <meta name="twitter:image:src" content="/assets/images/products/kubedb/kubedb-1280x640.png">
+    -->
+    <!-- facebook -->
+    <!--
+    <meta property="og:url" content="{{ $.Site.Params.domain_kubedb }}">
+    <meta property="og:title" content="KubeDB">
+    <meta property="og:description" content="{{ $.Site.Data.products.kubedb.summary | plainify }}">
+    <meta property="og:site_name" content="KubeDB">
+    <meta property="og:image" content="/assets/images/products/kubedb/kubedb-1280x640.png">
+    <meta property="og:type" content="article">
+    -->
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
     <!-- Bulma Carousel CSS -->
     <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
+    <!-- Bulma tooltip CSS -->
+    <link rel="stylesheet" href="/assets/css/bulma-tooltip.min.css" />
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="/assets/css/bulma.min.css" />
     <!-- Custom CSS -->
@@ -125,6 +165,7 @@
                         <div class="column is-4">
                           <div class="columns">
                             <div class="column is-12">
+                              {{ if $.Site.Data.products.bytebuilders.published }}
                               <!-- single menu item start -->
                               <a
                                 href="{{.Site.Params.domain_bytebuilders}}"
@@ -132,11 +173,11 @@
                               >
                                 <div class="menu-header">
                                   <p class="intro">Introducing....</p>
-                                  <h5>Byte.builders</h5>
+                                  <h5>{{ $.Site.Data.products.bytebuilders.name }}</h5>
                                 </div>
                                 <div class="menu-body">
                                   <p>
-                                    The Kubernetes Cloud
+                                    {{ $.Site.Data.products.bytebuilders.tagline | plainify }}
                                   </p>
                                 </div>
                                 <p class="learn-more-btn">
@@ -150,6 +191,7 @@
                                 </p>
                               </a>
                               <!-- single menu item end -->
+                              {{ end }}
 
                               {{ range $item := $.Site.Data.config.mainMenu.c2 }}
                               {{ $p := (index $.Site.Data.products $item) }}
@@ -177,23 +219,24 @@
                           </div>
                         </div>
                       </div>
-                      <div class="columns has-text-centered">
-                        <div class="column">
-                          <div class="menu-bottom">
-                            <p>
-                              Explore refreshing apps and integrations for
-                              AppsCode products:
-                              <a href="{{.Site.Params.domain_marketplace}}">
-                                Visit the Marketplace
-                                <i
-                                  class="fa fa-long-arrow-right"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </p>
+                      {{ if $.Site.Data.products.bytebuilders.published }}
+                        <div class="columns has-text-centered">
+                          <div class="column">
+                            <div class="menu-bottom">
+                              <p>
+                                Explore apps and integrations for AppsCode products:
+                                <a href="{{.Site.Params.domain_marketplace}}">
+                                  Visit the Marketplace
+                                  <i
+                                    class="fa fa-long-arrow-right"
+                                    aria-hidden="true"
+                                  ></i
+                                ></a>
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      {{end }}
                     </div>
                     <!-- dropdown menu end -->
                   </div>
@@ -543,6 +586,7 @@
                 <div class="footer-menu">
                   <h4>Services</h4>
                   <ul class="footer-link">
+                    <li><a href="{{.Site.Params.domain_appscode}}/pricing/">Commercial Support</a></li>
                     <li><a href="{{.Site.Params.domain_appscode}}/consulting/">Consulting</a></li>
                     <li><a href="{{.Site.Params.domain_appscode}}/training/">Training</a></li>
                     <li><a href="{{.Site.Params.domain_appscode}}/support/">Support</a></li>

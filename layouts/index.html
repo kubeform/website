@@ -16,7 +16,7 @@
                 {{ $p.tagline | safeHTML }}
               </h1>
               <div class="hero-area-button buttons">
-                <a href="/schedule-demo" class="button kd-button kd-primary"
+                <a href="meet-expert" class="button kd-button kd-primary"
                   >Schedule a Demo</a
                 >
                 {{ if $p.datasheetFormID }}
@@ -30,6 +30,18 @@
                 >
                 {{ end }}
               </div>
+              <!-- video player button start -->
+              <!--
+              <div class="play-buttons">
+                <a href="#" id="playme" onclick="revealVideo('video','youtube')"
+                  ><span class="video-icon"
+                    ><i class="fa fa-play" aria-hidden="true"></i
+                  ></span>
+                  Watch the reel</a
+                >
+              </div>
+              -->
+              <!-- video player button end -->
             </div>
           </div>
           <!-- hero content end -->
@@ -46,6 +58,39 @@
   </div>
 </section>
 <!-- hero area end -->
+
+<!-- video player frame and scripts start -->
+<!-- video-player start  -->
+<div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+  <div class="lightbox-container">
+    <div class="lightbox-content">
+      <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+        X
+      </button>
+      <div class="video-container">
+        <iframe id="youtube" width="1080" height="540" src="https://www.youtube.com/embed/CuQ6qvVBb0g" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- video-player start  -->
+<script>
+// Function to reveal lightbox and adding YouTube autoplay
+  function revealVideo(div,video_id) {
+    var video = document.getElementById(video_id).src;
+    document.getElementById(video_id).src = video+'?&autoplay=1'; // adding autoplay to the URL
+    document.getElementById(div).style.display = 'block';
+  }
+  // Hiding the lightbox and removing YouTube autoplay
+  function hideVideo(div,video_id) {
+    var video = document.getElementById(video_id).src;
+    var cleaned = video.replace('?&autoplay=1',''); // removing autoplay form url
+    document.getElementById(video_id).src = cleaned;
+    document.getElementById(div).style.display = 'none';
+  }
+</script>
+<!-- video player frame and scripts end -->
+
 
 <!-- feature-area start -->
 <section class="product-feature-area section-padding">

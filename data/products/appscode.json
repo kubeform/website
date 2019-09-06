@@ -1,8 +1,8 @@
 {
   "key": "appscode",
   "name": "AppsCode",
-  "tagline": "The Kubernetes Company",
-  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+  "tagline": "GitHub for Kubernetes",
+  "summary": "Accelerating the transition to Containers by building a Kubernetes-native Cloud",
   "published": false,
   "website": {
     "domainKey": "domain_appscode",
@@ -22,7 +22,10 @@
   },
   "icon": {
     "src": "https://cdn.appscode.com/images/products/appscode/appscode-icon.png",
-    "alt": "AppsCode"
+    "alt": "AppsCode",
+    "sizes": {
+      "192x192": "https://cdn.appscode.com/images/products/appscode/icons/android-icon-192x192.png"
+    }
   },
-  "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7"
+  "datasheetFormID": ""
 }
