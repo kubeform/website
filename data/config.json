@@ -42,6 +42,7 @@
     ],
     "c2": [
       "pharmer",
+      "kubeform",
       "kubed"
     ]
   },
