@@ -1,7 +1,7 @@
 {
   "key": "kubevault",
   "name": "KubeVault",
-  "tagline": "Tools for running HashiCorp Vault on Kubernetes",
+  "tagline": "Tools for running HashiCorp <strong>Vault</strong> on <strong>Kubernetes</strong>",
   "summary": "",
   "published": true,
   "website": {
