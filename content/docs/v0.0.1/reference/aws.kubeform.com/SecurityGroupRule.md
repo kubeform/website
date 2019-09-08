@@ -1,0 +1,45 @@
+---
+title: SecurityGroupRule
+menu:
+  docs_v0.0.1:
+    identifier: securitygrouprule-aws.kubeform.com
+    name: SecurityGroupRule
+    parent: aws.kubeform.com-reference
+    weight: 1
+menu_name: docs_v0.0.1
+section_menu_id: reference
+---
+
+## SecurityGroupRule
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
+|    `kind` | string | `SecurityGroupRule` |
+| `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
+| `spec` | ***[SecurityGroupRuleSpec](#SecurityGroupRuleSpec)***||
+| `status` | ***[SecurityGroupRuleStatus](#SecurityGroupRuleStatus)***||
+## SecurityGroupRuleSpec
+##### (Appears on:[SecurityGroupRule](#SecurityGroupRule), [SecurityGroupRuleStatus](#SecurityGroupRuleStatus))
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
+| `id` | ***string***||
+| `cidrBlocks` | ***[]string***| ***(Optional)*** |
+| `description` | ***string***| ***(Optional)*** |
+| `fromPort` | ***int***||
+| `ipv6CIDRBlocks` | ***[]string***| ***(Optional)*** |
+| `prefixListIDS` | ***[]string***| ***(Optional)*** |
+| `protocol` | ***string***||
+| `securityGroupID` | ***string***||
+| `self` | ***bool***| ***(Optional)*** |
+| `sourceSecurityGroupID` | ***string***| ***(Optional)*** |
+| `toPort` | ***int***||
+| `type` | ***string***|Type of rule, ingress (inbound) or egress (outbound).|
+## SecurityGroupRuleStatus
+##### (Appears on:[SecurityGroupRule](#SecurityGroupRule))
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
+| `output` | ***[SecurityGroupRuleSpec](#SecurityGroupRuleSpec)***| ***(Optional)*** |
+| `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
+---

@@ -1,0 +1,406 @@
+{{ define "documentation-menu" }}
+
+{{ $currentPage := . }}
+{{ $menu := .Params.menu_name }}
+<!-- documentation menu area start -->
+<div class="documentation-menu">
+  <div class="container section">
+    <div class="is-centered">
+      <div class="is-half has-text-centered-desktop">
+        <!-- responsive menu start -->
+        <div class="responsive-menu">
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="acNav3"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <!-- responsive menu end -->
+        <!-- start -->
+        <nav class="documentation-navbar">
+          <div id="acNav3" class="navbar-menu nav-menu main-menu">
+            <div class="navbar-centered">
+              <!-- nav menu start -->
+              <div class="navbar-start">
+                {{ $sectionMenuId := .Params.section_menu_id }}
+                {{ if isset .Params "menu_name" }}
+                  {{ range (index .Site.Menus .Params.menu_name) }}
+                    {{ if eq (string .Pre) "dropdown" }}
+                      <div class="navbar-item has-dropdown ac-is-hoverable">
+                        <a class="navbar-link">
+                          {{ .Name }}
+                        </a>
+                        <div class="ac-dropdown">
+                          {{ range .Children }}
+                            {{ if ne .Weight -1 }}
+                              <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+                            {{ end }}
+                          {{ end }}
+                        </div>
+                      </div>
+                    {{ else }}
+                      <a href="{{ .URL }}" class="{{ if eq $sectionMenuId .Identifier }} is-active {{ end }} navbar-item">{{ .Name }}</a>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              </div>
+              <!-- nav menu end -->
+            </div>
+          </div>
+        </nav>
+        <!-- end -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- documentation menu area end -->
+{{ end }}
+
+{{ define "main" }}
+
+{{ $currentPage := . }}
+{{ $menu := .Params.menu_name }}
+{{ $p := (index .Site.Data.products .Site.Params.product_key) }}
+
+<!-- init idx -->
+{{ .Scratch.Add "idx" 0 }}
+
+<!-- documentation area start -->
+<div class="documentation-area">
+  <div class="container section">
+    <div class="columns">
+      <div class="column is-3">
+        <!-- left sidebar area start -->
+        <div class="kd-left-sidebar">
+
+          <div class="trial-button">
+            <a href="/docs/{{ $p.latestVersion }}/setup/" class="button is-fullwidth">
+              Try Now for FREE!
+            </a>
+          </div>
+
+          <div class="kd-version">
+            {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
+
+            <div class="dropdown">
+              <div class="dropdown-trigger">
+                <button
+                  class="button is-fullwidth"
+                  aria-haspopup="true"
+                  aria-controls="dropdown-menu3"
+                >
+
+                  {{ range $v := $p.versions }}
+                    {{ if $v.show }}
+                      {{ if and $v.hostDocs (eq $v.version $currentBranch) }}
+                        <span><strong class="icon"><i class="fa fa-cog" aria-hidden="true"></i></strong>{{ $v.version }}</span>
+                      {{ if eq $v.version $p.latestVersion }}
+                        <span class="new-item">Latest</span>
+                      {{ end }}
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <div class="dropdown-content">
+                  {{ range $v := $p.versions }}
+                    {{ if $v.show }}
+                      {{ if $v.hostDocs }}
+                        <a href="/docs/{{ $v.version }}/" class="dropdown-item">{{ $v.version }}  {{ if eq $v.version $p.latestVersion }} <div class="tag">Latest</div> {{ end }}</a>
+                      {{ else }}
+                        <a href="https://github.com/{{ $p.docRepo }}/tree/{{ $v.version }}/docs" target="_blank" class="dropdown-item">{{ $v.version }}</a>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{ if isset .Params "menu_name" }}
+            {{ $sectionMenuId := .Params.section_menu_id }}
+            {{ range (index .Site.Menus .Params.menu_name) }}
+              {{ if eq $sectionMenuId .Identifier }}
+                {{ if .HasChildren }}
+                  {{ $hasPreDropdown := eq (string .Pre) "dropdown" }}
+
+                  {{ $.Scratch.Set "leftMenuHeadline" .Name }}
+                  {{ range .Children }}
+                    {{ if and ( and .HasChildren $hasPreDropdown) ($currentPage.HasMenuCurrent $menu .)  }}
+
+                      {{ $.Scratch.Set "leftMenuHeadline" .Name }}
+
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          <!-- sidebar menu start -->
+          <div class="kd-sidebar-menu">
+            {{ if isset .Params "menu_name" }}
+              {{ $sectionMenuId := .Params.section_menu_id }}
+
+              <!-- first child -> section menu -->
+              {{ range (index .Site.Menus .Params.menu_name ) }}
+
+                {{ if eq $sectionMenuId .Identifier }}
+                  {{ $hasPreDropdown := eq (string .Pre) "dropdown" }}
+
+                  <!-- second child -> left menu level 1-->
+                  {{ range .Children }}
+
+                    {{ if .HasChildren }}
+                      {{ if $hasPreDropdown }}
+                        {{ if $currentPage.HasMenuCurrent $menu . }}
+
+                            {{ range .Children }}
+                              {{ if .HasChildren }}
+                                {{ partial "menu/group.html" (dict "uid" $.File.UniqueID "page" $currentPage "menu" $menu "entry" .) }}
+                              {{ else }}
+                                {{ partial "menu/leaf.html" (dict "uid" $.File.UniqueID "page" $currentPage "menu" $menu "entry" .) }}
+                              {{ end }}
+                            {{ end }}
+
+                        {{ end }}
+                      {{ else }}
+                        {{ partial "menu/group.html" (dict "uid" $.File.UniqueID "page" $currentPage "menu" $menu "entry" .) }}
+                      {{ end }}
+
+                    {{ else }}
+                      {{ partial "menu/leaf.html" (dict "uid" $.File.UniqueID "page" $currentPage "menu" $menu "entry" .) }}
+                    {{ end }}
+                    <!-- end of menu item rendering -->
+                  {{ end }}
+                  <!-- end second child -> left level 1-->
+
+                {{ end }}
+              {{ end }}
+              <!-- end first child -> section menu -->
+            {{ end }}
+          </div>
+          <!-- sidebar menu end -->
+        </div>
+        <!-- left sidebar area end -->
+      </div>
+      <div class="column is-7">
+        <div class="full-info">
+          {{ .Content }}
+          <ul class="contents">
+          {{ range .Pages }}
+              <li>
+                <a href="{{.URL}}" >{{.Title}}</a>
+              </li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="right-sidebar-area">
+          <!-- search item -->
+          <div class="search-area">
+            <form action="#">
+              <input id="acSearch" type="text" placeholder="Search..." />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+          <!-- search item end -->
+
+          <!-- table of contents area start -->
+          <div class="tbl-of-contents">
+            <h4>What's on this Page</h4>
+            {{.TableOfContents}}
+          </div>
+          <!-- table of contents area end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // kd version dropdown js
+    var kdDropdown = document.querySelector(".dropdown");
+    var kdDropdownBtn = document.querySelector(".dropdown-trigger");
+      kdDropdownBtn.addEventListener("click", function(){
+        kdDropdown.classList.toggle("is-active");
+      })
+  </script>
+</div>
+<!-- documentation area end -->
+
+<!-- sidebar search area start -->
+
+<!-- overlay start -->
+<div class="overlay-bg"></div>
+<!-- overlay end -->
+
+<div class="sidebar-search-area">
+  <div class="search-area-top">
+    <h3>Search</h3>
+
+    <div class="searchbar-area">
+      <input type="search" name="search" id="searchbox" placeholder="Search..." />
+      <button onclick="queryPage(1)"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+
+    <span id="searchbar-script-container" style="display:none"></span>
+
+    <div class="search-meta-information level">
+      <div class="level-left">
+      </div>
+    </div>
+  </div>
+
+  <div class="search-result-wrapper">
+  </div>
+
+  <!-- pagination area start -->
+  <div class="pagination-area">
+    <div class="pagination-list">
+    </div>
+  </div>
+  <!-- pagination area end -->
+</div>
+
+<script type="text/javascript">
+  var pageSize = 5;
+  var acSearch = document.querySelector("#acSearch");
+  var bodyOverlay = document.querySelector(".overlay-bg");
+  var sidebarSearch = document.querySelector(".sidebar-search-area");
+
+  acSearch.addEventListener("click", function() {
+    bodyOverlay.style.display = "block";
+    sidebarSearch.style.right = "0";
+    document.getElementById("searchbox").focus();
+    bodyOverlay.addEventListener("click", function() {
+      bodyOverlay.style.display = "none";
+      sidebarSearch.style.right = "-50%";
+    });
+  });
+
+  function encodeQueryData(data) {
+    var ret = [];
+    for (var d in data)
+      ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+    return ret.join('&');
+  }
+
+  document.querySelector(".searchbar-area input[type=search]").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      queryPage(1);
+    }
+  });
+
+  function queryPage(idx) {
+    var q = document.getElementById("searchbox").value;
+    var cx = "{{.Site.Params.search_engine_ID}}";
+    var key = "{{.Site.Params.search_api_key}}";
+    var imgSize = "small";
+    var callback = "renderResult";
+
+    var src = "https://www.googleapis.com/customsearch/v1?" + encodeQueryData({
+      q: q,
+      cx: cx,
+      key: key,
+      imgSize: imgSize,
+      callback: callback,
+      start: (idx-1)*pageSize + 1,
+      num: pageSize,
+    });
+
+    var newScript = document.createElement("script");
+    newScript.src = src;
+    e = document.getElementById("searchbar-script-container");
+    var child = e.lastElementChild;
+    if (child) {
+        e.removeChild(child);
+    }
+    e.appendChild(newScript);
+  }
+
+  function renderSearchResultEntry(e) {
+    var out = '<div class="single-search-result">' +
+      '<h3><a href="' + e.link + '">' + e.title + '</a></h3>' +
+      '<a href="' + e.link + '">' + e.htmlFormattedUrl + '</a>' +
+      '<div class="result-description-wrapper">';
+      if (e.pagemap && e.pagemap.cse_thumbnail) {
+        out += '<div class="result-thumb">' +
+            '<img src="' + e.pagemap.cse_thumbnail[0].src + '" alt="" />' +
+          '</div>';
+      }
+      out += '<div class="result-description">' +
+          '<p>'+
+            e.snippet +
+          '</p>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+    return out;
+  }
+
+  function renderResult(response) {
+    document.querySelector(".search-meta-information .level-left").innerHTML = '<div class="level-left">'+
+        '<p>'+
+          'About <span class="search-count">'+response.searchInformation.formattedTotalResults+'</span> results (<span class="time-count">'+response.searchInformation.formattedSearchTime+' </span>seconds)'+
+        '</p>'+
+      '</div>';
+
+    if (!response.items) {
+      return;
+    }
+
+    var searchResultWrapper = document.querySelector(".search-result-wrapper");
+    searchResultWrapper.innerHTML = "";
+
+    for (var i = 0; i < response.items.length; i++) {
+      searchResultWrapper.innerHTML += renderSearchResultEntry(response.items[i]);
+    }
+
+    var pager = '<ul>';
+    if (response.queries.previousPage) {
+      var pageIndex = Math.floor(response.queries.previousPage[0].startIndex/pageSize) + 1;
+      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')">Previous</a></li>';
+    }
+    if (response.queries.request) {
+      var pageIndex = Math.floor(response.queries.request[0].startIndex/pageSize) + 1;
+      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')" class="is-active">' + pageIndex + '</a></li>';
+    }
+    if (response.queries.nextPage) {
+      var pageIndex = Math.floor(response.queries.nextPage[0].startIndex/pageSize) + 1;
+      pager += '<li><a href="#" onclick="queryPage(' + pageIndex  + ')">Next</a></li>';
+    }
+    pager += '</ul>';
+    document.querySelector(".pagination-area .pagination-list").innerHTML = pager;
+  }
+</script>
+
+<!-- sidebar search area end -->
+
+{{ end }}
+
+{{ define "testimonial" }}
+<section></section>
+{{ end }}
+
+
+{{ define "customer-logos" }}
+<section></section>
+{{ end }}
+
+{{ define "cta-install" }}
+<section></section>
+{{ end }}
