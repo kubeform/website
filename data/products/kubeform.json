@@ -1,7 +1,7 @@
 {
   "key": "kubeform",
   "name": "Kubeform",
-  "tagline": "Provision and manage any cloud provider resource using <strong>Kubernetes</strong> CRDs & Terraform",
+  "tagline": "Provision and manage any cloud provider resource using <strong>Kubernetes</strong> CRDs & <strong>Terraform</strong>",
   "summary": "",
   "published": true,
   "website": {
@@ -38,7 +38,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/features/kubernetes.png",
         "alt": "http"
       },
       "summary": "",
@@ -51,7 +51,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/features/terraform.png",
         "alt": "http"
       },
       "summary": "",
@@ -64,7 +64,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/features/source-code.png",
         "alt": "http"
       },
       "summary": "",
@@ -77,7 +77,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/features/clouds.png",
         "alt": "http"
       },
       "summary": "",
@@ -90,7 +90,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/features/speed.png",
         "alt": "http"
       },
       "summary": "",
@@ -103,7 +103,7 @@
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/http.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/features/teamwork.png",
         "alt": "http"
       },
       "summary": "",
