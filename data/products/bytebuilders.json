@@ -13,11 +13,11 @@
     "alt": "ByteBuilders"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders-logo.png",
+    "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders.png",
     "alt": "ByteBuilders"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders-logo-white.png",
+    "src": "https://cdn.appscode.com/images/products/bytebuilders/bytebuilders-white.png",
     "alt": "ByteBuilders"
   },
   "icon": {
@@ -38,7 +38,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/dribble.png",
+        "src": "https://cdn.appscode.com/images/products/pharmer/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Provision and upgrade Kubernetes cluster on any cloud on on-premises infrastructure",
@@ -51,7 +51,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/fire.png",
+        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/teamwork-2.png",
         "alt": ""
       },
       "summary": "On-board every member of your team on the cloud native journey using informative dashboards",
@@ -64,7 +64,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/home.png",
+        "src": "https://cdn.appscode.com/images/products/voyager/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Voyager ingress controller provides L7 & L4 load balancing, high availability, sticky sessions using HAProxy",
@@ -77,7 +77,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/leave.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Run popular databases like, Postgres, Elasticsearch, Redis, MongoDB, MySQL, Memcached etc. on K8s using KubeDB",
@@ -90,7 +90,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/rocket.png",
+        "src": "https://cdn.appscode.com/images/products/stash/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Use Stash to backup and restore any stateful workload using restic or volume snapshotting on any K8s cluster",
@@ -103,7 +103,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/send.png",
+        "src": "https://cdn.appscode.com/images/products/kubevault/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Use KubeVault to provision HashiCorp Vault on Kubernetes and manage secrets in a Kubernetes native way",
@@ -116,7 +116,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/sheild.png",
+        "src": "https://cdn.appscode.com/images/products/kubeform/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Use Kubeform to provision and manage any cloud provider resources using Kubernetes CRDs & Terraform",
@@ -129,7 +129,7 @@
         "alt": ""
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/bytebuilders/features/user.png",
+        "src": "https://cdn.appscode.com/images/products/guard/icons/android-icon-48x48.png",
         "alt": ""
       },
       "summary": "Use Guard as a Kubernetes Webhook Authentication server to login users via Google, GitHub, Azure, LDAP, etc.",

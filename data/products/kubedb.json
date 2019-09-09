@@ -13,11 +13,11 @@
     "alt": "KubeDB"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-logo.png",
+    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb.png",
     "alt": "KubeDB"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-logo-white.png",
+    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-white.png",
     "alt": "KubeDB"
   },
   "icon": {
