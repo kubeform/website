@@ -31,6 +31,18 @@
   "starRepo": "searchlight/searchlight",
   "docRepo": "searchlight/searchlight",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/appscode/searchlight",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/appscode/searchlight",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "Monitor Kubernetes",

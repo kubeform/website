@@ -6,6 +6,18 @@
   "repoURL": "https://github.com/stashed/mongodb",
   "starRepo": "stashed/stash",
   "docRepo": "stashed/mongodb",
+  "badges": [
+    {
+      "url" : "github/stars/stashed/mongodb",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/stashed/mongodb",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
     { "version": "3.4", "hostDocs": true, "show": true }
