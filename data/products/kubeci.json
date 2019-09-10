@@ -30,6 +30,18 @@
   "repoURL": "https://github.com/kube-ci/docs",
   "starRepo": "kube-ci/engine",
   "docRepo": "kube-ci/docs",
+  "badges": [
+    {
+      "url" : "github/stars/kube-ci/engine",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/kubeci/engine",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "Lower administrative burden",

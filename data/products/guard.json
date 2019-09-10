@@ -31,6 +31,18 @@
   "starRepo": "appscode/guard",
   "docRepo": "appscode/guard",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/appscode/guard",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/appscode/guard",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "Identity Providers",

@@ -103,7 +103,7 @@ const spyScrolling = () => {
 
   window.onscroll = () => {
     const scrollPos =
-      document.documentElement.scrollTop || document.body.scrollTop;
+      document.documentElement.scrollTop || document.body.scrollTop + 100;
     for (let s in allHeaders) {
       if (
         allHeaders.hasOwnProperty(s) &&

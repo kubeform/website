@@ -46,7 +46,15 @@
     height: auto;
     font-size: 14px;
   }
-
+  // pricing page style start
+  .pricing-area-wrapper {
+    overflow-x: scroll;
+    padding-top: 64px;
+  }
+  .payment-method-innner-text.pr-140 {
+    padding-right: 0;
+  }
+  // pricing page style end
   /* support page pricing table style */
   .pricing-heading {
     padding: 20px 15px;
@@ -66,7 +74,7 @@
   }
 
   .main-menu a {
-    padding: 5px 0;
+    padding: 5px 20px;
   }
 
   .main-menu {
@@ -74,6 +82,7 @@
   }
 
   .main-menu-button {
+    padding: 10px 20px;
     .button {
       padding: 6px 20px;
     }
@@ -121,6 +130,15 @@
   .pricing-body li {
     font-size: 13px;
   }
+  // pricing page style start
+  .pricing-area-wrapper {
+    overflow-x: scroll;
+    padding-top: 64px;
+  }
+  .payment-method-innner-text.pr-140 {
+    padding-right: 0;
+  }
+  // pricing page style end
   .is-full-height {
     height: 100%;
   }
@@ -258,16 +276,23 @@
     }
   }
   //feature page style end
-
-  //docs page search
-  .sidebar-search-area{
-    position: inherit;
-    width: 100%;
+// customer carousel start
+.carousel-wrapper{
+  padding: 30px;
+}
+// customer carousel end
+  // docs page style start
+  .sidebar-search-area {
+    right: -100%;
   }
+  // docs page style end
 }
 
 /*  tablet :769px. */
 @media (min-width: 769px) and (max-width: 1023px) {
+  .navbar-burger {
+    color: $white-color;
+  }
   p {
     font-size: 15px;
   }
@@ -581,13 +606,29 @@
     visibility: visible !important;
     display: block !important;
     position: inherit;
+    padding-left: 30px;
   }
   .main-menu {
     overflow-y: auto;
     max-height: 70vh;
   }
+
   // mega-menu end
 
+  // pricing page style start
+  .pricing-area-wrapper {
+    overflow-x: scroll;
+    padding-top: 64px;
+  }
+  .payment-method-innner-text.pr-140 {
+    padding-right: 0;
+  }
+  // pricing page style end
+  //documentation-menu page responsive code start
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0;
+  }
+  // documentation-menu page responsive code end
   .navbar-burger {
     background: rgba(144, 144, 144, 0.05);
   }
@@ -630,7 +671,7 @@
   }
 
   //docs page search
-  .sidebar-search-area{
+  .sidebar-search-area {
     position: inherit;
     width: 100%;
   }
@@ -644,6 +685,9 @@
 
 /* small Mobile :768px. */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar-menu.is-active{
+    border-radius: 4px;
+  }
   p {
     font-size: 15px;
   }
@@ -907,7 +951,7 @@
     background: #fff;
     position: inherit;
     min-width: auto;
-    top: 40px;
+    top: 0px;
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
@@ -1013,12 +1057,72 @@
     }
   }
   // contact form style
+  /* ==============================================
+  documentation page start
+==============================================*/
 
-  //docs page search
-  .sidebar-search-area{
+  //Searchbar position inherit
+  .documentation-area {
+    margin-bottom: 30px;
+  }
+  .right-sidebar-area {
+    padding: 0;
+    .search-area {
+      display: none;
+    }
+  }
+  .sidebar-search-area {
     position: inherit;
     width: 100%;
+    .result-thumb {
+      width: 40px;
+    }
   }
+  .kd-left-sidebar {
+    margin-right: 0;
+  }
+  .documentation-menu .ac-is-hoverable:hover .ac-dropdown {
+    top: 0;
+  }
+  .full-info h1 {
+    font-size: 28px;
+  }
+  .full-info {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding: 0 0 0 30px;
+      li {
+        &:before {
+          margin-right: 20px;
+        }
+      }
+    }
+    ol {
+      padding: 0 0 0 30px;
+    }
+  }
+  .sidebar-search-area {
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    input {
+      width: 80%;
+    }
+  }
+
+  /* ==============================================
+  documentation page end
+==============================================*/
+
   //reverse order css
   .reverse-row-order {
     display: flex;

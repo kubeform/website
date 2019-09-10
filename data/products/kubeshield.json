@@ -31,6 +31,18 @@
   "starRepo": "kubeshield/scanner",
   "docRepo": "kubeshield/scanner",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/kubeform/scanner",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/kubeform/scanner",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "Automatic Initialization & Unsealing",

@@ -31,6 +31,18 @@
   "starRepo": "pharmer/pharmer",
   "docRepo": "pharmer/docs",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/pharmer/pharmer",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/pharmer/pharmer",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "Kubeadm",

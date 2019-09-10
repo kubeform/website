@@ -31,6 +31,18 @@
   "starRepo": "kubedb/cli",
   "docRepo": "kubedb/docs",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/kubedb/cli",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/kubedb/operator",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "Lower administrative burden",

@@ -347,16 +347,10 @@
 
                 <div class="navbar-item">
                   <div class="buttons main-menu-button">
-                    <!-- Place this tag where you want the button to render. -->
-                    <a
-                      class="github-button"
-                      href="https://github.com/{{ $p.starRepo }}"
-                      data-size="large"
-                      data-show-count="true"
-                      aria-label="Star {{ $p.starRepo }} on GitHub"
-                    >Star</a>
-                    <!-- Place this tag in your head or just before your close body tag. -->
-                    <script async defer src="https://buttons.github.io/buttons.js"></script>
+                    {{ range $idx, $badge := $p.badges }}
+                      {{if gt $idx 0}} &nbsp;&nbsp;&nbsp; {{end}}
+                      <img style="height:24px" alt="{{ $badge.alt }}" src="https://img.shields.io/{{ $badge.url }}?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo={{ $badge.logo }}">
+                    {{ end }}
                   </div>
                 </div>
               </div>
