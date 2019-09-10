@@ -1,4 +1,4 @@
-title: Provision and manage any cloud provider resource using Kubernetes CRDs & Terraform
+title: Provision cloud resources using Kubernetes CRDs & Terraform
 baseurl: https://kubeform-v1-hugo.web.app
 languageCode: en-us
 assetDir: static
