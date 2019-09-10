@@ -38,12 +38,11 @@
       "voyager",
       "swift",
       "searchlight",
-      "service-broker"
+      "kubed"
     ],
     "c2": [
       "pharmer",
-      "kubeform",
-      "kubed"
+      "kubeform"
     ]
   },
   "products": [
