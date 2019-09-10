@@ -31,6 +31,18 @@
   "starRepo": "appscode/voyager",
   "docRepo": "appscode/voyager",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/appscode/voyager",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/appscode/voyager",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "HTTP & TCP",

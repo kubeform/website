@@ -35,8 +35,10 @@ body.fixed-nav header{
   font-size: 14px !important;
   transition: 0.3s ease-in-out;
 }
-
-
+//docker and github button middle alignment css
+.buttons.main-menu-button {
+  margin-bottom: 0 ;
+}
 .button.for-support, .button.for-chat {
   background: $white-color;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, .17);
@@ -95,6 +97,9 @@ nav.navbar{
 }
 .navbar-item img{
   max-height: 35px;
+}
+.header-bottom-area .navbar-item img {
+  max-height: 28px;
 }
 .customize-kubedb .navbar-dropdown .navbar-item {
   color: $primary-color;
@@ -944,10 +949,10 @@ p.spam-message {
   background: #fff;
   color: $orange-color;
   font-size: 14px;
-  display: block;
+  display: inline-block;
   border-radius: 50px;
   font-weight: 500;
-  padding: 2px;
+  padding: 5px 25px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
@@ -1281,9 +1286,6 @@ p.spam-message {
 .documentation-page {
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
 }
-.documentation-navbar .main-menu a {
-  padding: 10px 30px;
-}
 .documentation-menu {
   background: scale-color($primary-color, $lightness: 80%);
   height: 100%;
@@ -1310,6 +1312,7 @@ body.fixed-nav .documentation-menu {
 }
 
 .full-info {
+  overflow: hidden;
   h1,
   h2,
   h3,
@@ -1360,9 +1363,6 @@ body.fixed-nav .documentation-menu {
   visibility: visible;
 }
 
-.single-info {
-  margin-bottom: 40px;
-}
 blockquote {
   border-left: 4px solid $primary-color;
   padding-left: 15px;
@@ -1376,15 +1376,25 @@ blockquote {
   line-height: 1.8;
 }
 
-.full-info ul li {
-  text-indent: -22px;
+.full-info ul li, .full-info ol li{
+  text-indent: -30px;
 }
 
+.full-info ul li p,
+.full-info ol li p {
+  text-indent: 0;
+  margin-top: -30px;
+}
+.full-info ul li pre,
+.full-info ol li pre {
+  text-indent: 0px;
+  margin-left: -30px;
+}
 .full-info ul li:before {
   content: "\f10c";
   font-family: fontawesome;
   font-size: 8px;
-  margin-right: 15px;
+  margin-right: 20px;
   color: #707070;
 }
 
@@ -1393,7 +1403,7 @@ ul li b {
   font-weight: 500;
 }
 
-.full-info ul {
+.full-info ul,.full-info ol {
   padding: 0 0 0 30px;
 }
 .full-info ul li p {
@@ -1414,12 +1424,34 @@ ul li b {
   margin-bottom: 15px;
   color: $paragraph-color;
 }
-
+.full-info p strong {
+  font-weight: 500;
+  em{
+    font-weight: 500;
+  }
+}
 .appscode-style.full-info ul li p a
 .appscode-style.full-info p a,
 .appscode-style.full-info a{
   color: $primary-color;
 }
+//custom ol li class start
+.full-info ol {
+  list-style: none;
+  counter-reset: order-list-counter;
+}
+.full-info ol li {
+  counter-increment: order-list-counter;
+}
+.full-info ol li::before {
+  content: counter(order-list-counter) ". ";
+  font-weight: 500;
+  font-family: $font-paragraph;
+  font-size: 15px;
+  color: $link-color;
+  margin-right: 15px;
+}
+//custom ol li class end
 
 /* Right Sidebar For Documentation page */
 .search-area {
@@ -1449,6 +1481,10 @@ ul li b {
   margin-top: -1px;
   cursor: pointer;
   display: block;
+}
+
+.tbl-of-contents {
+  overflow: hidden;
 }
 
 .tbl-of-contents h4 {
@@ -1534,7 +1570,7 @@ li.nav-item.active a {
   background: $white-color;
   width: 585px;
   z-index: 999;
-  right: -50%;
+  right: -80%;
   position: fixed;
   top: 0;
   height: 100%;
@@ -1574,6 +1610,10 @@ li.nav-item.active a {
   height: 40px;
   border-radius: 3px;
   width: 86.6%;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
 }
 
 .searchbar-area {

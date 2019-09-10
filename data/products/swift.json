@@ -31,6 +31,18 @@
   "starRepo": "kubepack/swift",
   "docRepo": "kubepack/swift",
   "datasheetFormID": "",
+  "badges": [
+    {
+      "url" : "github/stars/appscode/swift",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/appscode/swift",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "features": [
     {
       "title": "API Support",

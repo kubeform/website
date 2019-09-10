@@ -6,6 +6,18 @@
   "repoURL": "https://github.com/stashed/postgres",
   "starRepo": "stashed/stash",
   "docRepo": "stashed/postgres",
+  "badges": [
+    {
+      "url" : "github/stars/stashed/postgres",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url" : "docker/pulls/stashed/postgres",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
     { "version": "9.6", "hostDocs": true, "show": true },

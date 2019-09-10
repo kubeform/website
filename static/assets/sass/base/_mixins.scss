@@ -62,6 +62,7 @@
   body.#{$name} .textarea.is-focused,
   body.#{$name} .textarea:active,
   body.#{$name} .textarea:focus,
+  body.#{$name} .searchbar-area input:focus,
   body.#{$name} .subscription-form .input:hover {
     border-color: #{$color};
   }
