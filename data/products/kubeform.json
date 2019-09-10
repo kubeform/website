@@ -1,7 +1,7 @@
 {
   "key": "kubeform",
   "name": "Kubeform",
-  "tagline": "Provision and manage any cloud provider resource using <strong>Kubernetes</strong> CRDs & <strong>Terraform</strong>",
+  "tagline": "Provision cloud resources <br /> using <strong>Kubernetes</strong> CRDs <br />& <strong>Terraform</strong>",
   "summary": "",
   "published": true,
   "website": {
