@@ -1,5 +1,4 @@
-/.firebase
-/node_modules
-/repos
-/resources
-.sass-cache
+.firebase/
+node_modules/
+repos/
+resources/

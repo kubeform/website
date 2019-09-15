@@ -27,5 +27,8 @@
       "192x192": "https://cdn.appscode.com/images/products/appscode/icons/android-icon-192x192.png"
     }
   },
-  "datasheetFormID": ""
+  "datasheetFormID": "",
+  "videos": {
+    "intro": "8az5rYUxyGs"
+  }
 }

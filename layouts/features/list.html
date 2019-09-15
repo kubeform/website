@@ -3,199 +3,80 @@
 {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
 
 <!-- features area start -->
-<section class="hero-features">
-  <div class="container section">
-    <div class="columns">
-      <div class="column is-6 is-offset-3 has-text-centered">
-        <!-- hero features text start -->
-        <div class="hero-features-content">
-          <h1>You’re in best cloud solution</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and it is</p>
-          <div class="hero-area-button">
-            <a href="/docs/{{ $p.latestVersion }}/setup/" class="button kd-button kd-primary">Install Now FREE</a>
-          </div>
-        </div>
-        <!-- hero features text end -->
+<section class="features-area">
+  <div class="hero-features d-table">
+    <!-- hero features text start -->
+    <div class="hero-features-content d-table-cell has-text-centered">
+      <h1>{{ $p.name }} Features</h1>
+      <p>{{ $p.summary }}</p>
+      <div class="hero-area-button">
+        <a
+          href="/docs/{{ $p.latestVersion }}/setup/"
+          class="button kd-button kd-primary"
+          >Install Now FREE</a
+        >
       </div>
     </div>
+    <!-- hero features text end -->
   </div>
 </section>
 <!-- features area end -->
 
 <!-- all featured section start -->
-<section class="section-padding pt-0">
+<section class="features-wrapper">
+  {{ range $idx, $f := $p.features }}
   <!-- single feature start -->
   <div class="container section">
-    <div class="columns">
-      <div class="column is-5 is-offset-1">
-        <div class="feature-wrapper d-table">
-          <div class="feature-content pr-140 d-table-cell">
-            <h2>Easy to administer</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and it is
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever.
-            </p>
+    <div class="feature-section-gap pb-100">
+      {{ if (modBool $idx 2) }}
+      <div class="columns">
+        <div class="column is-5 is-offset-1">
+          <div class="feature-wrapper d-table">
+            <div class="feature-content pr-140 d-table-cell">
+              <h2>{{ $f.title }}</h2>
+              <p>
+                {{ $f.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 is-offset-1">
+          <div class="single-feature-image">
+            <img
+              src="{{ $f.image.src }}"
+              alt="{{ $f.image.alt }}"
+              class="img"
+            />
           </div>
         </div>
       </div>
-      <div class="column is-5 is-offset-1">
-        <div class="single-feature-image">
-          <img
-            src="/assets/images/features-page/feature-1.png"
-            alt=""
-            class="img"
-          />
+      {{ else }}
+      <div class="columns reverse-row-order">
+        <div class="column is-5 is-offset-1">
+          <div class="single-feature-image">
+            <img
+              src="{{ $f.image.src }}"
+              alt="{{ $f.image.alt }}"
+              class="img"
+            />
+          </div>
         </div>
+        <div class="column is-5">
+          <div class="feature-wrapper d-table">
+            <div class="feature-content pr-45 d-table-cell">
+              <h2>{{ $f.title }}</h2>
+              <p>
+                {{ $f.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
       </div>
     </div>
   </div>
   <!-- single feature end -->
-  <!-- single feature start -->
-  <div class="container section">
-    <div class="columns section-padding reverse-row-order">
-      <div class="column is-5 is-offset-1">
-        <div class="single-feature-image">
-          <img
-            src="/assets/images/features-page/feature-2.png"
-            alt=""
-            class="img"
-          />
-        </div>
-      </div>
-      <div class="column is-5">
-        <div class="feature-wrapper d-table">
-          <div class="feature-content pr-45 d-table-cell">
-            <h2>Highly scalable</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and it is
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever.
-            </p>
-            <p>
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- single feature end -->
-  <!-- single feature start -->
-  <div class="container section">
-    <div class="columns">
-      <div class="column is-5 is-offset-1">
-        <div class="feature-wrapper d-table">
-          <div class="feature-content pr-140 d-table-cell">
-            <h2>Reliability & Security</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and it is
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="column is-5 is-offset-1">
-        <div class="single-feature-image">
-          <img
-            src="/assets/images/features-page/feature-3.png"
-            alt=""
-            class="img"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- single feature end -->
-  <!-- single feature start -->
-  <div class="container section">
-    <div class="columns section-padding  reverse-row-order">
-      <div class="column is-5 is-offset-1">
-        <div class="single-feature-image">
-          <img
-            src="/assets/images/features-page/feature-4.png"
-            alt=""
-            class="img"
-          />
-        </div>
-      </div>
-      <div class="column is-5">
-        <div class="feature-wrapper d-table">
-          <div class="feature-content pr-45 d-table-cell">
-            <h2>Fast</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and it is
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- single feature end -->
-  <!-- single feature start -->
-  <div class="container section">
-    <div class="columns">
-      <div class="column is-5 is-offset-1">
-        <div class="feature-wrapper d-table">
-          <div class="feature-content pr-140 d-table-cell">
-            <h2>Available and durable</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and it is
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="column is-5 is-offset-1">
-        <div class="single-feature-image">
-          <img
-            src="/assets/images/features-page/feature-5.png"
-            alt=""
-            class="img"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- single feature end -->
-  <!-- single feature start -->
-  <div class="container section">
-    <div class="columns section-padding pb-0 reverse-row-order">
-      <div class="column is-5 is-offset-1">
-        <div class="single-feature-image">
-          <img
-            src="/assets/images/features-page/feature-6.png"
-            alt=""
-            class="img"
-          />
-        </div>
-      </div>
-      <div class="column is-5">
-        <div class="feature-wrapper">
-          <div class="feature-content pr-45">
-            <h2>Inexpensive</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and it is
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever.
-            </p>
-            <p>
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- single feature end -->
+  {{ end }}
 </section>
 <!-- all featured section end -->
 {{ end }}
