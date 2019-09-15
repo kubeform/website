@@ -11,6 +11,8 @@ section_menu_id: guides
 url: /docs/v0.0.1/guides/azure/
 aliases:
 - /docs/v0.0.1/guides/azure/README/
+info:
+  version: v0.0.1
 ---
 
 # Azure

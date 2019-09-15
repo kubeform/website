@@ -12,6 +12,8 @@ section_menu_id: setup
 url: /docs/v0.0.1/setup/
 aliases:
 - /docs/v0.0.1/setup/README/
+info:
+  version: v0.0.1
 ---
 
 # Setup

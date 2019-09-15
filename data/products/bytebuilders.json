@@ -30,6 +30,9 @@
   "repoURL": "https://github.com/bytebuilders",
   "starRepo": "bytebuilders/community",
   "docRepo": "bytebuilders/community",
+  "videos": {
+    "intro": "8az5rYUxyGs"
+  },
   "features": [
     {
       "title": "Kubernetes anywhere",
@@ -41,7 +44,7 @@
         "src": "https://cdn.appscode.com/images/products/pharmer/icons/android-icon-48x48.png",
         "alt": ""
       },
-      "summary": "Provision and upgrade Kubernetes cluster on any cloud on on-premises infrastructure",
+      "summary": "Provision and upgrade Kubernetes cluster on any cloud or on-premises infrastructure",
       "description": ""
     },
     {

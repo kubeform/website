@@ -11,6 +11,8 @@ section_menu_id: guides
 url: /docs/v0.0.1/guides/aws/
 aliases:
 - /docs/v0.0.1/guides/aws/README/
+info:
+  version: v0.0.1
 ---
 
 # AWS

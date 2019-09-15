@@ -8,5 +8,7 @@ menu:
     name: What is Kubeform
     weight: 10
 menu_name: docs_v0.0.1
+info:
+  version: v0.0.1
 ---
 

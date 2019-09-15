@@ -13,6 +13,8 @@ url: /docs/v0.0.1/welcome/
 aliases:
 - /docs/v0.0.1/
 - /docs/v0.0.1/README/
+info:
+  version: v0.0.1
 ---
 
 # Kubeform

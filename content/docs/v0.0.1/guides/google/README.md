@@ -11,6 +11,8 @@ section_menu_id: guides
 url: /docs/v0.0.1/guides/google/
 aliases:
 - /docs/v0.0.1/guides/google/README/
+info:
+  version: v0.0.1
 ---
 
 # Google

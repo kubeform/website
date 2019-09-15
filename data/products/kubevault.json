@@ -38,7 +38,7 @@
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/kubevault/operator",
+      "url" : "docker/pulls/kubevault/vault-operator",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
