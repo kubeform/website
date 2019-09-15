@@ -37,7 +37,7 @@
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/kubeci/engine",
+      "url" : "docker/pulls/kubeci/kubeci-engine",
       "alt": "Docker Pulls",
       "logo": "docker"
     }

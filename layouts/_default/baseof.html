@@ -336,7 +336,7 @@
                       </div>
                     {{else}}
                       {{ if eq .Name "Documentation" }}
-                        <a href="/docs/{{ $p.latestVersion }}/welcome/">{{ .Name }}</a>
+                        <a href="/docs/{{ $p.latestVersion }}/welcome/" class="navbar-item">{{ .Name }}</a>
                       {{ else }}
                         <a href="{{.URL}}" class="navbar-item">{{ .Name }}</a>
                       {{ end }}

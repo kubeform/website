@@ -12,6 +12,8 @@ section_menu_id: welcome
 url: /docs/v0.0.1/welcome/acknowledgement/
 aliases:
 - /docs/v0.0.1/acknowledgement/
+info:
+  version: v0.0.1
 ---
 
 # Acknowledgement

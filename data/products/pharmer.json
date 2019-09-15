@@ -38,7 +38,7 @@
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/pharmer/pharmer",
+      "url" : "docker/pulls/pharmer/machine-controller",
       "alt": "Docker Pulls",
       "logo": "docker"
     }

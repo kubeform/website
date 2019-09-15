@@ -30,8 +30,8 @@
                 >
                 {{ end }}
               </div>
+              {{ if $p.videos.intro }}
               <!-- video player button start -->
-              <!--
               <div class="play-buttons">
                 <a href="#" id="playme" onclick="revealVideo('video','youtube')"
                   ><span class="video-icon"
@@ -40,8 +40,8 @@
                   Watch the reel</a
                 >
               </div>
-              -->
               <!-- video player button end -->
+              {{ end }}
             </div>
           </div>
           <!-- hero content end -->
@@ -59,6 +59,7 @@
 </section>
 <!-- hero area end -->
 
+{{ if $p.videos.intro }}
 <!-- video player frame and scripts start -->
 <!-- video-player start  -->
 <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
@@ -68,7 +69,7 @@
         X
       </button>
       <div class="video-container">
-        <iframe id="youtube" width="1080" height="540" src="https://www.youtube.com/embed/CuQ6qvVBb0g" frameborder="0" allowfullscreen></iframe>
+        <iframe id="youtube" width="1080" height="540" src="https://www.youtube.com/embed/{{ $p.videos.intro }}" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -90,7 +91,7 @@
   }
 </script>
 <!-- video player frame and scripts end -->
-
+{{ end }}
 
 <!-- feature-area start -->
 <section class="product-feature-area section-padding">

@@ -8,6 +8,8 @@ menu:
     weight: 10
 menu_name: docs_v0.0.1
 section_menu_id: setup
+info:
+  version: v0.0.1
 ---
 
 # Installation Guide

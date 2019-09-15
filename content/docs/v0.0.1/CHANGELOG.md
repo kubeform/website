@@ -12,6 +12,8 @@ section_menu_id: welcome
 url: /docs/v0.0.1/welcome/releases/
 aliases:
 - /docs/v0.0.1/RELEASES/
+info:
+  version: v0.0.1
 ---
 
 ## Current Release

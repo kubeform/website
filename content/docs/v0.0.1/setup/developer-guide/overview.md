@@ -10,6 +10,8 @@ menu_name: docs_v0.0.1
 section_menu_id: setup
 aliases:
 - /docs/v0.0.1/setup/developer-guide/
+info:
+  version: v0.0.1
 ---
 
 > New to Kubeform? Please start [here](/docs/v0.0.1/concepts/README).

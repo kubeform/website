@@ -794,15 +794,21 @@ p.spam-message {
 .mt-100 {
   margin-top: 100px;
 }
-
-.hero-features {
-  background-image: url(../images/features-page/feature-bg.png);
-  background-size: auto;
-  background-position: top;
-  padding: 140px 0;
-  min-height: 600px;
+.features-area{
+  background-image: url(../images/products/kubedb/features/feature-bg.png);
+  background-size: cover;
+  background-position: center;
+  .hero-features {
+    height: 500px;
+    padding: 50px 20px;
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
+.single-feature-image {
+  max-width: 450px;
+}
 .hero-features-content h1 {
   margin-bottom: 12px;
 }
@@ -867,7 +873,7 @@ p.spam-message {
   border-radius: 7px 7px 0 0;
   position: relative;
   z-index: 1;
-  min-height: 202px;
+  min-height: 230px;
 }
 
 .pricing-heading:after {
@@ -943,7 +949,7 @@ p.spam-message {
   position: relative;
   z-index: 1;
   margin-top: -32px;
-  min-height: 164px;
+  height: 164px;
 }
 .round-shape {
   background: #fff;
@@ -979,7 +985,7 @@ p.spam-message {
   }
 }
 .single-pricing-table.silver .pricing-top{
-  min-height: 100px;
+  height: 100px;
 }
 .single-pricing-table.free .pricing-top, .single-pricing-table.plutinum .pricing-top{
   margin-bottom: 30px;
@@ -1083,14 +1089,15 @@ p.spam-message {
 
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
-  margin-top: 252px;
+  margin-top: 264px;
   margin-right: 10px;
   padding-bottom: 70px;
   background-color: $white-color;
   padding-top: 5px;
+  min-width: 196px;
 }
 .single-pricing-table.details .pricing-body ul li:first-child {
-  padding: 5px;
+  padding: 5px 20px;
 }
 .single-pricing-table.free,
 .single-pricing-table.silver,
@@ -1916,6 +1923,7 @@ button.button.is-fullwidth {
   margin-right: 30px;
   position: sticky;
   top: 130px;
+  z-index: 9;
 }
 
 .kd-sidebar-menu .item label {

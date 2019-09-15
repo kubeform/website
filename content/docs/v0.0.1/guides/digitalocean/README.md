@@ -11,6 +11,8 @@ section_menu_id: guides
 url: /docs/v0.0.1/guides/digitalocean/
 aliases:
 - /docs/v0.0.1/guides/digitalocean/README/
+info:
+  version: v0.0.1
 ---
 
 # DigitalOcean

@@ -2,7 +2,7 @@
   "key": "kubedb",
   "name": "KubeDB",
   "tagline": "Run production-grade databases <br />easily on <strong>Kubernetes</strong>",
-  "summary": "",
+  "summary": "KubeDB by AppsCode simplifies and automates routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair for various popular databases on private and public clouds",
   "published": true,
   "website": {
     "domainKey": "domain_kubedb",
@@ -43,6 +43,9 @@
       "logo": "docker"
     }
   ],
+  "videos": {
+    "intro": "CuQ6qvVBb0g"
+  },
   "features": [
     {
       "title": "Lower administrative burden",
