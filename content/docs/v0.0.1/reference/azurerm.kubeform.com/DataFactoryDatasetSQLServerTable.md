@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `DataFactoryDatasetSQLServerTable` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DataFactoryDatasetSQLServerTableSpec](#DataFactoryDatasetSQLServerTableSpec)***||
-| `status` | ***[DataFactoryDatasetSQLServerTableStatus](#DataFactoryDatasetSQLServerTableStatus)***||
+| `spec` | ***[DataFactoryDatasetSQLServerTableSpec](#datafactorydatasetsqlservertablespec)***||
+| `status` | ***[DataFactoryDatasetSQLServerTableStatus](#datafactorydatasetsqlservertablestatus)***||
 ## DataFactoryDatasetSQLServerTableSpec
-##### (Appears on:[DataFactoryDatasetSQLServerTable](#DataFactoryDatasetSQLServerTable), [DataFactoryDatasetSQLServerTableStatus](#DataFactoryDatasetSQLServerTableStatus))
+
+Appears on:[DataFactoryDatasetSQLServerTable](#datafactorydatasetsqlservertable), [DataFactoryDatasetSQLServerTableStatus](#datafactorydatasetsqlservertablestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,20 +37,24 @@ info:
 | `name` | ***string***||
 | `parameters` | ***map[string]string***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
-| `schemaColumn` | ***[[]DataFactoryDatasetSQLServerTableSpecSchemaColumn](#DataFactoryDatasetSQLServerTableSpecSchemaColumn)***| ***(Optional)*** |
+| `schemaColumn` | ***[[]DataFactoryDatasetSQLServerTableSpecSchemaColumn](#datafactorydatasetsqlservertablespecschemacolumn)***| ***(Optional)*** |
 | `tableName` | ***string***| ***(Optional)*** |
 ## DataFactoryDatasetSQLServerTableSpecSchemaColumn
-##### (Appears on:[DataFactoryDatasetSQLServerTableSpec](#DataFactoryDatasetSQLServerTableSpec))
+
+Appears on:[DataFactoryDatasetSQLServerTableSpec](#datafactorydatasetsqlservertablespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `description` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `type` | ***string***| ***(Optional)*** |
 ## DataFactoryDatasetSQLServerTableStatus
-##### (Appears on:[DataFactoryDatasetSQLServerTable](#DataFactoryDatasetSQLServerTable))
+
+Appears on:[DataFactoryDatasetSQLServerTable](#datafactorydatasetsqlservertable)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DataFactoryDatasetSQLServerTableSpec](#DataFactoryDatasetSQLServerTableSpec)***| ***(Optional)*** |
+| `output` | ***[DataFactoryDatasetSQLServerTableSpec](#datafactorydatasetsqlservertablespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

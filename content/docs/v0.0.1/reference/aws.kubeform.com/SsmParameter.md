@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SsmParameter` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SsmParameterSpec](#SsmParameterSpec)***||
-| `status` | ***[SsmParameterStatus](#SsmParameterStatus)***||
+| `spec` | ***[SsmParameterSpec](#ssmparameterspec)***||
+| `status` | ***[SsmParameterStatus](#ssmparameterstatus)***||
 ## SsmParameterSpec
-##### (Appears on:[SsmParameter](#SsmParameter), [SsmParameterStatus](#SsmParameterStatus))
+
+Appears on:[SsmParameter](#ssmparameter), [SsmParameterStatus](#ssmparameterstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -37,11 +39,13 @@ info:
 | `tier` | ***string***| ***(Optional)*** |
 | `type` | ***string***||
 ## SsmParameterStatus
-##### (Appears on:[SsmParameter](#SsmParameter))
+
+Appears on:[SsmParameter](#ssmparameter)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SsmParameterSpec](#SsmParameterSpec)***| ***(Optional)*** |
+| `output` | ***[SsmParameterSpec](#ssmparameterspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `Route53DelegationSet` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[Route53DelegationSetSpec](#Route53DelegationSetSpec)***||
-| `status` | ***[Route53DelegationSetStatus](#Route53DelegationSetStatus)***||
+| `spec` | ***[Route53DelegationSetSpec](#route53delegationsetspec)***||
+| `status` | ***[Route53DelegationSetStatus](#route53delegationsetstatus)***||
 ## Route53DelegationSetSpec
-##### (Appears on:[Route53DelegationSet](#Route53DelegationSet), [Route53DelegationSetStatus](#Route53DelegationSetStatus))
+
+Appears on:[Route53DelegationSet](#route53delegationset), [Route53DelegationSetStatus](#route53delegationsetstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,10 +31,12 @@ info:
 | `nameServers` | ***[]string***| ***(Optional)*** |
 | `referenceName` | ***string***| ***(Optional)*** |
 ## Route53DelegationSetStatus
-##### (Appears on:[Route53DelegationSet](#Route53DelegationSet))
+
+Appears on:[Route53DelegationSet](#route53delegationset)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[Route53DelegationSetSpec](#Route53DelegationSetSpec)***| ***(Optional)*** |
+| `output` | ***[Route53DelegationSetSpec](#route53delegationsetspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

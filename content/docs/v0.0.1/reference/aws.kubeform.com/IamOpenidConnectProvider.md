@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IamOpenidConnectProvider` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IamOpenidConnectProviderSpec](#IamOpenidConnectProviderSpec)***||
-| `status` | ***[IamOpenidConnectProviderStatus](#IamOpenidConnectProviderStatus)***||
+| `spec` | ***[IamOpenidConnectProviderSpec](#iamopenidconnectproviderspec)***||
+| `status` | ***[IamOpenidConnectProviderStatus](#iamopenidconnectproviderstatus)***||
 ## IamOpenidConnectProviderSpec
-##### (Appears on:[IamOpenidConnectProvider](#IamOpenidConnectProvider), [IamOpenidConnectProviderStatus](#IamOpenidConnectProviderStatus))
+
+Appears on:[IamOpenidConnectProvider](#iamopenidconnectprovider), [IamOpenidConnectProviderStatus](#iamopenidconnectproviderstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `thumbprintList` | ***[]string***||
 | `url` | ***string***||
 ## IamOpenidConnectProviderStatus
-##### (Appears on:[IamOpenidConnectProvider](#IamOpenidConnectProvider))
+
+Appears on:[IamOpenidConnectProvider](#iamopenidconnectprovider)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IamOpenidConnectProviderSpec](#IamOpenidConnectProviderSpec)***| ***(Optional)*** |
+| `output` | ***[IamOpenidConnectProviderSpec](#iamopenidconnectproviderspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

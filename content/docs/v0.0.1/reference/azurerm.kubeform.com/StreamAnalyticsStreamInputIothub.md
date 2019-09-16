@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `StreamAnalyticsStreamInputIothub` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StreamAnalyticsStreamInputIothubSpec](#StreamAnalyticsStreamInputIothubSpec)***||
-| `status` | ***[StreamAnalyticsStreamInputIothubStatus](#StreamAnalyticsStreamInputIothubStatus)***||
+| `spec` | ***[StreamAnalyticsStreamInputIothubSpec](#streamanalyticsstreaminputiothubspec)***||
+| `status` | ***[StreamAnalyticsStreamInputIothubStatus](#streamanalyticsstreaminputiothubstatus)***||
 ## StreamAnalyticsStreamInputIothubSpec
-##### (Appears on:[StreamAnalyticsStreamInputIothub](#StreamAnalyticsStreamInputIothub), [StreamAnalyticsStreamInputIothubStatus](#StreamAnalyticsStreamInputIothubStatus))
+
+Appears on:[StreamAnalyticsStreamInputIothub](#streamanalyticsstreaminputiothub), [StreamAnalyticsStreamInputIothubStatus](#streamanalyticsstreaminputiothubstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,22 +34,26 @@ info:
 | `iothubNamespace` | ***string***||
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `serialization` | ***[[]StreamAnalyticsStreamInputIothubSpecSerialization](#StreamAnalyticsStreamInputIothubSpecSerialization)***||
+| `serialization` | ***[[]StreamAnalyticsStreamInputIothubSpecSerialization](#streamanalyticsstreaminputiothubspecserialization)***||
 | `sharedAccessPolicyName` | ***string***||
 | `streamAnalyticsJobName` | ***string***||
 ## StreamAnalyticsStreamInputIothubSpecSerialization
-##### (Appears on:[StreamAnalyticsStreamInputIothubSpec](#StreamAnalyticsStreamInputIothubSpec))
+
+Appears on:[StreamAnalyticsStreamInputIothubSpec](#streamanalyticsstreaminputiothubspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `encoding` | ***string***| ***(Optional)*** |
 | `fieldDelimiter` | ***string***| ***(Optional)*** |
 | `type` | ***string***||
 ## StreamAnalyticsStreamInputIothubStatus
-##### (Appears on:[StreamAnalyticsStreamInputIothub](#StreamAnalyticsStreamInputIothub))
+
+Appears on:[StreamAnalyticsStreamInputIothub](#streamanalyticsstreaminputiothub)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StreamAnalyticsStreamInputIothubSpec](#StreamAnalyticsStreamInputIothubSpec)***| ***(Optional)*** |
+| `output` | ***[StreamAnalyticsStreamInputIothubSpec](#streamanalyticsstreaminputiothubspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

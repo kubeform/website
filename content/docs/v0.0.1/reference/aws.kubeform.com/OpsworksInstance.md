@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `OpsworksInstance` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[OpsworksInstanceSpec](#OpsworksInstanceSpec)***||
-| `status` | ***[OpsworksInstanceStatus](#OpsworksInstanceStatus)***||
+| `spec` | ***[OpsworksInstanceSpec](#opsworksinstancespec)***||
+| `status` | ***[OpsworksInstanceStatus](#opsworksinstancestatus)***||
 ## OpsworksInstanceSpec
-##### (Appears on:[OpsworksInstance](#OpsworksInstance), [OpsworksInstanceStatus](#OpsworksInstanceStatus))
+
+Appears on:[OpsworksInstance](#opsworksinstance), [OpsworksInstanceStatus](#opsworksinstancestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -34,12 +36,12 @@ info:
 | `createdAt` | ***string***| ***(Optional)*** |
 | `deleteEbs` | ***bool***| ***(Optional)*** |
 | `deleteEip` | ***bool***| ***(Optional)*** |
-| `ebsBlockDevice` | ***[[]OpsworksInstanceSpecEbsBlockDevice](#OpsworksInstanceSpecEbsBlockDevice)***| ***(Optional)*** |
+| `ebsBlockDevice` | ***[[]OpsworksInstanceSpecEbsBlockDevice](#opsworksinstancespecebsblockdevice)***| ***(Optional)*** |
 | `ebsOptimized` | ***bool***| ***(Optional)*** |
 | `ec2InstanceID` | ***string***| ***(Optional)*** |
 | `ecsClusterArn` | ***string***| ***(Optional)*** |
 | `elasticIP` | ***string***| ***(Optional)*** |
-| `ephemeralBlockDevice` | ***[[]OpsworksInstanceSpecEphemeralBlockDevice](#OpsworksInstanceSpecEphemeralBlockDevice)***| ***(Optional)*** |
+| `ephemeralBlockDevice` | ***[[]OpsworksInstanceSpecEphemeralBlockDevice](#opsworksinstancespecephemeralblockdevice)***| ***(Optional)*** |
 | `hostname` | ***string***| ***(Optional)*** |
 | `infrastructureClass` | ***string***| ***(Optional)*** |
 | `installUpdatesOnBoot` | ***bool***| ***(Optional)*** |
@@ -58,7 +60,7 @@ info:
 | `reportedOsFamily` | ***string***| ***(Optional)*** |
 | `reportedOsName` | ***string***| ***(Optional)*** |
 | `reportedOsVersion` | ***string***| ***(Optional)*** |
-| `rootBlockDevice` | ***[[]OpsworksInstanceSpecRootBlockDevice](#OpsworksInstanceSpecRootBlockDevice)***| ***(Optional)*** |
+| `rootBlockDevice` | ***[[]OpsworksInstanceSpecRootBlockDevice](#opsworksinstancespecrootblockdevice)***| ***(Optional)*** |
 | `rootDeviceType` | ***string***| ***(Optional)*** |
 | `rootDeviceVolumeID` | ***string***| ***(Optional)*** |
 | `securityGroupIDS` | ***[]string***| ***(Optional)*** |
@@ -72,7 +74,9 @@ info:
 | `tenancy` | ***string***| ***(Optional)*** |
 | `virtualizationType` | ***string***| ***(Optional)*** |
 ## OpsworksInstanceSpecEbsBlockDevice
-##### (Appears on:[OpsworksInstanceSpec](#OpsworksInstanceSpec))
+
+Appears on:[OpsworksInstanceSpec](#opsworksinstancespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
@@ -82,13 +86,17 @@ info:
 | `volumeSize` | ***int***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## OpsworksInstanceSpecEphemeralBlockDevice
-##### (Appears on:[OpsworksInstanceSpec](#OpsworksInstanceSpec))
+
+Appears on:[OpsworksInstanceSpec](#opsworksinstancespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deviceName` | ***string***||
 | `virtualName` | ***string***||
 ## OpsworksInstanceSpecRootBlockDevice
-##### (Appears on:[OpsworksInstanceSpec](#OpsworksInstanceSpec))
+
+Appears on:[OpsworksInstanceSpec](#opsworksinstancespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
@@ -96,10 +104,12 @@ info:
 | `volumeSize` | ***int***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## OpsworksInstanceStatus
-##### (Appears on:[OpsworksInstance](#OpsworksInstance))
+
+Appears on:[OpsworksInstance](#opsworksinstance)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[OpsworksInstanceSpec](#OpsworksInstanceSpec)***| ***(Optional)*** |
+| `output` | ***[OpsworksInstanceSpec](#opsworksinstancespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

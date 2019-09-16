@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ElasticacheReplicationGroup` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ElasticacheReplicationGroupSpec](#ElasticacheReplicationGroupSpec)***||
-| `status` | ***[ElasticacheReplicationGroupStatus](#ElasticacheReplicationGroupStatus)***||
+| `spec` | ***[ElasticacheReplicationGroupSpec](#elasticachereplicationgroupspec)***||
+| `status` | ***[ElasticacheReplicationGroupStatus](#elasticachereplicationgroupstatus)***||
 ## ElasticacheReplicationGroupSpec
-##### (Appears on:[ElasticacheReplicationGroup](#ElasticacheReplicationGroup), [ElasticacheReplicationGroupStatus](#ElasticacheReplicationGroupStatus))
+
+Appears on:[ElasticacheReplicationGroup](#elasticachereplicationgroup), [ElasticacheReplicationGroupStatus](#elasticachereplicationgroupstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,7 +34,7 @@ info:
 | `autoMinorVersionUpgrade` | ***bool***| ***(Optional)*** |
 | `automaticFailoverEnabled` | ***bool***| ***(Optional)*** |
 | `availabilityZones` | ***[]string***| ***(Optional)*** |
-| `clusterMode` | ***[[]ElasticacheReplicationGroupSpecClusterMode](#ElasticacheReplicationGroupSpecClusterMode)***| ***(Optional)*** |
+| `clusterMode` | ***[[]ElasticacheReplicationGroupSpecClusterMode](#elasticachereplicationgroupspecclustermode)***| ***(Optional)*** |
 | `configurationEndpointAddress` | ***string***| ***(Optional)*** |
 | `engine` | ***string***| ***(Optional)*** |
 | `engineVersion` | ***string***| ***(Optional)*** |
@@ -56,17 +58,21 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `transitEncryptionEnabled` | ***bool***| ***(Optional)*** |
 ## ElasticacheReplicationGroupSpecClusterMode
-##### (Appears on:[ElasticacheReplicationGroupSpec](#ElasticacheReplicationGroupSpec))
+
+Appears on:[ElasticacheReplicationGroupSpec](#elasticachereplicationgroupspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `numNodeGroups` | ***int***||
 | `replicasPerNodeGroup` | ***int***||
 ## ElasticacheReplicationGroupStatus
-##### (Appears on:[ElasticacheReplicationGroup](#ElasticacheReplicationGroup))
+
+Appears on:[ElasticacheReplicationGroup](#elasticachereplicationgroup)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ElasticacheReplicationGroupSpec](#ElasticacheReplicationGroupSpec)***| ***(Optional)*** |
+| `output` | ***[ElasticacheReplicationGroupSpec](#elasticachereplicationgroupspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

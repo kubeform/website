@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SfnActivity` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SfnActivitySpec](#SfnActivitySpec)***||
-| `status` | ***[SfnActivityStatus](#SfnActivityStatus)***||
+| `spec` | ***[SfnActivitySpec](#sfnactivityspec)***||
+| `status` | ***[SfnActivityStatus](#sfnactivitystatus)***||
 ## SfnActivitySpec
-##### (Appears on:[SfnActivity](#SfnActivity), [SfnActivityStatus](#SfnActivityStatus))
+
+Appears on:[SfnActivity](#sfnactivity), [SfnActivityStatus](#sfnactivitystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `name` | ***string***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## SfnActivityStatus
-##### (Appears on:[SfnActivity](#SfnActivity))
+
+Appears on:[SfnActivity](#sfnactivity)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SfnActivitySpec](#SfnActivitySpec)***| ***(Optional)*** |
+| `output` | ***[SfnActivitySpec](#sfnactivityspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

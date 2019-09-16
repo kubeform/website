@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `StorageBucketIamPolicy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StorageBucketIamPolicySpec](#StorageBucketIamPolicySpec)***||
-| `status` | ***[StorageBucketIamPolicyStatus](#StorageBucketIamPolicyStatus)***||
+| `spec` | ***[StorageBucketIamPolicySpec](#storagebucketiampolicyspec)***||
+| `status` | ***[StorageBucketIamPolicyStatus](#storagebucketiampolicystatus)***||
 ## StorageBucketIamPolicySpec
-##### (Appears on:[StorageBucketIamPolicy](#StorageBucketIamPolicy), [StorageBucketIamPolicyStatus](#StorageBucketIamPolicyStatus))
+
+Appears on:[StorageBucketIamPolicy](#storagebucketiampolicy), [StorageBucketIamPolicyStatus](#storagebucketiampolicystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `etag` | ***string***| ***(Optional)*** |
 | `policyData` | ***string***||
 ## StorageBucketIamPolicyStatus
-##### (Appears on:[StorageBucketIamPolicy](#StorageBucketIamPolicy))
+
+Appears on:[StorageBucketIamPolicy](#storagebucketiampolicy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StorageBucketIamPolicySpec](#StorageBucketIamPolicySpec)***| ***(Optional)*** |
+| `output` | ***[StorageBucketIamPolicySpec](#storagebucketiampolicyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

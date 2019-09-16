@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `DevTestWindowsVirtualMachine` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DevTestWindowsVirtualMachineSpec](#DevTestWindowsVirtualMachineSpec)***||
-| `status` | ***[DevTestWindowsVirtualMachineStatus](#DevTestWindowsVirtualMachineStatus)***||
+| `spec` | ***[DevTestWindowsVirtualMachineSpec](#devtestwindowsvirtualmachinespec)***||
+| `status` | ***[DevTestWindowsVirtualMachineStatus](#devtestwindowsvirtualmachinestatus)***||
 ## DevTestWindowsVirtualMachineSpec
-##### (Appears on:[DevTestWindowsVirtualMachine](#DevTestWindowsVirtualMachine), [DevTestWindowsVirtualMachineStatus](#DevTestWindowsVirtualMachineStatus))
+
+Appears on:[DevTestWindowsVirtualMachine](#devtestwindowsvirtualmachine), [DevTestWindowsVirtualMachineStatus](#devtestwindowsvirtualmachinestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,8 +31,8 @@ info:
 | `allowClaim` | ***bool***| ***(Optional)*** |
 | `disallowPublicIPAddress` | ***bool***| ***(Optional)*** |
 | `fqdn` | ***string***| ***(Optional)*** |
-| `galleryImageReference` | ***[[]DevTestWindowsVirtualMachineSpecGalleryImageReference](#DevTestWindowsVirtualMachineSpecGalleryImageReference)***||
-| `inboundNATRule` | ***[[]DevTestWindowsVirtualMachineSpecInboundNATRule](#DevTestWindowsVirtualMachineSpecInboundNATRule)***| ***(Optional)*** |
+| `galleryImageReference` | ***[[]DevTestWindowsVirtualMachineSpecGalleryImageReference](#devtestwindowsvirtualmachinespecgalleryimagereference)***||
+| `inboundNATRule` | ***[[]DevTestWindowsVirtualMachineSpecInboundNATRule](#devtestwindowsvirtualmachinespecinboundnatrule)***| ***(Optional)*** |
 | `labName` | ***string***||
 | `labSubnetName` | ***string***||
 | `labVirtualNetworkID` | ***string***||
@@ -45,7 +47,9 @@ info:
 | `uniqueIdentifier` | ***string***| ***(Optional)*** |
 | `username` | ***string***||
 ## DevTestWindowsVirtualMachineSpecGalleryImageReference
-##### (Appears on:[DevTestWindowsVirtualMachineSpec](#DevTestWindowsVirtualMachineSpec))
+
+Appears on:[DevTestWindowsVirtualMachineSpec](#devtestwindowsvirtualmachinespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `offer` | ***string***||
@@ -53,17 +57,21 @@ info:
 | `sku` | ***string***||
 | `version` | ***string***||
 ## DevTestWindowsVirtualMachineSpecInboundNATRule
-##### (Appears on:[DevTestWindowsVirtualMachineSpec](#DevTestWindowsVirtualMachineSpec))
+
+Appears on:[DevTestWindowsVirtualMachineSpec](#devtestwindowsvirtualmachinespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `backendPort` | ***int***||
 | `frontendPort` | ***int***| ***(Optional)*** |
 | `protocol` | ***string***||
 ## DevTestWindowsVirtualMachineStatus
-##### (Appears on:[DevTestWindowsVirtualMachine](#DevTestWindowsVirtualMachine))
+
+Appears on:[DevTestWindowsVirtualMachine](#devtestwindowsvirtualmachine)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DevTestWindowsVirtualMachineSpec](#DevTestWindowsVirtualMachineSpec)***| ***(Optional)*** |
+| `output` | ***[DevTestWindowsVirtualMachineSpec](#devtestwindowsvirtualmachinespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

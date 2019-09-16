@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ConfigDeliveryChannel` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ConfigDeliveryChannelSpec](#ConfigDeliveryChannelSpec)***||
-| `status` | ***[ConfigDeliveryChannelStatus](#ConfigDeliveryChannelStatus)***||
+| `spec` | ***[ConfigDeliveryChannelSpec](#configdeliverychannelspec)***||
+| `status` | ***[ConfigDeliveryChannelStatus](#configdeliverychannelstatus)***||
 ## ConfigDeliveryChannelSpec
-##### (Appears on:[ConfigDeliveryChannel](#ConfigDeliveryChannel), [ConfigDeliveryChannelStatus](#ConfigDeliveryChannelStatus))
+
+Appears on:[ConfigDeliveryChannel](#configdeliverychannel), [ConfigDeliveryChannelStatus](#configdeliverychannelstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,18 +31,22 @@ info:
 | `name` | ***string***| ***(Optional)*** |
 | `s3BucketName` | ***string***||
 | `s3KeyPrefix` | ***string***| ***(Optional)*** |
-| `snapshotDeliveryProperties` | ***[[]ConfigDeliveryChannelSpecSnapshotDeliveryProperties](#ConfigDeliveryChannelSpecSnapshotDeliveryProperties)***| ***(Optional)*** |
+| `snapshotDeliveryProperties` | ***[[]ConfigDeliveryChannelSpecSnapshotDeliveryProperties](#configdeliverychannelspecsnapshotdeliveryproperties)***| ***(Optional)*** |
 | `snsTopicArn` | ***string***| ***(Optional)*** |
 ## ConfigDeliveryChannelSpecSnapshotDeliveryProperties
-##### (Appears on:[ConfigDeliveryChannelSpec](#ConfigDeliveryChannelSpec))
+
+Appears on:[ConfigDeliveryChannelSpec](#configdeliverychannelspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deliveryFrequency` | ***string***| ***(Optional)*** |
 ## ConfigDeliveryChannelStatus
-##### (Appears on:[ConfigDeliveryChannel](#ConfigDeliveryChannel))
+
+Appears on:[ConfigDeliveryChannel](#configdeliverychannel)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ConfigDeliveryChannelSpec](#ConfigDeliveryChannelSpec)***| ***(Optional)*** |
+| `output` | ***[ConfigDeliveryChannelSpec](#configdeliverychannelspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

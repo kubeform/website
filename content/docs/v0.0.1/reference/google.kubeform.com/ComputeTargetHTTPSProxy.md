@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ComputeTargetHTTPSProxy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ComputeTargetHTTPSProxySpec](#ComputeTargetHTTPSProxySpec)***||
-| `status` | ***[ComputeTargetHTTPSProxyStatus](#ComputeTargetHTTPSProxyStatus)***||
+| `spec` | ***[ComputeTargetHTTPSProxySpec](#computetargethttpsproxyspec)***||
+| `status` | ***[ComputeTargetHTTPSProxyStatus](#computetargethttpsproxystatus)***||
 ## ComputeTargetHTTPSProxySpec
-##### (Appears on:[ComputeTargetHTTPSProxy](#ComputeTargetHTTPSProxy), [ComputeTargetHTTPSProxyStatus](#ComputeTargetHTTPSProxyStatus))
+
+Appears on:[ComputeTargetHTTPSProxy](#computetargethttpsproxy), [ComputeTargetHTTPSProxyStatus](#computetargethttpsproxystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -37,10 +39,12 @@ info:
 | `sslPolicy` | ***string***| ***(Optional)*** |
 | `urlMap` | ***string***||
 ## ComputeTargetHTTPSProxyStatus
-##### (Appears on:[ComputeTargetHTTPSProxy](#ComputeTargetHTTPSProxy))
+
+Appears on:[ComputeTargetHTTPSProxy](#computetargethttpsproxy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ComputeTargetHTTPSProxySpec](#ComputeTargetHTTPSProxySpec)***| ***(Optional)*** |
+| `output` | ***[ComputeTargetHTTPSProxySpec](#computetargethttpsproxyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

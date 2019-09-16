@@ -18,27 +18,33 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiGatewayAccount` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiGatewayAccountSpec](#ApiGatewayAccountSpec)***||
-| `status` | ***[ApiGatewayAccountStatus](#ApiGatewayAccountStatus)***||
+| `spec` | ***[ApiGatewayAccountSpec](#apigatewayaccountspec)***||
+| `status` | ***[ApiGatewayAccountStatus](#apigatewayaccountstatus)***||
 ## ApiGatewayAccountSpec
-##### (Appears on:[ApiGatewayAccount](#ApiGatewayAccount), [ApiGatewayAccountStatus](#ApiGatewayAccountStatus))
+
+Appears on:[ApiGatewayAccount](#apigatewayaccount), [ApiGatewayAccountStatus](#apigatewayaccountstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `cloudwatchRoleArn` | ***string***| ***(Optional)*** |
-| `throttleSettings` | ***[[]ApiGatewayAccountSpecThrottleSettings](#ApiGatewayAccountSpecThrottleSettings)***| ***(Optional)*** |
+| `throttleSettings` | ***[[]ApiGatewayAccountSpecThrottleSettings](#apigatewayaccountspecthrottlesettings)***| ***(Optional)*** |
 ## ApiGatewayAccountSpecThrottleSettings
-##### (Appears on:[ApiGatewayAccountSpec](#ApiGatewayAccountSpec))
+
+Appears on:[ApiGatewayAccountSpec](#apigatewayaccountspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `burstLimit` | ***int***| ***(Optional)*** |
 | `rateLimit` | ***encoding/json.Number***| ***(Optional)*** |
 ## ApiGatewayAccountStatus
-##### (Appears on:[ApiGatewayAccount](#ApiGatewayAccount))
+
+Appears on:[ApiGatewayAccount](#apigatewayaccount)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiGatewayAccountSpec](#ApiGatewayAccountSpec)***| ***(Optional)*** |
+| `output` | ***[ApiGatewayAccountSpec](#apigatewayaccountspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

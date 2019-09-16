@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `digitalocean.kubeform.com/v1alpha1` |
 |    `kind` | string | `VolumeSnapshot` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[VolumeSnapshotSpec](#VolumeSnapshotSpec)***||
-| `status` | ***[VolumeSnapshotStatus](#VolumeSnapshotStatus)***||
+| `spec` | ***[VolumeSnapshotSpec](#volumesnapshotspec)***||
+| `status` | ***[VolumeSnapshotStatus](#volumesnapshotstatus)***||
 ## VolumeSnapshotSpec
-##### (Appears on:[VolumeSnapshot](#VolumeSnapshot), [VolumeSnapshotStatus](#VolumeSnapshotStatus))
+
+Appears on:[VolumeSnapshot](#volumesnapshot), [VolumeSnapshotStatus](#volumesnapshotstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -33,10 +35,12 @@ info:
 | `size` | ***encoding/json.Number***| ***(Optional)*** |
 | `volumeID` | ***string***||
 ## VolumeSnapshotStatus
-##### (Appears on:[VolumeSnapshot](#VolumeSnapshot))
+
+Appears on:[VolumeSnapshot](#volumesnapshot)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[VolumeSnapshotSpec](#VolumeSnapshotSpec)***| ***(Optional)*** |
+| `output` | ***[VolumeSnapshotSpec](#volumesnapshotspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

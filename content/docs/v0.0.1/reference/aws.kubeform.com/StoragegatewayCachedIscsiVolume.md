@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `StoragegatewayCachedIscsiVolume` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StoragegatewayCachedIscsiVolumeSpec](#StoragegatewayCachedIscsiVolumeSpec)***||
-| `status` | ***[StoragegatewayCachedIscsiVolumeStatus](#StoragegatewayCachedIscsiVolumeStatus)***||
+| `spec` | ***[StoragegatewayCachedIscsiVolumeSpec](#storagegatewaycachediscsivolumespec)***||
+| `status` | ***[StoragegatewayCachedIscsiVolumeStatus](#storagegatewaycachediscsivolumestatus)***||
 ## StoragegatewayCachedIscsiVolumeSpec
-##### (Appears on:[StoragegatewayCachedIscsiVolume](#StoragegatewayCachedIscsiVolume), [StoragegatewayCachedIscsiVolumeStatus](#StoragegatewayCachedIscsiVolumeStatus))
+
+Appears on:[StoragegatewayCachedIscsiVolume](#storagegatewaycachediscsivolume), [StoragegatewayCachedIscsiVolumeStatus](#storagegatewaycachediscsivolumestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -40,10 +42,12 @@ info:
 | `volumeID` | ***string***| ***(Optional)*** |
 | `volumeSizeInBytes` | ***int***||
 ## StoragegatewayCachedIscsiVolumeStatus
-##### (Appears on:[StoragegatewayCachedIscsiVolume](#StoragegatewayCachedIscsiVolume))
+
+Appears on:[StoragegatewayCachedIscsiVolume](#storagegatewaycachediscsivolume)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StoragegatewayCachedIscsiVolumeSpec](#StoragegatewayCachedIscsiVolumeSpec)***| ***(Optional)*** |
+| `output` | ***[StoragegatewayCachedIscsiVolumeSpec](#storagegatewaycachediscsivolumespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

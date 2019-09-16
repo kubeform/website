@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ServicebusQueue` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ServicebusQueueSpec](#ServicebusQueueSpec)***||
-| `status` | ***[ServicebusQueueStatus](#ServicebusQueueStatus)***||
+| `spec` | ***[ServicebusQueueSpec](#servicebusqueuespec)***||
+| `status` | ***[ServicebusQueueStatus](#servicebusqueuestatus)***||
 ## ServicebusQueueSpec
-##### (Appears on:[ServicebusQueue](#ServicebusQueue), [ServicebusQueueStatus](#ServicebusQueueStatus))
+
+Appears on:[ServicebusQueue](#servicebusqueue), [ServicebusQueueStatus](#servicebusqueuestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -44,10 +46,12 @@ info:
 | `resourceGroupName` | ***string***||
 | `supportOrdering` | ***bool***| ***(Optional)*** Deprecated|
 ## ServicebusQueueStatus
-##### (Appears on:[ServicebusQueue](#ServicebusQueue))
+
+Appears on:[ServicebusQueue](#servicebusqueue)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ServicebusQueueSpec](#ServicebusQueueSpec)***| ***(Optional)*** |
+| `output` | ***[ServicebusQueueSpec](#servicebusqueuespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

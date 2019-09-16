@@ -18,16 +18,18 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `MonitorActivityLogAlert` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[MonitorActivityLogAlertSpec](#MonitorActivityLogAlertSpec)***||
-| `status` | ***[MonitorActivityLogAlertStatus](#MonitorActivityLogAlertStatus)***||
+| `spec` | ***[MonitorActivityLogAlertSpec](#monitoractivitylogalertspec)***||
+| `status` | ***[MonitorActivityLogAlertStatus](#monitoractivitylogalertstatus)***||
 ## MonitorActivityLogAlertSpec
-##### (Appears on:[MonitorActivityLogAlert](#MonitorActivityLogAlert), [MonitorActivityLogAlertStatus](#MonitorActivityLogAlertStatus))
+
+Appears on:[MonitorActivityLogAlert](#monitoractivitylogalert), [MonitorActivityLogAlertStatus](#monitoractivitylogalertstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `action` | ***[[]MonitorActivityLogAlertSpecAction](#MonitorActivityLogAlertSpecAction)***| ***(Optional)*** |
-| `criteria` | ***[[]MonitorActivityLogAlertSpecCriteria](#MonitorActivityLogAlertSpecCriteria)***||
+| `action` | ***[[]MonitorActivityLogAlertSpecAction](#monitoractivitylogalertspecaction)***| ***(Optional)*** |
+| `criteria` | ***[[]MonitorActivityLogAlertSpecCriteria](#monitoractivitylogalertspeccriteria)***||
 | `description` | ***string***| ***(Optional)*** |
 | `enabled` | ***bool***| ***(Optional)*** |
 | `name` | ***string***||
@@ -35,13 +37,17 @@ info:
 | `scopes` | ***[]string***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## MonitorActivityLogAlertSpecAction
-##### (Appears on:[MonitorActivityLogAlertSpec](#MonitorActivityLogAlertSpec))
+
+Appears on:[MonitorActivityLogAlertSpec](#monitoractivitylogalertspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `actionGroupID` | ***string***||
 | `webhookProperties` | ***map[string]string***| ***(Optional)*** |
 ## MonitorActivityLogAlertSpecCriteria
-##### (Appears on:[MonitorActivityLogAlertSpec](#MonitorActivityLogAlertSpec))
+
+Appears on:[MonitorActivityLogAlertSpec](#monitoractivitylogalertspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `caller` | ***string***| ***(Optional)*** |
@@ -55,10 +61,12 @@ info:
 | `status` | ***string***| ***(Optional)*** |
 | `subStatus` | ***string***| ***(Optional)*** |
 ## MonitorActivityLogAlertStatus
-##### (Appears on:[MonitorActivityLogAlert](#MonitorActivityLogAlert))
+
+Appears on:[MonitorActivityLogAlert](#monitoractivitylogalert)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[MonitorActivityLogAlertSpec](#MonitorActivityLogAlertSpec)***| ***(Optional)*** |
+| `output` | ***[MonitorActivityLogAlertSpec](#monitoractivitylogalertspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

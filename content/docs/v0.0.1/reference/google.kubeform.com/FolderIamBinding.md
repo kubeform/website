@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `FolderIamBinding` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[FolderIamBindingSpec](#FolderIamBindingSpec)***||
-| `status` | ***[FolderIamBindingStatus](#FolderIamBindingStatus)***||
+| `spec` | ***[FolderIamBindingSpec](#folderiambindingspec)***||
+| `status` | ***[FolderIamBindingStatus](#folderiambindingstatus)***||
 ## FolderIamBindingSpec
-##### (Appears on:[FolderIamBinding](#FolderIamBinding), [FolderIamBindingStatus](#FolderIamBindingStatus))
+
+Appears on:[FolderIamBinding](#folderiambinding), [FolderIamBindingStatus](#folderiambindingstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `members` | ***[]string***||
 | `role` | ***string***||
 ## FolderIamBindingStatus
-##### (Appears on:[FolderIamBinding](#FolderIamBinding))
+
+Appears on:[FolderIamBinding](#folderiambinding)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[FolderIamBindingSpec](#FolderIamBindingSpec)***| ***(Optional)*** |
+| `output` | ***[FolderIamBindingSpec](#folderiambindingspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

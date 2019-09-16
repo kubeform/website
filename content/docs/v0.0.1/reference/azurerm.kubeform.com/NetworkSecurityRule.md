@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `NetworkSecurityRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[NetworkSecurityRuleSpec](#NetworkSecurityRuleSpec)***||
-| `status` | ***[NetworkSecurityRuleStatus](#NetworkSecurityRuleStatus)***||
+| `spec` | ***[NetworkSecurityRuleSpec](#networksecurityrulespec)***||
+| `status` | ***[NetworkSecurityRuleStatus](#networksecurityrulestatus)***||
 ## NetworkSecurityRuleSpec
-##### (Appears on:[NetworkSecurityRule](#NetworkSecurityRule), [NetworkSecurityRuleStatus](#NetworkSecurityRuleStatus))
+
+Appears on:[NetworkSecurityRule](#networksecurityrule), [NetworkSecurityRuleStatus](#networksecurityrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -45,10 +47,12 @@ info:
 | `sourcePortRange` | ***string***| ***(Optional)*** |
 | `sourcePortRanges` | ***[]string***| ***(Optional)*** |
 ## NetworkSecurityRuleStatus
-##### (Appears on:[NetworkSecurityRule](#NetworkSecurityRule))
+
+Appears on:[NetworkSecurityRule](#networksecurityrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[NetworkSecurityRuleSpec](#NetworkSecurityRuleSpec)***| ***(Optional)*** |
+| `output` | ***[NetworkSecurityRuleSpec](#networksecurityrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

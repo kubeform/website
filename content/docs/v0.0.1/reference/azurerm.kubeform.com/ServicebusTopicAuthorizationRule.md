@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ServicebusTopicAuthorizationRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ServicebusTopicAuthorizationRuleSpec](#ServicebusTopicAuthorizationRuleSpec)***||
-| `status` | ***[ServicebusTopicAuthorizationRuleStatus](#ServicebusTopicAuthorizationRuleStatus)***||
+| `spec` | ***[ServicebusTopicAuthorizationRuleSpec](#servicebustopicauthorizationrulespec)***||
+| `status` | ***[ServicebusTopicAuthorizationRuleStatus](#servicebustopicauthorizationrulestatus)***||
 ## ServicebusTopicAuthorizationRuleSpec
-##### (Appears on:[ServicebusTopicAuthorizationRule](#ServicebusTopicAuthorizationRule), [ServicebusTopicAuthorizationRuleStatus](#ServicebusTopicAuthorizationRuleStatus))
+
+Appears on:[ServicebusTopicAuthorizationRule](#servicebustopicauthorizationrule), [ServicebusTopicAuthorizationRuleStatus](#servicebustopicauthorizationrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,11 +37,13 @@ info:
 | `send` | ***bool***| ***(Optional)*** |
 | `topicName` | ***string***||
 ## ServicebusTopicAuthorizationRuleStatus
-##### (Appears on:[ServicebusTopicAuthorizationRule](#ServicebusTopicAuthorizationRule))
+
+Appears on:[ServicebusTopicAuthorizationRule](#servicebustopicauthorizationrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ServicebusTopicAuthorizationRuleSpec](#ServicebusTopicAuthorizationRuleSpec)***| ***(Optional)*** |
+| `output` | ***[ServicebusTopicAuthorizationRuleSpec](#servicebustopicauthorizationrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

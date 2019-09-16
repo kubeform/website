@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `AutoscalingAttachment` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AutoscalingAttachmentSpec](#AutoscalingAttachmentSpec)***||
-| `status` | ***[AutoscalingAttachmentStatus](#AutoscalingAttachmentStatus)***||
+| `spec` | ***[AutoscalingAttachmentSpec](#autoscalingattachmentspec)***||
+| `status` | ***[AutoscalingAttachmentStatus](#autoscalingattachmentstatus)***||
 ## AutoscalingAttachmentSpec
-##### (Appears on:[AutoscalingAttachment](#AutoscalingAttachment), [AutoscalingAttachmentStatus](#AutoscalingAttachmentStatus))
+
+Appears on:[AutoscalingAttachment](#autoscalingattachment), [AutoscalingAttachmentStatus](#autoscalingattachmentstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `autoscalingGroupName` | ***string***||
 | `elb` | ***string***| ***(Optional)*** |
 ## AutoscalingAttachmentStatus
-##### (Appears on:[AutoscalingAttachment](#AutoscalingAttachment))
+
+Appears on:[AutoscalingAttachment](#autoscalingattachment)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AutoscalingAttachmentSpec](#AutoscalingAttachmentSpec)***| ***(Optional)*** |
+| `output` | ***[AutoscalingAttachmentSpec](#autoscalingattachmentspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

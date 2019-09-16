@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `SqlSSLCert` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SqlSSLCertSpec](#SqlSSLCertSpec)***||
-| `status` | ***[SqlSSLCertStatus](#SqlSSLCertStatus)***||
+| `spec` | ***[SqlSSLCertSpec](#sqlsslcertspec)***||
+| `status` | ***[SqlSSLCertStatus](#sqlsslcertstatus)***||
 ## SqlSSLCertSpec
-##### (Appears on:[SqlSSLCert](#SqlSSLCert), [SqlSSLCertStatus](#SqlSSLCertStatus))
+
+Appears on:[SqlSSLCert](#sqlsslcert), [SqlSSLCertStatus](#sqlsslcertstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -36,11 +38,13 @@ info:
 | `serverCaCert` | ***string***| ***(Optional)*** |
 | `sha1Fingerprint` | ***string***| ***(Optional)*** |
 ## SqlSSLCertStatus
-##### (Appears on:[SqlSSLCert](#SqlSSLCert))
+
+Appears on:[SqlSSLCert](#sqlsslcert)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SqlSSLCertSpec](#SqlSSLCertSpec)***| ***(Optional)*** |
+| `output` | ***[SqlSSLCertSpec](#sqlsslcertspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

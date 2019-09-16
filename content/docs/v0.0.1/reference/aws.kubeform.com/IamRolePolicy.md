@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IamRolePolicy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IamRolePolicySpec](#IamRolePolicySpec)***||
-| `status` | ***[IamRolePolicyStatus](#IamRolePolicyStatus)***||
+| `spec` | ***[IamRolePolicySpec](#iamrolepolicyspec)***||
+| `status` | ***[IamRolePolicyStatus](#iamrolepolicystatus)***||
 ## IamRolePolicySpec
-##### (Appears on:[IamRolePolicy](#IamRolePolicy), [IamRolePolicyStatus](#IamRolePolicyStatus))
+
+Appears on:[IamRolePolicy](#iamrolepolicy), [IamRolePolicyStatus](#iamrolepolicystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `policy` | ***string***||
 | `role` | ***string***||
 ## IamRolePolicyStatus
-##### (Appears on:[IamRolePolicy](#IamRolePolicy))
+
+Appears on:[IamRolePolicy](#iamrolepolicy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IamRolePolicySpec](#IamRolePolicySpec)***| ***(Optional)*** |
+| `output` | ***[IamRolePolicySpec](#iamrolepolicyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

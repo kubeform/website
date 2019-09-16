@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `MysqlFirewallRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[MysqlFirewallRuleSpec](#MysqlFirewallRuleSpec)***||
-| `status` | ***[MysqlFirewallRuleStatus](#MysqlFirewallRuleStatus)***||
+| `spec` | ***[MysqlFirewallRuleSpec](#mysqlfirewallrulespec)***||
+| `status` | ***[MysqlFirewallRuleStatus](#mysqlfirewallrulestatus)***||
 ## MysqlFirewallRuleSpec
-##### (Appears on:[MysqlFirewallRule](#MysqlFirewallRule), [MysqlFirewallRuleStatus](#MysqlFirewallRuleStatus))
+
+Appears on:[MysqlFirewallRule](#mysqlfirewallrule), [MysqlFirewallRuleStatus](#mysqlfirewallrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `serverName` | ***string***||
 | `startIPAddress` | ***string***||
 ## MysqlFirewallRuleStatus
-##### (Appears on:[MysqlFirewallRule](#MysqlFirewallRule))
+
+Appears on:[MysqlFirewallRule](#mysqlfirewallrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[MysqlFirewallRuleSpec](#MysqlFirewallRuleSpec)***| ***(Optional)*** |
+| `output` | ***[MysqlFirewallRuleSpec](#mysqlfirewallrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

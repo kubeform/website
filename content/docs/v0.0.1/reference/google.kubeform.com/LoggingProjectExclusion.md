@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `LoggingProjectExclusion` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[LoggingProjectExclusionSpec](#LoggingProjectExclusionSpec)***||
-| `status` | ***[LoggingProjectExclusionStatus](#LoggingProjectExclusionStatus)***||
+| `spec` | ***[LoggingProjectExclusionSpec](#loggingprojectexclusionspec)***||
+| `status` | ***[LoggingProjectExclusionStatus](#loggingprojectexclusionstatus)***||
 ## LoggingProjectExclusionSpec
-##### (Appears on:[LoggingProjectExclusion](#LoggingProjectExclusion), [LoggingProjectExclusionStatus](#LoggingProjectExclusionStatus))
+
+Appears on:[LoggingProjectExclusion](#loggingprojectexclusion), [LoggingProjectExclusionStatus](#loggingprojectexclusionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `name` | ***string***||
 | `project` | ***string***| ***(Optional)*** |
 ## LoggingProjectExclusionStatus
-##### (Appears on:[LoggingProjectExclusion](#LoggingProjectExclusion))
+
+Appears on:[LoggingProjectExclusion](#loggingprojectexclusion)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[LoggingProjectExclusionSpec](#LoggingProjectExclusionSpec)***| ***(Optional)*** |
+| `output` | ***[LoggingProjectExclusionSpec](#loggingprojectexclusionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

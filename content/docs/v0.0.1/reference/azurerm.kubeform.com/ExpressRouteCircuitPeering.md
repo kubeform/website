@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ExpressRouteCircuitPeering` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ExpressRouteCircuitPeeringSpec](#ExpressRouteCircuitPeeringSpec)***||
-| `status` | ***[ExpressRouteCircuitPeeringStatus](#ExpressRouteCircuitPeeringStatus)***||
+| `spec` | ***[ExpressRouteCircuitPeeringSpec](#expressroutecircuitpeeringspec)***||
+| `status` | ***[ExpressRouteCircuitPeeringStatus](#expressroutecircuitpeeringstatus)***||
 ## ExpressRouteCircuitPeeringSpec
-##### (Appears on:[ExpressRouteCircuitPeering](#ExpressRouteCircuitPeering), [ExpressRouteCircuitPeeringStatus](#ExpressRouteCircuitPeeringStatus))
+
+Appears on:[ExpressRouteCircuitPeering](#expressroutecircuitpeering), [ExpressRouteCircuitPeeringStatus](#expressroutecircuitpeeringstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,7 +31,7 @@ info:
 | `secretRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `azureAsn` | ***int***| ***(Optional)*** |
 | `expressRouteCircuitName` | ***string***||
-| `microsoftPeeringConfig` | ***[[]ExpressRouteCircuitPeeringSpecMicrosoftPeeringConfig](#ExpressRouteCircuitPeeringSpecMicrosoftPeeringConfig)***| ***(Optional)*** |
+| `microsoftPeeringConfig` | ***[[]ExpressRouteCircuitPeeringSpecMicrosoftPeeringConfig](#expressroutecircuitpeeringspecmicrosoftpeeringconfig)***| ***(Optional)*** |
 | `peerAsn` | ***int***| ***(Optional)*** |
 | `peeringType` | ***string***||
 | `primaryAzurePort` | ***string***| ***(Optional)*** |
@@ -39,16 +41,20 @@ info:
 | `secondaryPeerAddressPrefix` | ***string***||
 | `vlanID` | ***int***||
 ## ExpressRouteCircuitPeeringSpecMicrosoftPeeringConfig
-##### (Appears on:[ExpressRouteCircuitPeeringSpec](#ExpressRouteCircuitPeeringSpec))
+
+Appears on:[ExpressRouteCircuitPeeringSpec](#expressroutecircuitpeeringspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `advertisedPublicPrefixes` | ***[]string***||
 ## ExpressRouteCircuitPeeringStatus
-##### (Appears on:[ExpressRouteCircuitPeering](#ExpressRouteCircuitPeering))
+
+Appears on:[ExpressRouteCircuitPeering](#expressroutecircuitpeering)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ExpressRouteCircuitPeeringSpec](#ExpressRouteCircuitPeeringSpec)***| ***(Optional)*** |
+| `output` | ***[ExpressRouteCircuitPeeringSpec](#expressroutecircuitpeeringspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

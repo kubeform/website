@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `BudgetsBudget` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[BudgetsBudgetSpec](#BudgetsBudgetSpec)***||
-| `status` | ***[BudgetsBudgetStatus](#BudgetsBudgetStatus)***||
+| `spec` | ***[BudgetsBudgetSpec](#budgetsbudgetspec)***||
+| `status` | ***[BudgetsBudgetStatus](#budgetsbudgetstatus)***||
 ## BudgetsBudgetSpec
-##### (Appears on:[BudgetsBudget](#BudgetsBudget), [BudgetsBudgetStatus](#BudgetsBudgetStatus))
+
+Appears on:[BudgetsBudget](#budgetsbudget), [BudgetsBudgetStatus](#budgetsbudgetstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,17 +31,19 @@ info:
 | `accountID` | ***string***| ***(Optional)*** |
 | `budgetType` | ***string***||
 | `costFilters` | ***map[string]string***| ***(Optional)*** |
-| `costTypes` | ***[[]BudgetsBudgetSpecCostTypes](#BudgetsBudgetSpecCostTypes)***| ***(Optional)*** |
+| `costTypes` | ***[[]BudgetsBudgetSpecCostTypes](#budgetsbudgetspeccosttypes)***| ***(Optional)*** |
 | `limitAmount` | ***string***||
 | `limitUnit` | ***string***||
 | `name` | ***string***| ***(Optional)*** |
 | `namePrefix` | ***string***| ***(Optional)*** |
-| `notification` | ***[[]BudgetsBudgetSpecNotification](#BudgetsBudgetSpecNotification)***| ***(Optional)*** |
+| `notification` | ***[[]BudgetsBudgetSpecNotification](#budgetsbudgetspecnotification)***| ***(Optional)*** |
 | `timePeriodEnd` | ***string***| ***(Optional)*** |
 | `timePeriodStart` | ***string***||
 | `timeUnit` | ***string***||
 ## BudgetsBudgetSpecCostTypes
-##### (Appears on:[BudgetsBudgetSpec](#BudgetsBudgetSpec))
+
+Appears on:[BudgetsBudgetSpec](#budgetsbudgetspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `includeCredit` | ***bool***| ***(Optional)*** |
@@ -54,7 +58,9 @@ info:
 | `useAmortized` | ***bool***| ***(Optional)*** |
 | `useBlended` | ***bool***| ***(Optional)*** |
 ## BudgetsBudgetSpecNotification
-##### (Appears on:[BudgetsBudgetSpec](#BudgetsBudgetSpec))
+
+Appears on:[BudgetsBudgetSpec](#budgetsbudgetspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `comparisonOperator` | ***string***||
@@ -64,10 +70,12 @@ info:
 | `threshold` | ***encoding/json.Number***||
 | `thresholdType` | ***string***||
 ## BudgetsBudgetStatus
-##### (Appears on:[BudgetsBudget](#BudgetsBudget))
+
+Appears on:[BudgetsBudget](#budgetsbudget)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[BudgetsBudgetSpec](#BudgetsBudgetSpec)***| ***(Optional)*** |
+| `output` | ***[BudgetsBudgetSpec](#budgetsbudgetspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

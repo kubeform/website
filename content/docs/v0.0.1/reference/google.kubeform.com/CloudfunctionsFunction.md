@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `CloudfunctionsFunction` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[CloudfunctionsFunctionSpec](#CloudfunctionsFunctionSpec)***||
-| `status` | ***[CloudfunctionsFunctionStatus](#CloudfunctionsFunctionStatus)***||
+| `spec` | ***[CloudfunctionsFunctionSpec](#cloudfunctionsfunctionspec)***||
+| `status` | ***[CloudfunctionsFunctionStatus](#cloudfunctionsfunctionstatus)***||
 ## CloudfunctionsFunctionSpec
-##### (Appears on:[CloudfunctionsFunction](#CloudfunctionsFunction), [CloudfunctionsFunctionStatus](#CloudfunctionsFunctionStatus))
+
+Appears on:[CloudfunctionsFunction](#cloudfunctionsfunction), [CloudfunctionsFunctionStatus](#cloudfunctionsfunctionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,7 +32,7 @@ info:
 | `description` | ***string***| ***(Optional)*** |
 | `entryPoint` | ***string***| ***(Optional)*** |
 | `environmentVariables` | ***map[string]string***| ***(Optional)*** |
-| `eventTrigger` | ***[[]CloudfunctionsFunctionSpecEventTrigger](#CloudfunctionsFunctionSpecEventTrigger)***| ***(Optional)*** |
+| `eventTrigger` | ***[[]CloudfunctionsFunctionSpecEventTrigger](#cloudfunctionsfunctionspeceventtrigger)***| ***(Optional)*** |
 | `httpsTriggerURL` | ***string***| ***(Optional)*** |
 | `labels` | ***map[string]string***| ***(Optional)*** |
 | `name` | ***string***||
@@ -45,22 +47,28 @@ info:
 | `triggerHTTP` | ***bool***| ***(Optional)*** |
 | `triggerTopic` | ***string***| ***(Optional)*** Deprecated|
 ## CloudfunctionsFunctionSpecEventTrigger
-##### (Appears on:[CloudfunctionsFunctionSpec](#CloudfunctionsFunctionSpec))
+
+Appears on:[CloudfunctionsFunctionSpec](#cloudfunctionsfunctionspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `eventType` | ***string***||
-| `failurePolicy` | ***[[]CloudfunctionsFunctionSpecEventTriggerFailurePolicy](#CloudfunctionsFunctionSpecEventTriggerFailurePolicy)***| ***(Optional)*** |
+| `failurePolicy` | ***[[]CloudfunctionsFunctionSpecEventTriggerFailurePolicy](#cloudfunctionsfunctionspeceventtriggerfailurepolicy)***| ***(Optional)*** |
 | `resource` | ***string***||
 ## CloudfunctionsFunctionSpecEventTriggerFailurePolicy
-##### (Appears on:[CloudfunctionsFunctionSpecEventTrigger](#CloudfunctionsFunctionSpecEventTrigger))
+
+Appears on:[CloudfunctionsFunctionSpecEventTrigger](#cloudfunctionsfunctionspeceventtrigger)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `retry` | ***bool***||
 ## CloudfunctionsFunctionStatus
-##### (Appears on:[CloudfunctionsFunction](#CloudfunctionsFunction))
+
+Appears on:[CloudfunctionsFunction](#cloudfunctionsfunction)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[CloudfunctionsFunctionSpec](#CloudfunctionsFunctionSpec)***| ***(Optional)*** |
+| `output` | ***[CloudfunctionsFunctionSpec](#cloudfunctionsfunctionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

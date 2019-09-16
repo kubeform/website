@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IamGroupPolicy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IamGroupPolicySpec](#IamGroupPolicySpec)***||
-| `status` | ***[IamGroupPolicyStatus](#IamGroupPolicyStatus)***||
+| `spec` | ***[IamGroupPolicySpec](#iamgrouppolicyspec)***||
+| `status` | ***[IamGroupPolicyStatus](#iamgrouppolicystatus)***||
 ## IamGroupPolicySpec
-##### (Appears on:[IamGroupPolicy](#IamGroupPolicy), [IamGroupPolicyStatus](#IamGroupPolicyStatus))
+
+Appears on:[IamGroupPolicy](#iamgrouppolicy), [IamGroupPolicyStatus](#iamgrouppolicystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `namePrefix` | ***string***| ***(Optional)*** |
 | `policy` | ***string***||
 ## IamGroupPolicyStatus
-##### (Appears on:[IamGroupPolicy](#IamGroupPolicy))
+
+Appears on:[IamGroupPolicy](#iamgrouppolicy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IamGroupPolicySpec](#IamGroupPolicySpec)***| ***(Optional)*** |
+| `output` | ***[IamGroupPolicySpec](#iamgrouppolicyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

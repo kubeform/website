@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ElasticacheSecurityGroup` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ElasticacheSecurityGroupSpec](#ElasticacheSecurityGroupSpec)***||
-| `status` | ***[ElasticacheSecurityGroupStatus](#ElasticacheSecurityGroupStatus)***||
+| `spec` | ***[ElasticacheSecurityGroupSpec](#elasticachesecuritygroupspec)***||
+| `status` | ***[ElasticacheSecurityGroupStatus](#elasticachesecuritygroupstatus)***||
 ## ElasticacheSecurityGroupSpec
-##### (Appears on:[ElasticacheSecurityGroup](#ElasticacheSecurityGroup), [ElasticacheSecurityGroupStatus](#ElasticacheSecurityGroupStatus))
+
+Appears on:[ElasticacheSecurityGroup](#elasticachesecuritygroup), [ElasticacheSecurityGroupStatus](#elasticachesecuritygroupstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `name` | ***string***||
 | `securityGroupNames` | ***[]string***||
 ## ElasticacheSecurityGroupStatus
-##### (Appears on:[ElasticacheSecurityGroup](#ElasticacheSecurityGroup))
+
+Appears on:[ElasticacheSecurityGroup](#elasticachesecuritygroup)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ElasticacheSecurityGroupSpec](#ElasticacheSecurityGroupSpec)***| ***(Optional)*** |
+| `output` | ***[ElasticacheSecurityGroupSpec](#elasticachesecuritygroupspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

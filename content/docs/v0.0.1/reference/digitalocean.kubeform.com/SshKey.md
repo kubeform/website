@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `digitalocean.kubeform.com/v1alpha1` |
 |    `kind` | string | `SshKey` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SshKeySpec](#SshKeySpec)***||
-| `status` | ***[SshKeyStatus](#SshKeyStatus)***||
+| `spec` | ***[SshKeySpec](#sshkeyspec)***||
+| `status` | ***[SshKeyStatus](#sshkeystatus)***||
 ## SshKeySpec
-##### (Appears on:[SshKey](#SshKey), [SshKeyStatus](#SshKeyStatus))
+
+Appears on:[SshKey](#sshkey), [SshKeyStatus](#sshkeystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `name` | ***string***||
 | `publicKey` | ***string***||
 ## SshKeyStatus
-##### (Appears on:[SshKey](#SshKey))
+
+Appears on:[SshKey](#sshkey)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SshKeySpec](#SshKeySpec)***| ***(Optional)*** |
+| `output` | ***[SshKeySpec](#sshkeyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

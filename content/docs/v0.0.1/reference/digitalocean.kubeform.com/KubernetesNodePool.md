@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `digitalocean.kubeform.com/v1alpha1` |
 |    `kind` | string | `KubernetesNodePool` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[KubernetesNodePoolSpec](#KubernetesNodePoolSpec)***||
-| `status` | ***[KubernetesNodePoolStatus](#KubernetesNodePoolStatus)***||
+| `spec` | ***[KubernetesNodePoolSpec](#kubernetesnodepoolspec)***||
+| `status` | ***[KubernetesNodePoolStatus](#kubernetesnodepoolstatus)***||
 ## KubernetesNodePoolSpec
-##### (Appears on:[KubernetesNodePool](#KubernetesNodePool), [KubernetesNodePoolStatus](#KubernetesNodePoolStatus))
+
+Appears on:[KubernetesNodePool](#kubernetesnodepool), [KubernetesNodePoolStatus](#kubernetesnodepoolstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,11 +31,13 @@ info:
 | `clusterID` | ***string***||
 | `name` | ***string***||
 | `nodeCount` | ***int***||
-| `nodes` | ***[[]KubernetesNodePoolSpecNodes](#KubernetesNodePoolSpecNodes)***| ***(Optional)*** |
+| `nodes` | ***[[]KubernetesNodePoolSpecNodes](#kubernetesnodepoolspecnodes)***| ***(Optional)*** |
 | `size` | ***string***||
 | `tags` | ***[]string***| ***(Optional)*** |
 ## KubernetesNodePoolSpecNodes
-##### (Appears on:[KubernetesNodePoolSpec](#KubernetesNodePoolSpec))
+
+Appears on:[KubernetesNodePoolSpec](#kubernetesnodepoolspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `createdAt` | ***string***| ***(Optional)*** |
@@ -42,10 +46,12 @@ info:
 | `status` | ***string***| ***(Optional)*** |
 | `updatedAt` | ***string***| ***(Optional)*** |
 ## KubernetesNodePoolStatus
-##### (Appears on:[KubernetesNodePool](#KubernetesNodePool))
+
+Appears on:[KubernetesNodePool](#kubernetesnodepool)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[KubernetesNodePoolSpec](#KubernetesNodePoolSpec)***| ***(Optional)*** |
+| `output` | ***[KubernetesNodePoolSpec](#kubernetesnodepoolspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiManagementAPIVersionSet` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiManagementAPIVersionSetSpec](#ApiManagementAPIVersionSetSpec)***||
-| `status` | ***[ApiManagementAPIVersionSetStatus](#ApiManagementAPIVersionSetStatus)***||
+| `spec` | ***[ApiManagementAPIVersionSetSpec](#apimanagementapiversionsetspec)***||
+| `status` | ***[ApiManagementAPIVersionSetStatus](#apimanagementapiversionsetstatus)***||
 ## ApiManagementAPIVersionSetSpec
-##### (Appears on:[ApiManagementAPIVersionSet](#ApiManagementAPIVersionSet), [ApiManagementAPIVersionSetStatus](#ApiManagementAPIVersionSetStatus))
+
+Appears on:[ApiManagementAPIVersionSet](#apimanagementapiversionset), [ApiManagementAPIVersionSetStatus](#apimanagementapiversionsetstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,10 +37,12 @@ info:
 | `versionQueryName` | ***string***| ***(Optional)*** |
 | `versioningScheme` | ***string***||
 ## ApiManagementAPIVersionSetStatus
-##### (Appears on:[ApiManagementAPIVersionSet](#ApiManagementAPIVersionSet))
+
+Appears on:[ApiManagementAPIVersionSet](#apimanagementapiversionset)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiManagementAPIVersionSetSpec](#ApiManagementAPIVersionSetSpec)***| ***(Optional)*** |
+| `output` | ***[ApiManagementAPIVersionSetSpec](#apimanagementapiversionsetspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

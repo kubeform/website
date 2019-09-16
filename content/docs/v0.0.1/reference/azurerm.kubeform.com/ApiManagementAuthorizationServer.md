@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiManagementAuthorizationServer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiManagementAuthorizationServerSpec](#ApiManagementAuthorizationServerSpec)***||
-| `status` | ***[ApiManagementAuthorizationServerStatus](#ApiManagementAuthorizationServerStatus)***||
+| `spec` | ***[ApiManagementAuthorizationServerSpec](#apimanagementauthorizationserverspec)***||
+| `status` | ***[ApiManagementAuthorizationServerStatus](#apimanagementauthorizationserverstatus)***||
 ## ApiManagementAuthorizationServerSpec
-##### (Appears on:[ApiManagementAuthorizationServer](#ApiManagementAuthorizationServer), [ApiManagementAuthorizationServerStatus](#ApiManagementAuthorizationServerStatus))
+
+Appears on:[ApiManagementAuthorizationServer](#apimanagementauthorizationserver), [ApiManagementAuthorizationServerStatus](#apimanagementauthorizationserverstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -42,20 +44,24 @@ info:
 | `resourceGroupName` | ***string***||
 | `resourceOwnerUsername` | ***string***| ***(Optional)*** |
 | `supportState` | ***bool***| ***(Optional)*** |
-| `tokenBodyParameter` | ***[[]ApiManagementAuthorizationServerSpecTokenBodyParameter](#ApiManagementAuthorizationServerSpecTokenBodyParameter)***| ***(Optional)*** |
+| `tokenBodyParameter` | ***[[]ApiManagementAuthorizationServerSpecTokenBodyParameter](#apimanagementauthorizationserverspectokenbodyparameter)***| ***(Optional)*** |
 | `tokenEndpoint` | ***string***| ***(Optional)*** |
 ## ApiManagementAuthorizationServerSpecTokenBodyParameter
-##### (Appears on:[ApiManagementAuthorizationServerSpec](#ApiManagementAuthorizationServerSpec))
+
+Appears on:[ApiManagementAuthorizationServerSpec](#apimanagementauthorizationserverspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
 | `value` | ***string***||
 ## ApiManagementAuthorizationServerStatus
-##### (Appears on:[ApiManagementAuthorizationServer](#ApiManagementAuthorizationServer))
+
+Appears on:[ApiManagementAuthorizationServer](#apimanagementauthorizationserver)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiManagementAuthorizationServerSpec](#ApiManagementAuthorizationServerSpec)***| ***(Optional)*** |
+| `output` | ***[ApiManagementAuthorizationServerSpec](#apimanagementauthorizationserverspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

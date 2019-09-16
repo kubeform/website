@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `BackupSelection` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[BackupSelectionSpec](#BackupSelectionSpec)***||
-| `status` | ***[BackupSelectionStatus](#BackupSelectionStatus)***||
+| `spec` | ***[BackupSelectionSpec](#backupselectionspec)***||
+| `status` | ***[BackupSelectionStatus](#backupselectionstatus)***||
 ## BackupSelectionSpec
-##### (Appears on:[BackupSelection](#BackupSelection), [BackupSelectionStatus](#BackupSelectionStatus))
+
+Appears on:[BackupSelection](#backupselection), [BackupSelectionStatus](#backupselectionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,19 +32,23 @@ info:
 | `name` | ***string***||
 | `planID` | ***string***||
 | `resources` | ***[]string***| ***(Optional)*** |
-| `selectionTag` | ***[[]BackupSelectionSpecSelectionTag](#BackupSelectionSpecSelectionTag)***| ***(Optional)*** |
+| `selectionTag` | ***[[]BackupSelectionSpecSelectionTag](#backupselectionspecselectiontag)***| ***(Optional)*** |
 ## BackupSelectionSpecSelectionTag
-##### (Appears on:[BackupSelectionSpec](#BackupSelectionSpec))
+
+Appears on:[BackupSelectionSpec](#backupselectionspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `key` | ***string***||
 | `type` | ***string***||
 | `value` | ***string***||
 ## BackupSelectionStatus
-##### (Appears on:[BackupSelection](#BackupSelection))
+
+Appears on:[BackupSelection](#backupselection)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[BackupSelectionSpec](#BackupSelectionSpec)***| ***(Optional)*** |
+| `output` | ***[BackupSelectionSpec](#backupselectionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

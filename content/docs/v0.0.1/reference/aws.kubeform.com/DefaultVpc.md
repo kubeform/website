@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `DefaultVpc` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DefaultVpcSpec](#DefaultVpcSpec)***||
-| `status` | ***[DefaultVpcStatus](#DefaultVpcStatus)***||
+| `spec` | ***[DefaultVpcSpec](#defaultvpcspec)***||
+| `status` | ***[DefaultVpcStatus](#defaultvpcstatus)***||
 ## DefaultVpcSpec
-##### (Appears on:[DefaultVpc](#DefaultVpc), [DefaultVpcStatus](#DefaultVpcStatus))
+
+Appears on:[DefaultVpc](#defaultvpc), [DefaultVpcStatus](#defaultvpcstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -44,10 +46,12 @@ info:
 | `ownerID` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## DefaultVpcStatus
-##### (Appears on:[DefaultVpc](#DefaultVpc))
+
+Appears on:[DefaultVpc](#defaultvpc)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DefaultVpcSpec](#DefaultVpcSpec)***| ***(Optional)*** |
+| `output` | ***[DefaultVpcSpec](#defaultvpcspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

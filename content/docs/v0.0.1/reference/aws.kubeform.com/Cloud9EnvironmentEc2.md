@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `Cloud9EnvironmentEc2` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[Cloud9EnvironmentEc2Spec](#Cloud9EnvironmentEc2Spec)***||
-| `status` | ***[Cloud9EnvironmentEc2Status](#Cloud9EnvironmentEc2Status)***||
+| `spec` | ***[Cloud9EnvironmentEc2Spec](#cloud9environmentec2spec)***||
+| `status` | ***[Cloud9EnvironmentEc2Status](#cloud9environmentec2status)***||
 ## Cloud9EnvironmentEc2Spec
-##### (Appears on:[Cloud9EnvironmentEc2](#Cloud9EnvironmentEc2), [Cloud9EnvironmentEc2Status](#Cloud9EnvironmentEc2Status))
+
+Appears on:[Cloud9EnvironmentEc2](#cloud9environmentec2), [Cloud9EnvironmentEc2Status](#cloud9environmentec2status)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,10 +37,12 @@ info:
 | `subnetID` | ***string***| ***(Optional)*** |
 | `type` | ***string***| ***(Optional)*** |
 ## Cloud9EnvironmentEc2Status
-##### (Appears on:[Cloud9EnvironmentEc2](#Cloud9EnvironmentEc2))
+
+Appears on:[Cloud9EnvironmentEc2](#cloud9environmentec2)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[Cloud9EnvironmentEc2Spec](#Cloud9EnvironmentEc2Spec)***| ***(Optional)*** |
+| `output` | ***[Cloud9EnvironmentEc2Spec](#cloud9environmentec2spec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

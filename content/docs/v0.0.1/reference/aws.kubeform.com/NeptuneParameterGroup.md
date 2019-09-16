@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `NeptuneParameterGroup` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[NeptuneParameterGroupSpec](#NeptuneParameterGroupSpec)***||
-| `status` | ***[NeptuneParameterGroupStatus](#NeptuneParameterGroupStatus)***||
+| `spec` | ***[NeptuneParameterGroupSpec](#neptuneparametergroupspec)***||
+| `status` | ***[NeptuneParameterGroupStatus](#neptuneparametergroupstatus)***||
 ## NeptuneParameterGroupSpec
-##### (Appears on:[NeptuneParameterGroup](#NeptuneParameterGroup), [NeptuneParameterGroupStatus](#NeptuneParameterGroupStatus))
+
+Appears on:[NeptuneParameterGroup](#neptuneparametergroup), [NeptuneParameterGroupStatus](#neptuneparametergroupstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,20 +32,24 @@ info:
 | `description` | ***string***| ***(Optional)*** |
 | `family` | ***string***||
 | `name` | ***string***||
-| `parameter` | ***[[]NeptuneParameterGroupSpecParameter](#NeptuneParameterGroupSpecParameter)***| ***(Optional)*** |
+| `parameter` | ***[[]NeptuneParameterGroupSpecParameter](#neptuneparametergroupspecparameter)***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## NeptuneParameterGroupSpecParameter
-##### (Appears on:[NeptuneParameterGroupSpec](#NeptuneParameterGroupSpec))
+
+Appears on:[NeptuneParameterGroupSpec](#neptuneparametergroupspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `applyMethod` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `value` | ***string***||
 ## NeptuneParameterGroupStatus
-##### (Appears on:[NeptuneParameterGroup](#NeptuneParameterGroup))
+
+Appears on:[NeptuneParameterGroup](#neptuneparametergroup)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[NeptuneParameterGroupSpec](#NeptuneParameterGroupSpec)***| ***(Optional)*** |
+| `output` | ***[NeptuneParameterGroupSpec](#neptuneparametergroupspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

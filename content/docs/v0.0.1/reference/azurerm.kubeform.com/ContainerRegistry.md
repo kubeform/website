@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ContainerRegistry` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ContainerRegistrySpec](#ContainerRegistrySpec)***||
-| `status` | ***[ContainerRegistryStatus](#ContainerRegistryStatus)***||
+| `spec` | ***[ContainerRegistrySpec](#containerregistryspec)***||
+| `status` | ***[ContainerRegistryStatus](#containerregistrystatus)***||
 ## ContainerRegistrySpec
-##### (Appears on:[ContainerRegistry](#ContainerRegistry), [ContainerRegistryStatus](#ContainerRegistryStatus))
+
+Appears on:[ContainerRegistry](#containerregistry), [ContainerRegistryStatus](#containerregistrystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -33,35 +35,43 @@ info:
 | `location` | ***string***||
 | `loginServer` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `networkRuleSet` | ***[[]ContainerRegistrySpecNetworkRuleSet](#ContainerRegistrySpecNetworkRuleSet)***| ***(Optional)*** |
+| `networkRuleSet` | ***[[]ContainerRegistrySpecNetworkRuleSet](#containerregistryspecnetworkruleset)***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
 | `sku` | ***string***| ***(Optional)*** |
-| `storageAccount` | ***[[]ContainerRegistrySpecStorageAccount](#ContainerRegistrySpecStorageAccount)***| ***(Optional)*** Deprecated|
+| `storageAccount` | ***[[]ContainerRegistrySpecStorageAccount](#containerregistryspecstorageaccount)***| ***(Optional)*** Deprecated|
 | `storageAccountID` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## ContainerRegistrySpecNetworkRuleSet
-##### (Appears on:[ContainerRegistrySpec](#ContainerRegistrySpec))
+
+Appears on:[ContainerRegistrySpec](#containerregistryspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `defaultAction` | ***string***| ***(Optional)*** |
-| `ipRule` | ***[[]ContainerRegistrySpecNetworkRuleSetIpRule](#ContainerRegistrySpecNetworkRuleSetIpRule)***| ***(Optional)*** |
+| `ipRule` | ***[[]ContainerRegistrySpecNetworkRuleSetIpRule](#containerregistryspecnetworkrulesetiprule)***| ***(Optional)*** |
 ## ContainerRegistrySpecNetworkRuleSetIpRule
-##### (Appears on:[ContainerRegistrySpecNetworkRuleSet](#ContainerRegistrySpecNetworkRuleSet))
+
+Appears on:[ContainerRegistrySpecNetworkRuleSet](#containerregistryspecnetworkruleset)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `action` | ***string***||
 | `ipRange` | ***string***||
 ## ContainerRegistrySpecStorageAccount
-##### (Appears on:[ContainerRegistrySpec](#ContainerRegistrySpec))
+
+Appears on:[ContainerRegistrySpec](#containerregistryspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
 ## ContainerRegistryStatus
-##### (Appears on:[ContainerRegistry](#ContainerRegistry))
+
+Appears on:[ContainerRegistry](#containerregistry)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ContainerRegistrySpec](#ContainerRegistrySpec)***| ***(Optional)*** |
+| `output` | ***[ContainerRegistrySpec](#containerregistryspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

@@ -18,55 +18,63 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApplicationGateway` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApplicationGatewaySpec](#ApplicationGatewaySpec)***||
-| `status` | ***[ApplicationGatewayStatus](#ApplicationGatewayStatus)***||
+| `spec` | ***[ApplicationGatewaySpec](#applicationgatewayspec)***||
+| `status` | ***[ApplicationGatewayStatus](#applicationgatewaystatus)***||
 ## ApplicationGatewaySpec
-##### (Appears on:[ApplicationGateway](#ApplicationGateway), [ApplicationGatewayStatus](#ApplicationGatewayStatus))
+
+Appears on:[ApplicationGateway](#applicationgateway), [ApplicationGatewayStatus](#applicationgatewaystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `secretRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
-| `authenticationCertificate` | ***[[]ApplicationGatewaySpecAuthenticationCertificate](#ApplicationGatewaySpecAuthenticationCertificate)***| ***(Optional)*** |
-| `autoscaleConfiguration` | ***[[]ApplicationGatewaySpecAutoscaleConfiguration](#ApplicationGatewaySpecAutoscaleConfiguration)***| ***(Optional)*** |
-| `backendAddressPool` | ***[[]ApplicationGatewaySpecBackendAddressPool](#ApplicationGatewaySpecBackendAddressPool)***||
-| `backendHTTPSettings` | ***[[]ApplicationGatewaySpecBackendHTTPSettings](#ApplicationGatewaySpecBackendHTTPSettings)***||
-| `customErrorConfiguration` | ***[[]ApplicationGatewaySpecCustomErrorConfiguration](#ApplicationGatewaySpecCustomErrorConfiguration)***| ***(Optional)*** |
+| `authenticationCertificate` | ***[[]ApplicationGatewaySpecAuthenticationCertificate](#applicationgatewayspecauthenticationcertificate)***| ***(Optional)*** |
+| `autoscaleConfiguration` | ***[[]ApplicationGatewaySpecAutoscaleConfiguration](#applicationgatewayspecautoscaleconfiguration)***| ***(Optional)*** |
+| `backendAddressPool` | ***[[]ApplicationGatewaySpecBackendAddressPool](#applicationgatewayspecbackendaddresspool)***||
+| `backendHTTPSettings` | ***[[]ApplicationGatewaySpecBackendHTTPSettings](#applicationgatewayspecbackendhttpsettings)***||
+| `customErrorConfiguration` | ***[[]ApplicationGatewaySpecCustomErrorConfiguration](#applicationgatewayspeccustomerrorconfiguration)***| ***(Optional)*** |
 | `disabledSSLProtocols` | ***[]string***| ***(Optional)*** Deprecated|
 | `enableHttp2` | ***bool***| ***(Optional)*** |
-| `frontendIPConfiguration` | ***[[]ApplicationGatewaySpecFrontendIPConfiguration](#ApplicationGatewaySpecFrontendIPConfiguration)***||
-| `frontendPort` | ***[[]ApplicationGatewaySpecFrontendPort](#ApplicationGatewaySpecFrontendPort)***||
-| `gatewayIPConfiguration` | ***[[]ApplicationGatewaySpecGatewayIPConfiguration](#ApplicationGatewaySpecGatewayIPConfiguration)***||
-| `httpListener` | ***[[]ApplicationGatewaySpecHttpListener](#ApplicationGatewaySpecHttpListener)***||
-| `identity` | ***[[]ApplicationGatewaySpecIdentity](#ApplicationGatewaySpecIdentity)***| ***(Optional)*** |
+| `frontendIPConfiguration` | ***[[]ApplicationGatewaySpecFrontendIPConfiguration](#applicationgatewayspecfrontendipconfiguration)***||
+| `frontendPort` | ***[[]ApplicationGatewaySpecFrontendPort](#applicationgatewayspecfrontendport)***||
+| `gatewayIPConfiguration` | ***[[]ApplicationGatewaySpecGatewayIPConfiguration](#applicationgatewayspecgatewayipconfiguration)***||
+| `httpListener` | ***[[]ApplicationGatewaySpecHttpListener](#applicationgatewayspechttplistener)***||
+| `identity` | ***[[]ApplicationGatewaySpecIdentity](#applicationgatewayspecidentity)***| ***(Optional)*** |
 | `location` | ***string***||
 | `name` | ***string***||
-| `probe` | ***[[]ApplicationGatewaySpecProbe](#ApplicationGatewaySpecProbe)***| ***(Optional)*** |
-| `redirectConfiguration` | ***[[]ApplicationGatewaySpecRedirectConfiguration](#ApplicationGatewaySpecRedirectConfiguration)***| ***(Optional)*** |
-| `requestRoutingRule` | ***[[]ApplicationGatewaySpecRequestRoutingRule](#ApplicationGatewaySpecRequestRoutingRule)***||
+| `probe` | ***[[]ApplicationGatewaySpecProbe](#applicationgatewayspecprobe)***| ***(Optional)*** |
+| `redirectConfiguration` | ***[[]ApplicationGatewaySpecRedirectConfiguration](#applicationgatewayspecredirectconfiguration)***| ***(Optional)*** |
+| `requestRoutingRule` | ***[[]ApplicationGatewaySpecRequestRoutingRule](#applicationgatewayspecrequestroutingrule)***||
 | `resourceGroupName` | ***string***||
-| `rewriteRuleSet` | ***[[]ApplicationGatewaySpecRewriteRuleSet](#ApplicationGatewaySpecRewriteRuleSet)***| ***(Optional)*** |
-| `sku` | ***[[]ApplicationGatewaySpecSku](#ApplicationGatewaySpecSku)***||
-| `sslCertificate` | ***[[]ApplicationGatewaySpecSslCertificate](#ApplicationGatewaySpecSslCertificate)***| ***(Optional)*** |
-| `sslPolicy` | ***[[]ApplicationGatewaySpecSslPolicy](#ApplicationGatewaySpecSslPolicy)***| ***(Optional)*** |
+| `rewriteRuleSet` | ***[[]ApplicationGatewaySpecRewriteRuleSet](#applicationgatewayspecrewriteruleset)***| ***(Optional)*** |
+| `sku` | ***[[]ApplicationGatewaySpecSku](#applicationgatewayspecsku)***||
+| `sslCertificate` | ***[[]ApplicationGatewaySpecSslCertificate](#applicationgatewayspecsslcertificate)***| ***(Optional)*** |
+| `sslPolicy` | ***[[]ApplicationGatewaySpecSslPolicy](#applicationgatewayspecsslpolicy)***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
-| `urlPathMap` | ***[[]ApplicationGatewaySpecUrlPathMap](#ApplicationGatewaySpecUrlPathMap)***| ***(Optional)*** |
-| `wafConfiguration` | ***[[]ApplicationGatewaySpecWafConfiguration](#ApplicationGatewaySpecWafConfiguration)***| ***(Optional)*** |
+| `urlPathMap` | ***[[]ApplicationGatewaySpecUrlPathMap](#applicationgatewayspecurlpathmap)***| ***(Optional)*** |
+| `wafConfiguration` | ***[[]ApplicationGatewaySpecWafConfiguration](#applicationgatewayspecwafconfiguration)***| ***(Optional)*** |
 | `zones` | ***[]string***| ***(Optional)*** |
 ## ApplicationGatewaySpecAuthenticationCertificate
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 ## ApplicationGatewaySpecAutoscaleConfiguration
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `maxCapacity` | ***int***| ***(Optional)*** |
 | `minCapacity` | ***int***||
 ## ApplicationGatewaySpecBackendAddressPool
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `fqdnList` | ***[]string***| ***(Optional)*** Deprecated|
@@ -76,12 +84,14 @@ info:
 | `ipAddresses` | ***[]string***| ***(Optional)*** |
 | `name` | ***string***||
 ## ApplicationGatewaySpecBackendHTTPSettings
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `affinityCookieName` | ***string***| ***(Optional)*** |
-| `authenticationCertificate` | ***[[]ApplicationGatewaySpecBackendHTTPSettingsAuthenticationCertificate](#ApplicationGatewaySpecBackendHTTPSettingsAuthenticationCertificate)***| ***(Optional)*** |
-| `connectionDraining` | ***[[]ApplicationGatewaySpecBackendHTTPSettingsConnectionDraining](#ApplicationGatewaySpecBackendHTTPSettingsConnectionDraining)***| ***(Optional)*** |
+| `authenticationCertificate` | ***[[]ApplicationGatewaySpecBackendHTTPSettingsAuthenticationCertificate](#applicationgatewayspecbackendhttpsettingsauthenticationcertificate)***| ***(Optional)*** |
+| `connectionDraining` | ***[[]ApplicationGatewaySpecBackendHTTPSettingsConnectionDraining](#applicationgatewayspecbackendhttpsettingsconnectiondraining)***| ***(Optional)*** |
 | `cookieBasedAffinity` | ***string***||
 | `hostName` | ***string***| ***(Optional)*** |
 | `ID` | ***string***| ***(Optional)*** |
@@ -94,26 +104,34 @@ info:
 | `protocol` | ***string***||
 | `requestTimeout` | ***int***| ***(Optional)*** |
 ## ApplicationGatewaySpecBackendHTTPSettingsAuthenticationCertificate
-##### (Appears on:[ApplicationGatewaySpecBackendHTTPSettings](#ApplicationGatewaySpecBackendHTTPSettings))
+
+Appears on:[ApplicationGatewaySpecBackendHTTPSettings](#applicationgatewayspecbackendhttpsettings)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 ## ApplicationGatewaySpecBackendHTTPSettingsConnectionDraining
-##### (Appears on:[ApplicationGatewaySpecBackendHTTPSettings](#ApplicationGatewaySpecBackendHTTPSettings))
+
+Appears on:[ApplicationGatewaySpecBackendHTTPSettings](#applicationgatewayspecbackendhttpsettings)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `drainTimeoutSec` | ***int***||
 | `enabled` | ***bool***||
 ## ApplicationGatewaySpecCustomErrorConfiguration
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `customErrorPageURL` | ***string***||
 | `ID` | ***string***| ***(Optional)*** |
 | `statusCode` | ***string***||
 ## ApplicationGatewaySpecFrontendIPConfiguration
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
@@ -123,24 +141,30 @@ info:
 | `publicIPAddressID` | ***string***| ***(Optional)*** |
 | `subnetID` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecFrontendPort
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `port` | ***int***||
 ## ApplicationGatewaySpecGatewayIPConfiguration
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `subnetID` | ***string***||
 ## ApplicationGatewaySpecHttpListener
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `customErrorConfiguration` | ***[[]ApplicationGatewaySpecHttpListenerCustomErrorConfiguration](#ApplicationGatewaySpecHttpListenerCustomErrorConfiguration)***| ***(Optional)*** |
+| `customErrorConfiguration` | ***[[]ApplicationGatewaySpecHttpListenerCustomErrorConfiguration](#applicationgatewayspechttplistenercustomerrorconfiguration)***| ***(Optional)*** |
 | `frontendIPConfigurationID` | ***string***| ***(Optional)*** |
 | `frontendIPConfigurationName` | ***string***||
 | `frontendPortID` | ***string***| ***(Optional)*** |
@@ -153,26 +177,32 @@ info:
 | `sslCertificateID` | ***string***| ***(Optional)*** |
 | `sslCertificateName` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecHttpListenerCustomErrorConfiguration
-##### (Appears on:[ApplicationGatewaySpecHttpListener](#ApplicationGatewaySpecHttpListener))
+
+Appears on:[ApplicationGatewaySpecHttpListener](#applicationgatewayspechttplistener)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `customErrorPageURL` | ***string***||
 | `ID` | ***string***| ***(Optional)*** |
 | `statusCode` | ***string***||
 ## ApplicationGatewaySpecIdentity
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `identityIDS` | ***[]string***||
 | `type` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecProbe
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `host` | ***string***| ***(Optional)*** |
 | `ID` | ***string***| ***(Optional)*** |
 | `interval` | ***int***||
-| `match` | ***[[]ApplicationGatewaySpecProbeMatch](#ApplicationGatewaySpecProbeMatch)***| ***(Optional)*** |
+| `match` | ***[[]ApplicationGatewaySpecProbeMatch](#applicationgatewayspecprobematch)***| ***(Optional)*** |
 | `minimumServers` | ***int***| ***(Optional)*** |
 | `name` | ***string***||
 | `path` | ***string***||
@@ -181,13 +211,17 @@ info:
 | `timeout` | ***int***||
 | `unhealthyThreshold` | ***int***||
 ## ApplicationGatewaySpecProbeMatch
-##### (Appears on:[ApplicationGatewaySpecProbe](#ApplicationGatewaySpecProbe))
+
+Appears on:[ApplicationGatewaySpecProbe](#applicationgatewayspecprobe)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `body` | ***string***| ***(Optional)*** |
 | `statusCode` | ***[]string***| ***(Optional)*** |
 ## ApplicationGatewaySpecRedirectConfiguration
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
@@ -199,7 +233,9 @@ info:
 | `targetListenerName` | ***string***| ***(Optional)*** |
 | `targetURL` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecRequestRoutingRule
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `backendAddressPoolID` | ***string***| ***(Optional)*** |
@@ -218,23 +254,29 @@ info:
 | `urlPathMapID` | ***string***| ***(Optional)*** |
 | `urlPathMapName` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecRewriteRuleSet
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `rewriteRule` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRule](#ApplicationGatewaySpecRewriteRuleSetRewriteRule)***| ***(Optional)*** |
+| `rewriteRule` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRule](#applicationgatewayspecrewriterulesetrewriterule)***| ***(Optional)*** |
 ## ApplicationGatewaySpecRewriteRuleSetRewriteRule
-##### (Appears on:[ApplicationGatewaySpecRewriteRuleSet](#ApplicationGatewaySpecRewriteRuleSet))
+
+Appears on:[ApplicationGatewaySpecRewriteRuleSet](#applicationgatewayspecrewriteruleset)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `condition` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleCondition](#ApplicationGatewaySpecRewriteRuleSetRewriteRuleCondition)***| ***(Optional)*** |
+| `condition` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleCondition](#applicationgatewayspecrewriterulesetrewriterulecondition)***| ***(Optional)*** |
 | `name` | ***string***||
-| `requestHeaderConfiguration` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleRequestHeaderConfiguration](#ApplicationGatewaySpecRewriteRuleSetRewriteRuleRequestHeaderConfiguration)***| ***(Optional)*** |
-| `responseHeaderConfiguration` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleResponseHeaderConfiguration](#ApplicationGatewaySpecRewriteRuleSetRewriteRuleResponseHeaderConfiguration)***| ***(Optional)*** |
+| `requestHeaderConfiguration` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleRequestHeaderConfiguration](#applicationgatewayspecrewriterulesetrewriterulerequestheaderconfiguration)***| ***(Optional)*** |
+| `responseHeaderConfiguration` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleResponseHeaderConfiguration](#applicationgatewayspecrewriterulesetrewriteruleresponseheaderconfiguration)***| ***(Optional)*** |
 | `ruleSequence` | ***int***||
 ## ApplicationGatewaySpecRewriteRuleSetRewriteRuleCondition
-##### (Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#ApplicationGatewaySpecRewriteRuleSetRewriteRule))
+
+Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#applicationgatewayspecrewriterulesetrewriterule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ignoreCase` | ***bool***| ***(Optional)*** |
@@ -242,33 +284,43 @@ info:
 | `pattern` | ***string***||
 | `variable` | ***string***||
 ## ApplicationGatewaySpecRewriteRuleSetRewriteRuleRequestHeaderConfiguration
-##### (Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#ApplicationGatewaySpecRewriteRuleSetRewriteRule))
+
+Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#applicationgatewayspecrewriterulesetrewriterule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `headerName` | ***string***||
 | `headerValue` | ***string***||
 ## ApplicationGatewaySpecRewriteRuleSetRewriteRuleResponseHeaderConfiguration
-##### (Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#ApplicationGatewaySpecRewriteRuleSetRewriteRule))
+
+Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#applicationgatewayspecrewriterulesetrewriterule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `headerName` | ***string***||
 | `headerValue` | ***string***||
 ## ApplicationGatewaySpecSku
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `capacity` | ***int***| ***(Optional)*** |
 | `name` | ***string***||
 | `tier` | ***string***||
 ## ApplicationGatewaySpecSslCertificate
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `publicCertData` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecSslPolicy
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `cipherSuites` | ***[]string***| ***(Optional)*** |
@@ -277,7 +329,9 @@ info:
 | `policyName` | ***string***| ***(Optional)*** |
 | `policyType` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecUrlPathMap
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `defaultBackendAddressPoolID` | ***string***| ***(Optional)*** |
@@ -290,9 +344,11 @@ info:
 | `defaultRewriteRuleSetName` | ***string***| ***(Optional)*** |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `pathRule` | ***[[]ApplicationGatewaySpecUrlPathMapPathRule](#ApplicationGatewaySpecUrlPathMapPathRule)***||
+| `pathRule` | ***[[]ApplicationGatewaySpecUrlPathMapPathRule](#applicationgatewayspecurlpathmappathrule)***||
 ## ApplicationGatewaySpecUrlPathMapPathRule
-##### (Appears on:[ApplicationGatewaySpecUrlPathMap](#ApplicationGatewaySpecUrlPathMap))
+
+Appears on:[ApplicationGatewaySpecUrlPathMap](#applicationgatewayspecurlpathmap)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `backendAddressPoolID` | ***string***| ***(Optional)*** |
@@ -307,12 +363,14 @@ info:
 | `rewriteRuleSetID` | ***string***| ***(Optional)*** |
 | `rewriteRuleSetName` | ***string***| ***(Optional)*** |
 ## ApplicationGatewaySpecWafConfiguration
-##### (Appears on:[ApplicationGatewaySpec](#ApplicationGatewaySpec))
+
+Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `disabledRuleGroup` | ***[[]ApplicationGatewaySpecWafConfigurationDisabledRuleGroup](#ApplicationGatewaySpecWafConfigurationDisabledRuleGroup)***| ***(Optional)*** |
+| `disabledRuleGroup` | ***[[]ApplicationGatewaySpecWafConfigurationDisabledRuleGroup](#applicationgatewayspecwafconfigurationdisabledrulegroup)***| ***(Optional)*** |
 | `enabled` | ***bool***||
-| `exclusion` | ***[[]ApplicationGatewaySpecWafConfigurationExclusion](#ApplicationGatewaySpecWafConfigurationExclusion)***| ***(Optional)*** |
+| `exclusion` | ***[[]ApplicationGatewaySpecWafConfigurationExclusion](#applicationgatewayspecwafconfigurationexclusion)***| ***(Optional)*** |
 | `fileUploadLimitMb` | ***int***| ***(Optional)*** |
 | `firewallMode` | ***string***||
 | `maxRequestBodySizeKb` | ***int***| ***(Optional)*** |
@@ -320,24 +378,30 @@ info:
 | `ruleSetType` | ***string***| ***(Optional)*** |
 | `ruleSetVersion` | ***string***||
 ## ApplicationGatewaySpecWafConfigurationDisabledRuleGroup
-##### (Appears on:[ApplicationGatewaySpecWafConfiguration](#ApplicationGatewaySpecWafConfiguration))
+
+Appears on:[ApplicationGatewaySpecWafConfiguration](#applicationgatewayspecwafconfiguration)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ruleGroupName` | ***string***||
 | `rules` | ***[]int64***| ***(Optional)*** |
 ## ApplicationGatewaySpecWafConfigurationExclusion
-##### (Appears on:[ApplicationGatewaySpecWafConfiguration](#ApplicationGatewaySpecWafConfiguration))
+
+Appears on:[ApplicationGatewaySpecWafConfiguration](#applicationgatewayspecwafconfiguration)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `matchVariable` | ***string***||
 | `selector` | ***string***| ***(Optional)*** |
 | `selectorMatchOperator` | ***string***| ***(Optional)*** |
 ## ApplicationGatewayStatus
-##### (Appears on:[ApplicationGateway](#ApplicationGateway))
+
+Appears on:[ApplicationGateway](#applicationgateway)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApplicationGatewaySpec](#ApplicationGatewaySpec)***| ***(Optional)*** |
+| `output` | ***[ApplicationGatewaySpec](#applicationgatewayspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

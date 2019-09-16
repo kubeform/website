@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `LbRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[LbRuleSpec](#LbRuleSpec)***||
-| `status` | ***[LbRuleStatus](#LbRuleStatus)***||
+| `spec` | ***[LbRuleSpec](#lbrulespec)***||
+| `status` | ***[LbRuleStatus](#lbrulestatus)***||
 ## LbRuleSpec
-##### (Appears on:[LbRule](#LbRule), [LbRuleStatus](#LbRuleStatus))
+
+Appears on:[LbRule](#lbrule), [LbRuleStatus](#lbrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -42,10 +44,12 @@ info:
 | `protocol` | ***string***||
 | `resourceGroupName` | ***string***||
 ## LbRuleStatus
-##### (Appears on:[LbRule](#LbRule))
+
+Appears on:[LbRule](#lbrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[LbRuleSpec](#LbRuleSpec)***| ***(Optional)*** |
+| `output` | ***[LbRuleSpec](#lbrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `DataFactoryLinkedServiceMysql` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DataFactoryLinkedServiceMysqlSpec](#DataFactoryLinkedServiceMysqlSpec)***||
-| `status` | ***[DataFactoryLinkedServiceMysqlStatus](#DataFactoryLinkedServiceMysqlStatus)***||
+| `spec` | ***[DataFactoryLinkedServiceMysqlSpec](#datafactorylinkedservicemysqlspec)***||
+| `status` | ***[DataFactoryLinkedServiceMysqlStatus](#datafactorylinkedservicemysqlstatus)***||
 ## DataFactoryLinkedServiceMysqlSpec
-##### (Appears on:[DataFactoryLinkedServiceMysql](#DataFactoryLinkedServiceMysql), [DataFactoryLinkedServiceMysqlStatus](#DataFactoryLinkedServiceMysqlStatus))
+
+Appears on:[DataFactoryLinkedServiceMysql](#datafactorylinkedservicemysql), [DataFactoryLinkedServiceMysqlStatus](#datafactorylinkedservicemysqlstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -36,10 +38,12 @@ info:
 | `parameters` | ***map[string]string***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
 ## DataFactoryLinkedServiceMysqlStatus
-##### (Appears on:[DataFactoryLinkedServiceMysql](#DataFactoryLinkedServiceMysql))
+
+Appears on:[DataFactoryLinkedServiceMysql](#datafactorylinkedservicemysql)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DataFactoryLinkedServiceMysqlSpec](#DataFactoryLinkedServiceMysqlSpec)***| ***(Optional)*** |
+| `output` | ***[DataFactoryLinkedServiceMysqlSpec](#datafactorylinkedservicemysqlspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

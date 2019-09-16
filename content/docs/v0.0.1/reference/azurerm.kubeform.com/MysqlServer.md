@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `MysqlServer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[MysqlServerSpec](#MysqlServerSpec)***||
-| `status` | ***[MysqlServerStatus](#MysqlServerStatus)***||
+| `spec` | ***[MysqlServerSpec](#mysqlserverspec)***||
+| `status` | ***[MysqlServerStatus](#mysqlserverstatus)***||
 ## MysqlServerSpec
-##### (Appears on:[MysqlServer](#MysqlServer), [MysqlServerStatus](#MysqlServerStatus))
+
+Appears on:[MysqlServer](#mysqlserver), [MysqlServerStatus](#mysqlserverstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,13 +34,15 @@ info:
 | `location` | ***string***||
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `sku` | ***[[]MysqlServerSpecSku](#MysqlServerSpecSku)***||
+| `sku` | ***[[]MysqlServerSpecSku](#mysqlserverspecsku)***||
 | `sslEnforcement` | ***string***||
-| `storageProfile` | ***[[]MysqlServerSpecStorageProfile](#MysqlServerSpecStorageProfile)***||
+| `storageProfile` | ***[[]MysqlServerSpecStorageProfile](#mysqlserverspecstorageprofile)***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `version` | ***string***||
 ## MysqlServerSpecSku
-##### (Appears on:[MysqlServerSpec](#MysqlServerSpec))
+
+Appears on:[MysqlServerSpec](#mysqlserverspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `capacity` | ***int***||
@@ -46,18 +50,22 @@ info:
 | `name` | ***string***||
 | `tier` | ***string***||
 ## MysqlServerSpecStorageProfile
-##### (Appears on:[MysqlServerSpec](#MysqlServerSpec))
+
+Appears on:[MysqlServerSpec](#mysqlserverspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `backupRetentionDays` | ***int***| ***(Optional)*** |
 | `geoRedundantBackup` | ***string***| ***(Optional)*** |
 | `storageMb` | ***int***||
 ## MysqlServerStatus
-##### (Appears on:[MysqlServer](#MysqlServer))
+
+Appears on:[MysqlServer](#mysqlserver)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[MysqlServerSpec](#MysqlServerSpec)***| ***(Optional)*** |
+| `output` | ***[MysqlServerSpec](#mysqlserverspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

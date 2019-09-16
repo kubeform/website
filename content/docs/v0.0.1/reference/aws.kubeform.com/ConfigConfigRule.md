@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ConfigConfigRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ConfigConfigRuleSpec](#ConfigConfigRuleSpec)***||
-| `status` | ***[ConfigConfigRuleStatus](#ConfigConfigRuleStatus)***||
+| `spec` | ***[ConfigConfigRuleSpec](#configconfigrulespec)***||
+| `status` | ***[ConfigConfigRuleStatus](#configconfigrulestatus)***||
 ## ConfigConfigRuleSpec
-##### (Appears on:[ConfigConfigRule](#ConfigConfigRule), [ConfigConfigRuleStatus](#ConfigConfigRuleStatus))
+
+Appears on:[ConfigConfigRule](#configconfigrule), [ConfigConfigRuleStatus](#configconfigrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `maximumExecutionFrequency` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `ruleID` | ***string***| ***(Optional)*** |
-| `scope` | ***[[]ConfigConfigRuleSpecScope](#ConfigConfigRuleSpecScope)***| ***(Optional)*** |
-| `source` | ***[[]ConfigConfigRuleSpecSource](#ConfigConfigRuleSpecSource)***||
+| `scope` | ***[[]ConfigConfigRuleSpecScope](#configconfigrulespecscope)***| ***(Optional)*** |
+| `source` | ***[[]ConfigConfigRuleSpecSource](#configconfigrulespecsource)***||
 ## ConfigConfigRuleSpecScope
-##### (Appears on:[ConfigConfigRuleSpec](#ConfigConfigRuleSpec))
+
+Appears on:[ConfigConfigRuleSpec](#configconfigrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `complianceResourceID` | ***string***| ***(Optional)*** |
@@ -43,24 +47,30 @@ info:
 | `tagKey` | ***string***| ***(Optional)*** |
 | `tagValue` | ***string***| ***(Optional)*** |
 ## ConfigConfigRuleSpecSource
-##### (Appears on:[ConfigConfigRuleSpec](#ConfigConfigRuleSpec))
+
+Appears on:[ConfigConfigRuleSpec](#configconfigrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `owner` | ***string***||
-| `sourceDetail` | ***[[]ConfigConfigRuleSpecSourceSourceDetail](#ConfigConfigRuleSpecSourceSourceDetail)***| ***(Optional)*** |
+| `sourceDetail` | ***[[]ConfigConfigRuleSpecSourceSourceDetail](#configconfigrulespecsourcesourcedetail)***| ***(Optional)*** |
 | `sourceIdentifier` | ***string***||
 ## ConfigConfigRuleSpecSourceSourceDetail
-##### (Appears on:[ConfigConfigRuleSpecSource](#ConfigConfigRuleSpecSource))
+
+Appears on:[ConfigConfigRuleSpecSource](#configconfigrulespecsource)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `eventSource` | ***string***| ***(Optional)*** |
 | `maximumExecutionFrequency` | ***string***| ***(Optional)*** |
 | `messageType` | ***string***| ***(Optional)*** |
 ## ConfigConfigRuleStatus
-##### (Appears on:[ConfigConfigRule](#ConfigConfigRule))
+
+Appears on:[ConfigConfigRule](#configconfigrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ConfigConfigRuleSpec](#ConfigConfigRuleSpec)***| ***(Optional)*** |
+| `output` | ***[ConfigConfigRuleSpec](#configconfigrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

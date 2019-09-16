@@ -18,45 +18,53 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ComputeInstanceGroupManager` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ComputeInstanceGroupManagerSpec](#ComputeInstanceGroupManagerSpec)***||
-| `status` | ***[ComputeInstanceGroupManagerStatus](#ComputeInstanceGroupManagerStatus)***||
+| `spec` | ***[ComputeInstanceGroupManagerSpec](#computeinstancegroupmanagerspec)***||
+| `status` | ***[ComputeInstanceGroupManagerStatus](#computeinstancegroupmanagerstatus)***||
 ## ComputeInstanceGroupManagerSpec
-##### (Appears on:[ComputeInstanceGroupManager](#ComputeInstanceGroupManager), [ComputeInstanceGroupManagerStatus](#ComputeInstanceGroupManagerStatus))
+
+Appears on:[ComputeInstanceGroupManager](#computeinstancegroupmanager), [ComputeInstanceGroupManagerStatus](#computeinstancegroupmanagerstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `autoHealingPolicies` | ***[[]ComputeInstanceGroupManagerSpecAutoHealingPolicies](#ComputeInstanceGroupManagerSpecAutoHealingPolicies)***| ***(Optional)*** Deprecated|
+| `autoHealingPolicies` | ***[[]ComputeInstanceGroupManagerSpecAutoHealingPolicies](#computeinstancegroupmanagerspecautohealingpolicies)***| ***(Optional)*** Deprecated|
 | `baseInstanceName` | ***string***||
 | `description` | ***string***| ***(Optional)*** |
 | `fingerprint` | ***string***| ***(Optional)*** |
 | `instanceGroup` | ***string***| ***(Optional)*** |
 | `instanceTemplate` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `namedPort` | ***[[]ComputeInstanceGroupManagerSpecNamedPort](#ComputeInstanceGroupManagerSpecNamedPort)***| ***(Optional)*** |
+| `namedPort` | ***[[]ComputeInstanceGroupManagerSpecNamedPort](#computeinstancegroupmanagerspecnamedport)***| ***(Optional)*** |
 | `project` | ***string***| ***(Optional)*** |
-| `rollingUpdatePolicy` | ***[[]ComputeInstanceGroupManagerSpecRollingUpdatePolicy](#ComputeInstanceGroupManagerSpecRollingUpdatePolicy)***| ***(Optional)*** Deprecated|
+| `rollingUpdatePolicy` | ***[[]ComputeInstanceGroupManagerSpecRollingUpdatePolicy](#computeinstancegroupmanagerspecrollingupdatepolicy)***| ***(Optional)*** Deprecated|
 | `selfLink` | ***string***| ***(Optional)*** |
 | `targetPools` | ***[]string***| ***(Optional)*** |
 | `targetSize` | ***int***| ***(Optional)*** |
 | `updateStrategy` | ***string***| ***(Optional)*** |
-| `version` | ***[[]ComputeInstanceGroupManagerSpecVersion](#ComputeInstanceGroupManagerSpecVersion)***| ***(Optional)*** Deprecated|
+| `version` | ***[[]ComputeInstanceGroupManagerSpecVersion](#computeinstancegroupmanagerspecversion)***| ***(Optional)*** Deprecated|
 | `waitForInstances` | ***bool***| ***(Optional)*** |
 | `zone` | ***string***| ***(Optional)*** |
 ## ComputeInstanceGroupManagerSpecAutoHealingPolicies
-##### (Appears on:[ComputeInstanceGroupManagerSpec](#ComputeInstanceGroupManagerSpec))
+
+Appears on:[ComputeInstanceGroupManagerSpec](#computeinstancegroupmanagerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `healthCheck` | ***string***||
 | `initialDelaySec` | ***int***||
 ## ComputeInstanceGroupManagerSpecNamedPort
-##### (Appears on:[ComputeInstanceGroupManagerSpec](#ComputeInstanceGroupManagerSpec))
+
+Appears on:[ComputeInstanceGroupManagerSpec](#computeinstancegroupmanagerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
 | `port` | ***int***||
 ## ComputeInstanceGroupManagerSpecRollingUpdatePolicy
-##### (Appears on:[ComputeInstanceGroupManagerSpec](#ComputeInstanceGroupManagerSpec))
+
+Appears on:[ComputeInstanceGroupManagerSpec](#computeinstancegroupmanagerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `maxSurgeFixed` | ***int***| ***(Optional)*** |
@@ -67,23 +75,29 @@ info:
 | `minimalAction` | ***string***||
 | `type` | ***string***||
 ## ComputeInstanceGroupManagerSpecVersion
-##### (Appears on:[ComputeInstanceGroupManagerSpec](#ComputeInstanceGroupManagerSpec))
+
+Appears on:[ComputeInstanceGroupManagerSpec](#computeinstancegroupmanagerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `instanceTemplate` | ***string***||
 | `name` | ***string***||
-| `targetSize` | ***[[]ComputeInstanceGroupManagerSpecVersionTargetSize](#ComputeInstanceGroupManagerSpecVersionTargetSize)***| ***(Optional)*** |
+| `targetSize` | ***[[]ComputeInstanceGroupManagerSpecVersionTargetSize](#computeinstancegroupmanagerspecversiontargetsize)***| ***(Optional)*** |
 ## ComputeInstanceGroupManagerSpecVersionTargetSize
-##### (Appears on:[ComputeInstanceGroupManagerSpecVersion](#ComputeInstanceGroupManagerSpecVersion))
+
+Appears on:[ComputeInstanceGroupManagerSpecVersion](#computeinstancegroupmanagerspecversion)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `fixed` | ***int***| ***(Optional)*** |
 | `percent` | ***int***| ***(Optional)*** |
 ## ComputeInstanceGroupManagerStatus
-##### (Appears on:[ComputeInstanceGroupManager](#ComputeInstanceGroupManager))
+
+Appears on:[ComputeInstanceGroupManager](#computeinstancegroupmanager)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ComputeInstanceGroupManagerSpec](#ComputeInstanceGroupManagerSpec)***| ***(Optional)*** |
+| `output` | ***[ComputeInstanceGroupManagerSpec](#computeinstancegroupmanagerspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

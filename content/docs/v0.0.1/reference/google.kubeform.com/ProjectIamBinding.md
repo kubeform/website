@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ProjectIamBinding` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ProjectIamBindingSpec](#ProjectIamBindingSpec)***||
-| `status` | ***[ProjectIamBindingStatus](#ProjectIamBindingStatus)***||
+| `spec` | ***[ProjectIamBindingSpec](#projectiambindingspec)***||
+| `status` | ***[ProjectIamBindingStatus](#projectiambindingstatus)***||
 ## ProjectIamBindingSpec
-##### (Appears on:[ProjectIamBinding](#ProjectIamBinding), [ProjectIamBindingStatus](#ProjectIamBindingStatus))
+
+Appears on:[ProjectIamBinding](#projectiambinding), [ProjectIamBindingStatus](#projectiambindingstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `project` | ***string***| ***(Optional)*** |
 | `role` | ***string***||
 ## ProjectIamBindingStatus
-##### (Appears on:[ProjectIamBinding](#ProjectIamBinding))
+
+Appears on:[ProjectIamBinding](#projectiambinding)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ProjectIamBindingSpec](#ProjectIamBindingSpec)***| ***(Optional)*** |
+| `output` | ***[ProjectIamBindingSpec](#projectiambindingspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

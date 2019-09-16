@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `MariadbServer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[MariadbServerSpec](#MariadbServerSpec)***||
-| `status` | ***[MariadbServerStatus](#MariadbServerStatus)***||
+| `spec` | ***[MariadbServerSpec](#mariadbserverspec)***||
+| `status` | ***[MariadbServerStatus](#mariadbserverstatus)***||
 ## MariadbServerSpec
-##### (Appears on:[MariadbServer](#MariadbServer), [MariadbServerStatus](#MariadbServerStatus))
+
+Appears on:[MariadbServer](#mariadbserver), [MariadbServerStatus](#mariadbserverstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,13 +34,15 @@ info:
 | `location` | ***string***||
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `sku` | ***[[]MariadbServerSpecSku](#MariadbServerSpecSku)***||
+| `sku` | ***[[]MariadbServerSpecSku](#mariadbserverspecsku)***||
 | `sslEnforcement` | ***string***||
-| `storageProfile` | ***[[]MariadbServerSpecStorageProfile](#MariadbServerSpecStorageProfile)***||
+| `storageProfile` | ***[[]MariadbServerSpecStorageProfile](#mariadbserverspecstorageprofile)***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `version` | ***string***||
 ## MariadbServerSpecSku
-##### (Appears on:[MariadbServerSpec](#MariadbServerSpec))
+
+Appears on:[MariadbServerSpec](#mariadbserverspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `capacity` | ***int***||
@@ -46,18 +50,22 @@ info:
 | `name` | ***string***||
 | `tier` | ***string***||
 ## MariadbServerSpecStorageProfile
-##### (Appears on:[MariadbServerSpec](#MariadbServerSpec))
+
+Appears on:[MariadbServerSpec](#mariadbserverspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `backupRetentionDays` | ***int***| ***(Optional)*** |
 | `geoRedundantBackup` | ***string***| ***(Optional)*** |
 | `storageMb` | ***int***||
 ## MariadbServerStatus
-##### (Appears on:[MariadbServer](#MariadbServer))
+
+Appears on:[MariadbServer](#mariadbserver)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[MariadbServerSpec](#MariadbServerSpec)***| ***(Optional)*** |
+| `output` | ***[MariadbServerSpec](#mariadbserverspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

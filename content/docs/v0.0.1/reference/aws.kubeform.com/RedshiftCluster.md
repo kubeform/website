@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `RedshiftCluster` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[RedshiftClusterSpec](#RedshiftClusterSpec)***||
-| `status` | ***[RedshiftClusterStatus](#RedshiftClusterStatus)***||
+| `spec` | ***[RedshiftClusterSpec](#redshiftclusterspec)***||
+| `status` | ***[RedshiftClusterStatus](#redshiftclusterstatus)***||
 ## RedshiftClusterSpec
-##### (Appears on:[RedshiftCluster](#RedshiftCluster), [RedshiftClusterStatus](#RedshiftClusterStatus))
+
+Appears on:[RedshiftCluster](#redshiftcluster), [RedshiftClusterStatus](#redshiftclusterstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -47,7 +49,7 @@ info:
 | `finalSnapshotIdentifier` | ***string***| ***(Optional)*** |
 | `iamRoles` | ***[]string***| ***(Optional)*** |
 | `kmsKeyID` | ***string***| ***(Optional)*** |
-| `logging` | ***[[]RedshiftClusterSpecLogging](#RedshiftClusterSpecLogging)***| ***(Optional)*** |
+| `logging` | ***[[]RedshiftClusterSpecLogging](#redshiftclusterspeclogging)***| ***(Optional)*** |
 | `masterUsername` | ***string***| ***(Optional)*** |
 | `nodeType` | ***string***||
 | `numberOfNodes` | ***int***| ***(Optional)*** |
@@ -57,30 +59,36 @@ info:
 | `publiclyAccessible` | ***bool***| ***(Optional)*** |
 | `skipFinalSnapshot` | ***bool***| ***(Optional)*** |
 | `snapshotClusterIdentifier` | ***string***| ***(Optional)*** |
-| `snapshotCopy` | ***[[]RedshiftClusterSpecSnapshotCopy](#RedshiftClusterSpecSnapshotCopy)***| ***(Optional)*** |
+| `snapshotCopy` | ***[[]RedshiftClusterSpecSnapshotCopy](#redshiftclusterspecsnapshotcopy)***| ***(Optional)*** |
 | `snapshotIdentifier` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `vpcSecurityGroupIDS` | ***[]string***| ***(Optional)*** |
 ## RedshiftClusterSpecLogging
-##### (Appears on:[RedshiftClusterSpec](#RedshiftClusterSpec))
+
+Appears on:[RedshiftClusterSpec](#redshiftclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `bucketName` | ***string***| ***(Optional)*** |
 | `enable` | ***bool***||
 | `s3KeyPrefix` | ***string***| ***(Optional)*** |
 ## RedshiftClusterSpecSnapshotCopy
-##### (Appears on:[RedshiftClusterSpec](#RedshiftClusterSpec))
+
+Appears on:[RedshiftClusterSpec](#redshiftclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `destinationRegion` | ***string***||
 | `grantName` | ***string***| ***(Optional)*** |
 | `retentionPeriod` | ***int***| ***(Optional)*** |
 ## RedshiftClusterStatus
-##### (Appears on:[RedshiftCluster](#RedshiftCluster))
+
+Appears on:[RedshiftCluster](#redshiftcluster)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[RedshiftClusterSpec](#RedshiftClusterSpec)***| ***(Optional)*** |
+| `output` | ***[RedshiftClusterSpec](#redshiftclusterspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

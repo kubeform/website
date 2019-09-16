@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `DevicefarmProject` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DevicefarmProjectSpec](#DevicefarmProjectSpec)***||
-| `status` | ***[DevicefarmProjectStatus](#DevicefarmProjectStatus)***||
+| `spec` | ***[DevicefarmProjectSpec](#devicefarmprojectspec)***||
+| `status` | ***[DevicefarmProjectStatus](#devicefarmprojectstatus)***||
 ## DevicefarmProjectSpec
-##### (Appears on:[DevicefarmProject](#DevicefarmProject), [DevicefarmProjectStatus](#DevicefarmProjectStatus))
+
+Appears on:[DevicefarmProject](#devicefarmproject), [DevicefarmProjectStatus](#devicefarmprojectstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,10 +31,12 @@ info:
 | `arn` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 ## DevicefarmProjectStatus
-##### (Appears on:[DevicefarmProject](#DevicefarmProject))
+
+Appears on:[DevicefarmProject](#devicefarmproject)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DevicefarmProjectSpec](#DevicefarmProjectSpec)***| ***(Optional)*** |
+| `output` | ***[DevicefarmProjectSpec](#devicefarmprojectspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

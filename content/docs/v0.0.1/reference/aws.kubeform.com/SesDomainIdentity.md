@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SesDomainIdentity` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SesDomainIdentitySpec](#SesDomainIdentitySpec)***||
-| `status` | ***[SesDomainIdentityStatus](#SesDomainIdentityStatus)***||
+| `spec` | ***[SesDomainIdentitySpec](#sesdomainidentityspec)***||
+| `status` | ***[SesDomainIdentityStatus](#sesdomainidentitystatus)***||
 ## SesDomainIdentitySpec
-##### (Appears on:[SesDomainIdentity](#SesDomainIdentity), [SesDomainIdentityStatus](#SesDomainIdentityStatus))
+
+Appears on:[SesDomainIdentity](#sesdomainidentity), [SesDomainIdentityStatus](#sesdomainidentitystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `domain` | ***string***||
 | `verificationToken` | ***string***| ***(Optional)*** |
 ## SesDomainIdentityStatus
-##### (Appears on:[SesDomainIdentity](#SesDomainIdentity))
+
+Appears on:[SesDomainIdentity](#sesdomainidentity)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SesDomainIdentitySpec](#SesDomainIdentitySpec)***| ***(Optional)*** |
+| `output` | ***[SesDomainIdentitySpec](#sesdomainidentityspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

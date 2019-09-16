@@ -18,19 +18,21 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `AmiFromInstance` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AmiFromInstanceSpec](#AmiFromInstanceSpec)***||
-| `status` | ***[AmiFromInstanceStatus](#AmiFromInstanceStatus)***||
+| `spec` | ***[AmiFromInstanceSpec](#amifrominstancespec)***||
+| `status` | ***[AmiFromInstanceStatus](#amifrominstancestatus)***||
 ## AmiFromInstanceSpec
-##### (Appears on:[AmiFromInstance](#AmiFromInstance), [AmiFromInstanceStatus](#AmiFromInstanceStatus))
+
+Appears on:[AmiFromInstance](#amifrominstance), [AmiFromInstanceStatus](#amifrominstancestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `architecture` | ***string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `ebsBlockDevice` | ***[[]AmiFromInstanceSpecEbsBlockDevice](#AmiFromInstanceSpecEbsBlockDevice)***| ***(Optional)*** |
+| `ebsBlockDevice` | ***[[]AmiFromInstanceSpecEbsBlockDevice](#amifrominstancespecebsblockdevice)***| ***(Optional)*** |
 | `enaSupport` | ***bool***| ***(Optional)*** |
-| `ephemeralBlockDevice` | ***[[]AmiFromInstanceSpecEphemeralBlockDevice](#AmiFromInstanceSpecEphemeralBlockDevice)***| ***(Optional)*** |
+| `ephemeralBlockDevice` | ***[[]AmiFromInstanceSpecEphemeralBlockDevice](#amifrominstancespecephemeralblockdevice)***| ***(Optional)*** |
 | `imageLocation` | ***string***| ***(Optional)*** |
 | `kernelID` | ***string***| ***(Optional)*** |
 | `manageEbsSnapshots` | ***bool***| ***(Optional)*** |
@@ -44,7 +46,9 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `virtualizationType` | ***string***| ***(Optional)*** |
 ## AmiFromInstanceSpecEbsBlockDevice
-##### (Appears on:[AmiFromInstanceSpec](#AmiFromInstanceSpec))
+
+Appears on:[AmiFromInstanceSpec](#amifrominstancespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
@@ -55,16 +59,20 @@ info:
 | `volumeSize` | ***int***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## AmiFromInstanceSpecEphemeralBlockDevice
-##### (Appears on:[AmiFromInstanceSpec](#AmiFromInstanceSpec))
+
+Appears on:[AmiFromInstanceSpec](#amifrominstancespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deviceName` | ***string***| ***(Optional)*** |
 | `virtualName` | ***string***| ***(Optional)*** |
 ## AmiFromInstanceStatus
-##### (Appears on:[AmiFromInstance](#AmiFromInstance))
+
+Appears on:[AmiFromInstance](#amifrominstance)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AmiFromInstanceSpec](#AmiFromInstanceSpec)***| ***(Optional)*** |
+| `output` | ***[AmiFromInstanceSpec](#amifrominstancespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
