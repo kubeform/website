@@ -18,29 +18,35 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `WafRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[WafRuleSpec](#WafRuleSpec)***||
-| `status` | ***[WafRuleStatus](#WafRuleStatus)***||
+| `spec` | ***[WafRuleSpec](#wafrulespec)***||
+| `status` | ***[WafRuleStatus](#wafrulestatus)***||
 ## WafRuleSpec
-##### (Appears on:[WafRule](#WafRule), [WafRuleStatus](#WafRuleStatus))
+
+Appears on:[WafRule](#wafrule), [WafRuleStatus](#wafrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `metricName` | ***string***||
 | `name` | ***string***||
-| `predicates` | ***[[]WafRuleSpecPredicates](#WafRuleSpecPredicates)***| ***(Optional)*** |
+| `predicates` | ***[[]WafRuleSpecPredicates](#wafrulespecpredicates)***| ***(Optional)*** |
 ## WafRuleSpecPredicates
-##### (Appears on:[WafRuleSpec](#WafRuleSpec))
+
+Appears on:[WafRuleSpec](#wafrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `dataID` | ***string***||
 | `negated` | ***bool***||
 | `type` | ***string***||
 ## WafRuleStatus
-##### (Appears on:[WafRule](#WafRule))
+
+Appears on:[WafRule](#wafrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[WafRuleSpec](#WafRuleSpec)***| ***(Optional)*** |
+| `output` | ***[WafRuleSpec](#wafrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

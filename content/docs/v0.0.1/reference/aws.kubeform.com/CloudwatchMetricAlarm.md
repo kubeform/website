@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `CloudwatchMetricAlarm` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[CloudwatchMetricAlarmSpec](#CloudwatchMetricAlarmSpec)***||
-| `status` | ***[CloudwatchMetricAlarmStatus](#CloudwatchMetricAlarmStatus)***||
+| `spec` | ***[CloudwatchMetricAlarmSpec](#cloudwatchmetricalarmspec)***||
+| `status` | ***[CloudwatchMetricAlarmStatus](#cloudwatchmetricalarmstatus)***||
 ## CloudwatchMetricAlarmSpec
-##### (Appears on:[CloudwatchMetricAlarm](#CloudwatchMetricAlarm), [CloudwatchMetricAlarmStatus](#CloudwatchMetricAlarmStatus))
+
+Appears on:[CloudwatchMetricAlarm](#cloudwatchmetricalarm), [CloudwatchMetricAlarmStatus](#cloudwatchmetricalarmstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -39,7 +41,7 @@ info:
 | `extendedStatistic` | ***string***| ***(Optional)*** |
 | `insufficientDataActions` | ***[]string***| ***(Optional)*** |
 | `metricName` | ***string***| ***(Optional)*** |
-| `metricQuery` | ***[[]CloudwatchMetricAlarmSpecMetricQuery](#CloudwatchMetricAlarmSpecMetricQuery)***| ***(Optional)*** |
+| `metricQuery` | ***[[]CloudwatchMetricAlarmSpecMetricQuery](#cloudwatchmetricalarmspecmetricquery)***| ***(Optional)*** |
 | `namespace` | ***string***| ***(Optional)*** |
 | `okActions` | ***[]string***| ***(Optional)*** |
 | `period` | ***int***| ***(Optional)*** |
@@ -49,16 +51,20 @@ info:
 | `treatMissingData` | ***string***| ***(Optional)*** |
 | `unit` | ***string***| ***(Optional)*** |
 ## CloudwatchMetricAlarmSpecMetricQuery
-##### (Appears on:[CloudwatchMetricAlarmSpec](#CloudwatchMetricAlarmSpec))
+
+Appears on:[CloudwatchMetricAlarmSpec](#cloudwatchmetricalarmspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `expression` | ***string***| ***(Optional)*** |
 | `ID` | ***string***||
 | `label` | ***string***| ***(Optional)*** |
-| `metric` | ***[[]CloudwatchMetricAlarmSpecMetricQueryMetric](#CloudwatchMetricAlarmSpecMetricQueryMetric)***| ***(Optional)*** |
+| `metric` | ***[[]CloudwatchMetricAlarmSpecMetricQueryMetric](#cloudwatchmetricalarmspecmetricquerymetric)***| ***(Optional)*** |
 | `returnData` | ***bool***| ***(Optional)*** |
 ## CloudwatchMetricAlarmSpecMetricQueryMetric
-##### (Appears on:[CloudwatchMetricAlarmSpecMetricQuery](#CloudwatchMetricAlarmSpecMetricQuery))
+
+Appears on:[CloudwatchMetricAlarmSpecMetricQuery](#cloudwatchmetricalarmspecmetricquery)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `dimensions` | ***map[string]string***| ***(Optional)*** |
@@ -68,10 +74,12 @@ info:
 | `stat` | ***string***||
 | `unit` | ***string***| ***(Optional)*** |
 ## CloudwatchMetricAlarmStatus
-##### (Appears on:[CloudwatchMetricAlarm](#CloudwatchMetricAlarm))
+
+Appears on:[CloudwatchMetricAlarm](#cloudwatchmetricalarm)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[CloudwatchMetricAlarmSpec](#CloudwatchMetricAlarmSpec)***| ***(Optional)*** |
+| `output` | ***[CloudwatchMetricAlarmSpec](#cloudwatchmetricalarmspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ComputeSnapshot` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ComputeSnapshotSpec](#ComputeSnapshotSpec)***||
-| `status` | ***[ComputeSnapshotStatus](#ComputeSnapshotStatus)***||
+| `spec` | ***[ComputeSnapshotSpec](#computesnapshotspec)***||
+| `status` | ***[ComputeSnapshotStatus](#computesnapshotstatus)***||
 ## ComputeSnapshotSpec
-##### (Appears on:[ComputeSnapshot](#ComputeSnapshot), [ComputeSnapshotStatus](#ComputeSnapshotStatus))
+
+Appears on:[ComputeSnapshot](#computesnapshot), [ComputeSnapshotStatus](#computesnapshotstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -36,30 +38,36 @@ info:
 | `name` | ***string***||
 | `project` | ***string***| ***(Optional)*** |
 | `selfLink` | ***string***| ***(Optional)*** |
-| `snapshotEncryptionKey` | ***[[]ComputeSnapshotSpecSnapshotEncryptionKey](#ComputeSnapshotSpecSnapshotEncryptionKey)***| ***(Optional)*** |
+| `snapshotEncryptionKey` | ***[[]ComputeSnapshotSpecSnapshotEncryptionKey](#computesnapshotspecsnapshotencryptionkey)***| ***(Optional)*** |
 | `snapshotEncryptionKeySha256` | ***string***| ***(Optional)*** Deprecated|
 | `snapshotID` | ***int***| ***(Optional)*** |
 | `sourceDisk` | ***string***||
-| `sourceDiskEncryptionKey` | ***[[]ComputeSnapshotSpecSourceDiskEncryptionKey](#ComputeSnapshotSpecSourceDiskEncryptionKey)***| ***(Optional)*** |
+| `sourceDiskEncryptionKey` | ***[[]ComputeSnapshotSpecSourceDiskEncryptionKey](#computesnapshotspecsourcediskencryptionkey)***| ***(Optional)*** |
 | `sourceDiskEncryptionKeySha256` | ***string***| ***(Optional)*** Deprecated|
 | `sourceDiskLink` | ***string***| ***(Optional)*** |
 | `storageBytes` | ***int***| ***(Optional)*** |
 | `zone` | ***string***| ***(Optional)*** |
 ## ComputeSnapshotSpecSnapshotEncryptionKey
-##### (Appears on:[ComputeSnapshotSpec](#ComputeSnapshotSpec))
+
+Appears on:[ComputeSnapshotSpec](#computesnapshotspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `sha256` | ***string***| ***(Optional)*** |
 ## ComputeSnapshotSpecSourceDiskEncryptionKey
-##### (Appears on:[ComputeSnapshotSpec](#ComputeSnapshotSpec))
+
+Appears on:[ComputeSnapshotSpec](#computesnapshotspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 ## ComputeSnapshotStatus
-##### (Appears on:[ComputeSnapshot](#ComputeSnapshot))
+
+Appears on:[ComputeSnapshot](#computesnapshot)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ComputeSnapshotSpec](#ComputeSnapshotSpec)***| ***(Optional)*** |
+| `output` | ***[ComputeSnapshotSpec](#computesnapshotspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

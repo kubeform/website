@@ -18,17 +18,19 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ComputeFirewall` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ComputeFirewallSpec](#ComputeFirewallSpec)***||
-| `status` | ***[ComputeFirewallStatus](#ComputeFirewallStatus)***||
+| `spec` | ***[ComputeFirewallSpec](#computefirewallspec)***||
+| `status` | ***[ComputeFirewallStatus](#computefirewallstatus)***||
 ## ComputeFirewallSpec
-##### (Appears on:[ComputeFirewall](#ComputeFirewall), [ComputeFirewallStatus](#ComputeFirewallStatus))
+
+Appears on:[ComputeFirewall](#computefirewall), [ComputeFirewallStatus](#computefirewallstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `allow` | ***[[]ComputeFirewallSpecAllow](#ComputeFirewallSpecAllow)***| ***(Optional)*** |
+| `allow` | ***[[]ComputeFirewallSpecAllow](#computefirewallspecallow)***| ***(Optional)*** |
 | `creationTimestamp` | ***string***| ***(Optional)*** |
-| `deny` | ***[[]ComputeFirewallSpecDeny](#ComputeFirewallSpecDeny)***| ***(Optional)*** |
+| `deny` | ***[[]ComputeFirewallSpecDeny](#computefirewallspecdeny)***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
 | `destinationRanges` | ***[]string***| ***(Optional)*** |
 | `direction` | ***string***| ***(Optional)*** |
@@ -45,22 +47,28 @@ info:
 | `targetServiceAccounts` | ***[]string***| ***(Optional)*** |
 | `targetTags` | ***[]string***| ***(Optional)*** |
 ## ComputeFirewallSpecAllow
-##### (Appears on:[ComputeFirewallSpec](#ComputeFirewallSpec))
+
+Appears on:[ComputeFirewallSpec](#computefirewallspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ports` | ***[]string***| ***(Optional)*** |
 | `protocol` | ***string***||
 ## ComputeFirewallSpecDeny
-##### (Appears on:[ComputeFirewallSpec](#ComputeFirewallSpec))
+
+Appears on:[ComputeFirewallSpec](#computefirewallspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ports` | ***[]string***| ***(Optional)*** |
 | `protocol` | ***string***||
 ## ComputeFirewallStatus
-##### (Appears on:[ComputeFirewall](#ComputeFirewall))
+
+Appears on:[ComputeFirewall](#computefirewall)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ComputeFirewallSpec](#ComputeFirewallSpec)***| ***(Optional)*** |
+| `output` | ***[ComputeFirewallSpec](#computefirewallspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

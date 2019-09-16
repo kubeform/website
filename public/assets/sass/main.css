@@ -2051,6 +2051,9 @@ body.fixed-nav .documentation-menu {
   z-index: 90;
   top: 58px; }
 
+.documentation-navbar .main-menu a {
+  padding: 10px 30px; }
+
 .documentation-area {
   margin-top: 35px;
   margin-bottom: 100px; }
@@ -3976,6 +3979,11 @@ video {
   /* ==============================================
   documentation page start
 ==============================================*/
+  .documentation-navbar .main-menu a {
+    padding: 7px 0; }
+  .documentation-navbar .main-menu .ac-dropdown {
+    padding-left: 20px; }
+
   .documentation-area {
     margin-bottom: 30px; }
 

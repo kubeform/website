@@ -76,7 +76,7 @@
     {
       "title": "Performance",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-3.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/performance-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -89,7 +89,7 @@
     {
       "title": "Availability and durability",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-4.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
@@ -102,7 +102,7 @@
     {
       "title": "Security",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-5.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/security-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -115,7 +115,7 @@
     {
       "title": "Manageability",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
@@ -128,7 +128,7 @@
     {
       "title": "Cost-effectiveness",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/low-price-lg.png",
         "alt": "http"
       },
       "icon": {

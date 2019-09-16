@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `GuarddutyThreatintelset` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[GuarddutyThreatintelsetSpec](#GuarddutyThreatintelsetSpec)***||
-| `status` | ***[GuarddutyThreatintelsetStatus](#GuarddutyThreatintelsetStatus)***||
+| `spec` | ***[GuarddutyThreatintelsetSpec](#guarddutythreatintelsetspec)***||
+| `status` | ***[GuarddutyThreatintelsetStatus](#guarddutythreatintelsetstatus)***||
 ## GuarddutyThreatintelsetSpec
-##### (Appears on:[GuarddutyThreatintelset](#GuarddutyThreatintelset), [GuarddutyThreatintelsetStatus](#GuarddutyThreatintelsetStatus))
+
+Appears on:[GuarddutyThreatintelset](#guarddutythreatintelset), [GuarddutyThreatintelsetStatus](#guarddutythreatintelsetstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `location` | ***string***||
 | `name` | ***string***||
 ## GuarddutyThreatintelsetStatus
-##### (Appears on:[GuarddutyThreatintelset](#GuarddutyThreatintelset))
+
+Appears on:[GuarddutyThreatintelset](#guarddutythreatintelset)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[GuarddutyThreatintelsetSpec](#GuarddutyThreatintelsetSpec)***| ***(Optional)*** |
+| `output` | ***[GuarddutyThreatintelsetSpec](#guarddutythreatintelsetspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

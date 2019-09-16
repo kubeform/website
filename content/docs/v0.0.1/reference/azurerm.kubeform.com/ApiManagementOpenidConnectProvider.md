@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiManagementOpenidConnectProvider` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiManagementOpenidConnectProviderSpec](#ApiManagementOpenidConnectProviderSpec)***||
-| `status` | ***[ApiManagementOpenidConnectProviderStatus](#ApiManagementOpenidConnectProviderStatus)***||
+| `spec` | ***[ApiManagementOpenidConnectProviderSpec](#apimanagementopenidconnectproviderspec)***||
+| `status` | ***[ApiManagementOpenidConnectProviderStatus](#apimanagementopenidconnectproviderstatus)***||
 ## ApiManagementOpenidConnectProviderSpec
-##### (Appears on:[ApiManagementOpenidConnectProvider](#ApiManagementOpenidConnectProvider), [ApiManagementOpenidConnectProviderStatus](#ApiManagementOpenidConnectProviderStatus))
+
+Appears on:[ApiManagementOpenidConnectProvider](#apimanagementopenidconnectprovider), [ApiManagementOpenidConnectProviderStatus](#apimanagementopenidconnectproviderstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -34,11 +36,13 @@ info:
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
 ## ApiManagementOpenidConnectProviderStatus
-##### (Appears on:[ApiManagementOpenidConnectProvider](#ApiManagementOpenidConnectProvider))
+
+Appears on:[ApiManagementOpenidConnectProvider](#apimanagementopenidconnectprovider)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiManagementOpenidConnectProviderSpec](#ApiManagementOpenidConnectProviderSpec)***| ***(Optional)*** |
+| `output` | ***[ApiManagementOpenidConnectProviderSpec](#apimanagementopenidconnectproviderspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

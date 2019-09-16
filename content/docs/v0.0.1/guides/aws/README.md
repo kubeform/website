@@ -3,7 +3,7 @@ title: AWS
 menu:
   docs_v0.0.1:
     identifier: readme-aws
-    name: AWS
+    name: Overview
     parent: aws-guides
     weight: 10
 menu_name: docs_v0.0.1
@@ -19,7 +19,7 @@ info:
 
 This guide will show you how to provision a AWS RDS (Relational Database Service) using Kubeform.
 
-> Examples used in this guide can be found [here](https://github.com/kubeform/docs/tree/v0.0.1/docs/examples/aws).
+> Examples used in this guide can be found [here](https://github.com/kubeform/docs/tree/{{< param "info.version" >}}/docs/examples/aws).
 
 Look at the `Terraform` configuration below:
 

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SagemakerEndpointConfiguration` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SagemakerEndpointConfigurationSpec](#SagemakerEndpointConfigurationSpec)***||
-| `status` | ***[SagemakerEndpointConfigurationStatus](#SagemakerEndpointConfigurationStatus)***||
+| `spec` | ***[SagemakerEndpointConfigurationSpec](#sagemakerendpointconfigurationspec)***||
+| `status` | ***[SagemakerEndpointConfigurationStatus](#sagemakerendpointconfigurationstatus)***||
 ## SagemakerEndpointConfigurationSpec
-##### (Appears on:[SagemakerEndpointConfiguration](#SagemakerEndpointConfiguration), [SagemakerEndpointConfigurationStatus](#SagemakerEndpointConfigurationStatus))
+
+Appears on:[SagemakerEndpointConfiguration](#sagemakerendpointconfiguration), [SagemakerEndpointConfigurationStatus](#sagemakerendpointconfigurationstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,10 +31,12 @@ info:
 | `arn` | ***string***| ***(Optional)*** |
 | `kmsKeyArn` | ***string***| ***(Optional)*** |
 | `name` | ***string***| ***(Optional)*** |
-| `productionVariants` | ***[[]SagemakerEndpointConfigurationSpecProductionVariants](#SagemakerEndpointConfigurationSpecProductionVariants)***||
+| `productionVariants` | ***[[]SagemakerEndpointConfigurationSpecProductionVariants](#sagemakerendpointconfigurationspecproductionvariants)***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## SagemakerEndpointConfigurationSpecProductionVariants
-##### (Appears on:[SagemakerEndpointConfigurationSpec](#SagemakerEndpointConfigurationSpec))
+
+Appears on:[SagemakerEndpointConfigurationSpec](#sagemakerendpointconfigurationspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `acceleratorType` | ***string***| ***(Optional)*** |
@@ -42,10 +46,12 @@ info:
 | `modelName` | ***string***||
 | `variantName` | ***string***| ***(Optional)*** |
 ## SagemakerEndpointConfigurationStatus
-##### (Appears on:[SagemakerEndpointConfiguration](#SagemakerEndpointConfiguration))
+
+Appears on:[SagemakerEndpointConfiguration](#sagemakerendpointconfiguration)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SagemakerEndpointConfigurationSpec](#SagemakerEndpointConfigurationSpec)***| ***(Optional)*** |
+| `output` | ***[SagemakerEndpointConfigurationSpec](#sagemakerendpointconfigurationspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

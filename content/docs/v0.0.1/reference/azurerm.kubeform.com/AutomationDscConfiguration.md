@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `AutomationDscConfiguration` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AutomationDscConfigurationSpec](#AutomationDscConfigurationSpec)***||
-| `status` | ***[AutomationDscConfigurationStatus](#AutomationDscConfigurationStatus)***||
+| `spec` | ***[AutomationDscConfigurationSpec](#automationdscconfigurationspec)***||
+| `status` | ***[AutomationDscConfigurationStatus](#automationdscconfigurationstatus)***||
 ## AutomationDscConfigurationSpec
-##### (Appears on:[AutomationDscConfiguration](#AutomationDscConfiguration), [AutomationDscConfigurationStatus](#AutomationDscConfigurationStatus))
+
+Appears on:[AutomationDscConfiguration](#automationdscconfiguration), [AutomationDscConfigurationStatus](#automationdscconfigurationstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,10 +37,12 @@ info:
 | `resourceGroupName` | ***string***||
 | `state` | ***string***| ***(Optional)*** |
 ## AutomationDscConfigurationStatus
-##### (Appears on:[AutomationDscConfiguration](#AutomationDscConfiguration))
+
+Appears on:[AutomationDscConfiguration](#automationdscconfiguration)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AutomationDscConfigurationSpec](#AutomationDscConfigurationSpec)***| ***(Optional)*** |
+| `output` | ***[AutomationDscConfigurationSpec](#automationdscconfigurationspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

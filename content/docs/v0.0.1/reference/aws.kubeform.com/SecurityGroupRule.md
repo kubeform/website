@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SecurityGroupRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SecurityGroupRuleSpec](#SecurityGroupRuleSpec)***||
-| `status` | ***[SecurityGroupRuleStatus](#SecurityGroupRuleStatus)***||
+| `spec` | ***[SecurityGroupRuleSpec](#securitygrouprulespec)***||
+| `status` | ***[SecurityGroupRuleStatus](#securitygrouprulestatus)***||
 ## SecurityGroupRuleSpec
-##### (Appears on:[SecurityGroupRule](#SecurityGroupRule), [SecurityGroupRuleStatus](#SecurityGroupRuleStatus))
+
+Appears on:[SecurityGroupRule](#securitygrouprule), [SecurityGroupRuleStatus](#securitygrouprulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -38,10 +40,12 @@ info:
 | `toPort` | ***int***||
 | `type` | ***string***|Type of rule, ingress (inbound) or egress (outbound).|
 ## SecurityGroupRuleStatus
-##### (Appears on:[SecurityGroupRule](#SecurityGroupRule))
+
+Appears on:[SecurityGroupRule](#securitygrouprule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SecurityGroupRuleSpec](#SecurityGroupRuleSpec)***| ***(Optional)*** |
+| `output` | ***[SecurityGroupRuleSpec](#securitygrouprulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

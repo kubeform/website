@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `LbProbe` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[LbProbeSpec](#LbProbeSpec)***||
-| `status` | ***[LbProbeStatus](#LbProbeStatus)***||
+| `spec` | ***[LbProbeSpec](#lbprobespec)***||
+| `status` | ***[LbProbeStatus](#lbprobestatus)***||
 ## LbProbeSpec
-##### (Appears on:[LbProbe](#LbProbe), [LbProbeStatus](#LbProbeStatus))
+
+Appears on:[LbProbe](#lbprobe), [LbProbeStatus](#lbprobestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -37,10 +39,12 @@ info:
 | `requestPath` | ***string***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
 ## LbProbeStatus
-##### (Appears on:[LbProbe](#LbProbe))
+
+Appears on:[LbProbe](#lbprobe)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[LbProbeSpec](#LbProbeSpec)***| ***(Optional)*** |
+| `output` | ***[LbProbeSpec](#lbprobespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

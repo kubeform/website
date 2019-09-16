@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `AppsyncFunction` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AppsyncFunctionSpec](#AppsyncFunctionSpec)***||
-| `status` | ***[AppsyncFunctionStatus](#AppsyncFunctionStatus)***||
+| `spec` | ***[AppsyncFunctionSpec](#appsyncfunctionspec)***||
+| `status` | ***[AppsyncFunctionStatus](#appsyncfunctionstatus)***||
 ## AppsyncFunctionSpec
-##### (Appears on:[AppsyncFunction](#AppsyncFunction), [AppsyncFunctionStatus](#AppsyncFunctionStatus))
+
+Appears on:[AppsyncFunction](#appsyncfunction), [AppsyncFunctionStatus](#appsyncfunctionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -36,10 +38,12 @@ info:
 | `requestMappingTemplate` | ***string***||
 | `responseMappingTemplate` | ***string***||
 ## AppsyncFunctionStatus
-##### (Appears on:[AppsyncFunction](#AppsyncFunction))
+
+Appears on:[AppsyncFunction](#appsyncfunction)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AppsyncFunctionSpec](#AppsyncFunctionSpec)***| ***(Optional)*** |
+| `output` | ***[AppsyncFunctionSpec](#appsyncfunctionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

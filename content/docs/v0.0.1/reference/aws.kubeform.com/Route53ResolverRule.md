@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `Route53ResolverRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[Route53ResolverRuleSpec](#Route53ResolverRuleSpec)***||
-| `status` | ***[Route53ResolverRuleStatus](#Route53ResolverRuleStatus)***||
+| `spec` | ***[Route53ResolverRuleSpec](#route53resolverrulespec)***||
+| `status` | ***[Route53ResolverRuleStatus](#route53resolverrulestatus)***||
 ## Route53ResolverRuleSpec
-##### (Appears on:[Route53ResolverRule](#Route53ResolverRule), [Route53ResolverRuleStatus](#Route53ResolverRuleStatus))
+
+Appears on:[Route53ResolverRule](#route53resolverrule), [Route53ResolverRuleStatus](#route53resolverrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -34,18 +36,22 @@ info:
 | `ruleType` | ***string***||
 | `shareStatus` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
-| `targetIP` | ***[[]Route53ResolverRuleSpecTargetIP](#Route53ResolverRuleSpecTargetIP)***| ***(Optional)*** |
+| `targetIP` | ***[[]Route53ResolverRuleSpecTargetIP](#route53resolverrulespectargetip)***| ***(Optional)*** |
 ## Route53ResolverRuleSpecTargetIP
-##### (Appears on:[Route53ResolverRuleSpec](#Route53ResolverRuleSpec))
+
+Appears on:[Route53ResolverRuleSpec](#route53resolverrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ip` | ***string***||
 | `port` | ***int***| ***(Optional)*** |
 ## Route53ResolverRuleStatus
-##### (Appears on:[Route53ResolverRule](#Route53ResolverRule))
+
+Appears on:[Route53ResolverRule](#route53resolverrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[Route53ResolverRuleSpec](#Route53ResolverRuleSpec)***| ***(Optional)*** |
+| `output` | ***[Route53ResolverRuleSpec](#route53resolverrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

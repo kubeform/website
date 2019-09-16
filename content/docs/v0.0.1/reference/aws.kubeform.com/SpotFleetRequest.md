@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SpotFleetRequest` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SpotFleetRequestSpec](#SpotFleetRequestSpec)***||
-| `status` | ***[SpotFleetRequestStatus](#SpotFleetRequestStatus)***||
+| `spec` | ***[SpotFleetRequestSpec](#spotfleetrequestspec)***||
+| `status` | ***[SpotFleetRequestStatus](#spotfleetrequeststatus)***||
 ## SpotFleetRequestSpec
-##### (Appears on:[SpotFleetRequest](#SpotFleetRequest), [SpotFleetRequestStatus](#SpotFleetRequestStatus))
+
+Appears on:[SpotFleetRequest](#spotfleetrequest), [SpotFleetRequestStatus](#spotfleetrequeststatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -33,7 +35,7 @@ info:
 | `iamFleetRole` | ***string***||
 | `instanceInterruptionBehaviour` | ***string***| ***(Optional)*** |
 | `instancePoolsToUseCount` | ***int***| ***(Optional)*** |
-| `launchSpecification` | ***[[]SpotFleetRequestSpecLaunchSpecification](#SpotFleetRequestSpecLaunchSpecification)***||
+| `launchSpecification` | ***[[]SpotFleetRequestSpecLaunchSpecification](#spotfleetrequestspeclaunchspecification)***||
 | `loadBalancers` | ***[]string***| ***(Optional)*** |
 | `replaceUnhealthyInstances` | ***bool***| ***(Optional)*** |
 | `spotPrice` | ***string***| ***(Optional)*** |
@@ -45,15 +47,17 @@ info:
 | `validUntil` | ***string***| ***(Optional)*** |
 | `waitForFulfillment` | ***bool***| ***(Optional)*** |
 ## SpotFleetRequestSpecLaunchSpecification
-##### (Appears on:[SpotFleetRequestSpec](#SpotFleetRequestSpec))
+
+Appears on:[SpotFleetRequestSpec](#spotfleetrequestspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ami` | ***string***||
 | `associatePublicIPAddress` | ***bool***| ***(Optional)*** |
 | `availabilityZone` | ***string***| ***(Optional)*** |
-| `ebsBlockDevice` | ***[[]SpotFleetRequestSpecLaunchSpecificationEbsBlockDevice](#SpotFleetRequestSpecLaunchSpecificationEbsBlockDevice)***| ***(Optional)*** |
+| `ebsBlockDevice` | ***[[]SpotFleetRequestSpecLaunchSpecificationEbsBlockDevice](#spotfleetrequestspeclaunchspecificationebsblockdevice)***| ***(Optional)*** |
 | `ebsOptimized` | ***bool***| ***(Optional)*** |
-| `ephemeralBlockDevice` | ***[[]SpotFleetRequestSpecLaunchSpecificationEphemeralBlockDevice](#SpotFleetRequestSpecLaunchSpecificationEphemeralBlockDevice)***| ***(Optional)*** |
+| `ephemeralBlockDevice` | ***[[]SpotFleetRequestSpecLaunchSpecificationEphemeralBlockDevice](#spotfleetrequestspeclaunchspecificationephemeralblockdevice)***| ***(Optional)*** |
 | `iamInstanceProfile` | ***string***| ***(Optional)*** |
 | `iamInstanceProfileArn` | ***string***| ***(Optional)*** |
 | `instanceType` | ***string***||
@@ -61,7 +65,7 @@ info:
 | `monitoring` | ***bool***| ***(Optional)*** |
 | `placementGroup` | ***string***| ***(Optional)*** |
 | `placementTenancy` | ***string***| ***(Optional)*** |
-| `rootBlockDevice` | ***[[]SpotFleetRequestSpecLaunchSpecificationRootBlockDevice](#SpotFleetRequestSpecLaunchSpecificationRootBlockDevice)***| ***(Optional)*** |
+| `rootBlockDevice` | ***[[]SpotFleetRequestSpecLaunchSpecificationRootBlockDevice](#spotfleetrequestspeclaunchspecificationrootblockdevice)***| ***(Optional)*** |
 | `spotPrice` | ***string***| ***(Optional)*** |
 | `subnetID` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
@@ -69,7 +73,9 @@ info:
 | `vpcSecurityGroupIDS` | ***[]string***| ***(Optional)*** |
 | `weightedCapacity` | ***string***| ***(Optional)*** |
 ## SpotFleetRequestSpecLaunchSpecificationEbsBlockDevice
-##### (Appears on:[SpotFleetRequestSpecLaunchSpecification](#SpotFleetRequestSpecLaunchSpecification))
+
+Appears on:[SpotFleetRequestSpecLaunchSpecification](#spotfleetrequestspeclaunchspecification)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
@@ -80,13 +86,17 @@ info:
 | `volumeSize` | ***int***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## SpotFleetRequestSpecLaunchSpecificationEphemeralBlockDevice
-##### (Appears on:[SpotFleetRequestSpecLaunchSpecification](#SpotFleetRequestSpecLaunchSpecification))
+
+Appears on:[SpotFleetRequestSpecLaunchSpecification](#spotfleetrequestspeclaunchspecification)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deviceName` | ***string***||
 | `virtualName` | ***string***||
 ## SpotFleetRequestSpecLaunchSpecificationRootBlockDevice
-##### (Appears on:[SpotFleetRequestSpecLaunchSpecification](#SpotFleetRequestSpecLaunchSpecification))
+
+Appears on:[SpotFleetRequestSpecLaunchSpecification](#spotfleetrequestspeclaunchspecification)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
@@ -94,10 +104,12 @@ info:
 | `volumeSize` | ***int***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## SpotFleetRequestStatus
-##### (Appears on:[SpotFleetRequest](#SpotFleetRequest))
+
+Appears on:[SpotFleetRequest](#spotfleetrequest)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SpotFleetRequestSpec](#SpotFleetRequestSpec)***| ***(Optional)*** |
+| `output` | ***[SpotFleetRequestSpec](#spotfleetrequestspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

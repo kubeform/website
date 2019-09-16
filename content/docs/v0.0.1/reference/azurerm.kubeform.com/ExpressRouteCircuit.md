@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ExpressRouteCircuit` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ExpressRouteCircuitSpec](#ExpressRouteCircuitSpec)***||
-| `status` | ***[ExpressRouteCircuitStatus](#ExpressRouteCircuitStatus)***||
+| `spec` | ***[ExpressRouteCircuitSpec](#expressroutecircuitspec)***||
+| `status` | ***[ExpressRouteCircuitStatus](#expressroutecircuitstatus)***||
 ## ExpressRouteCircuitSpec
-##### (Appears on:[ExpressRouteCircuit](#ExpressRouteCircuit), [ExpressRouteCircuitStatus](#ExpressRouteCircuitStatus))
+
+Appears on:[ExpressRouteCircuit](#expressroutecircuit), [ExpressRouteCircuitStatus](#expressroutecircuitstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,20 +37,24 @@ info:
 | `resourceGroupName` | ***string***||
 | `serviceProviderName` | ***string***||
 | `serviceProviderProvisioningState` | ***string***| ***(Optional)*** |
-| `sku` | ***[[]ExpressRouteCircuitSpecSku](#ExpressRouteCircuitSpecSku)***||
+| `sku` | ***[[]ExpressRouteCircuitSpecSku](#expressroutecircuitspecsku)***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## ExpressRouteCircuitSpecSku
-##### (Appears on:[ExpressRouteCircuitSpec](#ExpressRouteCircuitSpec))
+
+Appears on:[ExpressRouteCircuitSpec](#expressroutecircuitspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `family` | ***string***||
 | `tier` | ***string***||
 ## ExpressRouteCircuitStatus
-##### (Appears on:[ExpressRouteCircuit](#ExpressRouteCircuit))
+
+Appears on:[ExpressRouteCircuit](#expressroutecircuit)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ExpressRouteCircuitSpec](#ExpressRouteCircuitSpec)***| ***(Optional)*** |
+| `output` | ***[ExpressRouteCircuitSpec](#expressroutecircuitspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

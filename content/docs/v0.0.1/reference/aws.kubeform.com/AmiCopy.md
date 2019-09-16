@@ -18,20 +18,22 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `AmiCopy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AmiCopySpec](#AmiCopySpec)***||
-| `status` | ***[AmiCopyStatus](#AmiCopyStatus)***||
+| `spec` | ***[AmiCopySpec](#amicopyspec)***||
+| `status` | ***[AmiCopyStatus](#amicopystatus)***||
 ## AmiCopySpec
-##### (Appears on:[AmiCopy](#AmiCopy), [AmiCopyStatus](#AmiCopyStatus))
+
+Appears on:[AmiCopy](#amicopy), [AmiCopyStatus](#amicopystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `architecture` | ***string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `ebsBlockDevice` | ***[[]AmiCopySpecEbsBlockDevice](#AmiCopySpecEbsBlockDevice)***| ***(Optional)*** |
+| `ebsBlockDevice` | ***[[]AmiCopySpecEbsBlockDevice](#amicopyspecebsblockdevice)***| ***(Optional)*** |
 | `enaSupport` | ***bool***| ***(Optional)*** |
 | `encrypted` | ***bool***| ***(Optional)*** |
-| `ephemeralBlockDevice` | ***[[]AmiCopySpecEphemeralBlockDevice](#AmiCopySpecEphemeralBlockDevice)***| ***(Optional)*** |
+| `ephemeralBlockDevice` | ***[[]AmiCopySpecEphemeralBlockDevice](#amicopyspecephemeralblockdevice)***| ***(Optional)*** |
 | `imageLocation` | ***string***| ***(Optional)*** |
 | `kernelID` | ***string***| ***(Optional)*** |
 | `kmsKeyID` | ***string***| ***(Optional)*** |
@@ -46,7 +48,9 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `virtualizationType` | ***string***| ***(Optional)*** |
 ## AmiCopySpecEbsBlockDevice
-##### (Appears on:[AmiCopySpec](#AmiCopySpec))
+
+Appears on:[AmiCopySpec](#amicopyspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
@@ -57,16 +61,20 @@ info:
 | `volumeSize` | ***int***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## AmiCopySpecEphemeralBlockDevice
-##### (Appears on:[AmiCopySpec](#AmiCopySpec))
+
+Appears on:[AmiCopySpec](#amicopyspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deviceName` | ***string***| ***(Optional)*** |
 | `virtualName` | ***string***| ***(Optional)*** |
 ## AmiCopyStatus
-##### (Appears on:[AmiCopy](#AmiCopy))
+
+Appears on:[AmiCopy](#amicopy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AmiCopySpec](#AmiCopySpec)***| ***(Optional)*** |
+| `output` | ***[AmiCopySpec](#amicopyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

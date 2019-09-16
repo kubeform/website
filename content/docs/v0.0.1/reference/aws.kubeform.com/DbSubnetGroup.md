@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `DbSubnetGroup` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DbSubnetGroupSpec](#DbSubnetGroupSpec)***||
-| `status` | ***[DbSubnetGroupStatus](#DbSubnetGroupStatus)***||
+| `spec` | ***[DbSubnetGroupSpec](#dbsubnetgroupspec)***||
+| `status` | ***[DbSubnetGroupStatus](#dbsubnetgroupstatus)***||
 ## DbSubnetGroupSpec
-##### (Appears on:[DbSubnetGroup](#DbSubnetGroup), [DbSubnetGroupStatus](#DbSubnetGroupStatus))
+
+Appears on:[DbSubnetGroup](#dbsubnetgroup), [DbSubnetGroupStatus](#dbsubnetgroupstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -33,10 +35,12 @@ info:
 | `subnetIDS` | ***[]string***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## DbSubnetGroupStatus
-##### (Appears on:[DbSubnetGroup](#DbSubnetGroup))
+
+Appears on:[DbSubnetGroup](#dbsubnetgroup)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DbSubnetGroupSpec](#DbSubnetGroupSpec)***| ***(Optional)*** |
+| `output` | ***[DbSubnetGroupSpec](#dbsubnetgroupspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

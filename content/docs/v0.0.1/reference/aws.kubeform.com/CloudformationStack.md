@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `CloudformationStack` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[CloudformationStackSpec](#CloudformationStackSpec)***||
-| `status` | ***[CloudformationStackStatus](#CloudformationStackStatus)***||
+| `spec` | ***[CloudformationStackSpec](#cloudformationstackspec)***||
+| `status` | ***[CloudformationStackStatus](#cloudformationstackstatus)***||
 ## CloudformationStackSpec
-##### (Appears on:[CloudformationStack](#CloudformationStack), [CloudformationStackStatus](#CloudformationStackStatus))
+
+Appears on:[CloudformationStack](#cloudformationstack), [CloudformationStackStatus](#cloudformationstackstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -41,10 +43,12 @@ info:
 | `templateURL` | ***string***| ***(Optional)*** |
 | `timeoutInMinutes` | ***int***| ***(Optional)*** |
 ## CloudformationStackStatus
-##### (Appears on:[CloudformationStack](#CloudformationStack))
+
+Appears on:[CloudformationStack](#cloudformationstack)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[CloudformationStackSpec](#CloudformationStackSpec)***| ***(Optional)*** |
+| `output` | ***[CloudformationStackSpec](#cloudformationstackspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

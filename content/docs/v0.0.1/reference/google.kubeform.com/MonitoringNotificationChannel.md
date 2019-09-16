@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `MonitoringNotificationChannel` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[MonitoringNotificationChannelSpec](#MonitoringNotificationChannelSpec)***||
-| `status` | ***[MonitoringNotificationChannelStatus](#MonitoringNotificationChannelStatus)***||
+| `spec` | ***[MonitoringNotificationChannelSpec](#monitoringnotificationchannelspec)***||
+| `status` | ***[MonitoringNotificationChannelStatus](#monitoringnotificationchannelstatus)***||
 ## MonitoringNotificationChannelSpec
-##### (Appears on:[MonitoringNotificationChannel](#MonitoringNotificationChannel), [MonitoringNotificationChannelStatus](#MonitoringNotificationChannelStatus))
+
+Appears on:[MonitoringNotificationChannel](#monitoringnotificationchannel), [MonitoringNotificationChannelStatus](#monitoringnotificationchannelstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -36,10 +38,12 @@ info:
 | `userLabels` | ***map[string]string***| ***(Optional)*** |
 | `verificationStatus` | ***string***| ***(Optional)*** |
 ## MonitoringNotificationChannelStatus
-##### (Appears on:[MonitoringNotificationChannel](#MonitoringNotificationChannel))
+
+Appears on:[MonitoringNotificationChannel](#monitoringnotificationchannel)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[MonitoringNotificationChannelSpec](#MonitoringNotificationChannelSpec)***| ***(Optional)*** |
+| `output` | ***[MonitoringNotificationChannelSpec](#monitoringnotificationchannelspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

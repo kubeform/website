@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `OpsworksJavaAppLayer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[OpsworksJavaAppLayerSpec](#OpsworksJavaAppLayerSpec)***||
-| `status` | ***[OpsworksJavaAppLayerStatus](#OpsworksJavaAppLayerStatus)***||
+| `spec` | ***[OpsworksJavaAppLayerSpec](#opsworksjavaapplayerspec)***||
+| `status` | ***[OpsworksJavaAppLayerStatus](#opsworksjavaapplayerstatus)***||
 ## OpsworksJavaAppLayerSpec
-##### (Appears on:[OpsworksJavaAppLayer](#OpsworksJavaAppLayer), [OpsworksJavaAppLayerStatus](#OpsworksJavaAppLayerStatus))
+
+Appears on:[OpsworksJavaAppLayer](#opsworksjavaapplayer), [OpsworksJavaAppLayerStatus](#opsworksjavaapplayerstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -40,7 +42,7 @@ info:
 | `customShutdownRecipes` | ***[]string***| ***(Optional)*** |
 | `customUndeployRecipes` | ***[]string***| ***(Optional)*** |
 | `drainElbOnShutdown` | ***bool***| ***(Optional)*** |
-| `ebsVolume` | ***[[]OpsworksJavaAppLayerSpecEbsVolume](#OpsworksJavaAppLayerSpecEbsVolume)***| ***(Optional)*** |
+| `ebsVolume` | ***[[]OpsworksJavaAppLayerSpecEbsVolume](#opsworksjavaapplayerspecebsvolume)***| ***(Optional)*** |
 | `elasticLoadBalancer` | ***string***| ***(Optional)*** |
 | `installUpdatesOnBoot` | ***bool***| ***(Optional)*** |
 | `instanceShutdownTimeout` | ***int***| ***(Optional)*** |
@@ -52,7 +54,9 @@ info:
 | `systemPackages` | ***[]string***| ***(Optional)*** |
 | `useEbsOptimizedInstances` | ***bool***| ***(Optional)*** |
 ## OpsworksJavaAppLayerSpecEbsVolume
-##### (Appears on:[OpsworksJavaAppLayerSpec](#OpsworksJavaAppLayerSpec))
+
+Appears on:[OpsworksJavaAppLayerSpec](#opsworksjavaapplayerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `iops` | ***int***| ***(Optional)*** |
@@ -62,10 +66,12 @@ info:
 | `size` | ***int***||
 | `type` | ***string***| ***(Optional)*** |
 ## OpsworksJavaAppLayerStatus
-##### (Appears on:[OpsworksJavaAppLayer](#OpsworksJavaAppLayer))
+
+Appears on:[OpsworksJavaAppLayer](#opsworksjavaapplayer)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[OpsworksJavaAppLayerSpec](#OpsworksJavaAppLayerSpec)***| ***(Optional)*** |
+| `output` | ***[OpsworksJavaAppLayerSpec](#opsworksjavaapplayerspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

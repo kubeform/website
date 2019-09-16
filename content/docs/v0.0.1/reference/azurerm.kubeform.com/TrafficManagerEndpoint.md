@@ -18,15 +18,17 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `TrafficManagerEndpoint` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[TrafficManagerEndpointSpec](#TrafficManagerEndpointSpec)***||
-| `status` | ***[TrafficManagerEndpointStatus](#TrafficManagerEndpointStatus)***||
+| `spec` | ***[TrafficManagerEndpointSpec](#trafficmanagerendpointspec)***||
+| `status` | ***[TrafficManagerEndpointStatus](#trafficmanagerendpointstatus)***||
 ## TrafficManagerEndpointSpec
-##### (Appears on:[TrafficManagerEndpoint](#TrafficManagerEndpoint), [TrafficManagerEndpointStatus](#TrafficManagerEndpointStatus))
+
+Appears on:[TrafficManagerEndpoint](#trafficmanagerendpoint), [TrafficManagerEndpointStatus](#trafficmanagerendpointstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `customHeader` | ***[[]TrafficManagerEndpointSpecCustomHeader](#TrafficManagerEndpointSpecCustomHeader)***| ***(Optional)*** |
+| `customHeader` | ***[[]TrafficManagerEndpointSpecCustomHeader](#trafficmanagerendpointspeccustomheader)***| ***(Optional)*** |
 | `endpointLocation` | ***string***| ***(Optional)*** |
 | `endpointMonitorStatus` | ***string***| ***(Optional)*** |
 | `endpointStatus` | ***string***| ***(Optional)*** |
@@ -36,29 +38,35 @@ info:
 | `priority` | ***int***| ***(Optional)*** |
 | `profileName` | ***string***||
 | `resourceGroupName` | ***string***||
-| `subnet` | ***[[]TrafficManagerEndpointSpecSubnet](#TrafficManagerEndpointSpecSubnet)***| ***(Optional)*** |
+| `subnet` | ***[[]TrafficManagerEndpointSpecSubnet](#trafficmanagerendpointspecsubnet)***| ***(Optional)*** |
 | `target` | ***string***| ***(Optional)*** |
 | `targetResourceID` | ***string***| ***(Optional)*** |
 | `type` | ***string***||
 | `weight` | ***int***| ***(Optional)*** |
 ## TrafficManagerEndpointSpecCustomHeader
-##### (Appears on:[TrafficManagerEndpointSpec](#TrafficManagerEndpointSpec))
+
+Appears on:[TrafficManagerEndpointSpec](#trafficmanagerendpointspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
 | `value` | ***string***||
 ## TrafficManagerEndpointSpecSubnet
-##### (Appears on:[TrafficManagerEndpointSpec](#TrafficManagerEndpointSpec))
+
+Appears on:[TrafficManagerEndpointSpec](#trafficmanagerendpointspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `first` | ***string***||
 | `last` | ***string***| ***(Optional)*** |
 | `scope` | ***int***| ***(Optional)*** |
 ## TrafficManagerEndpointStatus
-##### (Appears on:[TrafficManagerEndpoint](#TrafficManagerEndpoint))
+
+Appears on:[TrafficManagerEndpoint](#trafficmanagerendpoint)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[TrafficManagerEndpointSpec](#TrafficManagerEndpointSpec)***| ***(Optional)*** |
+| `output` | ***[TrafficManagerEndpointSpec](#trafficmanagerendpointspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

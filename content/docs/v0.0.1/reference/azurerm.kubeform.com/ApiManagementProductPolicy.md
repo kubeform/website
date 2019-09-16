@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiManagementProductPolicy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiManagementProductPolicySpec](#ApiManagementProductPolicySpec)***||
-| `status` | ***[ApiManagementProductPolicyStatus](#ApiManagementProductPolicyStatus)***||
+| `spec` | ***[ApiManagementProductPolicySpec](#apimanagementproductpolicyspec)***||
+| `status` | ***[ApiManagementProductPolicyStatus](#apimanagementproductpolicystatus)***||
 ## ApiManagementProductPolicySpec
-##### (Appears on:[ApiManagementProductPolicy](#ApiManagementProductPolicy), [ApiManagementProductPolicyStatus](#ApiManagementProductPolicyStatus))
+
+Appears on:[ApiManagementProductPolicy](#apimanagementproductpolicy), [ApiManagementProductPolicyStatus](#apimanagementproductpolicystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `xmlContent` | ***string***| ***(Optional)*** |
 | `xmlLink` | ***string***| ***(Optional)*** |
 ## ApiManagementProductPolicyStatus
-##### (Appears on:[ApiManagementProductPolicy](#ApiManagementProductPolicy))
+
+Appears on:[ApiManagementProductPolicy](#apimanagementproductpolicy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiManagementProductPolicySpec](#ApiManagementProductPolicySpec)***| ***(Optional)*** |
+| `output` | ***[ApiManagementProductPolicySpec](#apimanagementproductpolicyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

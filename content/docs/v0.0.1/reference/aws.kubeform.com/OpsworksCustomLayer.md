@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `OpsworksCustomLayer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[OpsworksCustomLayerSpec](#OpsworksCustomLayerSpec)***||
-| `status` | ***[OpsworksCustomLayerStatus](#OpsworksCustomLayerStatus)***||
+| `spec` | ***[OpsworksCustomLayerSpec](#opsworkscustomlayerspec)***||
+| `status` | ***[OpsworksCustomLayerStatus](#opsworkscustomlayerstatus)***||
 ## OpsworksCustomLayerSpec
-##### (Appears on:[OpsworksCustomLayer](#OpsworksCustomLayer), [OpsworksCustomLayerStatus](#OpsworksCustomLayerStatus))
+
+Appears on:[OpsworksCustomLayer](#opsworkscustomlayer), [OpsworksCustomLayerStatus](#opsworkscustomlayerstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -38,7 +40,7 @@ info:
 | `customShutdownRecipes` | ***[]string***| ***(Optional)*** |
 | `customUndeployRecipes` | ***[]string***| ***(Optional)*** |
 | `drainElbOnShutdown` | ***bool***| ***(Optional)*** |
-| `ebsVolume` | ***[[]OpsworksCustomLayerSpecEbsVolume](#OpsworksCustomLayerSpecEbsVolume)***| ***(Optional)*** |
+| `ebsVolume` | ***[[]OpsworksCustomLayerSpecEbsVolume](#opsworkscustomlayerspecebsvolume)***| ***(Optional)*** |
 | `elasticLoadBalancer` | ***string***| ***(Optional)*** |
 | `installUpdatesOnBoot` | ***bool***| ***(Optional)*** |
 | `instanceShutdownTimeout` | ***int***| ***(Optional)*** |
@@ -48,7 +50,9 @@ info:
 | `systemPackages` | ***[]string***| ***(Optional)*** |
 | `useEbsOptimizedInstances` | ***bool***| ***(Optional)*** |
 ## OpsworksCustomLayerSpecEbsVolume
-##### (Appears on:[OpsworksCustomLayerSpec](#OpsworksCustomLayerSpec))
+
+Appears on:[OpsworksCustomLayerSpec](#opsworkscustomlayerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `iops` | ***int***| ***(Optional)*** |
@@ -58,10 +62,12 @@ info:
 | `size` | ***int***||
 | `type` | ***string***| ***(Optional)*** |
 ## OpsworksCustomLayerStatus
-##### (Appears on:[OpsworksCustomLayer](#OpsworksCustomLayer))
+
+Appears on:[OpsworksCustomLayer](#opsworkscustomlayer)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[OpsworksCustomLayerSpec](#OpsworksCustomLayerSpec)***| ***(Optional)*** |
+| `output` | ***[OpsworksCustomLayerSpec](#opsworkscustomlayerspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

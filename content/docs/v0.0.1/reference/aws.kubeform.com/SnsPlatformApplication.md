@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SnsPlatformApplication` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SnsPlatformApplicationSpec](#SnsPlatformApplicationSpec)***||
-| `status` | ***[SnsPlatformApplicationStatus](#SnsPlatformApplicationStatus)***||
+| `spec` | ***[SnsPlatformApplicationSpec](#snsplatformapplicationspec)***||
+| `status` | ***[SnsPlatformApplicationStatus](#snsplatformapplicationstatus)***||
 ## SnsPlatformApplicationSpec
-##### (Appears on:[SnsPlatformApplication](#SnsPlatformApplication), [SnsPlatformApplicationStatus](#SnsPlatformApplicationStatus))
+
+Appears on:[SnsPlatformApplication](#snsplatformapplication), [SnsPlatformApplicationStatus](#snsplatformapplicationstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -39,10 +41,12 @@ info:
 | `successFeedbackRoleArn` | ***string***| ***(Optional)*** |
 | `successFeedbackSampleRate` | ***string***| ***(Optional)*** |
 ## SnsPlatformApplicationStatus
-##### (Appears on:[SnsPlatformApplication](#SnsPlatformApplication))
+
+Appears on:[SnsPlatformApplication](#snsplatformapplication)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SnsPlatformApplicationSpec](#SnsPlatformApplicationSpec)***| ***(Optional)*** |
+| `output` | ***[SnsPlatformApplicationSpec](#snsplatformapplicationspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

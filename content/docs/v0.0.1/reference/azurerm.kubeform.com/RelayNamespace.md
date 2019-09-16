@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `RelayNamespace` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[RelayNamespaceSpec](#RelayNamespaceSpec)***||
-| `status` | ***[RelayNamespaceStatus](#RelayNamespaceStatus)***||
+| `spec` | ***[RelayNamespaceSpec](#relaynamespacespec)***||
+| `status` | ***[RelayNamespaceStatus](#relaynamespacestatus)***||
 ## RelayNamespaceSpec
-##### (Appears on:[RelayNamespace](#RelayNamespace), [RelayNamespaceStatus](#RelayNamespaceStatus))
+
+Appears on:[RelayNamespace](#relaynamespace), [RelayNamespaceStatus](#relaynamespacestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,20 +33,24 @@ info:
 | `metricID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `sku` | ***[[]RelayNamespaceSpecSku](#RelayNamespaceSpecSku)***| ***(Optional)*** Deprecated|
+| `sku` | ***[[]RelayNamespaceSpecSku](#relaynamespacespecsku)***| ***(Optional)*** Deprecated|
 | `skuName` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## RelayNamespaceSpecSku
-##### (Appears on:[RelayNamespaceSpec](#RelayNamespaceSpec))
+
+Appears on:[RelayNamespaceSpec](#relaynamespacespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
 ## RelayNamespaceStatus
-##### (Appears on:[RelayNamespace](#RelayNamespace))
+
+Appears on:[RelayNamespace](#relaynamespace)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[RelayNamespaceSpec](#RelayNamespaceSpec)***| ***(Optional)*** |
+| `output` | ***[RelayNamespaceSpec](#relaynamespacespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `PinpointApnsChannel` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[PinpointApnsChannelSpec](#PinpointApnsChannelSpec)***||
-| `status` | ***[PinpointApnsChannelStatus](#PinpointApnsChannelStatus)***||
+| `spec` | ***[PinpointApnsChannelSpec](#pinpointapnschannelspec)***||
+| `status` | ***[PinpointApnsChannelStatus](#pinpointapnschannelstatus)***||
 ## PinpointApnsChannelSpec
-##### (Appears on:[PinpointApnsChannel](#PinpointApnsChannel), [PinpointApnsChannelStatus](#PinpointApnsChannelStatus))
+
+Appears on:[PinpointApnsChannel](#pinpointapnschannel), [PinpointApnsChannelStatus](#pinpointapnschannelstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,11 +33,13 @@ info:
 | `defaultAuthenticationMethod` | ***string***| ***(Optional)*** |
 | `enabled` | ***bool***| ***(Optional)*** |
 ## PinpointApnsChannelStatus
-##### (Appears on:[PinpointApnsChannel](#PinpointApnsChannel))
+
+Appears on:[PinpointApnsChannel](#pinpointapnschannel)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[PinpointApnsChannelSpec](#PinpointApnsChannelSpec)***| ***(Optional)*** |
+| `output` | ***[PinpointApnsChannelSpec](#pinpointapnschannelspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

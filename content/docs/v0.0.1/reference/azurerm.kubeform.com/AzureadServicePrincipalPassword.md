@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `AzureadServicePrincipalPassword` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AzureadServicePrincipalPasswordSpec](#AzureadServicePrincipalPasswordSpec)***||
-| `status` | ***[AzureadServicePrincipalPasswordStatus](#AzureadServicePrincipalPasswordStatus)***||
+| `spec` | ***[AzureadServicePrincipalPasswordSpec](#azureadserviceprincipalpasswordspec)***||
+| `status` | ***[AzureadServicePrincipalPasswordStatus](#azureadserviceprincipalpasswordstatus)***||
 ## AzureadServicePrincipalPasswordSpec
-##### (Appears on:[AzureadServicePrincipalPassword](#AzureadServicePrincipalPassword), [AzureadServicePrincipalPasswordStatus](#AzureadServicePrincipalPasswordStatus))
+
+Appears on:[AzureadServicePrincipalPassword](#azureadserviceprincipalpassword), [AzureadServicePrincipalPasswordStatus](#azureadserviceprincipalpasswordstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,11 +34,13 @@ info:
 | `servicePrincipalID` | ***string***||
 | `startDate` | ***string***| ***(Optional)*** |
 ## AzureadServicePrincipalPasswordStatus
-##### (Appears on:[AzureadServicePrincipalPassword](#AzureadServicePrincipalPassword))
+
+Appears on:[AzureadServicePrincipalPassword](#azureadserviceprincipalpassword)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AzureadServicePrincipalPasswordSpec](#AzureadServicePrincipalPasswordSpec)***| ***(Optional)*** |
+| `output` | ***[AzureadServicePrincipalPasswordSpec](#azureadserviceprincipalpasswordspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

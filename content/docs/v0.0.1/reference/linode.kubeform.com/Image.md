@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `linode.kubeform.com/v1alpha1` |
 |    `kind` | string | `Image` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ImageSpec](#ImageSpec)***||
-| `status` | ***[ImageStatus](#ImageStatus)***||
+| `spec` | ***[ImageSpec](#imagespec)***||
+| `status` | ***[ImageStatus](#imagestatus)***||
 ## ImageSpec
-##### (Appears on:[Image](#Image), [ImageStatus](#ImageStatus))
+
+Appears on:[Image](#image), [ImageStatus](#imagestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -39,10 +41,12 @@ info:
 | `type` | ***string***| ***(Optional)*** How the Image was created. 'Manual' Images can be created at any time. 'Automatic' images are created automatically from a deleted Linode.|
 | `vendor` | ***string***| ***(Optional)*** The upstream distribution vendor. Nil for private Images.|
 ## ImageStatus
-##### (Appears on:[Image](#Image))
+
+Appears on:[Image](#image)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ImageSpec](#ImageSpec)***| ***(Optional)*** |
+| `output` | ***[ImageSpec](#imagespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

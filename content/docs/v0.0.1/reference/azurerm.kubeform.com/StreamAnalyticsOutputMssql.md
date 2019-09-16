@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `StreamAnalyticsOutputMssql` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StreamAnalyticsOutputMssqlSpec](#StreamAnalyticsOutputMssqlSpec)***||
-| `status` | ***[StreamAnalyticsOutputMssqlStatus](#StreamAnalyticsOutputMssqlStatus)***||
+| `spec` | ***[StreamAnalyticsOutputMssqlSpec](#streamanalyticsoutputmssqlspec)***||
+| `status` | ***[StreamAnalyticsOutputMssqlStatus](#streamanalyticsoutputmssqlstatus)***||
 ## StreamAnalyticsOutputMssqlSpec
-##### (Appears on:[StreamAnalyticsOutputMssql](#StreamAnalyticsOutputMssql), [StreamAnalyticsOutputMssqlStatus](#StreamAnalyticsOutputMssqlStatus))
+
+Appears on:[StreamAnalyticsOutputMssql](#streamanalyticsoutputmssql), [StreamAnalyticsOutputMssqlStatus](#streamanalyticsoutputmssqlstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,11 +37,13 @@ info:
 | `table` | ***string***||
 | `user` | ***string***||
 ## StreamAnalyticsOutputMssqlStatus
-##### (Appears on:[StreamAnalyticsOutputMssql](#StreamAnalyticsOutputMssql))
+
+Appears on:[StreamAnalyticsOutputMssql](#streamanalyticsoutputmssql)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StreamAnalyticsOutputMssqlSpec](#StreamAnalyticsOutputMssqlSpec)***| ***(Optional)*** |
+| `output` | ***[StreamAnalyticsOutputMssqlSpec](#streamanalyticsoutputmssqlspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `InternetGateway` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[InternetGatewaySpec](#InternetGatewaySpec)***||
-| `status` | ***[InternetGatewayStatus](#InternetGatewayStatus)***||
+| `spec` | ***[InternetGatewaySpec](#internetgatewayspec)***||
+| `status` | ***[InternetGatewayStatus](#internetgatewaystatus)***||
 ## InternetGatewaySpec
-##### (Appears on:[InternetGateway](#InternetGateway), [InternetGatewayStatus](#InternetGatewayStatus))
+
+Appears on:[InternetGateway](#internetgateway), [InternetGatewayStatus](#internetgatewaystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `vpcID` | ***string***| ***(Optional)*** |
 ## InternetGatewayStatus
-##### (Appears on:[InternetGateway](#InternetGateway))
+
+Appears on:[InternetGateway](#internetgateway)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[InternetGatewaySpec](#InternetGatewaySpec)***| ***(Optional)*** |
+| `output` | ***[InternetGatewaySpec](#internetgatewayspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

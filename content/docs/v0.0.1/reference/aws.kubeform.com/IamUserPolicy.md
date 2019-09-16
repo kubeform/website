@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IamUserPolicy` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IamUserPolicySpec](#IamUserPolicySpec)***||
-| `status` | ***[IamUserPolicyStatus](#IamUserPolicyStatus)***||
+| `spec` | ***[IamUserPolicySpec](#iamuserpolicyspec)***||
+| `status` | ***[IamUserPolicyStatus](#iamuserpolicystatus)***||
 ## IamUserPolicySpec
-##### (Appears on:[IamUserPolicy](#IamUserPolicy), [IamUserPolicyStatus](#IamUserPolicyStatus))
+
+Appears on:[IamUserPolicy](#iamuserpolicy), [IamUserPolicyStatus](#iamuserpolicystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `policy` | ***string***||
 | `user` | ***string***||
 ## IamUserPolicyStatus
-##### (Appears on:[IamUserPolicy](#IamUserPolicy))
+
+Appears on:[IamUserPolicy](#iamuserpolicy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IamUserPolicySpec](#IamUserPolicySpec)***| ***(Optional)*** |
+| `output` | ***[IamUserPolicySpec](#iamuserpolicyspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

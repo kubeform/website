@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `EventhubNamespace_` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[EventhubNamespace_Spec](#EventhubNamespace_Spec)***||
-| `status` | ***[EventhubNamespace_Status](#EventhubNamespace_Status)***||
+| `spec` | ***[EventhubNamespace_Spec](#eventhubnamespace_spec)***||
+| `status` | ***[EventhubNamespace_Status](#eventhubnamespace_status)***||
 ## EventhubNamespace_Spec
-##### (Appears on:[EventhubNamespace_](#EventhubNamespace_), [EventhubNamespace_Status](#EventhubNamespace_Status))
+
+Appears on:[EventhubNamespace_](#eventhubnamespace_), [EventhubNamespace_Status](#eventhubnamespace_status)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -37,11 +39,13 @@ info:
 | `sku` | ***string***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## EventhubNamespace_Status
-##### (Appears on:[EventhubNamespace_](#EventhubNamespace_))
+
+Appears on:[EventhubNamespace_](#eventhubnamespace_)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[EventhubNamespace_Spec](#EventhubNamespace_Spec)***| ***(Optional)*** |
+| `output` | ***[EventhubNamespace_Spec](#eventhubnamespace_spec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

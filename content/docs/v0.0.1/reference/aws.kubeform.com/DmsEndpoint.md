@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `DmsEndpoint` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DmsEndpointSpec](#DmsEndpointSpec)***||
-| `status` | ***[DmsEndpointStatus](#DmsEndpointStatus)***||
+| `spec` | ***[DmsEndpointSpec](#dmsendpointspec)***||
+| `status` | ***[DmsEndpointStatus](#dmsendpointstatus)***||
 ## DmsEndpointSpec
-##### (Appears on:[DmsEndpoint](#DmsEndpoint), [DmsEndpointStatus](#DmsEndpointStatus))
+
+Appears on:[DmsEndpoint](#dmsendpoint), [DmsEndpointStatus](#dmsendpointstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,16 +37,18 @@ info:
 | `engineName` | ***string***||
 | `extraConnectionAttributes` | ***string***| ***(Optional)*** |
 | `kmsKeyArn` | ***string***| ***(Optional)*** |
-| `mongodbSettings` | ***[[]DmsEndpointSpecMongodbSettings](#DmsEndpointSpecMongodbSettings)***| ***(Optional)*** |
+| `mongodbSettings` | ***[[]DmsEndpointSpecMongodbSettings](#dmsendpointspecmongodbsettings)***| ***(Optional)*** |
 | `port` | ***int***| ***(Optional)*** |
-| `s3Settings` | ***[[]DmsEndpointSpecS3Settings](#DmsEndpointSpecS3Settings)***| ***(Optional)*** |
+| `s3Settings` | ***[[]DmsEndpointSpecS3Settings](#dmsendpointspecs3settings)***| ***(Optional)*** |
 | `serverName` | ***string***| ***(Optional)*** |
 | `serviceAccessRole` | ***string***| ***(Optional)*** |
 | `sslMode` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `username` | ***string***| ***(Optional)*** |
 ## DmsEndpointSpecMongodbSettings
-##### (Appears on:[DmsEndpointSpec](#DmsEndpointSpec))
+
+Appears on:[DmsEndpointSpec](#dmsendpointspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `authMechanism` | ***string***| ***(Optional)*** |
@@ -54,7 +58,9 @@ info:
 | `extractDocID` | ***string***| ***(Optional)*** |
 | `nestingLevel` | ***string***| ***(Optional)*** |
 ## DmsEndpointSpecS3Settings
-##### (Appears on:[DmsEndpointSpec](#DmsEndpointSpec))
+
+Appears on:[DmsEndpointSpec](#dmsendpointspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `bucketFolder` | ***string***| ***(Optional)*** |
@@ -65,11 +71,13 @@ info:
 | `externalTableDefinition` | ***string***| ***(Optional)*** |
 | `serviceAccessRoleArn` | ***string***| ***(Optional)*** |
 ## DmsEndpointStatus
-##### (Appears on:[DmsEndpoint](#DmsEndpoint))
+
+Appears on:[DmsEndpoint](#dmsendpoint)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DmsEndpointSpec](#DmsEndpointSpec)***| ***(Optional)*** |
+| `output` | ***[DmsEndpointSpec](#dmsendpointspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

@@ -18,16 +18,18 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `OpsworksApplication` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[OpsworksApplicationSpec](#OpsworksApplicationSpec)***||
-| `status` | ***[OpsworksApplicationStatus](#OpsworksApplicationStatus)***||
+| `spec` | ***[OpsworksApplicationSpec](#opsworksapplicationspec)***||
+| `status` | ***[OpsworksApplicationStatus](#opsworksapplicationstatus)***||
 ## OpsworksApplicationSpec
-##### (Appears on:[OpsworksApplication](#OpsworksApplication), [OpsworksApplicationStatus](#OpsworksApplicationStatus))
+
+Appears on:[OpsworksApplication](#opsworksapplication), [OpsworksApplicationStatus](#opsworksapplicationstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `secretRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
-| `appSource` | ***[[]OpsworksApplicationSpecAppSource](#OpsworksApplicationSpecAppSource)***| ***(Optional)*** |
+| `appSource` | ***[[]OpsworksApplicationSpecAppSource](#opsworksapplicationspecappsource)***| ***(Optional)*** |
 | `autoBundleOnDeploy` | ***string***| ***(Optional)*** |
 | `awsFlowRubySettings` | ***string***| ***(Optional)*** |
 | `dataSourceArn` | ***string***| ***(Optional)*** |
@@ -37,15 +39,17 @@ info:
 | `documentRoot` | ***string***| ***(Optional)*** |
 | `domains` | ***[]string***| ***(Optional)*** |
 | `enableSSL` | ***bool***| ***(Optional)*** |
-| `environment` | ***[[]OpsworksApplicationSpecEnvironment](#OpsworksApplicationSpecEnvironment)***| ***(Optional)*** |
+| `environment` | ***[[]OpsworksApplicationSpecEnvironment](#opsworksapplicationspecenvironment)***| ***(Optional)*** |
 | `name` | ***string***||
 | `railsEnv` | ***string***| ***(Optional)*** |
 | `shortName` | ***string***| ***(Optional)*** |
-| `sslConfiguration` | ***[[]OpsworksApplicationSpecSslConfiguration](#OpsworksApplicationSpecSslConfiguration)***| ***(Optional)*** |
+| `sslConfiguration` | ***[[]OpsworksApplicationSpecSslConfiguration](#opsworksapplicationspecsslconfiguration)***| ***(Optional)*** |
 | `stackID` | ***string***||
 | `type` | ***string***||
 ## OpsworksApplicationSpecAppSource
-##### (Appears on:[OpsworksApplicationSpec](#OpsworksApplicationSpec))
+
+Appears on:[OpsworksApplicationSpec](#opsworksapplicationspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `revision` | ***string***| ***(Optional)*** |
@@ -54,24 +58,30 @@ info:
 | `url` | ***string***| ***(Optional)*** |
 | `username` | ***string***| ***(Optional)*** |
 ## OpsworksApplicationSpecEnvironment
-##### (Appears on:[OpsworksApplicationSpec](#OpsworksApplicationSpec))
+
+Appears on:[OpsworksApplicationSpec](#opsworksapplicationspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `key` | ***string***||
 | `secure` | ***bool***| ***(Optional)*** |
 | `value` | ***string***||
 ## OpsworksApplicationSpecSslConfiguration
-##### (Appears on:[OpsworksApplicationSpec](#OpsworksApplicationSpec))
+
+Appears on:[OpsworksApplicationSpec](#opsworksapplicationspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `certificate` | ***string***||
 | `chain` | ***string***| ***(Optional)*** |
 ## OpsworksApplicationStatus
-##### (Appears on:[OpsworksApplication](#OpsworksApplication))
+
+Appears on:[OpsworksApplication](#opsworksapplication)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[OpsworksApplicationSpec](#OpsworksApplicationSpec)***| ***(Optional)*** |
+| `output` | ***[OpsworksApplicationSpec](#opsworksapplicationspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

@@ -18,50 +18,62 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ServiceDiscoveryService` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ServiceDiscoveryServiceSpec](#ServiceDiscoveryServiceSpec)***||
-| `status` | ***[ServiceDiscoveryServiceStatus](#ServiceDiscoveryServiceStatus)***||
+| `spec` | ***[ServiceDiscoveryServiceSpec](#servicediscoveryservicespec)***||
+| `status` | ***[ServiceDiscoveryServiceStatus](#servicediscoveryservicestatus)***||
 ## ServiceDiscoveryServiceSpec
-##### (Appears on:[ServiceDiscoveryService](#ServiceDiscoveryService), [ServiceDiscoveryServiceStatus](#ServiceDiscoveryServiceStatus))
+
+Appears on:[ServiceDiscoveryService](#servicediscoveryservice), [ServiceDiscoveryServiceStatus](#servicediscoveryservicestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `arn` | ***string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `dnsConfig` | ***[[]ServiceDiscoveryServiceSpecDnsConfig](#ServiceDiscoveryServiceSpecDnsConfig)***||
-| `healthCheckConfig` | ***[[]ServiceDiscoveryServiceSpecHealthCheckConfig](#ServiceDiscoveryServiceSpecHealthCheckConfig)***| ***(Optional)*** |
-| `healthCheckCustomConfig` | ***[[]ServiceDiscoveryServiceSpecHealthCheckCustomConfig](#ServiceDiscoveryServiceSpecHealthCheckCustomConfig)***| ***(Optional)*** |
+| `dnsConfig` | ***[[]ServiceDiscoveryServiceSpecDnsConfig](#servicediscoveryservicespecdnsconfig)***||
+| `healthCheckConfig` | ***[[]ServiceDiscoveryServiceSpecHealthCheckConfig](#servicediscoveryservicespechealthcheckconfig)***| ***(Optional)*** |
+| `healthCheckCustomConfig` | ***[[]ServiceDiscoveryServiceSpecHealthCheckCustomConfig](#servicediscoveryservicespechealthcheckcustomconfig)***| ***(Optional)*** |
 | `name` | ***string***||
 ## ServiceDiscoveryServiceSpecDnsConfig
-##### (Appears on:[ServiceDiscoveryServiceSpec](#ServiceDiscoveryServiceSpec))
+
+Appears on:[ServiceDiscoveryServiceSpec](#servicediscoveryservicespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `dnsRecords` | ***[[]ServiceDiscoveryServiceSpecDnsConfigDnsRecords](#ServiceDiscoveryServiceSpecDnsConfigDnsRecords)***||
+| `dnsRecords` | ***[[]ServiceDiscoveryServiceSpecDnsConfigDnsRecords](#servicediscoveryservicespecdnsconfigdnsrecords)***||
 | `namespaceID` | ***string***||
 | `routingPolicy` | ***string***| ***(Optional)*** |
 ## ServiceDiscoveryServiceSpecDnsConfigDnsRecords
-##### (Appears on:[ServiceDiscoveryServiceSpecDnsConfig](#ServiceDiscoveryServiceSpecDnsConfig))
+
+Appears on:[ServiceDiscoveryServiceSpecDnsConfig](#servicediscoveryservicespecdnsconfig)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `ttl` | ***int***||
 | `type` | ***string***||
 ## ServiceDiscoveryServiceSpecHealthCheckConfig
-##### (Appears on:[ServiceDiscoveryServiceSpec](#ServiceDiscoveryServiceSpec))
+
+Appears on:[ServiceDiscoveryServiceSpec](#servicediscoveryservicespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `failureThreshold` | ***int***| ***(Optional)*** |
 | `resourcePath` | ***string***| ***(Optional)*** |
 | `type` | ***string***| ***(Optional)*** |
 ## ServiceDiscoveryServiceSpecHealthCheckCustomConfig
-##### (Appears on:[ServiceDiscoveryServiceSpec](#ServiceDiscoveryServiceSpec))
+
+Appears on:[ServiceDiscoveryServiceSpec](#servicediscoveryservicespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `failureThreshold` | ***int***| ***(Optional)*** |
 ## ServiceDiscoveryServiceStatus
-##### (Appears on:[ServiceDiscoveryService](#ServiceDiscoveryService))
+
+Appears on:[ServiceDiscoveryService](#servicediscoveryservice)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ServiceDiscoveryServiceSpec](#ServiceDiscoveryServiceSpec)***| ***(Optional)*** |
+| `output` | ***[ServiceDiscoveryServiceSpec](#servicediscoveryservicespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

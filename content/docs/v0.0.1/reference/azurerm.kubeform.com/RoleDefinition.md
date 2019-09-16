@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `RoleDefinition` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[RoleDefinitionSpec](#RoleDefinitionSpec)***||
-| `status` | ***[RoleDefinitionStatus](#RoleDefinitionStatus)***||
+| `spec` | ***[RoleDefinitionSpec](#roledefinitionspec)***||
+| `status` | ***[RoleDefinitionStatus](#roledefinitionstatus)***||
 ## RoleDefinitionSpec
-##### (Appears on:[RoleDefinition](#RoleDefinition), [RoleDefinitionStatus](#RoleDefinitionStatus))
+
+Appears on:[RoleDefinition](#roledefinition), [RoleDefinitionStatus](#roledefinitionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,11 +31,13 @@ info:
 | `assignableScopes` | ***[]string***||
 | `description` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `permissions` | ***[[]RoleDefinitionSpecPermissions](#RoleDefinitionSpecPermissions)***||
+| `permissions` | ***[[]RoleDefinitionSpecPermissions](#roledefinitionspecpermissions)***||
 | `roleDefinitionID` | ***string***| ***(Optional)*** |
 | `scope` | ***string***||
 ## RoleDefinitionSpecPermissions
-##### (Appears on:[RoleDefinitionSpec](#RoleDefinitionSpec))
+
+Appears on:[RoleDefinitionSpec](#roledefinitionspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `actions` | ***[]string***| ***(Optional)*** |
@@ -41,10 +45,12 @@ info:
 | `notActions` | ***[]string***| ***(Optional)*** |
 | `notDataActions` | ***[]string***| ***(Optional)*** |
 ## RoleDefinitionStatus
-##### (Appears on:[RoleDefinition](#RoleDefinition))
+
+Appears on:[RoleDefinition](#roledefinition)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[RoleDefinitionSpec](#RoleDefinitionSpec)***| ***(Optional)*** |
+| `output` | ***[RoleDefinitionSpec](#roledefinitionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

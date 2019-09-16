@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `StorageObjectACL` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StorageObjectACLSpec](#StorageObjectACLSpec)***||
-| `status` | ***[StorageObjectACLStatus](#StorageObjectACLStatus)***||
+| `spec` | ***[StorageObjectACLSpec](#storageobjectaclspec)***||
+| `status` | ***[StorageObjectACLStatus](#storageobjectaclstatus)***||
 ## StorageObjectACLSpec
-##### (Appears on:[StorageObjectACL](#StorageObjectACL), [StorageObjectACLStatus](#StorageObjectACLStatus))
+
+Appears on:[StorageObjectACL](#storageobjectacl), [StorageObjectACLStatus](#storageobjectaclstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,10 +33,12 @@ info:
 | `predefinedACL` | ***string***| ***(Optional)*** |
 | `roleEntity` | ***[]string***| ***(Optional)*** |
 ## StorageObjectACLStatus
-##### (Appears on:[StorageObjectACL](#StorageObjectACL))
+
+Appears on:[StorageObjectACL](#storageobjectacl)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StorageObjectACLSpec](#StorageObjectACLSpec)***| ***(Optional)*** |
+| `output` | ***[StorageObjectACLSpec](#storageobjectaclspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

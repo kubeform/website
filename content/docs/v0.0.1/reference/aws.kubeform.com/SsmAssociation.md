@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `SsmAssociation` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[SsmAssociationSpec](#SsmAssociationSpec)***||
-| `status` | ***[SsmAssociationStatus](#SsmAssociationStatus)***||
+| `spec` | ***[SsmAssociationSpec](#ssmassociationspec)***||
+| `status` | ***[SsmAssociationStatus](#ssmassociationstatus)***||
 ## SsmAssociationSpec
-##### (Appears on:[SsmAssociation](#SsmAssociation), [SsmAssociationStatus](#SsmAssociationStatus))
+
+Appears on:[SsmAssociation](#ssmassociation), [SsmAssociationStatus](#ssmassociationstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -34,27 +36,33 @@ info:
 | `maxConcurrency` | ***string***| ***(Optional)*** |
 | `maxErrors` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `outputLocation` | ***[[]SsmAssociationSpecOutputLocation](#SsmAssociationSpecOutputLocation)***| ***(Optional)*** |
+| `outputLocation` | ***[[]SsmAssociationSpecOutputLocation](#ssmassociationspecoutputlocation)***| ***(Optional)*** |
 | `parameters` | ***map[string]string***| ***(Optional)*** |
 | `scheduleExpression` | ***string***| ***(Optional)*** |
-| `targets` | ***[[]SsmAssociationSpecTargets](#SsmAssociationSpecTargets)***| ***(Optional)*** |
+| `targets` | ***[[]SsmAssociationSpecTargets](#ssmassociationspectargets)***| ***(Optional)*** |
 ## SsmAssociationSpecOutputLocation
-##### (Appears on:[SsmAssociationSpec](#SsmAssociationSpec))
+
+Appears on:[SsmAssociationSpec](#ssmassociationspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `s3BucketName` | ***string***||
 | `s3KeyPrefix` | ***string***| ***(Optional)*** |
 ## SsmAssociationSpecTargets
-##### (Appears on:[SsmAssociationSpec](#SsmAssociationSpec))
+
+Appears on:[SsmAssociationSpec](#ssmassociationspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `key` | ***string***||
 | `values` | ***[]string***||
 ## SsmAssociationStatus
-##### (Appears on:[SsmAssociation](#SsmAssociation))
+
+Appears on:[SsmAssociation](#ssmassociation)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[SsmAssociationSpec](#SsmAssociationSpec)***| ***(Optional)*** |
+| `output` | ***[SsmAssociationSpec](#ssmassociationspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

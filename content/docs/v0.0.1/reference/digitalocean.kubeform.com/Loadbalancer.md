@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `digitalocean.kubeform.com/v1alpha1` |
 |    `kind` | string | `Loadbalancer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[LoadbalancerSpec](#LoadbalancerSpec)***||
-| `status` | ***[LoadbalancerStatus](#LoadbalancerStatus)***||
+| `spec` | ***[LoadbalancerSpec](#loadbalancerspec)***||
+| `status` | ***[LoadbalancerStatus](#loadbalancerstatus)***||
 ## LoadbalancerSpec
-##### (Appears on:[Loadbalancer](#Loadbalancer), [LoadbalancerStatus](#LoadbalancerStatus))
+
+Appears on:[Loadbalancer](#loadbalancer), [LoadbalancerStatus](#loadbalancerstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,17 +32,19 @@ info:
 | `dropletIDS` | ***[]int64***| ***(Optional)*** |
 | `dropletTag` | ***string***| ***(Optional)*** |
 | `enableProxyProtocol` | ***bool***| ***(Optional)*** |
-| `forwardingRule` | ***[[]LoadbalancerSpecForwardingRule](#LoadbalancerSpecForwardingRule)***||
-| `healthcheck` | ***[[]LoadbalancerSpecHealthcheck](#LoadbalancerSpecHealthcheck)***| ***(Optional)*** |
+| `forwardingRule` | ***[[]LoadbalancerSpecForwardingRule](#loadbalancerspecforwardingrule)***||
+| `healthcheck` | ***[[]LoadbalancerSpecHealthcheck](#loadbalancerspechealthcheck)***| ***(Optional)*** |
 | `ip` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `redirectHTTPToHTTPS` | ***bool***| ***(Optional)*** |
 | `region` | ***string***||
 | `status` | ***string***| ***(Optional)*** |
-| `stickySessions` | ***[[]LoadbalancerSpecStickySessions](#LoadbalancerSpecStickySessions)***| ***(Optional)*** |
+| `stickySessions` | ***[[]LoadbalancerSpecStickySessions](#loadbalancerspecstickysessions)***| ***(Optional)*** |
 | `urn` | ***string***| ***(Optional)*** the uniform resource name for the load balancer|
 ## LoadbalancerSpecForwardingRule
-##### (Appears on:[LoadbalancerSpec](#LoadbalancerSpec))
+
+Appears on:[LoadbalancerSpec](#loadbalancerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `certificateID` | ***string***| ***(Optional)*** |
@@ -50,7 +54,9 @@ info:
 | `targetProtocol` | ***string***||
 | `tlsPassthrough` | ***bool***| ***(Optional)*** |
 ## LoadbalancerSpecHealthcheck
-##### (Appears on:[LoadbalancerSpec](#LoadbalancerSpec))
+
+Appears on:[LoadbalancerSpec](#loadbalancerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `checkIntervalSeconds` | ***int***| ***(Optional)*** |
@@ -61,17 +67,21 @@ info:
 | `responseTimeoutSeconds` | ***int***| ***(Optional)*** |
 | `unhealthyThreshold` | ***int***| ***(Optional)*** |
 ## LoadbalancerSpecStickySessions
-##### (Appears on:[LoadbalancerSpec](#LoadbalancerSpec))
+
+Appears on:[LoadbalancerSpec](#loadbalancerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `cookieName` | ***string***| ***(Optional)*** |
 | `cookieTtlSeconds` | ***int***| ***(Optional)*** |
 | `type` | ***string***| ***(Optional)*** |
 ## LoadbalancerStatus
-##### (Appears on:[Loadbalancer](#Loadbalancer))
+
+Appears on:[Loadbalancer](#loadbalancer)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[LoadbalancerSpec](#LoadbalancerSpec)***| ***(Optional)*** |
+| `output` | ***[LoadbalancerSpec](#loadbalancerspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

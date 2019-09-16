@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `Ec2TransitGateway` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[Ec2TransitGatewaySpec](#Ec2TransitGatewaySpec)***||
-| `status` | ***[Ec2TransitGatewayStatus](#Ec2TransitGatewayStatus)***||
+| `spec` | ***[Ec2TransitGatewaySpec](#ec2transitgatewayspec)***||
+| `status` | ***[Ec2TransitGatewayStatus](#ec2transitgatewaystatus)***||
 ## Ec2TransitGatewaySpec
-##### (Appears on:[Ec2TransitGateway](#Ec2TransitGateway), [Ec2TransitGatewayStatus](#Ec2TransitGatewayStatus))
+
+Appears on:[Ec2TransitGateway](#ec2transitgateway), [Ec2TransitGatewayStatus](#ec2transitgatewaystatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -39,10 +41,12 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `vpnEcmpSupport` | ***string***| ***(Optional)*** |
 ## Ec2TransitGatewayStatus
-##### (Appears on:[Ec2TransitGateway](#Ec2TransitGateway))
+
+Appears on:[Ec2TransitGateway](#ec2transitgateway)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[Ec2TransitGatewaySpec](#Ec2TransitGatewaySpec)***| ***(Optional)*** |
+| `output` | ***[Ec2TransitGatewaySpec](#ec2transitgatewayspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

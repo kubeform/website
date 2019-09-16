@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IamRolePolicyAttachment` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IamRolePolicyAttachmentSpec](#IamRolePolicyAttachmentSpec)***||
-| `status` | ***[IamRolePolicyAttachmentStatus](#IamRolePolicyAttachmentStatus)***||
+| `spec` | ***[IamRolePolicyAttachmentSpec](#iamrolepolicyattachmentspec)***||
+| `status` | ***[IamRolePolicyAttachmentStatus](#iamrolepolicyattachmentstatus)***||
 ## IamRolePolicyAttachmentSpec
-##### (Appears on:[IamRolePolicyAttachment](#IamRolePolicyAttachment), [IamRolePolicyAttachmentStatus](#IamRolePolicyAttachmentStatus))
+
+Appears on:[IamRolePolicyAttachment](#iamrolepolicyattachment), [IamRolePolicyAttachmentStatus](#iamrolepolicyattachmentstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,10 +31,12 @@ info:
 | `policyArn` | ***string***||
 | `role` | ***string***||
 ## IamRolePolicyAttachmentStatus
-##### (Appears on:[IamRolePolicyAttachment](#IamRolePolicyAttachment))
+
+Appears on:[IamRolePolicyAttachment](#iamrolepolicyattachment)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IamRolePolicyAttachmentSpec](#IamRolePolicyAttachmentSpec)***| ***(Optional)*** |
+| `output` | ***[IamRolePolicyAttachmentSpec](#iamrolepolicyattachmentspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

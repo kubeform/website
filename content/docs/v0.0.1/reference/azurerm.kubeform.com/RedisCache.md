@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `RedisCache` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[RedisCacheSpec](#RedisCacheSpec)***||
-| `status` | ***[RedisCacheStatus](#RedisCacheStatus)***||
+| `spec` | ***[RedisCacheSpec](#rediscachespec)***||
+| `status` | ***[RedisCacheStatus](#rediscachestatus)***||
 ## RedisCacheSpec
-##### (Appears on:[RedisCache](#RedisCache), [RedisCacheStatus](#RedisCacheStatus))
+
+Appears on:[RedisCache](#rediscache), [RedisCacheStatus](#rediscachestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -34,10 +36,10 @@ info:
 | `location` | ***string***||
 | `minimumTLSVersion` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `patchSchedule` | ***[[]RedisCacheSpecPatchSchedule](#RedisCacheSpecPatchSchedule)***| ***(Optional)*** |
+| `patchSchedule` | ***[[]RedisCacheSpecPatchSchedule](#rediscachespecpatchschedule)***| ***(Optional)*** |
 | `port` | ***int***| ***(Optional)*** |
 | `privateStaticIPAddress` | ***string***| ***(Optional)*** |
-| `redisConfiguration` | ***[[]RedisCacheSpecRedisConfiguration](#RedisCacheSpecRedisConfiguration)***| ***(Optional)*** |
+| `redisConfiguration` | ***[[]RedisCacheSpecRedisConfiguration](#rediscachespecredisconfiguration)***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
 | `shardCount` | ***int***| ***(Optional)*** |
 | `skuName` | ***string***||
@@ -46,13 +48,17 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `zones` | ***[]string***| ***(Optional)*** |
 ## RedisCacheSpecPatchSchedule
-##### (Appears on:[RedisCacheSpec](#RedisCacheSpec))
+
+Appears on:[RedisCacheSpec](#rediscachespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `dayOfWeek` | ***string***||
 | `startHourUtc` | ***int***| ***(Optional)*** |
 ## RedisCacheSpecRedisConfiguration
-##### (Appears on:[RedisCacheSpec](#RedisCacheSpec))
+
+Appears on:[RedisCacheSpec](#rediscachespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `aofBackupEnabled` | ***bool***| ***(Optional)*** |
@@ -67,11 +73,13 @@ info:
 | `rdbBackupFrequency` | ***int***| ***(Optional)*** |
 | `rdbBackupMaxSnapshotCount` | ***int***| ***(Optional)*** |
 ## RedisCacheStatus
-##### (Appears on:[RedisCache](#RedisCache))
+
+Appears on:[RedisCache](#rediscache)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[RedisCacheSpec](#RedisCacheSpec)***| ***(Optional)*** |
+| `output` | ***[RedisCacheSpec](#rediscachespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

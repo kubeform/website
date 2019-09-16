@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `CosmosdbMongoCollection` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[CosmosdbMongoCollectionSpec](#CosmosdbMongoCollectionSpec)***||
-| `status` | ***[CosmosdbMongoCollectionStatus](#CosmosdbMongoCollectionStatus)***||
+| `spec` | ***[CosmosdbMongoCollectionSpec](#cosmosdbmongocollectionspec)***||
+| `status` | ***[CosmosdbMongoCollectionStatus](#cosmosdbmongocollectionstatus)***||
 ## CosmosdbMongoCollectionSpec
-##### (Appears on:[CosmosdbMongoCollection](#CosmosdbMongoCollection), [CosmosdbMongoCollectionStatus](#CosmosdbMongoCollectionStatus))
+
+Appears on:[CosmosdbMongoCollection](#cosmosdbmongocollection), [CosmosdbMongoCollectionStatus](#cosmosdbmongocollectionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,21 +31,25 @@ info:
 | `accountName` | ***string***||
 | `databaseName` | ***string***||
 | `defaultTtlSeconds` | ***int***| ***(Optional)*** |
-| `indexes` | ***[[]CosmosdbMongoCollectionSpecIndexes](#CosmosdbMongoCollectionSpecIndexes)***| ***(Optional)*** |
+| `indexes` | ***[[]CosmosdbMongoCollectionSpecIndexes](#cosmosdbmongocollectionspecindexes)***| ***(Optional)*** |
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
 | `shardKey` | ***string***| ***(Optional)*** |
 ## CosmosdbMongoCollectionSpecIndexes
-##### (Appears on:[CosmosdbMongoCollectionSpec](#CosmosdbMongoCollectionSpec))
+
+Appears on:[CosmosdbMongoCollectionSpec](#cosmosdbmongocollectionspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `key` | ***string***||
 | `unique` | ***bool***| ***(Optional)*** |
 ## CosmosdbMongoCollectionStatus
-##### (Appears on:[CosmosdbMongoCollection](#CosmosdbMongoCollection))
+
+Appears on:[CosmosdbMongoCollection](#cosmosdbmongocollection)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[CosmosdbMongoCollectionSpec](#CosmosdbMongoCollectionSpec)***| ***(Optional)*** |
+| `output` | ***[CosmosdbMongoCollectionSpec](#cosmosdbmongocollectionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

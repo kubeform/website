@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ComputeGlobalAddress` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ComputeGlobalAddressSpec](#ComputeGlobalAddressSpec)***||
-| `status` | ***[ComputeGlobalAddressStatus](#ComputeGlobalAddressStatus)***||
+| `spec` | ***[ComputeGlobalAddressSpec](#computeglobaladdressspec)***||
+| `status` | ***[ComputeGlobalAddressStatus](#computeglobaladdressstatus)***||
 ## ComputeGlobalAddressSpec
-##### (Appears on:[ComputeGlobalAddress](#ComputeGlobalAddress), [ComputeGlobalAddressStatus](#ComputeGlobalAddressStatus))
+
+Appears on:[ComputeGlobalAddress](#computeglobaladdress), [ComputeGlobalAddressStatus](#computeglobaladdressstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -40,10 +42,12 @@ info:
 | `purpose` | ***string***| ***(Optional)*** Deprecated|
 | `selfLink` | ***string***| ***(Optional)*** |
 ## ComputeGlobalAddressStatus
-##### (Appears on:[ComputeGlobalAddress](#ComputeGlobalAddress))
+
+Appears on:[ComputeGlobalAddress](#computeglobaladdress)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ComputeGlobalAddressSpec](#ComputeGlobalAddressSpec)***| ***(Optional)*** |
+| `output` | ***[ComputeGlobalAddressSpec](#computeglobaladdressspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `AppmeshVirtualRouter` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AppmeshVirtualRouterSpec](#AppmeshVirtualRouterSpec)***||
-| `status` | ***[AppmeshVirtualRouterStatus](#AppmeshVirtualRouterStatus)***||
+| `spec` | ***[AppmeshVirtualRouterSpec](#appmeshvirtualrouterspec)***||
+| `status` | ***[AppmeshVirtualRouterStatus](#appmeshvirtualrouterstatus)***||
 ## AppmeshVirtualRouterSpec
-##### (Appears on:[AppmeshVirtualRouter](#AppmeshVirtualRouter), [AppmeshVirtualRouterStatus](#AppmeshVirtualRouterStatus))
+
+Appears on:[AppmeshVirtualRouter](#appmeshvirtualrouter), [AppmeshVirtualRouterStatus](#appmeshvirtualrouterstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -31,28 +33,36 @@ info:
 | `lastUpdatedDate` | ***string***| ***(Optional)*** |
 | `meshName` | ***string***||
 | `name` | ***string***||
-| `spec` | ***[[]AppmeshVirtualRouterSpecSpec](#AppmeshVirtualRouterSpecSpec)***||
+| `spec` | ***[[]AppmeshVirtualRouterSpecSpec](#appmeshvirtualrouterspecspec)***||
 ## AppmeshVirtualRouterSpecSpec
-##### (Appears on:[AppmeshVirtualRouterSpec](#AppmeshVirtualRouterSpec))
+
+Appears on:[AppmeshVirtualRouterSpec](#appmeshvirtualrouterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `listener` | ***[[]AppmeshVirtualRouterSpecSpecListener](#AppmeshVirtualRouterSpecSpecListener)***||
+| `listener` | ***[[]AppmeshVirtualRouterSpecSpecListener](#appmeshvirtualrouterspecspeclistener)***||
 ## AppmeshVirtualRouterSpecSpecListener
-##### (Appears on:[AppmeshVirtualRouterSpecSpec](#AppmeshVirtualRouterSpecSpec))
+
+Appears on:[AppmeshVirtualRouterSpecSpec](#appmeshvirtualrouterspecspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `portMapping` | ***[[]AppmeshVirtualRouterSpecSpecListenerPortMapping](#AppmeshVirtualRouterSpecSpecListenerPortMapping)***||
+| `portMapping` | ***[[]AppmeshVirtualRouterSpecSpecListenerPortMapping](#appmeshvirtualrouterspecspeclistenerportmapping)***||
 ## AppmeshVirtualRouterSpecSpecListenerPortMapping
-##### (Appears on:[AppmeshVirtualRouterSpecSpecListener](#AppmeshVirtualRouterSpecSpecListener))
+
+Appears on:[AppmeshVirtualRouterSpecSpecListener](#appmeshvirtualrouterspecspeclistener)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `port` | ***int***||
 | `protocol` | ***string***||
 ## AppmeshVirtualRouterStatus
-##### (Appears on:[AppmeshVirtualRouter](#AppmeshVirtualRouter))
+
+Appears on:[AppmeshVirtualRouter](#appmeshvirtualrouter)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AppmeshVirtualRouterSpec](#AppmeshVirtualRouterSpec)***| ***(Optional)*** |
+| `output` | ***[AppmeshVirtualRouterSpec](#appmeshvirtualrouterspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

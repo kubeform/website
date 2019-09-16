@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `StoragegatewayWorkingStorage` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StoragegatewayWorkingStorageSpec](#StoragegatewayWorkingStorageSpec)***||
-| `status` | ***[StoragegatewayWorkingStorageStatus](#StoragegatewayWorkingStorageStatus)***||
+| `spec` | ***[StoragegatewayWorkingStorageSpec](#storagegatewayworkingstoragespec)***||
+| `status` | ***[StoragegatewayWorkingStorageStatus](#storagegatewayworkingstoragestatus)***||
 ## StoragegatewayWorkingStorageSpec
-##### (Appears on:[StoragegatewayWorkingStorage](#StoragegatewayWorkingStorage), [StoragegatewayWorkingStorageStatus](#StoragegatewayWorkingStorageStatus))
+
+Appears on:[StoragegatewayWorkingStorage](#storagegatewayworkingstorage), [StoragegatewayWorkingStorageStatus](#storagegatewayworkingstoragestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,10 +31,12 @@ info:
 | `diskID` | ***string***||
 | `gatewayArn` | ***string***||
 ## StoragegatewayWorkingStorageStatus
-##### (Appears on:[StoragegatewayWorkingStorage](#StoragegatewayWorkingStorage))
+
+Appears on:[StoragegatewayWorkingStorage](#storagegatewayworkingstorage)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StoragegatewayWorkingStorageSpec](#StoragegatewayWorkingStorageSpec)***| ***(Optional)*** |
+| `output` | ***[StoragegatewayWorkingStorageSpec](#storagegatewayworkingstoragespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

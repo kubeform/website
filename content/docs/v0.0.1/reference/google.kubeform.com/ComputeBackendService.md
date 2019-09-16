@@ -18,24 +18,26 @@ info:
 | `apiVersion` | string | `google.kubeform.com/v1alpha1` |
 |    `kind` | string | `ComputeBackendService` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ComputeBackendServiceSpec](#ComputeBackendServiceSpec)***||
-| `status` | ***[ComputeBackendServiceStatus](#ComputeBackendServiceStatus)***||
+| `spec` | ***[ComputeBackendServiceSpec](#computebackendservicespec)***||
+| `status` | ***[ComputeBackendServiceStatus](#computebackendservicestatus)***||
 ## ComputeBackendServiceSpec
-##### (Appears on:[ComputeBackendService](#ComputeBackendService), [ComputeBackendServiceStatus](#ComputeBackendServiceStatus))
+
+Appears on:[ComputeBackendService](#computebackendservice), [ComputeBackendServiceStatus](#computebackendservicestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `secretRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
-| `backend` | ***[[]ComputeBackendServiceSpecBackend](#ComputeBackendServiceSpecBackend)***| ***(Optional)*** |
-| `cdnPolicy` | ***[[]ComputeBackendServiceSpecCdnPolicy](#ComputeBackendServiceSpecCdnPolicy)***| ***(Optional)*** |
+| `backend` | ***[[]ComputeBackendServiceSpecBackend](#computebackendservicespecbackend)***| ***(Optional)*** |
+| `cdnPolicy` | ***[[]ComputeBackendServiceSpecCdnPolicy](#computebackendservicespeccdnpolicy)***| ***(Optional)*** |
 | `connectionDrainingTimeoutSec` | ***int***| ***(Optional)*** |
 | `customRequestHeaders` | ***[]string***| ***(Optional)*** Deprecated|
 | `description` | ***string***| ***(Optional)*** |
 | `enableCdn` | ***bool***| ***(Optional)*** |
 | `fingerprint` | ***string***| ***(Optional)*** |
 | `healthChecks` | ***[]string***||
-| `iap` | ***[[]ComputeBackendServiceSpecIap](#ComputeBackendServiceSpecIap)***| ***(Optional)*** |
+| `iap` | ***[[]ComputeBackendServiceSpecIap](#computebackendservicespeciap)***| ***(Optional)*** |
 | `name` | ***string***||
 | `portName` | ***string***| ***(Optional)*** |
 | `project` | ***string***| ***(Optional)*** |
@@ -45,7 +47,9 @@ info:
 | `sessionAffinity` | ***string***| ***(Optional)*** |
 | `timeoutSec` | ***int***| ***(Optional)*** |
 ## ComputeBackendServiceSpecBackend
-##### (Appears on:[ComputeBackendServiceSpec](#ComputeBackendServiceSpec))
+
+Appears on:[ComputeBackendServiceSpec](#computebackendservicespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `balancingMode` | ***string***| ***(Optional)*** |
@@ -58,12 +62,16 @@ info:
 | `maxRatePerInstance` | ***encoding/json.Number***| ***(Optional)*** |
 | `maxUtilization` | ***encoding/json.Number***| ***(Optional)*** |
 ## ComputeBackendServiceSpecCdnPolicy
-##### (Appears on:[ComputeBackendServiceSpec](#ComputeBackendServiceSpec))
+
+Appears on:[ComputeBackendServiceSpec](#computebackendservicespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `cacheKeyPolicy` | ***[[]ComputeBackendServiceSpecCdnPolicyCacheKeyPolicy](#ComputeBackendServiceSpecCdnPolicyCacheKeyPolicy)***| ***(Optional)*** |
+| `cacheKeyPolicy` | ***[[]ComputeBackendServiceSpecCdnPolicyCacheKeyPolicy](#computebackendservicespeccdnpolicycachekeypolicy)***| ***(Optional)*** |
 ## ComputeBackendServiceSpecCdnPolicyCacheKeyPolicy
-##### (Appears on:[ComputeBackendServiceSpecCdnPolicy](#ComputeBackendServiceSpecCdnPolicy))
+
+Appears on:[ComputeBackendServiceSpecCdnPolicy](#computebackendservicespeccdnpolicy)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `includeHost` | ***bool***| ***(Optional)*** |
@@ -72,16 +80,20 @@ info:
 | `queryStringBlacklist` | ***[]string***| ***(Optional)*** |
 | `queryStringWhitelist` | ***[]string***| ***(Optional)*** |
 ## ComputeBackendServiceSpecIap
-##### (Appears on:[ComputeBackendServiceSpec](#ComputeBackendServiceSpec))
+
+Appears on:[ComputeBackendServiceSpec](#computebackendservicespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `oauth2ClientID` | ***string***||
 ## ComputeBackendServiceStatus
-##### (Appears on:[ComputeBackendService](#ComputeBackendService))
+
+Appears on:[ComputeBackendService](#computebackendservice)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ComputeBackendServiceSpec](#ComputeBackendServiceSpec)***| ***(Optional)*** |
+| `output` | ***[ComputeBackendServiceSpec](#computebackendservicespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

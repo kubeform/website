@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `Route53ZoneAssociation` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[Route53ZoneAssociationSpec](#Route53ZoneAssociationSpec)***||
-| `status` | ***[Route53ZoneAssociationStatus](#Route53ZoneAssociationStatus)***||
+| `spec` | ***[Route53ZoneAssociationSpec](#route53zoneassociationspec)***||
+| `status` | ***[Route53ZoneAssociationStatus](#route53zoneassociationstatus)***||
 ## Route53ZoneAssociationSpec
-##### (Appears on:[Route53ZoneAssociation](#Route53ZoneAssociation), [Route53ZoneAssociationStatus](#Route53ZoneAssociationStatus))
+
+Appears on:[Route53ZoneAssociation](#route53zoneassociation), [Route53ZoneAssociationStatus](#route53zoneassociationstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `vpcRegion` | ***string***| ***(Optional)*** |
 | `zoneID` | ***string***||
 ## Route53ZoneAssociationStatus
-##### (Appears on:[Route53ZoneAssociation](#Route53ZoneAssociation))
+
+Appears on:[Route53ZoneAssociation](#route53zoneassociation)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[Route53ZoneAssociationSpec](#Route53ZoneAssociationSpec)***| ***(Optional)*** |
+| `output` | ***[Route53ZoneAssociationSpec](#route53zoneassociationspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

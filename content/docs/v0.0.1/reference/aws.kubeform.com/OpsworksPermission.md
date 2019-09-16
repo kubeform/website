@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `OpsworksPermission` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[OpsworksPermissionSpec](#OpsworksPermissionSpec)***||
-| `status` | ***[OpsworksPermissionStatus](#OpsworksPermissionStatus)***||
+| `spec` | ***[OpsworksPermissionSpec](#opsworkspermissionspec)***||
+| `status` | ***[OpsworksPermissionStatus](#opsworkspermissionstatus)***||
 ## OpsworksPermissionSpec
-##### (Appears on:[OpsworksPermission](#OpsworksPermission), [OpsworksPermissionStatus](#OpsworksPermissionStatus))
+
+Appears on:[OpsworksPermission](#opsworkspermission), [OpsworksPermissionStatus](#opsworkspermissionstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `stackID` | ***string***| ***(Optional)*** |
 | `userArn` | ***string***||
 ## OpsworksPermissionStatus
-##### (Appears on:[OpsworksPermission](#OpsworksPermission))
+
+Appears on:[OpsworksPermission](#opsworkspermission)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[OpsworksPermissionSpec](#OpsworksPermissionSpec)***| ***(Optional)*** |
+| `output` | ***[OpsworksPermissionSpec](#opsworkspermissionspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

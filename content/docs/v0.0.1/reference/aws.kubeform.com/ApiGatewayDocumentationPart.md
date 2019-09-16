@@ -18,19 +18,23 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiGatewayDocumentationPart` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiGatewayDocumentationPartSpec](#ApiGatewayDocumentationPartSpec)***||
-| `status` | ***[ApiGatewayDocumentationPartStatus](#ApiGatewayDocumentationPartStatus)***||
+| `spec` | ***[ApiGatewayDocumentationPartSpec](#apigatewaydocumentationpartspec)***||
+| `status` | ***[ApiGatewayDocumentationPartStatus](#apigatewaydocumentationpartstatus)***||
 ## ApiGatewayDocumentationPartSpec
-##### (Appears on:[ApiGatewayDocumentationPart](#ApiGatewayDocumentationPart), [ApiGatewayDocumentationPartStatus](#ApiGatewayDocumentationPartStatus))
+
+Appears on:[ApiGatewayDocumentationPart](#apigatewaydocumentationpart), [ApiGatewayDocumentationPartStatus](#apigatewaydocumentationpartstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `location` | ***[[]ApiGatewayDocumentationPartSpecLocation](#ApiGatewayDocumentationPartSpecLocation)***||
+| `location` | ***[[]ApiGatewayDocumentationPartSpecLocation](#apigatewaydocumentationpartspeclocation)***||
 | `properties` | ***string***||
 | `restAPIID` | ***string***||
 ## ApiGatewayDocumentationPartSpecLocation
-##### (Appears on:[ApiGatewayDocumentationPartSpec](#ApiGatewayDocumentationPartSpec))
+
+Appears on:[ApiGatewayDocumentationPartSpec](#apigatewaydocumentationpartspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `method` | ***string***| ***(Optional)*** |
@@ -39,10 +43,12 @@ info:
 | `statusCode` | ***string***| ***(Optional)*** |
 | `type` | ***string***||
 ## ApiGatewayDocumentationPartStatus
-##### (Appears on:[ApiGatewayDocumentationPart](#ApiGatewayDocumentationPart))
+
+Appears on:[ApiGatewayDocumentationPart](#apigatewaydocumentationpart)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiGatewayDocumentationPartSpec](#ApiGatewayDocumentationPartSpec)***| ***(Optional)*** |
+| `output` | ***[ApiGatewayDocumentationPartSpec](#apigatewaydocumentationpartspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

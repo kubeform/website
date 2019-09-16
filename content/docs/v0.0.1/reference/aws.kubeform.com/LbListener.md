@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `LbListener` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[LbListenerSpec](#LbListenerSpec)***||
-| `status` | ***[LbListenerStatus](#LbListenerStatus)***||
+| `spec` | ***[LbListenerSpec](#lblistenerspec)***||
+| `status` | ***[LbListenerStatus](#lblistenerstatus)***||
 ## LbListenerSpec
-##### (Appears on:[LbListener](#LbListener), [LbListenerStatus](#LbListenerStatus))
+
+Appears on:[LbListener](#lblistener), [LbListenerStatus](#lblistenerstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,24 +31,28 @@ info:
 | `secretRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `arn` | ***string***| ***(Optional)*** |
 | `certificateArn` | ***string***| ***(Optional)*** |
-| `defaultAction` | ***[[]LbListenerSpecDefaultAction](#LbListenerSpecDefaultAction)***||
+| `defaultAction` | ***[[]LbListenerSpecDefaultAction](#lblistenerspecdefaultaction)***||
 | `loadBalancerArn` | ***string***||
 | `port` | ***int***||
 | `protocol` | ***string***| ***(Optional)*** |
 | `sslPolicy` | ***string***| ***(Optional)*** |
 ## LbListenerSpecDefaultAction
-##### (Appears on:[LbListenerSpec](#LbListenerSpec))
+
+Appears on:[LbListenerSpec](#lblistenerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `authenticateCognito` | ***[[]LbListenerSpecDefaultActionAuthenticateCognito](#LbListenerSpecDefaultActionAuthenticateCognito)***| ***(Optional)*** |
-| `authenticateOidc` | ***[[]LbListenerSpecDefaultActionAuthenticateOidc](#LbListenerSpecDefaultActionAuthenticateOidc)***| ***(Optional)*** |
-| `fixedResponse` | ***[[]LbListenerSpecDefaultActionFixedResponse](#LbListenerSpecDefaultActionFixedResponse)***| ***(Optional)*** |
+| `authenticateCognito` | ***[[]LbListenerSpecDefaultActionAuthenticateCognito](#lblistenerspecdefaultactionauthenticatecognito)***| ***(Optional)*** |
+| `authenticateOidc` | ***[[]LbListenerSpecDefaultActionAuthenticateOidc](#lblistenerspecdefaultactionauthenticateoidc)***| ***(Optional)*** |
+| `fixedResponse` | ***[[]LbListenerSpecDefaultActionFixedResponse](#lblistenerspecdefaultactionfixedresponse)***| ***(Optional)*** |
 | `order` | ***int***| ***(Optional)*** |
-| `redirect` | ***[[]LbListenerSpecDefaultActionRedirect](#LbListenerSpecDefaultActionRedirect)***| ***(Optional)*** |
+| `redirect` | ***[[]LbListenerSpecDefaultActionRedirect](#lblistenerspecdefaultactionredirect)***| ***(Optional)*** |
 | `targetGroupArn` | ***string***| ***(Optional)*** |
 | `type` | ***string***||
 ## LbListenerSpecDefaultActionAuthenticateCognito
-##### (Appears on:[LbListenerSpecDefaultAction](#LbListenerSpecDefaultAction))
+
+Appears on:[LbListenerSpecDefaultAction](#lblistenerspecdefaultaction)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `authenticationRequestExtraParams` | ***map[string]string***| ***(Optional)*** |
@@ -58,7 +64,9 @@ info:
 | `userPoolClientID` | ***string***||
 | `userPoolDomain` | ***string***||
 ## LbListenerSpecDefaultActionAuthenticateOidc
-##### (Appears on:[LbListenerSpecDefaultAction](#LbListenerSpecDefaultAction))
+
+Appears on:[LbListenerSpecDefaultAction](#lblistenerspecdefaultaction)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `authenticationRequestExtraParams` | ***map[string]string***| ***(Optional)*** |
@@ -72,14 +80,18 @@ info:
 | `tokenEndpoint` | ***string***||
 | `userInfoEndpoint` | ***string***||
 ## LbListenerSpecDefaultActionFixedResponse
-##### (Appears on:[LbListenerSpecDefaultAction](#LbListenerSpecDefaultAction))
+
+Appears on:[LbListenerSpecDefaultAction](#lblistenerspecdefaultaction)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `contentType` | ***string***||
 | `messageBody` | ***string***| ***(Optional)*** |
 | `statusCode` | ***string***| ***(Optional)*** |
 ## LbListenerSpecDefaultActionRedirect
-##### (Appears on:[LbListenerSpecDefaultAction](#LbListenerSpecDefaultAction))
+
+Appears on:[LbListenerSpecDefaultAction](#lblistenerspecdefaultaction)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `host` | ***string***| ***(Optional)*** |
@@ -89,11 +101,13 @@ info:
 | `query` | ***string***| ***(Optional)*** |
 | `statusCode` | ***string***||
 ## LbListenerStatus
-##### (Appears on:[LbListener](#LbListener))
+
+Appears on:[LbListener](#lblistener)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[LbListenerSpec](#LbListenerSpec)***| ***(Optional)*** |
+| `output` | ***[LbListenerSpec](#lblistenerspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

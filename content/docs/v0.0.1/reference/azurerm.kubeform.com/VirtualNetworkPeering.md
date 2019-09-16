@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `VirtualNetworkPeering` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[VirtualNetworkPeeringSpec](#VirtualNetworkPeeringSpec)***||
-| `status` | ***[VirtualNetworkPeeringStatus](#VirtualNetworkPeeringStatus)***||
+| `spec` | ***[VirtualNetworkPeeringSpec](#virtualnetworkpeeringspec)***||
+| `status` | ***[VirtualNetworkPeeringStatus](#virtualnetworkpeeringstatus)***||
 ## VirtualNetworkPeeringSpec
-##### (Appears on:[VirtualNetworkPeering](#VirtualNetworkPeering), [VirtualNetworkPeeringStatus](#VirtualNetworkPeeringStatus))
+
+Appears on:[VirtualNetworkPeering](#virtualnetworkpeering), [VirtualNetworkPeeringStatus](#virtualnetworkpeeringstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,10 +37,12 @@ info:
 | `useRemoteGateways` | ***bool***| ***(Optional)*** |
 | `virtualNetworkName` | ***string***||
 ## VirtualNetworkPeeringStatus
-##### (Appears on:[VirtualNetworkPeering](#VirtualNetworkPeering))
+
+Appears on:[VirtualNetworkPeering](#virtualnetworkpeering)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[VirtualNetworkPeeringSpec](#VirtualNetworkPeeringSpec)***| ***(Optional)*** |
+| `output` | ***[VirtualNetworkPeeringSpec](#virtualnetworkpeeringspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

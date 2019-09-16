@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `DataFactoryDatasetPostgresql` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[DataFactoryDatasetPostgresqlSpec](#DataFactoryDatasetPostgresqlSpec)***||
-| `status` | ***[DataFactoryDatasetPostgresqlStatus](#DataFactoryDatasetPostgresqlStatus)***||
+| `spec` | ***[DataFactoryDatasetPostgresqlSpec](#datafactorydatasetpostgresqlspec)***||
+| `status` | ***[DataFactoryDatasetPostgresqlStatus](#datafactorydatasetpostgresqlstatus)***||
 ## DataFactoryDatasetPostgresqlSpec
-##### (Appears on:[DataFactoryDatasetPostgresql](#DataFactoryDatasetPostgresql), [DataFactoryDatasetPostgresqlStatus](#DataFactoryDatasetPostgresqlStatus))
+
+Appears on:[DataFactoryDatasetPostgresql](#datafactorydatasetpostgresql), [DataFactoryDatasetPostgresqlStatus](#datafactorydatasetpostgresqlstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -35,20 +37,24 @@ info:
 | `name` | ***string***||
 | `parameters` | ***map[string]string***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
-| `schemaColumn` | ***[[]DataFactoryDatasetPostgresqlSpecSchemaColumn](#DataFactoryDatasetPostgresqlSpecSchemaColumn)***| ***(Optional)*** |
+| `schemaColumn` | ***[[]DataFactoryDatasetPostgresqlSpecSchemaColumn](#datafactorydatasetpostgresqlspecschemacolumn)***| ***(Optional)*** |
 | `tableName` | ***string***| ***(Optional)*** |
 ## DataFactoryDatasetPostgresqlSpecSchemaColumn
-##### (Appears on:[DataFactoryDatasetPostgresqlSpec](#DataFactoryDatasetPostgresqlSpec))
+
+Appears on:[DataFactoryDatasetPostgresqlSpec](#datafactorydatasetpostgresqlspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `description` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
 | `type` | ***string***| ***(Optional)*** |
 ## DataFactoryDatasetPostgresqlStatus
-##### (Appears on:[DataFactoryDatasetPostgresql](#DataFactoryDatasetPostgresql))
+
+Appears on:[DataFactoryDatasetPostgresql](#datafactorydatasetpostgresql)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[DataFactoryDatasetPostgresqlSpec](#DataFactoryDatasetPostgresqlSpec)***| ***(Optional)*** |
+| `output` | ***[DataFactoryDatasetPostgresqlSpec](#datafactorydatasetpostgresqlspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

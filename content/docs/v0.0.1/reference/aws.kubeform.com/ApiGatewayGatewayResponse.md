@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `ApiGatewayGatewayResponse` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[ApiGatewayGatewayResponseSpec](#ApiGatewayGatewayResponseSpec)***||
-| `status` | ***[ApiGatewayGatewayResponseStatus](#ApiGatewayGatewayResponseStatus)***||
+| `spec` | ***[ApiGatewayGatewayResponseSpec](#apigatewaygatewayresponsespec)***||
+| `status` | ***[ApiGatewayGatewayResponseStatus](#apigatewaygatewayresponsestatus)***||
 ## ApiGatewayGatewayResponseSpec
-##### (Appears on:[ApiGatewayGatewayResponse](#ApiGatewayGatewayResponse), [ApiGatewayGatewayResponseStatus](#ApiGatewayGatewayResponseStatus))
+
+Appears on:[ApiGatewayGatewayResponse](#apigatewaygatewayresponse), [ApiGatewayGatewayResponseStatus](#apigatewaygatewayresponsestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `restAPIID` | ***string***||
 | `statusCode` | ***string***| ***(Optional)*** |
 ## ApiGatewayGatewayResponseStatus
-##### (Appears on:[ApiGatewayGatewayResponse](#ApiGatewayGatewayResponse))
+
+Appears on:[ApiGatewayGatewayResponse](#apigatewaygatewayresponse)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[ApiGatewayGatewayResponseSpec](#ApiGatewayGatewayResponseSpec)***| ***(Optional)*** |
+| `output` | ***[ApiGatewayGatewayResponseSpec](#apigatewaygatewayresponsespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

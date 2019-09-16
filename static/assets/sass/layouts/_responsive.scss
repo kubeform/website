@@ -1092,7 +1092,16 @@
   /* ==============================================
   documentation page start
 ==============================================*/
-
+  .documentation-navbar {
+    .main-menu {
+      a {
+        padding: 7px 0;
+      }
+      .ac-dropdown{
+        padding-left: 20px;
+      }
+    }
+  }
   //Searchbar position inherit
   .documentation-area {
     margin-bottom: 30px;

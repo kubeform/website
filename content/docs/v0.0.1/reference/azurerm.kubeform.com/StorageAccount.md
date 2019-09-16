@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `StorageAccount` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[StorageAccountSpec](#StorageAccountSpec)***||
-| `status` | ***[StorageAccountStatus](#StorageAccountStatus)***||
+| `spec` | ***[StorageAccountSpec](#storageaccountspec)***||
+| `status` | ***[StorageAccountStatus](#storageaccountstatus)***||
 ## StorageAccountSpec
-##### (Appears on:[StorageAccount](#StorageAccount), [StorageAccountStatus](#StorageAccountStatus))
+
+Appears on:[StorageAccount](#storageaccount), [StorageAccountStatus](#storageaccountstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -33,16 +35,16 @@ info:
 | `accountReplicationType` | ***string***||
 | `accountTier` | ***string***||
 | `accountType` | ***string***| ***(Optional)*** Deprecated|
-| `customDomain` | ***[[]StorageAccountSpecCustomDomain](#StorageAccountSpecCustomDomain)***| ***(Optional)*** |
+| `customDomain` | ***[[]StorageAccountSpecCustomDomain](#storageaccountspeccustomdomain)***| ***(Optional)*** |
 | `enableAdvancedThreatProtection` | ***bool***| ***(Optional)*** |
 | `enableBlobEncryption` | ***bool***| ***(Optional)*** |
 | `enableFileEncryption` | ***bool***| ***(Optional)*** |
 | `enableHTTPSTrafficOnly` | ***bool***| ***(Optional)*** |
-| `identity` | ***[[]StorageAccountSpecIdentity](#StorageAccountSpecIdentity)***| ***(Optional)*** |
+| `identity` | ***[[]StorageAccountSpecIdentity](#storageaccountspecidentity)***| ***(Optional)*** |
 | `isHnsEnabled` | ***bool***| ***(Optional)*** |
 | `location` | ***string***||
 | `name` | ***string***||
-| `networkRules` | ***[[]StorageAccountSpecNetworkRules](#StorageAccountSpecNetworkRules)***| ***(Optional)*** |
+| `networkRules` | ***[[]StorageAccountSpecNetworkRules](#storageaccountspecnetworkrules)***| ***(Optional)*** |
 | `primaryBlobEndpoint` | ***string***| ***(Optional)*** |
 | `primaryBlobHost` | ***string***| ***(Optional)*** |
 | `primaryDfsEndpoint` | ***string***| ***(Optional)*** |
@@ -56,7 +58,7 @@ info:
 | `primaryTableHost` | ***string***| ***(Optional)*** |
 | `primaryWebEndpoint` | ***string***| ***(Optional)*** |
 | `primaryWebHost` | ***string***| ***(Optional)*** |
-| `queueProperties` | ***[[]StorageAccountSpecQueueProperties](#StorageAccountSpecQueueProperties)***| ***(Optional)*** |
+| `queueProperties` | ***[[]StorageAccountSpecQueueProperties](#storageaccountspecqueueproperties)***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
 | `secondaryBlobEndpoint` | ***string***| ***(Optional)*** |
 | `secondaryBlobHost` | ***string***| ***(Optional)*** |
@@ -73,20 +75,26 @@ info:
 | `secondaryWebHost` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## StorageAccountSpecCustomDomain
-##### (Appears on:[StorageAccountSpec](#StorageAccountSpec))
+
+Appears on:[StorageAccountSpec](#storageaccountspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
 | `useSubdomain` | ***bool***| ***(Optional)*** |
 ## StorageAccountSpecIdentity
-##### (Appears on:[StorageAccountSpec](#StorageAccountSpec))
+
+Appears on:[StorageAccountSpec](#storageaccountspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `principalID` | ***string***| ***(Optional)*** |
 | `tenantID` | ***string***| ***(Optional)*** |
 | `type` | ***string***||
 ## StorageAccountSpecNetworkRules
-##### (Appears on:[StorageAccountSpec](#StorageAccountSpec))
+
+Appears on:[StorageAccountSpec](#storageaccountspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `bypass` | ***[]string***| ***(Optional)*** |
@@ -94,15 +102,19 @@ info:
 | `ipRules` | ***[]string***| ***(Optional)*** |
 | `virtualNetworkSubnetIDS` | ***[]string***| ***(Optional)*** |
 ## StorageAccountSpecQueueProperties
-##### (Appears on:[StorageAccountSpec](#StorageAccountSpec))
+
+Appears on:[StorageAccountSpec](#storageaccountspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `corsRule` | ***[[]StorageAccountSpecQueuePropertiesCorsRule](#StorageAccountSpecQueuePropertiesCorsRule)***| ***(Optional)*** |
-| `hourMetrics` | ***[[]StorageAccountSpecQueuePropertiesHourMetrics](#StorageAccountSpecQueuePropertiesHourMetrics)***| ***(Optional)*** |
-| `logging` | ***[[]StorageAccountSpecQueuePropertiesLogging](#StorageAccountSpecQueuePropertiesLogging)***| ***(Optional)*** |
-| `minuteMetrics` | ***[[]StorageAccountSpecQueuePropertiesMinuteMetrics](#StorageAccountSpecQueuePropertiesMinuteMetrics)***| ***(Optional)*** |
+| `corsRule` | ***[[]StorageAccountSpecQueuePropertiesCorsRule](#storageaccountspecqueuepropertiescorsrule)***| ***(Optional)*** |
+| `hourMetrics` | ***[[]StorageAccountSpecQueuePropertiesHourMetrics](#storageaccountspecqueuepropertieshourmetrics)***| ***(Optional)*** |
+| `logging` | ***[[]StorageAccountSpecQueuePropertiesLogging](#storageaccountspecqueuepropertieslogging)***| ***(Optional)*** |
+| `minuteMetrics` | ***[[]StorageAccountSpecQueuePropertiesMinuteMetrics](#storageaccountspecqueuepropertiesminutemetrics)***| ***(Optional)*** |
 ## StorageAccountSpecQueuePropertiesCorsRule
-##### (Appears on:[StorageAccountSpecQueueProperties](#StorageAccountSpecQueueProperties))
+
+Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueueproperties)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `allowedHeaders` | ***[]string***||
@@ -111,7 +123,9 @@ info:
 | `exposedHeaders` | ***[]string***||
 | `maxAgeInSeconds` | ***int***||
 ## StorageAccountSpecQueuePropertiesHourMetrics
-##### (Appears on:[StorageAccountSpecQueueProperties](#StorageAccountSpecQueueProperties))
+
+Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueueproperties)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `enabled` | ***bool***||
@@ -119,7 +133,9 @@ info:
 | `retentionPolicyDays` | ***int***| ***(Optional)*** |
 | `version` | ***string***||
 ## StorageAccountSpecQueuePropertiesLogging
-##### (Appears on:[StorageAccountSpecQueueProperties](#StorageAccountSpecQueueProperties))
+
+Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueueproperties)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `delete` | ***bool***||
@@ -128,7 +144,9 @@ info:
 | `version` | ***string***||
 | `write` | ***bool***||
 ## StorageAccountSpecQueuePropertiesMinuteMetrics
-##### (Appears on:[StorageAccountSpecQueueProperties](#StorageAccountSpecQueueProperties))
+
+Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueueproperties)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `enabled` | ***bool***||
@@ -136,11 +154,13 @@ info:
 | `retentionPolicyDays` | ***int***| ***(Optional)*** |
 | `version` | ***string***||
 ## StorageAccountStatus
-##### (Appears on:[StorageAccount](#StorageAccount))
+
+Appears on:[StorageAccount](#storageaccount)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[StorageAccountSpec](#StorageAccountSpec)***| ***(Optional)*** |
+| `output` | ***[StorageAccountSpec](#storageaccountspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

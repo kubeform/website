@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `HdinsightRserverCluster` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[HdinsightRserverClusterSpec](#HdinsightRserverClusterSpec)***||
-| `status` | ***[HdinsightRserverClusterStatus](#HdinsightRserverClusterStatus)***||
+| `spec` | ***[HdinsightRserverClusterSpec](#hdinsightrserverclusterspec)***||
+| `status` | ***[HdinsightRserverClusterStatus](#hdinsightrserverclusterstatus)***||
 ## HdinsightRserverClusterSpec
-##### (Appears on:[HdinsightRserverCluster](#HdinsightRserverCluster), [HdinsightRserverClusterStatus](#HdinsightRserverClusterStatus))
+
+Appears on:[HdinsightRserverCluster](#hdinsightrservercluster), [HdinsightRserverClusterStatus](#hdinsightrserverclusterstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,33 +31,39 @@ info:
 | `secretRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `clusterVersion` | ***string***||
 | `edgeSSHEndpoint` | ***string***| ***(Optional)*** |
-| `gateway` | ***[[]HdinsightRserverClusterSpecGateway](#HdinsightRserverClusterSpecGateway)***||
+| `gateway` | ***[[]HdinsightRserverClusterSpecGateway](#hdinsightrserverclusterspecgateway)***||
 | `httpsEndpoint` | ***string***| ***(Optional)*** |
 | `location` | ***string***||
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `roles` | ***[[]HdinsightRserverClusterSpecRoles](#HdinsightRserverClusterSpecRoles)***||
+| `roles` | ***[[]HdinsightRserverClusterSpecRoles](#hdinsightrserverclusterspecroles)***||
 | `rstudio` | ***bool***||
 | `sshEndpoint` | ***string***| ***(Optional)*** |
-| `storageAccount` | ***[[]HdinsightRserverClusterSpecStorageAccount](#HdinsightRserverClusterSpecStorageAccount)***||
+| `storageAccount` | ***[[]HdinsightRserverClusterSpecStorageAccount](#hdinsightrserverclusterspecstorageaccount)***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `tier` | ***string***||
 ## HdinsightRserverClusterSpecGateway
-##### (Appears on:[HdinsightRserverClusterSpec](#HdinsightRserverClusterSpec))
+
+Appears on:[HdinsightRserverClusterSpec](#hdinsightrserverclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `enabled` | ***bool***||
 | `username` | ***string***||
 ## HdinsightRserverClusterSpecRoles
-##### (Appears on:[HdinsightRserverClusterSpec](#HdinsightRserverClusterSpec))
+
+Appears on:[HdinsightRserverClusterSpec](#hdinsightrserverclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `edgeNode` | ***[[]HdinsightRserverClusterSpecRolesEdgeNode](#HdinsightRserverClusterSpecRolesEdgeNode)***||
-| `headNode` | ***[[]HdinsightRserverClusterSpecRolesHeadNode](#HdinsightRserverClusterSpecRolesHeadNode)***||
-| `workerNode` | ***[[]HdinsightRserverClusterSpecRolesWorkerNode](#HdinsightRserverClusterSpecRolesWorkerNode)***||
-| `zookeeperNode` | ***[[]HdinsightRserverClusterSpecRolesZookeeperNode](#HdinsightRserverClusterSpecRolesZookeeperNode)***||
+| `edgeNode` | ***[[]HdinsightRserverClusterSpecRolesEdgeNode](#hdinsightrserverclusterspecrolesedgenode)***||
+| `headNode` | ***[[]HdinsightRserverClusterSpecRolesHeadNode](#hdinsightrserverclusterspecrolesheadnode)***||
+| `workerNode` | ***[[]HdinsightRserverClusterSpecRolesWorkerNode](#hdinsightrserverclusterspecrolesworkernode)***||
+| `zookeeperNode` | ***[[]HdinsightRserverClusterSpecRolesZookeeperNode](#hdinsightrserverclusterspecroleszookeepernode)***||
 ## HdinsightRserverClusterSpecRolesEdgeNode
-##### (Appears on:[HdinsightRserverClusterSpecRoles](#HdinsightRserverClusterSpecRoles))
+
+Appears on:[HdinsightRserverClusterSpecRoles](#hdinsightrserverclusterspecroles)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `sshKeys` | ***[]string***| ***(Optional)*** |
@@ -64,7 +72,9 @@ info:
 | `virtualNetworkID` | ***string***| ***(Optional)*** |
 | `vmSize` | ***string***||
 ## HdinsightRserverClusterSpecRolesHeadNode
-##### (Appears on:[HdinsightRserverClusterSpecRoles](#HdinsightRserverClusterSpecRoles))
+
+Appears on:[HdinsightRserverClusterSpecRoles](#hdinsightrserverclusterspecroles)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `sshKeys` | ***[]string***| ***(Optional)*** |
@@ -73,7 +83,9 @@ info:
 | `virtualNetworkID` | ***string***| ***(Optional)*** |
 | `vmSize` | ***string***||
 ## HdinsightRserverClusterSpecRolesWorkerNode
-##### (Appears on:[HdinsightRserverClusterSpecRoles](#HdinsightRserverClusterSpecRoles))
+
+Appears on:[HdinsightRserverClusterSpecRoles](#hdinsightrserverclusterspecroles)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `minInstanceCount` | ***int***| ***(Optional)*** |
@@ -84,7 +96,9 @@ info:
 | `virtualNetworkID` | ***string***| ***(Optional)*** |
 | `vmSize` | ***string***||
 ## HdinsightRserverClusterSpecRolesZookeeperNode
-##### (Appears on:[HdinsightRserverClusterSpecRoles](#HdinsightRserverClusterSpecRoles))
+
+Appears on:[HdinsightRserverClusterSpecRoles](#hdinsightrserverclusterspecroles)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `sshKeys` | ***[]string***| ***(Optional)*** |
@@ -93,17 +107,21 @@ info:
 | `virtualNetworkID` | ***string***| ***(Optional)*** |
 | `vmSize` | ***string***||
 ## HdinsightRserverClusterSpecStorageAccount
-##### (Appears on:[HdinsightRserverClusterSpec](#HdinsightRserverClusterSpec))
+
+Appears on:[HdinsightRserverClusterSpec](#hdinsightrserverclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `isDefault` | ***bool***||
 | `storageContainerID` | ***string***||
 ## HdinsightRserverClusterStatus
-##### (Appears on:[HdinsightRserverCluster](#HdinsightRserverCluster))
+
+Appears on:[HdinsightRserverCluster](#hdinsightrservercluster)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[HdinsightRserverClusterSpec](#HdinsightRserverClusterSpec)***| ***(Optional)*** |
+| `output` | ***[HdinsightRserverClusterSpec](#hdinsightrserverclusterspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
 ## Sensitive Values

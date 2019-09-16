@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IamUserPolicyAttachment` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IamUserPolicyAttachmentSpec](#IamUserPolicyAttachmentSpec)***||
-| `status` | ***[IamUserPolicyAttachmentStatus](#IamUserPolicyAttachmentStatus)***||
+| `spec` | ***[IamUserPolicyAttachmentSpec](#iamuserpolicyattachmentspec)***||
+| `status` | ***[IamUserPolicyAttachmentStatus](#iamuserpolicyattachmentstatus)***||
 ## IamUserPolicyAttachmentSpec
-##### (Appears on:[IamUserPolicyAttachment](#IamUserPolicyAttachment), [IamUserPolicyAttachmentStatus](#IamUserPolicyAttachmentStatus))
+
+Appears on:[IamUserPolicyAttachment](#iamuserpolicyattachment), [IamUserPolicyAttachmentStatus](#iamuserpolicyattachmentstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,10 +31,12 @@ info:
 | `policyArn` | ***string***||
 | `user` | ***string***||
 ## IamUserPolicyAttachmentStatus
-##### (Appears on:[IamUserPolicyAttachment](#IamUserPolicyAttachment))
+
+Appears on:[IamUserPolicyAttachment](#iamuserpolicyattachment)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IamUserPolicyAttachmentSpec](#IamUserPolicyAttachmentSpec)***| ***(Optional)*** |
+| `output` | ***[IamUserPolicyAttachmentSpec](#iamuserpolicyattachmentspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

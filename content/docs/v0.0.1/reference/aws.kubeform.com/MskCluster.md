@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `MskCluster` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[MskClusterSpec](#MskClusterSpec)***||
-| `status` | ***[MskClusterStatus](#MskClusterStatus)***||
+| `spec` | ***[MskClusterSpec](#mskclusterspec)***||
+| `status` | ***[MskClusterStatus](#mskclusterstatus)***||
 ## MskClusterSpec
-##### (Appears on:[MskCluster](#MskCluster), [MskClusterStatus](#MskClusterStatus))
+
+Appears on:[MskCluster](#mskcluster), [MskClusterStatus](#mskclusterstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -29,19 +31,21 @@ info:
 | `arn` | ***string***| ***(Optional)*** |
 | `bootstrapBrokers` | ***string***| ***(Optional)*** |
 | `bootstrapBrokersTls` | ***string***| ***(Optional)*** |
-| `brokerNodeGroupInfo` | ***[[]MskClusterSpecBrokerNodeGroupInfo](#MskClusterSpecBrokerNodeGroupInfo)***||
-| `clientAuthentication` | ***[[]MskClusterSpecClientAuthentication](#MskClusterSpecClientAuthentication)***| ***(Optional)*** |
+| `brokerNodeGroupInfo` | ***[[]MskClusterSpecBrokerNodeGroupInfo](#mskclusterspecbrokernodegroupinfo)***||
+| `clientAuthentication` | ***[[]MskClusterSpecClientAuthentication](#mskclusterspecclientauthentication)***| ***(Optional)*** |
 | `clusterName` | ***string***||
-| `configurationInfo` | ***[[]MskClusterSpecConfigurationInfo](#MskClusterSpecConfigurationInfo)***| ***(Optional)*** |
+| `configurationInfo` | ***[[]MskClusterSpecConfigurationInfo](#mskclusterspecconfigurationinfo)***| ***(Optional)*** |
 | `currentVersion` | ***string***| ***(Optional)*** |
-| `encryptionInfo` | ***[[]MskClusterSpecEncryptionInfo](#MskClusterSpecEncryptionInfo)***| ***(Optional)*** |
+| `encryptionInfo` | ***[[]MskClusterSpecEncryptionInfo](#mskclusterspecencryptioninfo)***| ***(Optional)*** |
 | `enhancedMonitoring` | ***string***| ***(Optional)*** |
 | `kafkaVersion` | ***string***||
 | `numberOfBrokerNodes` | ***int***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `zookeeperConnectString` | ***string***| ***(Optional)*** |
 ## MskClusterSpecBrokerNodeGroupInfo
-##### (Appears on:[MskClusterSpec](#MskClusterSpec))
+
+Appears on:[MskClusterSpec](#mskclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `azDistribution` | ***string***| ***(Optional)*** |
@@ -50,38 +54,50 @@ info:
 | `instanceType` | ***string***||
 | `securityGroups` | ***[]string***||
 ## MskClusterSpecClientAuthentication
-##### (Appears on:[MskClusterSpec](#MskClusterSpec))
+
+Appears on:[MskClusterSpec](#mskclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `tls` | ***[[]MskClusterSpecClientAuthenticationTls](#MskClusterSpecClientAuthenticationTls)***| ***(Optional)*** |
+| `tls` | ***[[]MskClusterSpecClientAuthenticationTls](#mskclusterspecclientauthenticationtls)***| ***(Optional)*** |
 ## MskClusterSpecClientAuthenticationTls
-##### (Appears on:[MskClusterSpecClientAuthentication](#MskClusterSpecClientAuthentication))
+
+Appears on:[MskClusterSpecClientAuthentication](#mskclusterspecclientauthentication)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `certificateAuthorityArns` | ***[]string***| ***(Optional)*** |
 ## MskClusterSpecConfigurationInfo
-##### (Appears on:[MskClusterSpec](#MskClusterSpec))
+
+Appears on:[MskClusterSpec](#mskclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `arn` | ***string***||
 | `revision` | ***int***||
 ## MskClusterSpecEncryptionInfo
-##### (Appears on:[MskClusterSpec](#MskClusterSpec))
+
+Appears on:[MskClusterSpec](#mskclusterspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `encryptionAtRestKmsKeyArn` | ***string***| ***(Optional)*** |
-| `encryptionInTransit` | ***[[]MskClusterSpecEncryptionInfoEncryptionInTransit](#MskClusterSpecEncryptionInfoEncryptionInTransit)***| ***(Optional)*** |
+| `encryptionInTransit` | ***[[]MskClusterSpecEncryptionInfoEncryptionInTransit](#mskclusterspecencryptioninfoencryptionintransit)***| ***(Optional)*** |
 ## MskClusterSpecEncryptionInfoEncryptionInTransit
-##### (Appears on:[MskClusterSpecEncryptionInfo](#MskClusterSpecEncryptionInfo))
+
+Appears on:[MskClusterSpecEncryptionInfo](#mskclusterspecencryptioninfo)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `clientBroker` | ***string***| ***(Optional)*** |
 | `inCluster` | ***bool***| ***(Optional)*** |
 ## MskClusterStatus
-##### (Appears on:[MskCluster](#MskCluster))
+
+Appears on:[MskCluster](#mskcluster)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[MskClusterSpec](#MskClusterSpec)***| ***(Optional)*** |
+| `output` | ***[MskClusterSpec](#mskclusterspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

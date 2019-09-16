@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `AutomationAccount` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[AutomationAccountSpec](#AutomationAccountSpec)***||
-| `status` | ***[AutomationAccountStatus](#AutomationAccountStatus)***||
+| `spec` | ***[AutomationAccountSpec](#automationaccountspec)***||
+| `status` | ***[AutomationAccountStatus](#automationaccountstatus)***||
 ## AutomationAccountSpec
-##### (Appears on:[AutomationAccount](#AutomationAccount), [AutomationAccountStatus](#AutomationAccountStatus))
+
+Appears on:[AutomationAccount](#automationaccount), [AutomationAccountStatus](#automationaccountstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,19 +34,23 @@ info:
 | `location` | ***string***||
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `sku` | ***[[]AutomationAccountSpecSku](#AutomationAccountSpecSku)***| ***(Optional)*** Deprecated|
+| `sku` | ***[[]AutomationAccountSpecSku](#automationaccountspecsku)***| ***(Optional)*** Deprecated|
 | `skuName` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 ## AutomationAccountSpecSku
-##### (Appears on:[AutomationAccountSpec](#AutomationAccountSpec))
+
+Appears on:[AutomationAccountSpec](#automationaccountspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***| ***(Optional)*** |
 ## AutomationAccountStatus
-##### (Appears on:[AutomationAccount](#AutomationAccount))
+
+Appears on:[AutomationAccount](#automationaccount)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[AutomationAccountSpec](#AutomationAccountSpec)***| ***(Optional)*** |
+| `output` | ***[AutomationAccountSpec](#automationaccountspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

@@ -18,27 +18,33 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `WafregionalGeoMatchSet` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[WafregionalGeoMatchSetSpec](#WafregionalGeoMatchSetSpec)***||
-| `status` | ***[WafregionalGeoMatchSetStatus](#WafregionalGeoMatchSetStatus)***||
+| `spec` | ***[WafregionalGeoMatchSetSpec](#wafregionalgeomatchsetspec)***||
+| `status` | ***[WafregionalGeoMatchSetStatus](#wafregionalgeomatchsetstatus)***||
 ## WafregionalGeoMatchSetSpec
-##### (Appears on:[WafregionalGeoMatchSet](#WafregionalGeoMatchSet), [WafregionalGeoMatchSetStatus](#WafregionalGeoMatchSetStatus))
+
+Appears on:[WafregionalGeoMatchSet](#wafregionalgeomatchset), [WafregionalGeoMatchSetStatus](#wafregionalgeomatchsetstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `geoMatchConstraint` | ***[[]WafregionalGeoMatchSetSpecGeoMatchConstraint](#WafregionalGeoMatchSetSpecGeoMatchConstraint)***| ***(Optional)*** |
+| `geoMatchConstraint` | ***[[]WafregionalGeoMatchSetSpecGeoMatchConstraint](#wafregionalgeomatchsetspecgeomatchconstraint)***| ***(Optional)*** |
 | `name` | ***string***||
 ## WafregionalGeoMatchSetSpecGeoMatchConstraint
-##### (Appears on:[WafregionalGeoMatchSetSpec](#WafregionalGeoMatchSetSpec))
+
+Appears on:[WafregionalGeoMatchSetSpec](#wafregionalgeomatchsetspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `type` | ***string***||
 | `value` | ***string***||
 ## WafregionalGeoMatchSetStatus
-##### (Appears on:[WafregionalGeoMatchSet](#WafregionalGeoMatchSet))
+
+Appears on:[WafregionalGeoMatchSet](#wafregionalgeomatchset)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[WafregionalGeoMatchSetSpec](#WafregionalGeoMatchSetSpec)***| ***(Optional)*** |
+| `output` | ***[WafregionalGeoMatchSetSpec](#wafregionalgeomatchsetspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

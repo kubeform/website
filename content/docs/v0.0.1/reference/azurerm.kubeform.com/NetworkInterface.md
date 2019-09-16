@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `NetworkInterface` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[NetworkInterfaceSpec](#NetworkInterfaceSpec)***||
-| `status` | ***[NetworkInterfaceStatus](#NetworkInterfaceStatus)***||
+| `spec` | ***[NetworkInterfaceSpec](#networkinterfacespec)***||
+| `status` | ***[NetworkInterfaceStatus](#networkinterfacestatus)***||
 ## NetworkInterfaceSpec
-##### (Appears on:[NetworkInterface](#NetworkInterface), [NetworkInterfaceStatus](#NetworkInterfaceStatus))
+
+Appears on:[NetworkInterface](#networkinterface), [NetworkInterfaceStatus](#networkinterfacestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,7 +34,7 @@ info:
 | `enableIPForwarding` | ***bool***| ***(Optional)*** |
 | `internalDNSNameLabel` | ***string***| ***(Optional)*** |
 | `internalFqdn` | ***string***| ***(Optional)*** Deprecated|
-| `ipConfiguration` | ***[[]NetworkInterfaceSpecIpConfiguration](#NetworkInterfaceSpecIpConfiguration)***||
+| `ipConfiguration` | ***[[]NetworkInterfaceSpecIpConfiguration](#networkinterfacespecipconfiguration)***||
 | `location` | ***string***||
 | `macAddress` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
@@ -43,7 +45,9 @@ info:
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `virtualMachineID` | ***string***| ***(Optional)*** |
 ## NetworkInterfaceSpecIpConfiguration
-##### (Appears on:[NetworkInterfaceSpec](#NetworkInterfaceSpec))
+
+Appears on:[NetworkInterfaceSpec](#networkinterfacespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `applicationGatewayBackendAddressPoolsIDS` | ***[]string***| ***(Optional)*** Deprecated|
@@ -58,10 +62,12 @@ info:
 | `publicIPAddressID` | ***string***| ***(Optional)*** |
 | `subnetID` | ***string***| ***(Optional)*** |
 ## NetworkInterfaceStatus
-##### (Appears on:[NetworkInterface](#NetworkInterface))
+
+Appears on:[NetworkInterface](#networkinterface)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[NetworkInterfaceSpec](#NetworkInterfaceSpec)***| ***(Optional)*** |
+| `output` | ***[NetworkInterfaceSpec](#networkinterfacespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

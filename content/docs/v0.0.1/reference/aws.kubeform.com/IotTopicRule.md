@@ -18,33 +18,37 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `IotTopicRule` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[IotTopicRuleSpec](#IotTopicRuleSpec)***||
-| `status` | ***[IotTopicRuleStatus](#IotTopicRuleStatus)***||
+| `spec` | ***[IotTopicRuleSpec](#iottopicrulespec)***||
+| `status` | ***[IotTopicRuleStatus](#iottopicrulestatus)***||
 ## IotTopicRuleSpec
-##### (Appears on:[IotTopicRule](#IotTopicRule), [IotTopicRuleStatus](#IotTopicRuleStatus))
+
+Appears on:[IotTopicRule](#iottopicrule), [IotTopicRuleStatus](#iottopicrulestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
 | `arn` | ***string***| ***(Optional)*** |
-| `cloudwatchAlarm` | ***[[]IotTopicRuleSpecCloudwatchAlarm](#IotTopicRuleSpecCloudwatchAlarm)***| ***(Optional)*** |
-| `cloudwatchMetric` | ***[[]IotTopicRuleSpecCloudwatchMetric](#IotTopicRuleSpecCloudwatchMetric)***| ***(Optional)*** |
+| `cloudwatchAlarm` | ***[[]IotTopicRuleSpecCloudwatchAlarm](#iottopicrulespeccloudwatchalarm)***| ***(Optional)*** |
+| `cloudwatchMetric` | ***[[]IotTopicRuleSpecCloudwatchMetric](#iottopicrulespeccloudwatchmetric)***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `dynamodb` | ***[[]IotTopicRuleSpecDynamodb](#IotTopicRuleSpecDynamodb)***| ***(Optional)*** |
-| `elasticsearch` | ***[[]IotTopicRuleSpecElasticsearch](#IotTopicRuleSpecElasticsearch)***| ***(Optional)*** |
+| `dynamodb` | ***[[]IotTopicRuleSpecDynamodb](#iottopicrulespecdynamodb)***| ***(Optional)*** |
+| `elasticsearch` | ***[[]IotTopicRuleSpecElasticsearch](#iottopicrulespecelasticsearch)***| ***(Optional)*** |
 | `enabled` | ***bool***||
-| `firehose` | ***[[]IotTopicRuleSpecFirehose](#IotTopicRuleSpecFirehose)***| ***(Optional)*** |
-| `kinesis` | ***[[]IotTopicRuleSpecKinesis](#IotTopicRuleSpecKinesis)***| ***(Optional)*** |
-| `lambda` | ***[[]IotTopicRuleSpecLambda](#IotTopicRuleSpecLambda)***| ***(Optional)*** |
+| `firehose` | ***[[]IotTopicRuleSpecFirehose](#iottopicrulespecfirehose)***| ***(Optional)*** |
+| `kinesis` | ***[[]IotTopicRuleSpecKinesis](#iottopicrulespeckinesis)***| ***(Optional)*** |
+| `lambda` | ***[[]IotTopicRuleSpecLambda](#iottopicrulespeclambda)***| ***(Optional)*** |
 | `name` | ***string***||
-| `republish` | ***[[]IotTopicRuleSpecRepublish](#IotTopicRuleSpecRepublish)***| ***(Optional)*** |
-| `s3` | ***[[]IotTopicRuleSpecS3](#IotTopicRuleSpecS3)***| ***(Optional)*** |
-| `sns` | ***[[]IotTopicRuleSpecSns](#IotTopicRuleSpecSns)***| ***(Optional)*** |
+| `republish` | ***[[]IotTopicRuleSpecRepublish](#iottopicrulespecrepublish)***| ***(Optional)*** |
+| `s3` | ***[[]IotTopicRuleSpecS3](#iottopicrulespecs3)***| ***(Optional)*** |
+| `sns` | ***[[]IotTopicRuleSpecSns](#iottopicrulespecsns)***| ***(Optional)*** |
 | `sql` | ***string***||
 | `sqlVersion` | ***string***||
-| `sqs` | ***[[]IotTopicRuleSpecSqs](#IotTopicRuleSpecSqs)***| ***(Optional)*** |
+| `sqs` | ***[[]IotTopicRuleSpecSqs](#iottopicrulespecsqs)***| ***(Optional)*** |
 ## IotTopicRuleSpecCloudwatchAlarm
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `alarmName` | ***string***||
@@ -52,7 +56,9 @@ info:
 | `stateReason` | ***string***||
 | `stateValue` | ***string***||
 ## IotTopicRuleSpecCloudwatchMetric
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `metricName` | ***string***||
@@ -62,7 +68,9 @@ info:
 | `metricValue` | ***string***||
 | `roleArn` | ***string***||
 ## IotTopicRuleSpecDynamodb
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `hashKeyField` | ***string***||
@@ -75,7 +83,9 @@ info:
 | `roleArn` | ***string***||
 | `tableName` | ***string***||
 ## IotTopicRuleSpecElasticsearch
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `endpoint` | ***string***||
@@ -84,56 +94,72 @@ info:
 | `roleArn` | ***string***||
 | `type` | ***string***||
 ## IotTopicRuleSpecFirehose
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deliveryStreamName` | ***string***||
 | `roleArn` | ***string***||
 | `separator` | ***string***| ***(Optional)*** |
 ## IotTopicRuleSpecKinesis
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `partitionKey` | ***string***| ***(Optional)*** |
 | `roleArn` | ***string***||
 | `streamName` | ***string***||
 ## IotTopicRuleSpecLambda
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `functionArn` | ***string***||
 ## IotTopicRuleSpecRepublish
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `roleArn` | ***string***||
 | `topic` | ***string***||
 ## IotTopicRuleSpecS3
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `bucketName` | ***string***||
 | `key` | ***string***||
 | `roleArn` | ***string***||
 ## IotTopicRuleSpecSns
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `messageFormat` | ***string***| ***(Optional)*** |
 | `roleArn` | ***string***||
 | `targetArn` | ***string***||
 ## IotTopicRuleSpecSqs
-##### (Appears on:[IotTopicRuleSpec](#IotTopicRuleSpec))
+
+Appears on:[IotTopicRuleSpec](#iottopicrulespec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `queueURL` | ***string***||
 | `roleArn` | ***string***||
 | `useBase64` | ***bool***||
 ## IotTopicRuleStatus
-##### (Appears on:[IotTopicRule](#IotTopicRule))
+
+Appears on:[IotTopicRule](#iottopicrule)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[IotTopicRuleSpec](#IotTopicRuleSpec)***| ***(Optional)*** |
+| `output` | ***[IotTopicRuleSpec](#iottopicrulespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

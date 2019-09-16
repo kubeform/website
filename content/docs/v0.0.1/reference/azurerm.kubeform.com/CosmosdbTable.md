@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `CosmosdbTable` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[CosmosdbTableSpec](#CosmosdbTableSpec)***||
-| `status` | ***[CosmosdbTableStatus](#CosmosdbTableStatus)***||
+| `spec` | ***[CosmosdbTableSpec](#cosmosdbtablespec)***||
+| `status` | ***[CosmosdbTableStatus](#cosmosdbtablestatus)***||
 ## CosmosdbTableSpec
-##### (Appears on:[CosmosdbTable](#CosmosdbTable), [CosmosdbTableStatus](#CosmosdbTableStatus))
+
+Appears on:[CosmosdbTable](#cosmosdbtable), [CosmosdbTableStatus](#cosmosdbtablestatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -30,10 +32,12 @@ info:
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
 ## CosmosdbTableStatus
-##### (Appears on:[CosmosdbTable](#CosmosdbTable))
+
+Appears on:[CosmosdbTable](#cosmosdbtable)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[CosmosdbTableSpec](#CosmosdbTableSpec)***| ***(Optional)*** |
+| `output` | ***[CosmosdbTableSpec](#cosmosdbtablespec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

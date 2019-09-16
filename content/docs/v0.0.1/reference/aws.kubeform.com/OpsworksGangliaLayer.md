@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `aws.kubeform.com/v1alpha1` |
 |    `kind` | string | `OpsworksGangliaLayer` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[OpsworksGangliaLayerSpec](#OpsworksGangliaLayerSpec)***||
-| `status` | ***[OpsworksGangliaLayerStatus](#OpsworksGangliaLayerStatus)***||
+| `spec` | ***[OpsworksGangliaLayerSpec](#opsworksganglialayerspec)***||
+| `status` | ***[OpsworksGangliaLayerStatus](#opsworksganglialayerstatus)***||
 ## OpsworksGangliaLayerSpec
-##### (Appears on:[OpsworksGangliaLayer](#OpsworksGangliaLayer), [OpsworksGangliaLayerStatus](#OpsworksGangliaLayerStatus))
+
+Appears on:[OpsworksGangliaLayer](#opsworksganglialayer), [OpsworksGangliaLayerStatus](#opsworksganglialayerstatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -38,7 +40,7 @@ info:
 | `customShutdownRecipes` | ***[]string***| ***(Optional)*** |
 | `customUndeployRecipes` | ***[]string***| ***(Optional)*** |
 | `drainElbOnShutdown` | ***bool***| ***(Optional)*** |
-| `ebsVolume` | ***[[]OpsworksGangliaLayerSpecEbsVolume](#OpsworksGangliaLayerSpecEbsVolume)***| ***(Optional)*** |
+| `ebsVolume` | ***[[]OpsworksGangliaLayerSpecEbsVolume](#opsworksganglialayerspecebsvolume)***| ***(Optional)*** |
 | `elasticLoadBalancer` | ***string***| ***(Optional)*** |
 | `installUpdatesOnBoot` | ***bool***| ***(Optional)*** |
 | `instanceShutdownTimeout` | ***int***| ***(Optional)*** |
@@ -50,7 +52,9 @@ info:
 | `useEbsOptimizedInstances` | ***bool***| ***(Optional)*** |
 | `username` | ***string***| ***(Optional)*** |
 ## OpsworksGangliaLayerSpecEbsVolume
-##### (Appears on:[OpsworksGangliaLayerSpec](#OpsworksGangliaLayerSpec))
+
+Appears on:[OpsworksGangliaLayerSpec](#opsworksganglialayerspec)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `iops` | ***int***| ***(Optional)*** |
@@ -60,10 +64,12 @@ info:
 | `size` | ***int***||
 | `type` | ***string***| ***(Optional)*** |
 ## OpsworksGangliaLayerStatus
-##### (Appears on:[OpsworksGangliaLayer](#OpsworksGangliaLayer))
+
+Appears on:[OpsworksGangliaLayer](#opsworksganglialayer)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[OpsworksGangliaLayerSpec](#OpsworksGangliaLayerSpec)***| ***(Optional)*** |
+| `output` | ***[OpsworksGangliaLayerSpec](#opsworksganglialayerspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---

@@ -18,10 +18,12 @@ info:
 | `apiVersion` | string | `azurerm.kubeform.com/v1alpha1` |
 |    `kind` | string | `LogicAppTriggerHTTPRequest` |
 | `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
-| `spec` | ***[LogicAppTriggerHTTPRequestSpec](#LogicAppTriggerHTTPRequestSpec)***||
-| `status` | ***[LogicAppTriggerHTTPRequestStatus](#LogicAppTriggerHTTPRequestStatus)***||
+| `spec` | ***[LogicAppTriggerHTTPRequestSpec](#logicapptriggerhttprequestspec)***||
+| `status` | ***[LogicAppTriggerHTTPRequestStatus](#logicapptriggerhttprequeststatus)***||
 ## LogicAppTriggerHTTPRequestSpec
-##### (Appears on:[LogicAppTriggerHTTPRequest](#LogicAppTriggerHTTPRequest), [LogicAppTriggerHTTPRequestStatus](#LogicAppTriggerHTTPRequestStatus))
+
+Appears on:[LogicAppTriggerHTTPRequest](#logicapptriggerhttprequest), [LogicAppTriggerHTTPRequestStatus](#logicapptriggerhttprequeststatus)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
@@ -32,10 +34,12 @@ info:
 | `relativePath` | ***string***| ***(Optional)*** |
 | `schema` | ***string***||
 ## LogicAppTriggerHTTPRequestStatus
-##### (Appears on:[LogicAppTriggerHTTPRequest](#LogicAppTriggerHTTPRequest))
+
+Appears on:[LogicAppTriggerHTTPRequest](#logicapptriggerhttprequest)
+
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
-| `output` | ***[LogicAppTriggerHTTPRequestSpec](#LogicAppTriggerHTTPRequestSpec)***| ***(Optional)*** |
+| `output` | ***[LogicAppTriggerHTTPRequestSpec](#logicapptriggerhttprequestspec)***| ***(Optional)*** |
 | `state` | ***kubeform.dev/kubeform/apis.State***| ***(Optional)*** |
 ---
