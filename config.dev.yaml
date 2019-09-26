@@ -2,7 +2,7 @@ title: Provision cloud resources using Kubernetes CRDs & Terraform
 baseurl: https://kubeform-v1-hugo.web.app
 languageCode: en-us
 assetDir: static
-googleAnalytics: UA-141868403-3
+googleAnalytics: UA-62096468-4
 disableKinds:
 - taxonomy
 - taxonomyTerm
