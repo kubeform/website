@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - 'release-*'
+    tags-ignore:
+      - '*.*'
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Set up Go 1.13
+      uses: actions/setup-go@v1
+      with:
+        go-version: 1.13
+      id: go
+
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+
+    - uses: actions/checkout@v1
+
+    - name: Install Hugo
+      run: |
+        curl -fsSL -o hugo_extended.deb https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.deb
+        sudo dpkg -i hugo_extended.deb
+
+    - name: Install npm packages
+      run: |
+        npm install
+
+    - name: Install link checker
+      env:
+        GO111MODULE: on
+      run: |
+        export GOPATH=$(go env GOPATH)
+        export GOBIN=$GOPATH/bin
+        mkdir -p $GOBIN
+        mkdir -p $GOPATH/github.com/raviqqe
+        pushd $GOPATH/github.com/raviqqe
+        git clone https://github.com/appscodelabs/liche
+        cd liche
+        git checkout master
+        go install -v ./...
+        sudo mv $GOBIN/* /usr/local/bin
+        popd
+
+    - name: Build
+      run: make gen-prod
+
+    - name: Check links
+      run: |
+        hugo server --minify --config=config.yaml &>/dev/null &
+        make check-links
