@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/kubevault/operator",
+      "url": "github/stars/kubevault/operator",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/kubevault/vault-operator",
+      "url": "docker/pulls/kubevault/vault-operator",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -144,5 +144,22 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://kubevault.com"
   },
-  "stripeProductID": "prod_FiawKtgLGy6R9v"
+  "stripeProductID": "prod_FiawKtgLGy6R9v",
+  "plans": {
+    "Community": {
+      "price": "0"
+    },
+    "Standard_M2M": {
+      "price": "499"
+    },
+    "Standard_Y2Y": {
+      "price": "349"
+    },
+    "Golden_M2M": {
+      "price": "899"
+    },
+    "Golden_Y2Y": {
+      "price": "699"
+    }
+  }
 }

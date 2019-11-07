@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/appscode/guard",
+      "url": "github/stars/appscode/guard",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/appscode/guard",
+      "url": "docker/pulls/appscode/guard",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -114,5 +114,22 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/guard"
   },
-  "stripeProductID": "prod_FARVnkJx8nelJk"
+  "stripeProductID": "prod_FARVnkJx8nelJk",
+  "plans": {
+    "Community": {
+      "price": "0"
+    },
+    "Standard_M2M": {
+      "price": "499"
+    },
+    "Standard_Y2Y": {
+      "price": "349"
+    },
+    "Golden_M2M": {
+      "price": "899"
+    },
+    "Golden_Y2Y": {
+      "price": "699"
+    }
+  }
 }

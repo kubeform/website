@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/kubeshield/scanner",
+      "url": "github/stars/kubeshield/scanner",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/kubeshield/scanner",
+      "url": "docker/pulls/kubeshield/scanner",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -143,5 +143,10 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://kubeshield.app/"
   },
-  "stripeProductID": "prod_FFhyh5Z56cmEJL"
+  "stripeProductID": "prod_FFhyh5Z56cmEJL",
+  "plans": {
+    "Community": {
+      "price": "0"
+    }
+  }
 }

@@ -1,4 +1,10 @@
 {
+  "intersystems": {
+    "name": "InterSystems",
+    "website": "https://www.intersystems.com",
+    "logo": "https://cdn.appscode.com/images/customers/intersystems/logo.png",
+    "show": true
+  },
   "elpheria": {
     "name": "Elpheria",
     "website": "https://www.elpheria.com",

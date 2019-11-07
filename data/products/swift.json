@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/appscode/swift",
+      "url": "github/stars/appscode/swift",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/appscode/swift",
+      "url": "docker/pulls/appscode/swift",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -86,6 +86,7 @@
   ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
+    { "version": "v0.12.1", "hostDocs": true, "show": true },
     { "version": "0.11.1", "hostDocs": true, "show": true },
     { "version": "0.11.0", "hostDocs": true, "show": true },
     { "version": "0.10.0", "hostDocs": true, "show": true },
@@ -105,7 +106,7 @@
     { "version": "0.2.0", "hostDocs": false, "show": true },
     { "version": "0.1.0", "hostDocs": false, "show": true }
   ],
-  "latestVersion": "0.11.1",
+  "latestVersion": "v0.12.1",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://kubepack.dev/swift",
@@ -121,5 +122,10 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/swift"
   },
-  "stripeProductID": "prod_FARXloMWkxsKvP"
+  "stripeProductID": "prod_FARXloMWkxsKvP",
+  "plans": {
+    "Community": {
+      "price": "0"
+    }
+  }
 }

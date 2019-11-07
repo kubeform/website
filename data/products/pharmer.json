@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/pharmer/pharmer",
+      "url": "github/stars/pharmer/pharmer",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/pharmer/machine-controller",
+      "url": "docker/pulls/pharmer/machine-controller",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -86,9 +86,10 @@
   ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
-    { "version": "0.3.1", "hostDocs": true, "show": true }
+    { "version": "0.3.1", "hostDocs": true, "show": true },
+    { "version": "v0.5.2", "hostDocs": true, "show": true }
   ],
-  "latestVersion": "0.3.1",
+  "latestVersion": "v0.5.2",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/pharmer",
@@ -104,5 +105,22 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/pharmer"
   },
-  "stripeProductID": "prod_FARVvB8RAs9eaU"
+  "stripeProductID": "prod_FARVvB8RAs9eaU",
+  "plans": {
+    "Community": {
+      "price": "0"
+    },
+    "Standard_M2M": {
+      "price": "599"
+    },
+    "Standard_Y2Y": {
+      "price": "399"
+    },
+    "Golden_M2M": {
+      "price": "999"
+    },
+    "Golden_Y2Y": {
+      "price": "799"
+    }
+  }
 }

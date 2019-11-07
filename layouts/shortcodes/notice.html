@@ -1,0 +1,13 @@
+{{/*
+    Usage: Show notice on a page.
+    Format: {{< notice type="notice-type" message="Your message" >}}
+    Available types: [warning, danger, success, info, dark, primary, link]
+    Ref: https://bulma.io/documentation/components/message/
+*/}}
+
+
+<article class="message is-{{ .Get "type" }}">
+    <div class="message-body">
+        {{- .Get "message" | markdownify -}} {{/* Use `markdownify` to render any markdown syntax of message */}}
+    </div>
+</article>
