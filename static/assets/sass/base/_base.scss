@@ -1339,6 +1339,19 @@ body.fixed-nav .documentation-menu {
     &:first-child{
       margin-top: 0;
     }
+    a{
+      svg{
+        padding-left: 10px;
+      }
+      font-size: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease-in-out;
+    }
+    &:hover a{
+      opacity: 1;
+      visibility: visible;
+    }
   }
   h1 {
     font-size: 32px;
@@ -1360,6 +1373,13 @@ body.fixed-nav .documentation-menu {
   }
   h6 {
     font-size: 13px;
+  }
+  .highlight{
+    pre{
+      code{
+        color: #f1f1f1;
+      }
+    }
   }
 }
 .full-info h2 span.share-icon {
@@ -1448,6 +1468,43 @@ ul li b {
 .appscode-style.full-info a{
   color: $primary-color;
 }
+//code block style
+.code-block-heading {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f3f6;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  border: 1px solid #d1d5d9;
+  border-bottom: transparent;
+  h4 {
+    font-size: 16px;
+    font-family: $font-paragraph;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .copy-and-download{
+    .download-here,.copy-here {
+      background: transparent;
+      border: none;
+      color: #9aa2ad;
+      font-size: 20px;
+      cursor: copy;
+    }
+    .download-here{
+      cursor: pointer;
+    }
+  }
+}
+.highlight {
+  pre {
+    background-color: #1c2c41 !important;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  margin-bottom: 40px;
+}
 //custom ol li class start
 .full-info ol {
   list-style: none;
@@ -1497,7 +1554,32 @@ ul li b {
 }
 
 .tbl-of-contents {
-  overflow: hidden;
+  #TableOfContents{
+    max-height: 70vh;
+    &:hover{
+      overflow-y: auto;
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #F1F1F1;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #C1C1C1;
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
 }
 
 .tbl-of-contents h4 {
@@ -1922,8 +2004,14 @@ button.button.is-fullwidth {
   border: 1px solid #e2e2e2;
   background: $white-color;
 }
+.item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label {
+  border: 1px solid transparent;
+}
 .appscode-style .item input:checked ~ label > a{
   color: $primary-color;
+}
+.item input:checked~ul, .item input:checked~.item>ul>.item{
+  margin-left: -20px;
 }
 .kd-left-sidebar {
   margin-right: 30px;
@@ -1931,7 +2019,10 @@ button.button.is-fullwidth {
   top: 130px;
   z-index: 9;
 }
-
+.kd-sidebar-menu{
+  max-height: 65vh;
+  overflow-y: auto;
+}
 .kd-sidebar-menu .item label {
   border: 1px solid transparent;
   position: relative;
@@ -2410,3 +2501,21 @@ video {
   opacity: 1;
 }
 //  go to top area end
+
+// improve section start
+.improve-section-area{
+  padding-bottom: 80px;
+} 
+.improve-bg-color{
+  background-color: #FBFDFF;
+  padding: 0 20px !important;
+  a{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    font-family: $font-heading;
+  }
+  p{
+    font-size: 16px !important;
+    color: #74818D !important;
+  }
+}

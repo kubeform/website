@@ -792,8 +792,8 @@ function showPrice(plan, y2y, m2m) {
   discount.innerHTML = "Save "+Math.floor((m2m-y2y)/y2y*100)+"%";
 }
 
-function showStandardPrice() { showPrice('standard', 399, 599); }
-function showGoldPrice() { showPrice('gold', 799, 999); }
+function showStandardPrice() { showPrice('standard', {{ $p.plans.Standard_Y2Y.price }}, {{ $p.plans.Standard_M2M.price }}); }
+function showGoldPrice() { showPrice('gold', {{ $p.plans.Golden_Y2Y.price }}, {{ $p.plans.Golden_M2M.price }}); }
 
 showStandardPrice();
 showGoldPrice();

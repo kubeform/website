@@ -107,5 +107,10 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/service-broker"
   },
-  "stripeProductID": "prod_FARXK4vNsfeLk3"
+  "stripeProductID": "prod_FARXK4vNsfeLk3",
+  "plans": {
+    "Community": {
+      "price": "0"
+    }
+  }
 }
