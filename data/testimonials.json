@@ -1,8 +1,17 @@
 [
   {
+    "name": "Luca Ravazzolo",
+    "job": "Product Manager",
+    "email": "",
+    "profile": "https://cdn.appscode.com/images/customers/persons/luca_ravazzolo.png",
+    "companyKey": "intersystems",
+    "productKey": "consulting",
+    "testimonial": "InterSystems was delighted to engage with AppsCode in the delicate, yet fundamental task of supporting durable, non-ephemeral workloads with Kubernetes. We needed the best-prepared, most-proficient database operator consulting in the industry. Given AppsCode's pedigree of database building operators, the decision was easy. No time was wasted and all objectives reached in an amazingly short period of time. I would recommend AppsCode consulting for any Kubernetes related work."
+  },
+  {
     "name": "Mario Kozjak",
     "job": "Solutions Architect",
-    "email": "mario.kozjak@elpheria.com",
+    "email": "",
     "profile": "https://cdn.appscode.com/images/customers/persons/mario_kozjak.jpg",
     "companyKey": "elpheria",
     "productKey": "voyager",
@@ -11,7 +20,7 @@
   {
     "name": "Manuel Ramírez López",
     "job": "DevOps Engineer",
-    "email": "manuel.ramirez.lopez@pricehubble.com",
+    "email": "",
     "profile": "https://cdn.appscode.com/images/customers/persons/manuel_ramírez_lópez.jpeg",
     "companyKey": "pricehubble",
     "productKey": "voyager",
@@ -20,7 +29,7 @@
   {
     "name": "Richer Larivière",
     "job": "DevOPS Specialist",
-    "email": "rlariviere@devolutions.net",
+    "email": "",
     "profile": "https://cdn.appscode.com/images/customers/persons/richer_larivière.jpeg",
     "companyKey": "devolutions",
     "productKey": "voyager",
@@ -29,7 +38,7 @@
   {
     "name": "Daniel Gormly",
     "job": "Senior Developer",
-    "email": "daniel@birdi.com.au",
+    "email": "",
     "profile": "https://cdn.appscode.com/images/customers/persons/daniel_gormly.png",
     "companyKey": "birdi",
     "productKey": "voyager",
@@ -38,7 +47,7 @@
   {
     "name": "Dario Freddi",
     "job": "Founder & CEO",
-    "email": "drf54321@gmail.com",
+    "email": "",
     "profile": "https://cdn.appscode.com/images/customers/persons/dario_freddi.jpeg",
     "companyKey": "astarte",
     "productKey": "voyager",

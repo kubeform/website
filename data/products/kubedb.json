@@ -30,15 +30,15 @@
   "repoURL": "https://github.com/kubedb/docs",
   "starRepo": "kubedb/cli",
   "docRepo": "kubedb/docs",
-  "datasheetFormID": "",
+  "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
   "badges": [
     {
-      "url" : "github/stars/kubedb/cli",
+      "url": "github/stars/kubedb/cli",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/kubedb/operator",
+      "url": "docker/pulls/kubedb/operator",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -50,7 +50,7 @@
     {
       "title": "Lower administrative burden",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-1.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/easy-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -63,7 +63,7 @@
     {
       "title": "Native Kubernetes Support",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/multi-cloud-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -89,7 +89,7 @@
     {
       "title": "Availability and durability",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-3.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/availability-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -115,7 +115,7 @@
     {
       "title": "Manageability",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-1.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/monitoring-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -141,7 +141,7 @@
     {
       "title": "Open Source",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubedb/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/open-source-lg.png",
         "alt": "http"
       },
       "icon": {
@@ -185,5 +185,22 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.kubedb.com"
   },
-  "stripeProductID": "prod_FARWKSytMzmLb9"
+  "stripeProductID": "prod_FARWKSytMzmLb9",
+  "plans": {
+    "Community": {
+      "price": "0"
+    },
+    "Standard_M2M": {
+      "price": "599"
+    },
+    "Standard_Y2Y": {
+      "price": "399"
+    },
+    "Golden_M2M": {
+      "price": "999"
+    },
+    "Golden_Y2Y": {
+      "price": "799"
+    }
+  }
 }

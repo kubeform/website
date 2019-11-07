@@ -174,15 +174,6 @@ h6 {
   border-color: #4d4dcb;
   box-shadow: none; }
 
-.is-dark {
-  background-color: #32325d; }
-
-.is-success {
-  background-color: #00a651 !important; }
-
-.is-info {
-  background-color: #1da1f2 !important; }
-
 .is-blue {
   background-color: #3f19ad !important;
   color: #ffffff; }
@@ -193,9 +184,6 @@ h6 {
 
 .is-marked {
   background-color: #fff5e5 !important; }
-
-.is-danger {
-  background-color: #e01563; }
 
 .is-red {
   background-color: #e03056 !important;
@@ -2084,6 +2072,31 @@ body.fixed-nav .documentation-menu {
     .full-info h5:first-child,
     .full-info h6:first-child {
       margin-top: 0; }
+    .full-info h1 a,
+    .full-info h2 a,
+    .full-info h3 a,
+    .full-info h4 a,
+    .full-info h5 a,
+    .full-info h6 a {
+      font-size: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease-in-out; }
+      .full-info h1 a svg,
+      .full-info h2 a svg,
+      .full-info h3 a svg,
+      .full-info h4 a svg,
+      .full-info h5 a svg,
+      .full-info h6 a svg {
+        padding-left: 10px; }
+    .full-info h1:hover a,
+    .full-info h2:hover a,
+    .full-info h3:hover a,
+    .full-info h4:hover a,
+    .full-info h5:hover a,
+    .full-info h6:hover a {
+      opacity: 1;
+      visibility: visible; }
   .full-info h1 {
     font-size: 32px;
     border-bottom: 1px solid #ebebeb;
@@ -2099,6 +2112,8 @@ body.fixed-nav .documentation-menu {
     font-size: 15px; }
   .full-info h6 {
     font-size: 13px; }
+  .full-info .highlight pre code {
+    color: #f1f1f1; }
 
 .full-info h2 span.share-icon {
   color: #6b6b6b;
@@ -2178,6 +2193,36 @@ ul li b {
 .appscode-style.full-info a {
   color: #4d4dcb; }
 
+.code-block-heading {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f3f6;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  border: 1px solid #d1d5d9;
+  border-bottom: transparent; }
+  .code-block-heading h4 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0; }
+  .code-block-heading .copy-and-download .download-here, .code-block-heading .copy-and-download .copy-here {
+    background: transparent;
+    border: none;
+    color: #9aa2ad;
+    font-size: 20px;
+    cursor: copy; }
+  .code-block-heading .copy-and-download .download-here {
+    cursor: pointer; }
+
+.highlight {
+  margin-bottom: 40px; }
+  .highlight pre {
+    background-color: #1c2c41 !important;
+    font-size: 14px;
+    margin-bottom: 20px; }
+
 .full-info ol {
   list-style: none;
   counter-reset: order-list-counter; }
@@ -2220,8 +2265,23 @@ ul li b {
   cursor: pointer;
   display: block; }
 
-.tbl-of-contents {
-  overflow: hidden; }
+.tbl-of-contents #TableOfContents {
+  max-height: 70vh;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .tbl-of-contents #TableOfContents:hover {
+    overflow-y: auto; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar {
+    width: 4px;
+    height: 4px; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar-track {
+    background: #F1F1F1; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar-thumb {
+    background: #C1C1C1; }
+  .tbl-of-contents #TableOfContents::-webkit-scrollbar-thumb:hover {
+    background: #555; }
 
 .tbl-of-contents h4 {
   font-size: 14px;
@@ -2601,14 +2661,24 @@ button.button.is-fullwidth {
   border: 1px solid #e2e2e2;
   background: #ffffff; }
 
+.item:first-child input:checked ~ label, .item:first-child input:checked ~ .item:first-child > label {
+  border: 1px solid transparent; }
+
 .appscode-style .item input:checked ~ label > a {
   color: #4d4dcb; }
+
+.item input:checked ~ ul, .item input:checked ~ .item > ul > .item {
+  margin-left: -20px; }
 
 .kd-left-sidebar {
   margin-right: 30px;
   position: sticky;
   top: 130px;
   z-index: 9; }
+
+.kd-sidebar-menu {
+  max-height: 65vh;
+  overflow-y: auto; }
 
 .kd-sidebar-menu .item label {
   border: 1px solid transparent;
@@ -3058,6 +3128,20 @@ video {
 
 .go-to-top.is-visible {
   opacity: 1; }
+
+.improve-section-area {
+  padding-bottom: 80px; }
+
+.improve-bg-color {
+  background-color: #FBFDFF;
+  padding: 0 20px !important; }
+  .improve-bg-color a {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    font-family: "Raleway", sans-serif; }
+  .improve-bg-color p {
+    font-size: 16px !important;
+    color: #74818D !important; }
 
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
