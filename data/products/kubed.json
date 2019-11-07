@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/appscode/kubed",
+      "url": "github/stars/appscode/kubed",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/appscode/kubed",
+      "url": "docker/pulls/appscode/kubed",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -156,5 +156,10 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/kubed"
   },
-  "stripeProductID": "prod_FARVnpFkkXyggO"
+  "stripeProductID": "prod_FARVnpFkkXyggO",
+  "plans": {
+    "Community": {
+      "price": "0"
+    }
+  }
 }

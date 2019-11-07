@@ -32,12 +32,12 @@
   "docRepo": "kubeform/docs",
   "badges": [
     {
-      "url" : "github/stars/kubeform/kubeform",
+      "url": "github/stars/kubeform/kubeform",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/kubeform/kfc",
+      "url": "docker/pulls/kubeform/kfc",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -142,5 +142,10 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.kubeform.com"
   },
-  "stripeProductID": "prod_FARWKSytMzmLb9"
+  "stripeProductID": "prod_FARWKSytMzmLb9",
+  "plans": {
+    "Community": {
+      "price": "0"
+    }
+  }
 }

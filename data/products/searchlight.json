@@ -33,12 +33,12 @@
   "datasheetFormID": "",
   "badges": [
     {
-      "url" : "github/stars/appscode/searchlight",
+      "url": "github/stars/appscode/searchlight",
       "alt": "GitHub Stars",
       "logo": "github"
     },
     {
-      "url" : "docker/pulls/appscode/searchlight",
+      "url": "docker/pulls/appscode/searchlight",
       "alt": "Docker Pulls",
       "logo": "docker"
     }
@@ -112,5 +112,10 @@
     "Support URL": "https://appscode.freshdesk.com",
     "Website URL": "https://www.appscode.com/products/searchlight"
   },
-  "stripeProductID": "prod_FARWHv38XFKlXL"
+  "stripeProductID": "prod_FARWHv38XFKlXL",
+  "plans": {
+    "Community": {
+      "price": "0"
+    }
+  }
 }

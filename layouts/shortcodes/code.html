@@ -1,0 +1,14 @@
+<div class="highlight" id="codeblock-{{.Ordinal}}">
+<!-- title start  -->
+  <div class="code-block-heading">
+    <div class="code-title">
+      <h4>{{ .Get "title" }}</h4>
+    </div>
+    <div class="copy-and-download">
+      <button class="download-here"><i class="fa fa-download" title="Download" aria-hidden="true"></i></button>
+      <button class="copy-here" data-clipboard-target="#codeblock-{{.Ordinal}} pre code" title="Copy"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <!-- title end  -->
+  {{ .Inner }}
+</div>

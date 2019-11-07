@@ -268,6 +268,24 @@
   <!-- pagination area end -->
 </div>
 
+<!-- improve page section start  -->
+<div class="improve-section-area">
+  <div class="container section">
+      <div class="improve-bg-color">
+      <div class="columns">
+          {{ $urlToken := (split .File.Path "/") }}
+          <div class="column is-6">
+            <a href="{{ $p.repoURL }}/edit/master/docs/{{ if (gt $urlToken 2) }} {{- range after 2 $urlToken -}}{{.}}/{{- end -}}{{ end }}">Improve This Page</a>
+          </div>
+          <!-- <div class="column is-6 has-text-right">
+            <p>Last Update 3 days ago</p>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- improve page section end -->
+
 <script type="text/javascript">
   var pageSize = 5;
   var acSearch = document.querySelector("#acSearch");

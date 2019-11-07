@@ -1,0 +1,22 @@
+{
+  "key": "stash-cli",
+  "name": "Stash kubectl Plugin",
+  "tagline": "kubectl plugin for Stash",
+  "published": true,
+  "repoURL": "https://github.com/stashed/cli",
+  "starRepo": "stashed/stash",
+  "docRepo": "stashed/cli",
+  "badges": [
+    {
+      "url" : "github/stars/stashed/cli",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    }
+  ],
+  "versions": [
+    { "version": "master", "hostDocs": false, "show": true },
+    { "version": "v0.2.0", "hostDocs": true, "show": true },
+    { "version": "v0.1.0", "hostDocs": true, "show": true }
+  ],
+  "latestVersion": "v0.2.0"
+}
