@@ -124,9 +124,10 @@
   ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
-    { "version": "v0.0.1", "hostDocs": true, "show": true }
+    { "version": "v0.0.1", "hostDocs": true, "show": false },
+    { "version": "v0.1.0", "hostDocs": true, "show": true }
   ],
-  "latestVersion": "v0.0.1",
+  "latestVersion": "v0.1.0",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubeform/kubeform",
