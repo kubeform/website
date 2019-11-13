@@ -1,7 +1,7 @@
 {
   "key": "kubedb",
   "name": "KubeDB",
-  "tagline": "Run production-grade databases <br />easily on <strong>Kubernetes</strong>",
+  "tagline": "Run production-grade databases easily on <strong>Kubernetes</strong>",
   "summary": "KubeDB by AppsCode simplifies and automates routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair for various popular databases on private and public clouds",
   "published": true,
   "website": {
@@ -149,7 +149,7 @@
         "alt": "http"
       },
       "summary": "",
-      "description": "KubeDB is 100% open source and distributed under a commercial friendly Apache v2 license. You get the benefits of bug fixes and enhancements made by the KubeDB community as a whole and not just be its primary sponsor AppsCode Inc. Since it is open source, your engineering team has the ability to debug issues unique to your deployment and make any changes if necessary. You get the piece of mind that your critical infrastructure component is not tied to the fate of a startup."
+      "description": "KubeDB is 100% open source and distributed under a commercial friendly Apache v2 license. You get the benefits of bug fixes and enhancements made by the KubeDB community as a whole and not just by its primary sponsor AppsCode Inc. Since it is open source, your engineering team has the ability to debug issues unique to your deployment and make any changes if necessary. You get the piece of mind that your critical infrastructure component is not tied to the fate of a startup."
     }
   ],
   "versions": [
