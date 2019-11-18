@@ -1923,14 +1923,14 @@ p.spam-message {
 
 .payment-method-area {
   position: relative;
-  background-image: url(../images/shape/shape-1.webp);
+  background-image: url(../images/shape/shape-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
   margin-top: 120px; }
 
 .payment-method-area:after {
-  background-image: url(../images/shape/shape-2.webp);
+  background-image: url(../images/shape/shape-2.png);
   content: "";
   left: 0;
   top: 0;
@@ -2267,10 +2267,13 @@ ul li b {
 
 .tbl-of-contents #TableOfContents {
   max-height: 70vh;
+  overflow-y: hidden;
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */ }
+  .tbl-of-contents #TableOfContents:hover {
+    overflow-y: auto; }
   .tbl-of-contents #TableOfContents::-webkit-scrollbar {
     width: 4px;
     height: 4px; }
@@ -4117,4 +4120,4 @@ video {
     display: flex;
     flex-direction: column-reverse; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

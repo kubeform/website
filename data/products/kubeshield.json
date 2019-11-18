@@ -9,22 +9,22 @@
     "path": ""
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/kubeshield/kubeshield-hero.png",
+    "src": "/assets/images/products/kubeshield/kubeshield-hero.png",
     "alt": "Kubeshield"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/kubeshield/kubeshield.png",
+    "src": "/assets/images/products/kubeshield/kubeshield.png",
     "alt": "Kubeshield"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/kubeshield/kubeshield-white.png",
+    "src": "/assets/images/products/kubeshield/kubeshield-white.png",
     "alt": "Kubeshield"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/kubeshield/kubeshield-icon.png",
+    "src": "/assets/images/products/kubeshield/kubeshield-icon.png",
     "alt": "Kubeshield",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/kubeshield/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/kubeshield/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/kubeshield/scanner",
@@ -47,11 +47,11 @@
     {
       "title": "Automatic Initialization & Unsealing",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/feature-1.png",
+        "src": "/assets/images/products/kubeshield/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/http.png",
+        "src": "/assets/images/products/kubeshield/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -60,11 +60,11 @@
     {
       "title": "Manage Vault Policy",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/feature-2.png",
+        "src": "/assets/images/products/kubeshield/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/http.png",
+        "src": "/assets/images/products/kubeshield/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -73,11 +73,11 @@
     {
       "title": "AWS Secret Engine",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/feature-3.png",
+        "src": "/assets/images/products/kubeshield/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/http.png",
+        "src": "/assets/images/products/kubeshield/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -86,11 +86,11 @@
     {
       "title": "Azure Secret Engine",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/feature-4.png",
+        "src": "/assets/images/products/kubeshield/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/http.png",
+        "src": "/assets/images/products/kubeshield/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -99,11 +99,11 @@
     {
       "title": "GCP Secret Engine",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/feature-5.png",
+        "src": "/assets/images/products/kubeshield/features/feature-5.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/http.png",
+        "src": "/assets/images/products/kubeshield/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -112,11 +112,11 @@
     {
       "title": "Database Secret Engine",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/feature-6.png",
+        "src": "/assets/images/products/kubeshield/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeshield/features/http.png",
+        "src": "/assets/images/products/kubeshield/features/http.png",
         "alt": "http"
       },
       "summary": "",

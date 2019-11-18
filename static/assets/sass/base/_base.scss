@@ -1168,7 +1168,7 @@ p.spam-message {
 
 .payment-method-area {
   position: relative;
-  background-image: url(../images/shape/shape-1.png);
+  background-image: url(../images/shape/shape-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -1176,7 +1176,7 @@ p.spam-message {
 }
 
 .payment-method-area:after {
-  background-image: url(../images/shape/shape-2.png);
+  background-image: url(../images/shape/shape-2.webp);
   content: "";
   left: 0;
   top: 0;
@@ -1556,15 +1556,11 @@ ul li b {
 .tbl-of-contents {
   #TableOfContents{
     max-height: 70vh;
-    &:hover{
-      overflow-y: auto;
-    }
     /* width */
     &::-webkit-scrollbar {
       width: 4px;
       height: 4px;
     }
-  
     /* Track */
     &::-webkit-scrollbar-track {
       background: #F1F1F1;
