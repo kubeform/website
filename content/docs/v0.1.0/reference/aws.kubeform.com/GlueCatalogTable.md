@@ -35,7 +35,7 @@ Appears on:[GlueCatalogTable](#gluecatalogtable), [GlueCatalogTableStatus](#glue
 | `owner` | ***string***| ***(Optional)*** |
 | `parameters` | ***map[string]string***| ***(Optional)*** |
 | `partitionKeys` | ***[[]GlueCatalogTableSpecPartitionKeys](#gluecatalogtablespecpartitionkeys)***| ***(Optional)*** |
-| `retention` | ***int***| ***(Optional)*** |
+| `retention` | ***int64***| ***(Optional)*** |
 | `storageDescriptor` | ***[[]GlueCatalogTableSpecStorageDescriptor](#gluecatalogtablespecstoragedescriptor)***| ***(Optional)*** |
 | `tableType` | ***string***| ***(Optional)*** |
 | `viewExpandedText` | ***string***| ***(Optional)*** |
@@ -60,7 +60,7 @@ Appears on:[GlueCatalogTableSpec](#gluecatalogtablespec)
 | `compressed` | ***bool***| ***(Optional)*** |
 | `inputFormat` | ***string***| ***(Optional)*** |
 | `location` | ***string***| ***(Optional)*** |
-| `numberOfBuckets` | ***int***| ***(Optional)*** |
+| `numberOfBuckets` | ***int64***| ***(Optional)*** |
 | `outputFormat` | ***string***| ***(Optional)*** |
 | `parameters` | ***map[string]string***| ***(Optional)*** |
 | `serDeInfo` | ***[[]GlueCatalogTableSpecStorageDescriptorSerDeInfo](#gluecatalogtablespecstoragedescriptorserdeinfo)***| ***(Optional)*** |
@@ -101,7 +101,7 @@ Appears on:[GlueCatalogTableSpecStorageDescriptor](#gluecatalogtablespecstoraged
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `column` | ***string***||
-| `sortOrder` | ***int***||
+| `sortOrder` | ***int64***||
 ## GlueCatalogTableStatus
 
 Appears on:[GlueCatalogTable](#gluecatalogtable)

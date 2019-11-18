@@ -42,7 +42,7 @@ Appears on:[WafregionalSizeConstraintSetSpec](#wafregionalsizeconstraintsetspec)
 | ------ | ----- | ----------- |
 | `comparisonOperator` | ***string***||
 | `fieldToMatch` | ***[[]WafregionalSizeConstraintSetSpecSizeConstraintsFieldToMatch](#wafregionalsizeconstraintsetspecsizeconstraintsfieldtomatch)***||
-| `size` | ***int***||
+| `size` | ***int64***||
 | `textTransformation` | ***string***||
 ## WafregionalSizeConstraintSetSpecSizeConstraintsFieldToMatch
 

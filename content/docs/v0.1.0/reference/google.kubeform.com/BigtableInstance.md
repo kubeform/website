@@ -33,7 +33,7 @@ Appears on:[BigtableInstance](#bigtableinstance), [BigtableInstanceStatus](#bigt
 | `displayName` | ***string***| ***(Optional)*** |
 | `instanceType` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `numNodes` | ***int***| ***(Optional)*** Deprecated|
+| `numNodes` | ***int64***| ***(Optional)*** Deprecated|
 | `project` | ***string***| ***(Optional)*** |
 | `storageType` | ***string***| ***(Optional)*** Deprecated|
 | `zone` | ***string***| ***(Optional)*** Deprecated|
@@ -44,7 +44,7 @@ Appears on:[BigtableInstanceSpec](#bigtableinstancespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `clusterID` | ***string***| ***(Optional)*** |
-| `numNodes` | ***int***| ***(Optional)*** |
+| `numNodes` | ***int64***| ***(Optional)*** |
 | `storageType` | ***string***| ***(Optional)*** |
 | `zone` | ***string***| ***(Optional)*** |
 ## BigtableInstanceStatus

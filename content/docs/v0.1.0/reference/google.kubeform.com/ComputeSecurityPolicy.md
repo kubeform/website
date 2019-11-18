@@ -44,7 +44,7 @@ Appears on:[ComputeSecurityPolicySpec](#computesecuritypolicyspec)
 | `description` | ***string***| ***(Optional)*** |
 | `match` | ***[[]ComputeSecurityPolicySpecRuleMatch](#computesecuritypolicyspecrulematch)***||
 | `preview` | ***bool***| ***(Optional)*** |
-| `priority` | ***int***||
+| `priority` | ***int64***||
 ## ComputeSecurityPolicySpecRuleMatch
 
 Appears on:[ComputeSecurityPolicySpecRule](#computesecuritypolicyspecrule)

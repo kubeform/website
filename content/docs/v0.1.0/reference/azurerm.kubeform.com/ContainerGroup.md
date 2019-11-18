@@ -51,14 +51,14 @@ Appears on:[ContainerGroupSpec](#containergroupspec)
 | ------ | ----- | ----------- |
 | `command` | ***string***| ***(Optional)*** Deprecated|
 | `commands` | ***[]string***| ***(Optional)*** |
-| `cpu` | ***encoding/json.Number***||
+| `cpu` | ***float64***||
 | `environmentVariables` | ***map[string]string***| ***(Optional)*** |
 | `gpu` | ***[[]ContainerGroupSpecContainerGpu](#containergroupspeccontainergpu)***| ***(Optional)*** |
 | `image` | ***string***||
 | `livenessProbe` | ***[[]ContainerGroupSpecContainerLivenessProbe](#containergroupspeccontainerlivenessprobe)***| ***(Optional)*** |
-| `memory` | ***encoding/json.Number***||
+| `memory` | ***float64***||
 | `name` | ***string***||
-| `port` | ***int***| ***(Optional)*** Deprecated|
+| `port` | ***int64***| ***(Optional)*** Deprecated|
 | `ports` | ***[[]ContainerGroupSpecContainerPorts](#containergroupspeccontainerports)***| ***(Optional)*** |
 | `protocol` | ***string***| ***(Optional)*** Deprecated|
 | `readinessProbe` | ***[[]ContainerGroupSpecContainerReadinessProbe](#containergroupspeccontainerreadinessprobe)***| ***(Optional)*** |
@@ -69,7 +69,7 @@ Appears on:[ContainerGroupSpecContainer](#containergroupspeccontainer)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `count` | ***int***| ***(Optional)*** |
+| `count` | ***int64***| ***(Optional)*** |
 | `sku` | ***string***| ***(Optional)*** |
 ## ContainerGroupSpecContainerLivenessProbe
 
@@ -78,12 +78,12 @@ Appears on:[ContainerGroupSpecContainer](#containergroupspeccontainer)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `exec` | ***[]string***| ***(Optional)*** |
-| `failureThreshold` | ***int***| ***(Optional)*** |
+| `failureThreshold` | ***int64***| ***(Optional)*** |
 | `httpGet` | ***[[]ContainerGroupSpecContainerLivenessProbeHttpGet](#containergroupspeccontainerlivenessprobehttpget)***| ***(Optional)*** |
-| `initialDelaySeconds` | ***int***| ***(Optional)*** |
-| `periodSeconds` | ***int***| ***(Optional)*** |
-| `successThreshold` | ***int***| ***(Optional)*** |
-| `timeoutSeconds` | ***int***| ***(Optional)*** |
+| `initialDelaySeconds` | ***int64***| ***(Optional)*** |
+| `periodSeconds` | ***int64***| ***(Optional)*** |
+| `successThreshold` | ***int64***| ***(Optional)*** |
+| `timeoutSeconds` | ***int64***| ***(Optional)*** |
 ## ContainerGroupSpecContainerLivenessProbeHttpGet
 
 Appears on:[ContainerGroupSpecContainerLivenessProbe](#containergroupspeccontainerlivenessprobe)
@@ -91,7 +91,7 @@ Appears on:[ContainerGroupSpecContainerLivenessProbe](#containergroupspeccontain
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `path` | ***string***| ***(Optional)*** |
-| `port` | ***int***| ***(Optional)*** |
+| `port` | ***int64***| ***(Optional)*** |
 | `scheme` | ***string***| ***(Optional)*** |
 ## ContainerGroupSpecContainerPorts
 
@@ -99,7 +99,7 @@ Appears on:[ContainerGroupSpecContainer](#containergroupspeccontainer)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `port` | ***int***| ***(Optional)*** |
+| `port` | ***int64***| ***(Optional)*** |
 | `protocol` | ***string***| ***(Optional)*** |
 ## ContainerGroupSpecContainerReadinessProbe
 
@@ -108,12 +108,12 @@ Appears on:[ContainerGroupSpecContainer](#containergroupspeccontainer)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `exec` | ***[]string***| ***(Optional)*** |
-| `failureThreshold` | ***int***| ***(Optional)*** |
+| `failureThreshold` | ***int64***| ***(Optional)*** |
 | `httpGet` | ***[[]ContainerGroupSpecContainerReadinessProbeHttpGet](#containergroupspeccontainerreadinessprobehttpget)***| ***(Optional)*** |
-| `initialDelaySeconds` | ***int***| ***(Optional)*** |
-| `periodSeconds` | ***int***| ***(Optional)*** |
-| `successThreshold` | ***int***| ***(Optional)*** |
-| `timeoutSeconds` | ***int***| ***(Optional)*** |
+| `initialDelaySeconds` | ***int64***| ***(Optional)*** |
+| `periodSeconds` | ***int64***| ***(Optional)*** |
+| `successThreshold` | ***int64***| ***(Optional)*** |
+| `timeoutSeconds` | ***int64***| ***(Optional)*** |
 ## ContainerGroupSpecContainerReadinessProbeHttpGet
 
 Appears on:[ContainerGroupSpecContainerReadinessProbe](#containergroupspeccontainerreadinessprobe)
@@ -121,7 +121,7 @@ Appears on:[ContainerGroupSpecContainerReadinessProbe](#containergroupspeccontai
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `path` | ***string***| ***(Optional)*** |
-| `port` | ***int***| ***(Optional)*** |
+| `port` | ***int64***| ***(Optional)*** |
 | `scheme` | ***string***| ***(Optional)*** |
 ## ContainerGroupSpecContainerVolume
 

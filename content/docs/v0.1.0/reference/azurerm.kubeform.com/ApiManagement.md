@@ -175,7 +175,7 @@ Appears on:[ApiManagementSpec](#apimanagementspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `capacity` | ***int***||
+| `capacity` | ***int64***||
 | `name` | ***string***||
 ## ApiManagementStatus
 

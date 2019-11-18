@@ -54,7 +54,7 @@ Appears on:[AppmeshVirtualRouterSpecSpecListener](#appmeshvirtualrouterspecspecl
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `port` | ***int***||
+| `port` | ***int64***||
 | `protocol` | ***string***||
 ## AppmeshVirtualRouterStatus
 

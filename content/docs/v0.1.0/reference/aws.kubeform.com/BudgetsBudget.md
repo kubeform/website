@@ -67,7 +67,7 @@ Appears on:[BudgetsBudgetSpec](#budgetsbudgetspec)
 | `notificationType` | ***string***||
 | `subscriberEmailAddresses` | ***[]string***| ***(Optional)*** |
 | `subscriberSnsTopicArns` | ***[]string***| ***(Optional)*** |
-| `threshold` | ***encoding/json.Number***||
+| `threshold` | ***float64***||
 | `thresholdType` | ***string***||
 ## BudgetsBudgetStatus
 

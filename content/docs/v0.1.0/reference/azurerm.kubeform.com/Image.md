@@ -44,9 +44,9 @@ Appears on:[ImageSpec](#imagespec)
 | ------ | ----- | ----------- |
 | `blobURI` | ***string***| ***(Optional)*** |
 | `caching` | ***string***| ***(Optional)*** |
-| `lun` | ***int***| ***(Optional)*** |
+| `lun` | ***int64***| ***(Optional)*** |
 | `managedDiskID` | ***string***| ***(Optional)*** |
-| `sizeGb` | ***int***| ***(Optional)*** |
+| `sizeGb` | ***int64***| ***(Optional)*** |
 ## ImageSpecOsDisk
 
 Appears on:[ImageSpec](#imagespec)
@@ -58,7 +58,7 @@ Appears on:[ImageSpec](#imagespec)
 | `managedDiskID` | ***string***| ***(Optional)*** |
 | `osState` | ***string***| ***(Optional)*** |
 | `osType` | ***string***| ***(Optional)*** |
-| `sizeGb` | ***int***| ***(Optional)*** |
+| `sizeGb` | ***int64***| ***(Optional)*** |
 ## ImageStatus
 
 Appears on:[Image](#image)

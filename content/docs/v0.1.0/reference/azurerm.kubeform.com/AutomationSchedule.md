@@ -33,7 +33,7 @@ Appears on:[AutomationSchedule](#automationschedule), [AutomationScheduleStatus]
 | `description` | ***string***| ***(Optional)*** |
 | `expiryTime` | ***string***| ***(Optional)*** |
 | `frequency` | ***string***||
-| `interval` | ***int***| ***(Optional)*** |
+| `interval` | ***int64***| ***(Optional)*** |
 | `monthDays` | ***[]int64***| ***(Optional)*** |
 | `monthlyOccurrence` | ***[[]AutomationScheduleSpecMonthlyOccurrence](#automationschedulespecmonthlyoccurrence)***| ***(Optional)*** |
 | `name` | ***string***||
@@ -48,7 +48,7 @@ Appears on:[AutomationScheduleSpec](#automationschedulespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `day` | ***string***||
-| `occurrence` | ***int***||
+| `occurrence` | ***int64***||
 ## AutomationScheduleStatus
 
 Appears on:[AutomationSchedule](#automationschedule)

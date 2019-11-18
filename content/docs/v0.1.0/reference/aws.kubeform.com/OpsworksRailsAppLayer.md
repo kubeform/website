@@ -45,7 +45,7 @@ Appears on:[OpsworksRailsAppLayer](#opsworksrailsapplayer), [OpsworksRailsAppLay
 | `ebsVolume` | ***[[]OpsworksRailsAppLayerSpecEbsVolume](#opsworksrailsapplayerspecebsvolume)***| ***(Optional)*** |
 | `elasticLoadBalancer` | ***string***| ***(Optional)*** |
 | `installUpdatesOnBoot` | ***bool***| ***(Optional)*** |
-| `instanceShutdownTimeout` | ***int***| ***(Optional)*** |
+| `instanceShutdownTimeout` | ***int64***| ***(Optional)*** |
 | `manageBundler` | ***bool***| ***(Optional)*** |
 | `name` | ***string***| ***(Optional)*** |
 | `passengerVersion` | ***string***| ***(Optional)*** |
@@ -60,11 +60,11 @@ Appears on:[OpsworksRailsAppLayerSpec](#opsworksrailsapplayerspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `iops` | ***int***| ***(Optional)*** |
+| `iops` | ***int64***| ***(Optional)*** |
 | `mountPoint` | ***string***||
-| `numberOfDisks` | ***int***||
+| `numberOfDisks` | ***int64***||
 | `raidLevel` | ***string***| ***(Optional)*** |
-| `size` | ***int***||
+| `size` | ***int64***||
 | `type` | ***string***| ***(Optional)*** |
 ## OpsworksRailsAppLayerStatus
 

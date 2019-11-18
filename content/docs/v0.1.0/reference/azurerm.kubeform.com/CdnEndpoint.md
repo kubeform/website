@@ -61,8 +61,8 @@ Appears on:[CdnEndpointSpec](#cdnendpointspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `hostName` | ***string***||
-| `httpPort` | ***int***| ***(Optional)*** |
-| `httpsPort` | ***int***| ***(Optional)*** |
+| `httpPort` | ***int64***| ***(Optional)*** |
+| `httpsPort` | ***int64***| ***(Optional)*** |
 | `name` | ***string***||
 ## CdnEndpointStatus
 

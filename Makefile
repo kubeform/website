@@ -5,6 +5,12 @@ run:
 .PHONY: docs
 docs:
 	hugo-tools docs-aggregator
+	find ./data -name "*.json" -exec sed -i 's/https:\/\/cdn.appscode.com\/images/\/assets\/images/g' {} \;
+
+.PHONY: assets
+assets:
+	hugo-tools docs-aggregator --only-assets
+	find ./data -name "*.json" -exec sed -i 's/https:\/\/cdn.appscode.com\/images/\/assets\/images/g' {} \;
 
 .PHONY: gen
 gen:

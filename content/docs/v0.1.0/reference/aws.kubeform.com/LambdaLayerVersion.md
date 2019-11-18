@@ -40,7 +40,7 @@ Appears on:[LambdaLayerVersion](#lambdalayerversion), [LambdaLayerVersionStatus]
 | `s3Key` | ***string***| ***(Optional)*** |
 | `s3ObjectVersion` | ***string***| ***(Optional)*** |
 | `sourceCodeHash` | ***string***| ***(Optional)*** |
-| `sourceCodeSize` | ***int***| ***(Optional)*** |
+| `sourceCodeSize` | ***int64***| ***(Optional)*** |
 | `version` | ***string***| ***(Optional)*** |
 ## LambdaLayerVersionStatus
 

@@ -61,8 +61,8 @@ Appears on:[EventgridEventSubscriptionSpec](#eventgrideventsubscriptionspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `eventTimeToLive` | ***int***||
-| `maxDeliveryAttempts` | ***int***||
+| `eventTimeToLive` | ***int64***||
+| `maxDeliveryAttempts` | ***int64***||
 ## EventgridEventSubscriptionSpecStorageBlobDeadLetterDestination
 
 Appears on:[EventgridEventSubscriptionSpec](#eventgrideventsubscriptionspec)

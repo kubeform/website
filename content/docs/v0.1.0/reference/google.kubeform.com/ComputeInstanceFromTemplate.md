@@ -84,7 +84,7 @@ Appears on:[ComputeInstanceFromTemplateSpecBootDisk](#computeinstancefromtemplat
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `image` | ***string***| ***(Optional)*** |
-| `size` | ***int***| ***(Optional)*** |
+| `size` | ***int64***| ***(Optional)*** |
 | `type` | ***string***| ***(Optional)*** |
 ## ComputeInstanceFromTemplateSpecGuestAccelerator
 
@@ -92,7 +92,7 @@ Appears on:[ComputeInstanceFromTemplateSpec](#computeinstancefromtemplatespec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `count` | ***int***||
+| `count` | ***int64***||
 | `type` | ***string***||
 ## ComputeInstanceFromTemplateSpecNetworkInterface
 

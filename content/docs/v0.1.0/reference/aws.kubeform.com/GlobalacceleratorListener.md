@@ -38,8 +38,8 @@ Appears on:[GlobalacceleratorListenerSpec](#globalacceleratorlistenerspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `fromPort` | ***int***| ***(Optional)*** |
-| `toPort` | ***int***| ***(Optional)*** |
+| `fromPort` | ***int64***| ***(Optional)*** |
+| `toPort` | ***int64***| ***(Optional)*** |
 ## GlobalacceleratorListenerStatus
 
 Appears on:[GlobalacceleratorListener](#globalacceleratorlistener)

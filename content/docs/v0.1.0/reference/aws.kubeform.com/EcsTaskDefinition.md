@@ -39,7 +39,7 @@ Appears on:[EcsTaskDefinition](#ecstaskdefinition), [EcsTaskDefinitionStatus](#e
 | `pidMode` | ***string***| ***(Optional)*** |
 | `placementConstraints` | ***[[]EcsTaskDefinitionSpecPlacementConstraints](#ecstaskdefinitionspecplacementconstraints)***| ***(Optional)*** |
 | `requiresCompatibilities` | ***[]string***| ***(Optional)*** |
-| `revision` | ***int***| ***(Optional)*** |
+| `revision` | ***int64***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `taskRoleArn` | ***string***| ***(Optional)*** |
 | `volume` | ***[[]EcsTaskDefinitionSpecVolume](#ecstaskdefinitionspecvolume)***| ***(Optional)*** |

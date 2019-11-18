@@ -45,7 +45,7 @@ Appears on:[MysqlServerSpec](#mysqlserverspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `capacity` | ***int***||
+| `capacity` | ***int64***||
 | `family` | ***string***||
 | `name` | ***string***||
 | `tier` | ***string***||
@@ -55,9 +55,9 @@ Appears on:[MysqlServerSpec](#mysqlserverspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `backupRetentionDays` | ***int***| ***(Optional)*** |
+| `backupRetentionDays` | ***int64***| ***(Optional)*** |
 | `geoRedundantBackup` | ***string***| ***(Optional)*** |
-| `storageMb` | ***int***||
+| `storageMb` | ***int64***||
 ## MysqlServerStatus
 
 Appears on:[MysqlServer](#mysqlserver)

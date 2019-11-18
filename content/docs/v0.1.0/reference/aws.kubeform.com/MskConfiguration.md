@@ -23,7 +23,9 @@ info:
 ## MskConfigurationSpec
 
 
+
 Appears on:[MskConfiguration](#mskconfiguration), [MskConfigurationStatus](#mskconfigurationstatus)
+
 
 
 | Field | Type | Description |
@@ -39,7 +41,9 @@ Appears on:[MskConfiguration](#mskconfiguration), [MskConfigurationStatus](#mskc
 ## MskConfigurationStatus
 
 
+
 Appears on:[MskConfiguration](#mskconfiguration)
+
 
 
 | Field | Type | Description |

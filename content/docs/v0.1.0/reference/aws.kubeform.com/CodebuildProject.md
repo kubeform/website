@@ -33,7 +33,7 @@ Appears on:[CodebuildProject](#codebuildproject), [CodebuildProjectStatus](#code
 | `artifacts` | ***[[]CodebuildProjectSpecArtifacts](#codebuildprojectspecartifacts)***||
 | `badgeEnabled` | ***bool***| ***(Optional)*** |
 | `badgeURL` | ***string***| ***(Optional)*** |
-| `buildTimeout` | ***int***| ***(Optional)*** |
+| `buildTimeout` | ***int64***| ***(Optional)*** |
 | `cache` | ***[[]CodebuildProjectSpecCache](#codebuildprojectspeccache)***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
 | `encryptionKey` | ***string***| ***(Optional)*** |
@@ -110,7 +110,7 @@ Appears on:[CodebuildProjectSpec](#codebuildprojectspec)
 | ------ | ----- | ----------- |
 | `auth` | ***[[]CodebuildProjectSpecSecondarySourcesAuth](#codebuildprojectspecsecondarysourcesauth)***| ***(Optional)*** |
 | `buildspec` | ***string***| ***(Optional)*** |
-| `gitCloneDepth` | ***int***| ***(Optional)*** |
+| `gitCloneDepth` | ***int64***| ***(Optional)*** |
 | `insecureSSL` | ***bool***| ***(Optional)*** |
 | `location` | ***string***| ***(Optional)*** |
 | `reportBuildStatus` | ***bool***| ***(Optional)*** |
@@ -131,7 +131,7 @@ Appears on:[CodebuildProjectSpec](#codebuildprojectspec)
 | ------ | ----- | ----------- |
 | `auth` | ***[[]CodebuildProjectSpecSourceAuth](#codebuildprojectspecsourceauth)***| ***(Optional)*** |
 | `buildspec` | ***string***| ***(Optional)*** |
-| `gitCloneDepth` | ***int***| ***(Optional)*** |
+| `gitCloneDepth` | ***int64***| ***(Optional)*** |
 | `insecureSSL` | ***bool***| ***(Optional)*** |
 | `location` | ***string***| ***(Optional)*** |
 | `reportBuildStatus` | ***bool***| ***(Optional)*** |

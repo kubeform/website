@@ -37,7 +37,7 @@ Appears on:[SsmMaintenanceWindowTask](#ssmmaintenancewindowtask), [SsmMaintenanc
 | `maxConcurrency` | ***string***||
 | `maxErrors` | ***string***||
 | `name` | ***string***| ***(Optional)*** |
-| `priority` | ***int***| ***(Optional)*** |
+| `priority` | ***int64***| ***(Optional)*** |
 | `serviceRoleArn` | ***string***||
 | `targets` | ***[[]SsmMaintenanceWindowTaskSpecTargets](#ssmmaintenancewindowtaskspectargets)***||
 | `taskArn` | ***string***||

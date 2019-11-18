@@ -51,7 +51,7 @@ Appears on:[MonitorDiagnosticSettingSpecLog](#monitordiagnosticsettingspeclog)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `days` | ***int***| ***(Optional)*** |
+| `days` | ***int64***| ***(Optional)*** |
 | `enabled` | ***bool***||
 ## MonitorDiagnosticSettingSpecMetric
 
@@ -68,7 +68,7 @@ Appears on:[MonitorDiagnosticSettingSpecMetric](#monitordiagnosticsettingspecmet
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `days` | ***int***| ***(Optional)*** |
+| `days` | ***int64***| ***(Optional)*** |
 | `enabled` | ***bool***||
 ## MonitorDiagnosticSettingStatus
 

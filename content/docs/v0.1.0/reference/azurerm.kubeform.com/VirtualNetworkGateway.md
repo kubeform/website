@@ -51,8 +51,8 @@ Appears on:[VirtualNetworkGatewaySpec](#virtualnetworkgatewayspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `asn` | ***int***| ***(Optional)*** |
-| `peerWeight` | ***int***| ***(Optional)*** |
+| `asn` | ***int64***| ***(Optional)*** |
+| `peerWeight` | ***int64***| ***(Optional)*** |
 | `peeringAddress` | ***string***| ***(Optional)*** |
 ## VirtualNetworkGatewaySpecIpConfiguration
 

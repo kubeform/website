@@ -76,7 +76,7 @@ Appears on:[CodedeployDeploymentGroupSpecBlueGreenDeploymentConfig](#codedeployd
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `actionOnTimeout` | ***string***| ***(Optional)*** |
-| `waitTimeInMinutes` | ***int***| ***(Optional)*** |
+| `waitTimeInMinutes` | ***int64***| ***(Optional)*** |
 ## CodedeployDeploymentGroupSpecBlueGreenDeploymentConfigGreenFleetProvisioningOption
 
 Appears on:[CodedeployDeploymentGroupSpecBlueGreenDeploymentConfig](#codedeploydeploymentgroupspecbluegreendeploymentconfig)
@@ -91,7 +91,7 @@ Appears on:[CodedeployDeploymentGroupSpecBlueGreenDeploymentConfig](#codedeployd
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `action` | ***string***| ***(Optional)*** |
-| `terminationWaitTimeInMinutes` | ***int***| ***(Optional)*** |
+| `terminationWaitTimeInMinutes` | ***int64***| ***(Optional)*** |
 ## CodedeployDeploymentGroupSpecDeploymentStyle
 
 Appears on:[CodedeployDeploymentGroupSpec](#codedeploydeploymentgroupspec)

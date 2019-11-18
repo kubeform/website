@@ -42,26 +42,26 @@ Appears on:[ComputeRegionAutoscalerSpec](#computeregionautoscalerspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `cooldownPeriod` | ***int***| ***(Optional)*** |
+| `cooldownPeriod` | ***int64***| ***(Optional)*** |
 | `cpuUtilization` | ***[[]ComputeRegionAutoscalerSpecAutoscalingPolicyCpuUtilization](#computeregionautoscalerspecautoscalingpolicycpuutilization)***| ***(Optional)*** |
 | `loadBalancingUtilization` | ***[[]ComputeRegionAutoscalerSpecAutoscalingPolicyLoadBalancingUtilization](#computeregionautoscalerspecautoscalingpolicyloadbalancingutilization)***| ***(Optional)*** |
-| `maxReplicas` | ***int***||
+| `maxReplicas` | ***int64***||
 | `metric` | ***[[]ComputeRegionAutoscalerSpecAutoscalingPolicyMetric](#computeregionautoscalerspecautoscalingpolicymetric)***| ***(Optional)*** |
-| `minReplicas` | ***int***||
+| `minReplicas` | ***int64***||
 ## ComputeRegionAutoscalerSpecAutoscalingPolicyCpuUtilization
 
 Appears on:[ComputeRegionAutoscalerSpecAutoscalingPolicy](#computeregionautoscalerspecautoscalingpolicy)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `target` | ***encoding/json.Number***||
+| `target` | ***float64***||
 ## ComputeRegionAutoscalerSpecAutoscalingPolicyLoadBalancingUtilization
 
 Appears on:[ComputeRegionAutoscalerSpecAutoscalingPolicy](#computeregionautoscalerspecautoscalingpolicy)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `target` | ***encoding/json.Number***||
+| `target` | ***float64***||
 ## ComputeRegionAutoscalerSpecAutoscalingPolicyMetric
 
 Appears on:[ComputeRegionAutoscalerSpecAutoscalingPolicy](#computeregionautoscalerspecautoscalingpolicy)
@@ -69,7 +69,7 @@ Appears on:[ComputeRegionAutoscalerSpecAutoscalingPolicy](#computeregionautoscal
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `name` | ***string***||
-| `target` | ***encoding/json.Number***||
+| `target` | ***float64***||
 | `type` | ***string***||
 ## ComputeRegionAutoscalerStatus
 

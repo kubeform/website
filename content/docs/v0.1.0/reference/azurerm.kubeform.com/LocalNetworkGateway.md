@@ -41,9 +41,9 @@ Appears on:[LocalNetworkGatewaySpec](#localnetworkgatewayspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `asn` | ***int***||
+| `asn` | ***int64***||
 | `bgpPeeringAddress` | ***string***||
-| `peerWeight` | ***int***| ***(Optional)*** |
+| `peerWeight` | ***int64***| ***(Optional)*** |
 ## LocalNetworkGatewayStatus
 
 Appears on:[LocalNetworkGateway](#localnetworkgateway)

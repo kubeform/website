@@ -69,8 +69,8 @@ Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `maxCapacity` | ***int***| ***(Optional)*** |
-| `minCapacity` | ***int***||
+| `maxCapacity` | ***int64***| ***(Optional)*** |
+| `minCapacity` | ***int64***||
 ## ApplicationGatewaySpecBackendAddressPool
 
 Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
@@ -98,11 +98,11 @@ Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
 | `name` | ***string***||
 | `path` | ***string***| ***(Optional)*** |
 | `pickHostNameFromBackendAddress` | ***bool***| ***(Optional)*** |
-| `port` | ***int***||
+| `port` | ***int64***||
 | `probeID` | ***string***| ***(Optional)*** |
 | `probeName` | ***string***| ***(Optional)*** |
 | `protocol` | ***string***||
-| `requestTimeout` | ***int***| ***(Optional)*** |
+| `requestTimeout` | ***int64***| ***(Optional)*** |
 ## ApplicationGatewaySpecBackendHTTPSettingsAuthenticationCertificate
 
 Appears on:[ApplicationGatewaySpecBackendHTTPSettings](#applicationgatewayspecbackendhttpsettings)
@@ -117,7 +117,7 @@ Appears on:[ApplicationGatewaySpecBackendHTTPSettings](#applicationgatewayspecba
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `drainTimeoutSec` | ***int***||
+| `drainTimeoutSec` | ***int64***||
 | `enabled` | ***bool***||
 ## ApplicationGatewaySpecCustomErrorConfiguration
 
@@ -148,7 +148,7 @@ Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `port` | ***int***||
+| `port` | ***int64***||
 ## ApplicationGatewaySpecGatewayIPConfiguration
 
 Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
@@ -201,15 +201,15 @@ Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
 | ------ | ----- | ----------- |
 | `host` | ***string***| ***(Optional)*** |
 | `ID` | ***string***| ***(Optional)*** |
-| `interval` | ***int***||
+| `interval` | ***int64***||
 | `match` | ***[[]ApplicationGatewaySpecProbeMatch](#applicationgatewayspecprobematch)***| ***(Optional)*** |
-| `minimumServers` | ***int***| ***(Optional)*** |
+| `minimumServers` | ***int64***| ***(Optional)*** |
 | `name` | ***string***||
 | `path` | ***string***||
 | `pickHostNameFromBackendHTTPSettings` | ***bool***| ***(Optional)*** |
 | `protocol` | ***string***||
-| `timeout` | ***int***||
-| `unhealthyThreshold` | ***int***||
+| `timeout` | ***int64***||
+| `unhealthyThreshold` | ***int64***||
 ## ApplicationGatewaySpecProbeMatch
 
 Appears on:[ApplicationGatewaySpecProbe](#applicationgatewayspecprobe)
@@ -272,7 +272,7 @@ Appears on:[ApplicationGatewaySpecRewriteRuleSet](#applicationgatewayspecrewrite
 | `name` | ***string***||
 | `requestHeaderConfiguration` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleRequestHeaderConfiguration](#applicationgatewayspecrewriterulesetrewriterulerequestheaderconfiguration)***| ***(Optional)*** |
 | `responseHeaderConfiguration` | ***[[]ApplicationGatewaySpecRewriteRuleSetRewriteRuleResponseHeaderConfiguration](#applicationgatewayspecrewriterulesetrewriteruleresponseheaderconfiguration)***| ***(Optional)*** |
-| `ruleSequence` | ***int***||
+| `ruleSequence` | ***int64***||
 ## ApplicationGatewaySpecRewriteRuleSetRewriteRuleCondition
 
 Appears on:[ApplicationGatewaySpecRewriteRuleSetRewriteRule](#applicationgatewayspecrewriterulesetrewriterule)
@@ -305,7 +305,7 @@ Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `capacity` | ***int***| ***(Optional)*** |
+| `capacity` | ***int64***| ***(Optional)*** |
 | `name` | ***string***||
 | `tier` | ***string***||
 ## ApplicationGatewaySpecSslCertificate
@@ -371,9 +371,9 @@ Appears on:[ApplicationGatewaySpec](#applicationgatewayspec)
 | `disabledRuleGroup` | ***[[]ApplicationGatewaySpecWafConfigurationDisabledRuleGroup](#applicationgatewayspecwafconfigurationdisabledrulegroup)***| ***(Optional)*** |
 | `enabled` | ***bool***||
 | `exclusion` | ***[[]ApplicationGatewaySpecWafConfigurationExclusion](#applicationgatewayspecwafconfigurationexclusion)***| ***(Optional)*** |
-| `fileUploadLimitMb` | ***int***| ***(Optional)*** |
+| `fileUploadLimitMb` | ***int64***| ***(Optional)*** |
 | `firewallMode` | ***string***||
-| `maxRequestBodySizeKb` | ***int***| ***(Optional)*** |
+| `maxRequestBodySizeKb` | ***int64***| ***(Optional)*** |
 | `requestBodyCheck` | ***bool***| ***(Optional)*** |
 | `ruleSetType` | ***string***| ***(Optional)*** |
 | `ruleSetVersion` | ***string***||

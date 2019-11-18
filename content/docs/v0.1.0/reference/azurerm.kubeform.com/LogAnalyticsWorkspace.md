@@ -33,7 +33,7 @@ Appears on:[LogAnalyticsWorkspace](#loganalyticsworkspace), [LogAnalyticsWorkspa
 | `name` | ***string***||
 | `portalURL` | ***string***| ***(Optional)*** |
 | `resourceGroupName` | ***string***||
-| `retentionInDays` | ***int***| ***(Optional)*** |
+| `retentionInDays` | ***int64***| ***(Optional)*** |
 | `sku` | ***string***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `workspaceID` | ***string***| ***(Optional)*** |

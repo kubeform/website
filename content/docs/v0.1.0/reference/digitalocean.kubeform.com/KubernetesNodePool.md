@@ -30,7 +30,7 @@ Appears on:[KubernetesNodePool](#kubernetesnodepool), [KubernetesNodePoolStatus]
 | `id` | ***string***||
 | `clusterID` | ***string***||
 | `name` | ***string***||
-| `nodeCount` | ***int***||
+| `nodeCount` | ***int64***||
 | `nodes` | ***[[]KubernetesNodePoolSpecNodes](#kubernetesnodepoolspecnodes)***| ***(Optional)*** |
 | `size` | ***string***||
 | `tags` | ***[]string***| ***(Optional)*** |

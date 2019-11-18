@@ -41,7 +41,7 @@ Appears on:[LambdaAliasSpec](#lambdaaliasspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `additionalVersionWeights` | ***map[string]encoding/json.Number***| ***(Optional)*** |
+| `additionalVersionWeights` | ***map[string]float64***| ***(Optional)*** |
 ## LambdaAliasStatus
 
 Appears on:[LambdaAlias](#lambdaalias)

@@ -47,7 +47,7 @@ Appears on:[TrafficManagerProfileSpec](#trafficmanagerprofilespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `relativeName` | ***string***||
-| `ttl` | ***int***||
+| `ttl` | ***int64***||
 ## TrafficManagerProfileSpecMonitorConfig
 
 Appears on:[TrafficManagerProfileSpec](#trafficmanagerprofilespec)
@@ -55,7 +55,7 @@ Appears on:[TrafficManagerProfileSpec](#trafficmanagerprofilespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `path` | ***string***| ***(Optional)*** |
-| `port` | ***int***||
+| `port` | ***int64***||
 | `protocol` | ***string***||
 ## TrafficManagerProfileStatus
 

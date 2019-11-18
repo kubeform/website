@@ -23,7 +23,9 @@ info:
 ## DirectoryServiceLogSubscriptionSpec
 
 
+
 Appears on:[DirectoryServiceLogSubscription](#directoryservicelogsubscription), [DirectoryServiceLogSubscriptionStatus](#directoryservicelogsubscriptionstatus)
+
 
 
 | Field | Type | Description |
@@ -35,7 +37,9 @@ Appears on:[DirectoryServiceLogSubscription](#directoryservicelogsubscription), 
 ## DirectoryServiceLogSubscriptionStatus
 
 
+
 Appears on:[DirectoryServiceLogSubscription](#directoryservicelogsubscription)
+
 
 
 | Field | Type | Description |

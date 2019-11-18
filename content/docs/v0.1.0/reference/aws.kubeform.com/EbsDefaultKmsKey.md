@@ -23,7 +23,9 @@ info:
 ## EbsDefaultKmsKeySpec
 
 
+
 Appears on:[EbsDefaultKmsKey](#ebsdefaultkmskey), [EbsDefaultKmsKeyStatus](#ebsdefaultkmskeystatus)
+
 
 
 | Field | Type | Description |
@@ -34,7 +36,9 @@ Appears on:[EbsDefaultKmsKey](#ebsdefaultkmskey), [EbsDefaultKmsKeyStatus](#ebsd
 ## EbsDefaultKmsKeyStatus
 
 
+
 Appears on:[EbsDefaultKmsKey](#ebsdefaultkmskey)
+
 
 
 | Field | Type | Description |

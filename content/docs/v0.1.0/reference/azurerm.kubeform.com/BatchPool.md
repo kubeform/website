@@ -34,7 +34,7 @@ Appears on:[BatchPool](#batchpool), [BatchPoolStatus](#batchpoolstatus)
 | `containerConfiguration` | ***[[]BatchPoolSpecContainerConfiguration](#batchpoolspeccontainerconfiguration)***| ***(Optional)*** |
 | `displayName` | ***string***| ***(Optional)*** |
 | `fixedScale` | ***[[]BatchPoolSpecFixedScale](#batchpoolspecfixedscale)***| ***(Optional)*** |
-| `maxTasksPerNode` | ***int***| ***(Optional)*** |
+| `maxTasksPerNode` | ***int64***| ***(Optional)*** |
 | `name` | ***string***||
 | `nodeAgentSkuID` | ***string***||
 | `resourceGroupName` | ***string***||
@@ -74,8 +74,8 @@ Appears on:[BatchPoolSpec](#batchpoolspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `resizeTimeout` | ***string***| ***(Optional)*** |
-| `targetDedicatedNodes` | ***int***| ***(Optional)*** |
-| `targetLowPriorityNodes` | ***int***| ***(Optional)*** |
+| `targetDedicatedNodes` | ***int64***| ***(Optional)*** |
+| `targetLowPriorityNodes` | ***int64***| ***(Optional)*** |
 ## BatchPoolSpecStartTask
 
 Appears on:[BatchPoolSpec](#batchpoolspec)
@@ -84,7 +84,7 @@ Appears on:[BatchPoolSpec](#batchpoolspec)
 | ------ | ----- | ----------- |
 | `commandLine` | ***string***||
 | `environment` | ***map[string]string***| ***(Optional)*** |
-| `maxTaskRetryCount` | ***int***| ***(Optional)*** |
+| `maxTaskRetryCount` | ***int64***| ***(Optional)*** |
 | `resourceFile` | ***[[]BatchPoolSpecStartTaskResourceFile](#batchpoolspecstarttaskresourcefile)***| ***(Optional)*** |
 | `userIdentity` | ***[[]BatchPoolSpecStartTaskUserIdentity](#batchpoolspecstarttaskuseridentity)***||
 | `waitForSuccess` | ***bool***| ***(Optional)*** |

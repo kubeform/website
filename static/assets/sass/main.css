@@ -1923,14 +1923,14 @@ p.spam-message {
 
 .payment-method-area {
   position: relative;
-  background-image: url(../images/shape/shape-1.png);
+  background-image: url(../images/shape/shape-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
   margin-top: 120px; }
 
 .payment-method-area:after {
-  background-image: url(../images/shape/shape-2.png);
+  background-image: url(../images/shape/shape-2.webp);
   content: "";
   left: 0;
   top: 0;
@@ -2271,8 +2271,6 @@ ul li b {
   /* Track */
   /* Handle */
   /* Handle on hover */ }
-  .tbl-of-contents #TableOfContents:hover {
-    overflow-y: auto; }
   .tbl-of-contents #TableOfContents::-webkit-scrollbar {
     width: 4px;
     height: 4px; }

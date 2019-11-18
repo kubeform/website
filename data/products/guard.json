@@ -9,22 +9,22 @@
     "path": "/products/guard/"
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/guard/guard-hero.png",
+    "src": "/assets/images/products/guard/guard-hero.png",
     "alt": "Guard"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/guard/guard.png",
+    "src": "/assets/images/products/guard/guard.png",
     "alt": "Guard"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/guard/guard-white.png",
+    "src": "/assets/images/products/guard/guard-white.png",
     "alt": "Guard"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/guard/guard-icon.png",
+    "src": "/assets/images/products/guard/guard-icon.png",
     "alt": "Guard",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/guard/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/guard/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/appscode/guard",
@@ -47,11 +47,11 @@
     {
       "title": "Identity Providers",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/guard/features/feature-1.png",
+        "src": "/assets/images/products/guard/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/guard/features/identity-providers.svg",
+        "src": "/assets/images/products/guard/features/identity-providers.svg",
         "alt": "http"
       },
       "summary": "",
@@ -60,11 +60,11 @@
     {
       "title": "CLI",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/guard/features/feature-2.png",
+        "src": "/assets/images/products/guard/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/guard/features/cli.svg",
+        "src": "/assets/images/products/guard/features/cli.svg",
         "alt": "http"
       },
       "summary": "",
@@ -73,11 +73,11 @@
     {
       "title": "RBAC",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/guard/features/feature-3.png",
+        "src": "/assets/images/products/guard/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/guard/features/rbac.svg",
+        "src": "/assets/images/products/guard/features/rbac.svg",
         "alt": "http"
       },
       "summary": "",

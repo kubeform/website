@@ -61,8 +61,8 @@ Appears on:[CosmosdbAccountSpec](#cosmosdbaccountspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `consistencyLevel` | ***string***||
-| `maxIntervalInSeconds` | ***int***| ***(Optional)*** |
-| `maxStalenessPrefix` | ***int***| ***(Optional)*** |
+| `maxIntervalInSeconds` | ***int64***| ***(Optional)*** |
+| `maxStalenessPrefix` | ***int64***| ***(Optional)*** |
 ## CosmosdbAccountSpecFailoverPolicy
 
 Appears on:[CosmosdbAccountSpec](#cosmosdbaccountspec)
@@ -71,14 +71,14 @@ Appears on:[CosmosdbAccountSpec](#cosmosdbaccountspec)
 | ------ | ----- | ----------- |
 | `ID` | ***string***| ***(Optional)*** |
 | `location` | ***string***||
-| `priority` | ***int***||
+| `priority` | ***int64***||
 ## CosmosdbAccountSpecGeoLocation
 
 Appears on:[CosmosdbAccountSpec](#cosmosdbaccountspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `failoverPriority` | ***int***||
+| `failoverPriority` | ***int64***||
 | `ID` | ***string***| ***(Optional)*** |
 | `location` | ***string***||
 | `prefix` | ***string***| ***(Optional)*** |

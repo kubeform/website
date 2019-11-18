@@ -30,7 +30,7 @@ Appears on:[IamUserLoginProfile](#iamuserloginprofile), [IamUserLoginProfileStat
 | `id` | ***string***||
 | `encryptedPassword` | ***string***| ***(Optional)*** |
 | `keyFingerprint` | ***string***| ***(Optional)*** |
-| `passwordLength` | ***int***| ***(Optional)*** |
+| `passwordLength` | ***int64***| ***(Optional)*** |
 | `passwordResetRequired` | ***bool***| ***(Optional)*** |
 | `pgpKey` | ***string***||
 | `user` | ***string***||

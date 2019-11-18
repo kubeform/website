@@ -52,11 +52,11 @@ Appears on:[IothubSpec](#iothubspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `batchFrequencyInSeconds` | ***int***| ***(Optional)*** |
+| `batchFrequencyInSeconds` | ***int64***| ***(Optional)*** |
 | `containerName` | ***string***| ***(Optional)*** |
 | `encoding` | ***string***| ***(Optional)*** |
 | `fileNameFormat` | ***string***| ***(Optional)*** |
-| `maxChunkSizeInBytes` | ***int***| ***(Optional)*** |
+| `maxChunkSizeInBytes` | ***int64***| ***(Optional)*** |
 | `name` | ***string***||
 | `type` | ***string***||
 ## IothubSpecFallbackRoute
@@ -78,7 +78,7 @@ Appears on:[IothubSpec](#iothubspec)
 | `containerName` | ***string***||
 | `defaultTtl` | ***string***| ***(Optional)*** |
 | `lockDuration` | ***string***| ***(Optional)*** |
-| `maxDeliveryCount` | ***int***| ***(Optional)*** |
+| `maxDeliveryCount` | ***int64***| ***(Optional)*** |
 | `notifications` | ***bool***| ***(Optional)*** |
 | `sasTtl` | ***string***| ***(Optional)*** |
 ## IothubSpecIpFilterRule
@@ -115,7 +115,7 @@ Appears on:[IothubSpec](#iothubspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `capacity` | ***int***||
+| `capacity` | ***int64***||
 | `name` | ***string***||
 | `tier` | ***string***||
 ## IothubStatus

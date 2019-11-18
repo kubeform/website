@@ -41,7 +41,7 @@ Appears on:[ApiGatewayIntegration](#apigatewayintegration), [ApiGatewayIntegrati
 | `requestTemplates` | ***map[string]string***| ***(Optional)*** |
 | `resourceID` | ***string***||
 | `restAPIID` | ***string***||
-| `timeoutMilliseconds` | ***int***| ***(Optional)*** |
+| `timeoutMilliseconds` | ***int64***| ***(Optional)*** |
 | `type` | ***string***||
 | `uri` | ***string***| ***(Optional)*** |
 ## ApiGatewayIntegrationStatus

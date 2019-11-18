@@ -33,7 +33,7 @@ Appears on:[AutomationVariableInt](#automationvariableint), [AutomationVariableI
 | `encrypted` | ***bool***| ***(Optional)*** |
 | `name` | ***string***||
 | `resourceGroupName` | ***string***||
-| `value` | ***int***| ***(Optional)*** |
+| `value` | ***int64***| ***(Optional)*** |
 ## AutomationVariableIntStatus
 
 Appears on:[AutomationVariableInt](#automationvariableint)
