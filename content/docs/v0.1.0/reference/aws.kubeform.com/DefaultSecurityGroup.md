@@ -44,13 +44,13 @@ Appears on:[DefaultSecurityGroupSpec](#defaultsecuritygroupspec)
 | ------ | ----- | ----------- |
 | `cidrBlocks` | ***[]string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `fromPort` | ***int***||
+| `fromPort` | ***int64***||
 | `ipv6CIDRBlocks` | ***[]string***| ***(Optional)*** |
 | `prefixListIDS` | ***[]string***| ***(Optional)*** |
 | `protocol` | ***string***||
 | `securityGroups` | ***[]string***| ***(Optional)*** |
 | `self` | ***bool***| ***(Optional)*** |
-| `toPort` | ***int***||
+| `toPort` | ***int64***||
 ## DefaultSecurityGroupSpecIngress
 
 Appears on:[DefaultSecurityGroupSpec](#defaultsecuritygroupspec)
@@ -59,13 +59,13 @@ Appears on:[DefaultSecurityGroupSpec](#defaultsecuritygroupspec)
 | ------ | ----- | ----------- |
 | `cidrBlocks` | ***[]string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `fromPort` | ***int***||
+| `fromPort` | ***int64***||
 | `ipv6CIDRBlocks` | ***[]string***| ***(Optional)*** |
 | `prefixListIDS` | ***[]string***| ***(Optional)*** |
 | `protocol` | ***string***||
 | `securityGroups` | ***[]string***| ***(Optional)*** |
 | `self` | ***bool***| ***(Optional)*** |
-| `toPort` | ***int***||
+| `toPort` | ***int64***||
 ## DefaultSecurityGroupStatus
 
 Appears on:[DefaultSecurityGroup](#defaultsecuritygroup)

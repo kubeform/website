@@ -23,7 +23,9 @@ info:
 ## SesIdentityPolicySpec
 
 
+
 Appears on:[SesIdentityPolicy](#sesidentitypolicy), [SesIdentityPolicyStatus](#sesidentitypolicystatus)
+
 
 
 | Field | Type | Description |
@@ -36,7 +38,9 @@ Appears on:[SesIdentityPolicy](#sesidentitypolicy), [SesIdentityPolicyStatus](#s
 ## SesIdentityPolicyStatus
 
 
+
 Appears on:[SesIdentityPolicy](#sesidentitypolicy)
+
 
 
 | Field | Type | Description |

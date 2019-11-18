@@ -23,7 +23,9 @@ info:
 ## EbsEncryptionByDefaultSpec
 
 
+
 Appears on:[EbsEncryptionByDefault](#ebsencryptionbydefault), [EbsEncryptionByDefaultStatus](#ebsencryptionbydefaultstatus)
+
 
 
 | Field | Type | Description |
@@ -34,7 +36,9 @@ Appears on:[EbsEncryptionByDefault](#ebsencryptionbydefault), [EbsEncryptionByDe
 ## EbsEncryptionByDefaultStatus
 
 
+
 Appears on:[EbsEncryptionByDefault](#ebsencryptionbydefault)
+
 
 
 | Field | Type | Description |

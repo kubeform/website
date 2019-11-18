@@ -42,7 +42,7 @@ Appears on:[DatasyncTaskSpec](#datasynctaskspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `atime` | ***string***| ***(Optional)*** |
-| `bytesPerSecond` | ***int***| ***(Optional)*** |
+| `bytesPerSecond` | ***int64***| ***(Optional)*** |
 | `gid` | ***string***| ***(Optional)*** |
 | `mtime` | ***string***| ***(Optional)*** |
 | `posixPermissions` | ***string***| ***(Optional)*** |

@@ -44,7 +44,7 @@ Appears on:[FilestoreInstanceSpec](#filestoreinstancespec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `capacityGb` | ***int***||
+| `capacityGb` | ***int64***||
 | `name` | ***string***||
 ## FilestoreInstanceSpecNetworks
 

@@ -33,7 +33,7 @@ Appears on:[NetworkInterface](#networkinterface), [NetworkInterfaceStatus](#netw
 | `privateDNSName` | ***string***| ***(Optional)*** |
 | `privateIP` | ***string***| ***(Optional)*** |
 | `privateIPS` | ***[]string***| ***(Optional)*** |
-| `privateIPSCount` | ***int***| ***(Optional)*** |
+| `privateIPSCount` | ***int64***| ***(Optional)*** |
 | `securityGroups` | ***[]string***| ***(Optional)*** |
 | `sourceDestCheck` | ***bool***| ***(Optional)*** |
 | `subnetID` | ***string***||
@@ -45,7 +45,7 @@ Appears on:[NetworkInterfaceSpec](#networkinterfacespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `attachmentID` | ***string***| ***(Optional)*** |
-| `deviceIndex` | ***int***||
+| `deviceIndex` | ***int64***||
 | `instance` | ***string***||
 ## NetworkInterfaceStatus
 

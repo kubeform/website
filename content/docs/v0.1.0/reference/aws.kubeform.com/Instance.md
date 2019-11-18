@@ -32,8 +32,8 @@ Appears on:[Instance](#instance), [InstanceStatus](#instancestatus)
 | `arn` | ***string***| ***(Optional)*** |
 | `associatePublicIPAddress` | ***bool***| ***(Optional)*** |
 | `availabilityZone` | ***string***| ***(Optional)*** |
-| `cpuCoreCount` | ***int***| ***(Optional)*** |
-| `cpuThreadsPerCore` | ***int***| ***(Optional)*** |
+| `cpuCoreCount` | ***int64***| ***(Optional)*** |
+| `cpuThreadsPerCore` | ***int64***| ***(Optional)*** |
 | `creditSpecification` | ***[[]InstanceSpecCreditSpecification](#instancespeccreditspecification)***| ***(Optional)*** |
 | `disableAPITermination` | ***bool***| ***(Optional)*** |
 | `ebsBlockDevice` | ***[[]InstanceSpecEbsBlockDevice](#instancespecebsblockdevice)***| ***(Optional)*** |
@@ -45,7 +45,7 @@ Appears on:[Instance](#instance), [InstanceStatus](#instancestatus)
 | `instanceInitiatedShutdownBehavior` | ***string***| ***(Optional)*** |
 | `instanceState` | ***string***| ***(Optional)*** |
 | `instanceType` | ***string***||
-| `ipv6AddressCount` | ***int***| ***(Optional)*** |
+| `ipv6AddressCount` | ***int64***| ***(Optional)*** |
 | `ipv6Addresses` | ***[]string***| ***(Optional)*** |
 | `keyName` | ***string***| ***(Optional)*** |
 | `monitoring` | ***bool***| ***(Optional)*** |
@@ -83,10 +83,10 @@ Appears on:[InstanceSpec](#instancespec)
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
 | `deviceName` | ***string***||
 | `encrypted` | ***bool***| ***(Optional)*** |
-| `iops` | ***int***| ***(Optional)*** |
+| `iops` | ***int64***| ***(Optional)*** |
 | `snapshotID` | ***string***| ***(Optional)*** |
 | `volumeID` | ***string***| ***(Optional)*** |
-| `volumeSize` | ***int***| ***(Optional)*** |
+| `volumeSize` | ***int64***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## InstanceSpecEphemeralBlockDevice
 
@@ -104,7 +104,7 @@ Appears on:[InstanceSpec](#instancespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
-| `deviceIndex` | ***int***||
+| `deviceIndex` | ***int64***||
 | `networkInterfaceID` | ***string***||
 ## InstanceSpecRootBlockDevice
 
@@ -113,9 +113,9 @@ Appears on:[InstanceSpec](#instancespec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
-| `iops` | ***int***| ***(Optional)*** |
+| `iops` | ***int64***| ***(Optional)*** |
 | `volumeID` | ***string***| ***(Optional)*** |
-| `volumeSize` | ***int***| ***(Optional)*** |
+| `volumeSize` | ***int64***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## InstanceStatus
 

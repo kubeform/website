@@ -158,8 +158,8 @@ Appears on:[VirtualMachineSpec](#virtualmachinespec)
 | ------ | ----- | ----------- |
 | `caching` | ***string***| ***(Optional)*** |
 | `createOption` | ***string***||
-| `diskSizeGb` | ***int***| ***(Optional)*** |
-| `lun` | ***int***||
+| `diskSizeGb` | ***int64***| ***(Optional)*** |
+| `lun` | ***int64***||
 | `managedDiskID` | ***string***| ***(Optional)*** |
 | `managedDiskType` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
@@ -184,7 +184,7 @@ Appears on:[VirtualMachineSpec](#virtualmachinespec)
 | ------ | ----- | ----------- |
 | `caching` | ***string***| ***(Optional)*** |
 | `createOption` | ***string***||
-| `diskSizeGb` | ***int***| ***(Optional)*** |
+| `diskSizeGb` | ***int64***| ***(Optional)*** |
 | `imageURI` | ***string***| ***(Optional)*** |
 | `managedDiskID` | ***string***| ***(Optional)*** |
 | `managedDiskType` | ***string***| ***(Optional)*** |

@@ -50,13 +50,13 @@ Appears on:[SecurityGroupSpec](#securitygroupspec)
 | ------ | ----- | ----------- |
 | `cidrBlocks` | ***[]string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `fromPort` | ***int***||
+| `fromPort` | ***int64***||
 | `ipv6CIDRBlocks` | ***[]string***| ***(Optional)*** |
 | `prefixListIDS` | ***[]string***| ***(Optional)*** |
 | `protocol` | ***string***||
 | `securityGroups` | ***[]string***| ***(Optional)*** |
 | `self` | ***bool***| ***(Optional)*** |
-| `toPort` | ***int***||
+| `toPort` | ***int64***||
 ## SecurityGroupSpecIngress
 
 Appears on:[SecurityGroupSpec](#securitygroupspec)
@@ -65,13 +65,13 @@ Appears on:[SecurityGroupSpec](#securitygroupspec)
 | ------ | ----- | ----------- |
 | `cidrBlocks` | ***[]string***| ***(Optional)*** |
 | `description` | ***string***| ***(Optional)*** |
-| `fromPort` | ***int***||
+| `fromPort` | ***int64***||
 | `ipv6CIDRBlocks` | ***[]string***| ***(Optional)*** |
 | `prefixListIDS` | ***[]string***| ***(Optional)*** |
 | `protocol` | ***string***||
 | `securityGroups` | ***[]string***| ***(Optional)*** |
 | `self` | ***bool***| ***(Optional)*** |
-| `toPort` | ***int***||
+| `toPort` | ***int64***||
 ## SecurityGroupStatus
 
 Appears on:[SecurityGroup](#securitygroup)

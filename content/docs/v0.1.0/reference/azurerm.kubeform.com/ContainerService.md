@@ -45,7 +45,7 @@ Appears on:[ContainerServiceSpec](#containerservicespec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `count` | ***int***| ***(Optional)*** |
+| `count` | ***int64***| ***(Optional)*** |
 | `dnsPrefix` | ***string***||
 | `fqdn` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
@@ -79,7 +79,7 @@ Appears on:[ContainerServiceSpec](#containerservicespec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `count` | ***int***| ***(Optional)*** |
+| `count` | ***int64***| ***(Optional)*** |
 | `dnsPrefix` | ***string***||
 | `fqdn` | ***string***| ***(Optional)*** |
 ## ContainerServiceSpecServicePrincipal

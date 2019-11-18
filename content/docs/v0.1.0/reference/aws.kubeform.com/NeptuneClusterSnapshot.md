@@ -28,7 +28,7 @@ Appears on:[NeptuneClusterSnapshot](#neptuneclustersnapshot), [NeptuneClusterSna
 | ------ | ----- | ----------- |
 | `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
 | `id` | ***string***||
-| `allocatedStorage` | ***int***| ***(Optional)*** |
+| `allocatedStorage` | ***int64***| ***(Optional)*** |
 | `availabilityZones` | ***[]string***| ***(Optional)*** |
 | `dbClusterIdentifier` | ***string***||
 | `dbClusterSnapshotArn` | ***string***| ***(Optional)*** |
@@ -37,7 +37,7 @@ Appears on:[NeptuneClusterSnapshot](#neptuneclustersnapshot), [NeptuneClusterSna
 | `engineVersion` | ***string***| ***(Optional)*** |
 | `kmsKeyID` | ***string***| ***(Optional)*** |
 | `licenseModel` | ***string***| ***(Optional)*** |
-| `port` | ***int***| ***(Optional)*** |
+| `port` | ***int64***| ***(Optional)*** |
 | `snapshotType` | ***string***| ***(Optional)*** |
 | `sourceDbClusterSnapshotArn` | ***string***| ***(Optional)*** |
 | `status` | ***string***| ***(Optional)*** |

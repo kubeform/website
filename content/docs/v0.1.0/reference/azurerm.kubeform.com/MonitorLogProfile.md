@@ -40,7 +40,7 @@ Appears on:[MonitorLogProfileSpec](#monitorlogprofilespec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `days` | ***int***| ***(Optional)*** |
+| `days` | ***int64***| ***(Optional)*** |
 | `enabled` | ***bool***||
 ## MonitorLogProfileStatus
 

@@ -30,7 +30,7 @@ Appears on:[CognitoUserGroup](#cognitousergroup), [CognitoUserGroupStatus](#cogn
 | `id` | ***string***||
 | `description` | ***string***| ***(Optional)*** |
 | `name` | ***string***||
-| `precedence` | ***int***| ***(Optional)*** |
+| `precedence` | ***int64***| ***(Optional)*** |
 | `roleArn` | ***string***| ***(Optional)*** |
 | `userPoolID` | ***string***||
 ## CognitoUserGroupStatus

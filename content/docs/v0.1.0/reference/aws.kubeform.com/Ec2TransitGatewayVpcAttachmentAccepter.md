@@ -23,7 +23,9 @@ info:
 ## Ec2TransitGatewayVpcAttachmentAccepterSpec
 
 
+
 Appears on:[Ec2TransitGatewayVpcAttachmentAccepter](#ec2transitgatewayvpcattachmentaccepter), [Ec2TransitGatewayVpcAttachmentAccepterStatus](#ec2transitgatewayvpcattachmentaccepterstatus)
+
 
 
 | Field | Type | Description |
@@ -43,7 +45,9 @@ Appears on:[Ec2TransitGatewayVpcAttachmentAccepter](#ec2transitgatewayvpcattachm
 ## Ec2TransitGatewayVpcAttachmentAccepterStatus
 
 
+
 Appears on:[Ec2TransitGatewayVpcAttachmentAccepter](#ec2transitgatewayvpcattachmentaccepter)
+
 
 
 | Field | Type | Description |

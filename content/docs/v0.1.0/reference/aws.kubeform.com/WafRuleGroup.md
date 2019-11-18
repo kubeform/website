@@ -42,7 +42,7 @@ Appears on:[WafRuleGroupSpec](#wafrulegroupspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `action` | ***[[]WafRuleGroupSpecActivatedRuleAction](#wafrulegroupspecactivatedruleaction)***||
-| `priority` | ***int***||
+| `priority` | ***int64***||
 | `ruleID` | ***string***||
 | `type` | ***string***| ***(Optional)*** |
 ## WafRuleGroupSpecActivatedRuleAction

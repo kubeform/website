@@ -34,7 +34,7 @@ Appears on:[ComputeTargetTcpProxy](#computetargettcpproxy), [ComputeTargetTcpPro
 | `name` | ***string***||
 | `project` | ***string***| ***(Optional)*** |
 | `proxyHeader` | ***string***| ***(Optional)*** |
-| `proxyID` | ***int***| ***(Optional)*** |
+| `proxyID` | ***int64***| ***(Optional)*** |
 | `selfLink` | ***string***| ***(Optional)*** |
 ## ComputeTargetTcpProxyStatus
 

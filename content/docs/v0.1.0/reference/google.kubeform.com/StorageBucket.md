@@ -52,7 +52,7 @@ Appears on:[StorageBucketSpec](#storagebucketspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `maxAgeSeconds` | ***int***| ***(Optional)*** |
+| `maxAgeSeconds` | ***int64***| ***(Optional)*** |
 | `method` | ***[]string***| ***(Optional)*** |
 | `origin` | ***[]string***| ***(Optional)*** |
 | `responseHeader` | ***[]string***| ***(Optional)*** |
@@ -85,11 +85,11 @@ Appears on:[StorageBucketSpecLifecycleRule](#storagebucketspeclifecyclerule)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `age` | ***int***| ***(Optional)*** |
+| `age` | ***int64***| ***(Optional)*** |
 | `createdBefore` | ***string***| ***(Optional)*** |
 | `isLive` | ***bool***| ***(Optional)*** |
 | `matchesStorageClass` | ***[]string***| ***(Optional)*** |
-| `numNewerVersions` | ***int***| ***(Optional)*** |
+| `numNewerVersions` | ***int64***| ***(Optional)*** |
 ## StorageBucketSpecLogging
 
 Appears on:[StorageBucketSpec](#storagebucketspec)

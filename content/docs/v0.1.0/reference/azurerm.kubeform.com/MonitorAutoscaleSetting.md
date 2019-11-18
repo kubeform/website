@@ -78,9 +78,9 @@ Appears on:[MonitorAutoscaleSettingSpecProfile](#monitorautoscalesettingspecprof
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `default` | ***int***||
-| `maximum` | ***int***||
-| `minimum` | ***int***||
+| `default` | ***int64***||
+| `maximum` | ***int64***||
+| `minimum` | ***int64***||
 ## MonitorAutoscaleSettingSpecProfileFixedDate
 
 Appears on:[MonitorAutoscaleSettingSpecProfile](#monitorautoscalesettingspecprofile)
@@ -118,7 +118,7 @@ Appears on:[MonitorAutoscaleSettingSpecProfileRule](#monitorautoscalesettingspec
 | `metricResourceID` | ***string***||
 | `operator` | ***string***||
 | `statistic` | ***string***||
-| `threshold` | ***encoding/json.Number***||
+| `threshold` | ***float64***||
 | `timeAggregation` | ***string***||
 | `timeGrain` | ***string***||
 | `timeWindow` | ***string***||
@@ -131,7 +131,7 @@ Appears on:[MonitorAutoscaleSettingSpecProfileRule](#monitorautoscalesettingspec
 | `cooldown` | ***string***||
 | `direction` | ***string***||
 | `type` | ***string***||
-| `value` | ***int***||
+| `value` | ***int64***||
 ## MonitorAutoscaleSettingStatus
 
 Appears on:[MonitorAutoscaleSetting](#monitorautoscalesetting)

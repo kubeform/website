@@ -36,7 +36,7 @@ Appears on:[PrivateDNSARecord](#privatednsarecord), [PrivateDNSARecordStatus](#p
 | `records` | ***[]string***||
 | `resourceGroupName` | ***string***||
 | `tags` | ***map[string]string***| ***(Optional)*** |
-| `ttl` | ***int***||
+| `ttl` | ***int64***||
 | `zoneName` | ***string***||
 ## PrivateDNSARecordStatus
 

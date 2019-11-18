@@ -23,7 +23,9 @@ info:
 ## DatapipelinePipelineSpec
 
 
+
 Appears on:[DatapipelinePipeline](#datapipelinepipeline), [DatapipelinePipelineStatus](#datapipelinepipelinestatus)
+
 
 
 | Field | Type | Description |
@@ -36,7 +38,9 @@ Appears on:[DatapipelinePipeline](#datapipelinepipeline), [DatapipelinePipelineS
 ## DatapipelinePipelineStatus
 
 
+
 Appears on:[DatapipelinePipeline](#datapipelinepipeline)
+
 
 
 | Field | Type | Description |

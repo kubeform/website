@@ -43,13 +43,13 @@ Appears on:[DefaultNetworkACLSpec](#defaultnetworkaclspec)
 | ------ | ----- | ----------- |
 | `action` | ***string***||
 | `cidrBlock` | ***string***| ***(Optional)*** |
-| `fromPort` | ***int***||
-| `icmpCode` | ***int***| ***(Optional)*** |
-| `icmpType` | ***int***| ***(Optional)*** |
+| `fromPort` | ***int64***||
+| `icmpCode` | ***int64***| ***(Optional)*** |
+| `icmpType` | ***int64***| ***(Optional)*** |
 | `ipv6CIDRBlock` | ***string***| ***(Optional)*** |
 | `protocol` | ***string***||
-| `ruleNo` | ***int***||
-| `toPort` | ***int***||
+| `ruleNo` | ***int64***||
+| `toPort` | ***int64***||
 ## DefaultNetworkACLSpecIngress
 
 Appears on:[DefaultNetworkACLSpec](#defaultnetworkaclspec)
@@ -58,13 +58,13 @@ Appears on:[DefaultNetworkACLSpec](#defaultnetworkaclspec)
 | ------ | ----- | ----------- |
 | `action` | ***string***||
 | `cidrBlock` | ***string***| ***(Optional)*** |
-| `fromPort` | ***int***||
-| `icmpCode` | ***int***| ***(Optional)*** |
-| `icmpType` | ***int***| ***(Optional)*** |
+| `fromPort` | ***int64***||
+| `icmpCode` | ***int64***| ***(Optional)*** |
+| `icmpType` | ***int64***| ***(Optional)*** |
 | `ipv6CIDRBlock` | ***string***| ***(Optional)*** |
 | `protocol` | ***string***||
-| `ruleNo` | ***int***||
-| `toPort` | ***int***||
+| `ruleNo` | ***int64***||
+| `toPort` | ***int64***||
 ## DefaultNetworkACLStatus
 
 Appears on:[DefaultNetworkACL](#defaultnetworkacl)

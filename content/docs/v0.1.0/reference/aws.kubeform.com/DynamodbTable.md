@@ -37,7 +37,7 @@ Appears on:[DynamodbTable](#dynamodbtable), [DynamodbTableStatus](#dynamodbtable
 | `name` | ***string***||
 | `pointInTimeRecovery` | ***[[]DynamodbTableSpecPointInTimeRecovery](#dynamodbtablespecpointintimerecovery)***| ***(Optional)*** |
 | `rangeKey` | ***string***| ***(Optional)*** |
-| `readCapacity` | ***int***| ***(Optional)*** |
+| `readCapacity` | ***int64***| ***(Optional)*** |
 | `serverSideEncryption` | ***[[]DynamodbTableSpecServerSideEncryption](#dynamodbtablespecserversideencryption)***| ***(Optional)*** |
 | `streamArn` | ***string***| ***(Optional)*** |
 | `streamEnabled` | ***bool***| ***(Optional)*** |
@@ -45,7 +45,7 @@ Appears on:[DynamodbTable](#dynamodbtable), [DynamodbTableStatus](#dynamodbtable
 | `streamViewType` | ***string***| ***(Optional)*** |
 | `tags` | ***map[string]string***| ***(Optional)*** |
 | `ttl` | ***[[]DynamodbTableSpecTtl](#dynamodbtablespecttl)***| ***(Optional)*** |
-| `writeCapacity` | ***int***| ***(Optional)*** |
+| `writeCapacity` | ***int64***| ***(Optional)*** |
 ## DynamodbTableSpecAttribute
 
 Appears on:[DynamodbTableSpec](#dynamodbtablespec)
@@ -65,8 +65,8 @@ Appears on:[DynamodbTableSpec](#dynamodbtablespec)
 | `nonKeyAttributes` | ***[]string***| ***(Optional)*** |
 | `projectionType` | ***string***||
 | `rangeKey` | ***string***| ***(Optional)*** |
-| `readCapacity` | ***int***| ***(Optional)*** |
-| `writeCapacity` | ***int***| ***(Optional)*** |
+| `readCapacity` | ***int64***| ***(Optional)*** |
+| `writeCapacity` | ***int64***| ***(Optional)*** |
 ## DynamodbTableSpecLocalSecondaryIndex
 
 Appears on:[DynamodbTableSpec](#dynamodbtablespec)

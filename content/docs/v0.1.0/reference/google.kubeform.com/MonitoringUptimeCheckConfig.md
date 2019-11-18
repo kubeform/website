@@ -59,7 +59,7 @@ Appears on:[MonitoringUptimeCheckConfigSpec](#monitoringuptimecheckconfigspec)
 | `headers` | ***map[string]string***| ***(Optional)*** |
 | `maskHeaders` | ***bool***| ***(Optional)*** |
 | `path` | ***string***| ***(Optional)*** |
-| `port` | ***int***| ***(Optional)*** |
+| `port` | ***int64***| ***(Optional)*** |
 | `useSSL` | ***bool***| ***(Optional)*** |
 ## MonitoringUptimeCheckConfigSpecHttpCheckAuthInfo
 
@@ -101,7 +101,7 @@ Appears on:[MonitoringUptimeCheckConfigSpec](#monitoringuptimecheckconfigspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `port` | ***int***||
+| `port` | ***int64***||
 ## MonitoringUptimeCheckConfigStatus
 
 Appears on:[MonitoringUptimeCheckConfig](#monitoringuptimecheckconfig)

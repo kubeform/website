@@ -32,7 +32,7 @@ Appears on:[DnsRecordSet](#dnsrecordset), [DnsRecordSetStatus](#dnsrecordsetstat
 | `name` | ***string***||
 | `project` | ***string***| ***(Optional)*** |
 | `rrdatas` | ***[]string***||
-| `ttl` | ***int***||
+| `ttl` | ***int64***||
 | `type` | ***string***||
 ## DnsRecordSetStatus
 

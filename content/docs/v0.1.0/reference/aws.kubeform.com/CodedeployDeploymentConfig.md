@@ -40,7 +40,7 @@ Appears on:[CodedeployDeploymentConfigSpec](#codedeploydeploymentconfigspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `type` | ***string***| ***(Optional)*** |
-| `value` | ***int***| ***(Optional)*** |
+| `value` | ***int64***| ***(Optional)*** |
 ## CodedeployDeploymentConfigSpecTrafficRoutingConfig
 
 Appears on:[CodedeployDeploymentConfigSpec](#codedeploydeploymentconfigspec)
@@ -56,16 +56,16 @@ Appears on:[CodedeployDeploymentConfigSpecTrafficRoutingConfig](#codedeploydeplo
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `interval` | ***int***| ***(Optional)*** |
-| `percentage` | ***int***| ***(Optional)*** |
+| `interval` | ***int64***| ***(Optional)*** |
+| `percentage` | ***int64***| ***(Optional)*** |
 ## CodedeployDeploymentConfigSpecTrafficRoutingConfigTimeBasedLinear
 
 Appears on:[CodedeployDeploymentConfigSpecTrafficRoutingConfig](#codedeploydeploymentconfigspectrafficroutingconfig)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `interval` | ***int***| ***(Optional)*** |
-| `percentage` | ***int***| ***(Optional)*** |
+| `interval` | ***int64***| ***(Optional)*** |
+| `percentage` | ***int64***| ***(Optional)*** |
 ## CodedeployDeploymentConfigStatus
 
 Appears on:[CodedeployDeploymentConfig](#codedeploydeploymentconfig)

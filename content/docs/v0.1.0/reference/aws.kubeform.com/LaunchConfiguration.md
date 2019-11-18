@@ -56,10 +56,10 @@ Appears on:[LaunchConfigurationSpec](#launchconfigurationspec)
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
 | `deviceName` | ***string***||
 | `encrypted` | ***bool***| ***(Optional)*** |
-| `iops` | ***int***| ***(Optional)*** |
+| `iops` | ***int64***| ***(Optional)*** |
 | `noDevice` | ***bool***| ***(Optional)*** |
 | `snapshotID` | ***string***| ***(Optional)*** |
-| `volumeSize` | ***int***| ***(Optional)*** |
+| `volumeSize` | ***int64***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## LaunchConfigurationSpecEphemeralBlockDevice
 
@@ -76,8 +76,8 @@ Appears on:[LaunchConfigurationSpec](#launchconfigurationspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `deleteOnTermination` | ***bool***| ***(Optional)*** |
-| `iops` | ***int***| ***(Optional)*** |
-| `volumeSize` | ***int***| ***(Optional)*** |
+| `iops` | ***int64***| ***(Optional)*** |
+| `volumeSize` | ***int64***| ***(Optional)*** |
 | `volumeType` | ***string***| ***(Optional)*** |
 ## LaunchConfigurationStatus
 

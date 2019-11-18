@@ -48,9 +48,9 @@ Appears on:[LoadbalancerSpec](#loadbalancerspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `certificateID` | ***string***| ***(Optional)*** |
-| `entryPort` | ***int***||
+| `entryPort` | ***int64***||
 | `entryProtocol` | ***string***||
-| `targetPort` | ***int***||
+| `targetPort` | ***int64***||
 | `targetProtocol` | ***string***||
 | `tlsPassthrough` | ***bool***| ***(Optional)*** |
 ## LoadbalancerSpecHealthcheck
@@ -59,13 +59,13 @@ Appears on:[LoadbalancerSpec](#loadbalancerspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `checkIntervalSeconds` | ***int***| ***(Optional)*** |
-| `healthyThreshold` | ***int***| ***(Optional)*** |
+| `checkIntervalSeconds` | ***int64***| ***(Optional)*** |
+| `healthyThreshold` | ***int64***| ***(Optional)*** |
 | `path` | ***string***| ***(Optional)*** |
-| `port` | ***int***||
+| `port` | ***int64***||
 | `protocol` | ***string***||
-| `responseTimeoutSeconds` | ***int***| ***(Optional)*** |
-| `unhealthyThreshold` | ***int***| ***(Optional)*** |
+| `responseTimeoutSeconds` | ***int64***| ***(Optional)*** |
+| `unhealthyThreshold` | ***int64***| ***(Optional)*** |
 ## LoadbalancerSpecStickySessions
 
 Appears on:[LoadbalancerSpec](#loadbalancerspec)
@@ -73,7 +73,7 @@ Appears on:[LoadbalancerSpec](#loadbalancerspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `cookieName` | ***string***| ***(Optional)*** |
-| `cookieTtlSeconds` | ***int***| ***(Optional)*** |
+| `cookieTtlSeconds` | ***int64***| ***(Optional)*** |
 | `type` | ***string***| ***(Optional)*** |
 ## LoadbalancerStatus
 

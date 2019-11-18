@@ -9,22 +9,22 @@
     "path": ""
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-hero.png",
+    "src": "/assets/images/products/kubeform/kubeform-hero.png",
     "alt": "Kubeform"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform.png",
+    "src": "/assets/images/products/kubeform/kubeform.png",
     "alt": "Kubeform"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-white.png",
+    "src": "/assets/images/products/kubeform/kubeform-white.png",
     "alt": "Kubeform"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-icon.png",
+    "src": "/assets/images/products/kubeform/kubeform-icon.png",
     "alt": "Kubeform",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/kubeform/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/kubeform/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/kubeform/docs",
@@ -46,11 +46,11 @@
     {
       "title": "Native Kubernetes Support",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-1.png",
+        "src": "/assets/images/products/kubeform/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/kubernetes.png",
+        "src": "/assets/images/products/kubeform/features/kubernetes.png",
         "alt": "http"
       },
       "summary": "",
@@ -59,11 +59,11 @@
     {
       "title": "Built on Terrafrom",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-2.png",
+        "src": "/assets/images/products/kubeform/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/terraform.png",
+        "src": "/assets/images/products/kubeform/features/terraform.png",
         "alt": "http"
       },
       "summary": "",
@@ -72,11 +72,11 @@
     {
       "title": "Infrastructure as Code",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-3.png",
+        "src": "/assets/images/products/kubeform/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/source-code.png",
+        "src": "/assets/images/products/kubeform/features/source-code.png",
         "alt": "http"
       },
       "summary": "",
@@ -85,11 +85,11 @@
     {
       "title": "Supports Multiple Cloud Platform",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-4.png",
+        "src": "/assets/images/products/kubeform/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/clouds.png",
+        "src": "/assets/images/products/kubeform/features/clouds.png",
         "alt": "http"
       },
       "summary": "",
@@ -98,11 +98,11 @@
     {
       "title": "Unleash Developer Velocity",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-5.png",
+        "src": "/assets/images/products/kubeform/features/feature-5.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/speed.png",
+        "src": "/assets/images/products/kubeform/features/speed.png",
         "alt": "http"
       },
       "summary": "",
@@ -111,11 +111,11 @@
     {
       "title": "Open Source",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-6.png",
+        "src": "/assets/images/products/kubeform/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/teamwork.png",
+        "src": "/assets/images/products/kubeform/features/teamwork.png",
         "alt": "http"
       },
       "summary": "",

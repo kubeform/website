@@ -38,7 +38,7 @@ Appears on:[ContainerCluster](#containercluster), [ContainerClusterStatus](#cont
 | `enableLegacyAbac` | ***bool***| ***(Optional)*** |
 | `enableTpu` | ***bool***| ***(Optional)*** Deprecated|
 | `endpoint` | ***string***| ***(Optional)*** |
-| `initialNodeCount` | ***int***| ***(Optional)*** |
+| `initialNodeCount` | ***int64***| ***(Optional)*** |
 | `instanceGroupUrls` | ***[]string***| ***(Optional)*** |
 | `ipAllocationPolicy` | ***[[]ContainerClusterSpecIpAllocationPolicy](#containerclusterspecipallocationpolicy)***| ***(Optional)*** |
 | `loggingService` | ***string***| ***(Optional)*** |
@@ -175,12 +175,12 @@ Appears on:[ContainerClusterSpec](#containerclusterspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `diskSizeGb` | ***int***| ***(Optional)*** |
+| `diskSizeGb` | ***int64***| ***(Optional)*** |
 | `diskType` | ***string***| ***(Optional)*** |
 | `guestAccelerator` | ***[[]ContainerClusterSpecNodeConfigGuestAccelerator](#containerclusterspecnodeconfigguestaccelerator)***| ***(Optional)*** |
 | `imageType` | ***string***| ***(Optional)*** |
 | `labels` | ***map[string]string***| ***(Optional)*** |
-| `localSsdCount` | ***int***| ***(Optional)*** |
+| `localSsdCount` | ***int64***| ***(Optional)*** |
 | `machineType` | ***string***| ***(Optional)*** |
 | `metadata` | ***map[string]string***| ***(Optional)*** |
 | `minCPUPlatform` | ***string***| ***(Optional)*** |
@@ -196,7 +196,7 @@ Appears on:[ContainerClusterSpecNodeConfig](#containerclusterspecnodeconfig)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `count` | ***int***||
+| `count` | ***int64***||
 | `type` | ***string***||
 ## ContainerClusterSpecNodeConfigTaint
 
@@ -221,14 +221,14 @@ Appears on:[ContainerClusterSpec](#containerclusterspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `autoscaling` | ***[[]ContainerClusterSpecNodePoolAutoscaling](#containerclusterspecnodepoolautoscaling)***| ***(Optional)*** |
-| `initialNodeCount` | ***int***| ***(Optional)*** |
+| `initialNodeCount` | ***int64***| ***(Optional)*** |
 | `instanceGroupUrls` | ***[]string***| ***(Optional)*** |
 | `management` | ***[[]ContainerClusterSpecNodePoolManagement](#containerclusterspecnodepoolmanagement)***| ***(Optional)*** |
-| `maxPodsPerNode` | ***int***| ***(Optional)*** Deprecated|
+| `maxPodsPerNode` | ***int64***| ***(Optional)*** Deprecated|
 | `name` | ***string***| ***(Optional)*** |
 | `namePrefix` | ***string***| ***(Optional)*** Deprecated|
 | `nodeConfig` | ***[[]ContainerClusterSpecNodePoolNodeConfig](#containerclusterspecnodepoolnodeconfig)***| ***(Optional)*** |
-| `nodeCount` | ***int***| ***(Optional)*** |
+| `nodeCount` | ***int64***| ***(Optional)*** |
 | `version` | ***string***| ***(Optional)*** |
 ## ContainerClusterSpecNodePoolAutoscaling
 
@@ -236,8 +236,8 @@ Appears on:[ContainerClusterSpecNodePool](#containerclusterspecnodepool)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `maxNodeCount` | ***int***||
-| `minNodeCount` | ***int***||
+| `maxNodeCount` | ***int64***||
+| `minNodeCount` | ***int64***||
 ## ContainerClusterSpecNodePoolManagement
 
 Appears on:[ContainerClusterSpecNodePool](#containerclusterspecnodepool)
@@ -252,12 +252,12 @@ Appears on:[ContainerClusterSpecNodePool](#containerclusterspecnodepool)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `diskSizeGb` | ***int***| ***(Optional)*** |
+| `diskSizeGb` | ***int64***| ***(Optional)*** |
 | `diskType` | ***string***| ***(Optional)*** |
 | `guestAccelerator` | ***[[]ContainerClusterSpecNodePoolNodeConfigGuestAccelerator](#containerclusterspecnodepoolnodeconfigguestaccelerator)***| ***(Optional)*** |
 | `imageType` | ***string***| ***(Optional)*** |
 | `labels` | ***map[string]string***| ***(Optional)*** |
-| `localSsdCount` | ***int***| ***(Optional)*** |
+| `localSsdCount` | ***int64***| ***(Optional)*** |
 | `machineType` | ***string***| ***(Optional)*** |
 | `metadata` | ***map[string]string***| ***(Optional)*** |
 | `minCPUPlatform` | ***string***| ***(Optional)*** |
@@ -273,7 +273,7 @@ Appears on:[ContainerClusterSpecNodePoolNodeConfig](#containerclusterspecnodepoo
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `count` | ***int***||
+| `count` | ***int64***||
 | `type` | ***string***||
 ## ContainerClusterSpecNodePoolNodeConfigTaint
 

@@ -125,7 +125,7 @@ Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueuepropertie
 | `allowedMethods` | ***[]string***||
 | `allowedOrigins` | ***[]string***||
 | `exposedHeaders` | ***[]string***||
-| `maxAgeInSeconds` | ***int***||
+| `maxAgeInSeconds` | ***int64***||
 ## StorageAccountSpecQueuePropertiesHourMetrics
 
 Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueueproperties)
@@ -134,7 +134,7 @@ Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueuepropertie
 | ------ | ----- | ----------- |
 | `enabled` | ***bool***||
 | `includeApis` | ***bool***| ***(Optional)*** |
-| `retentionPolicyDays` | ***int***| ***(Optional)*** |
+| `retentionPolicyDays` | ***int64***| ***(Optional)*** |
 | `version` | ***string***||
 ## StorageAccountSpecQueuePropertiesLogging
 
@@ -144,7 +144,7 @@ Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueuepropertie
 | ------ | ----- | ----------- |
 | `delete` | ***bool***||
 | `read` | ***bool***||
-| `retentionPolicyDays` | ***int***| ***(Optional)*** |
+| `retentionPolicyDays` | ***int64***| ***(Optional)*** |
 | `version` | ***string***||
 | `write` | ***bool***||
 ## StorageAccountSpecQueuePropertiesMinuteMetrics
@@ -155,7 +155,7 @@ Appears on:[StorageAccountSpecQueueProperties](#storageaccountspecqueuepropertie
 | ------ | ----- | ----------- |
 | `enabled` | ***bool***||
 | `includeApis` | ***bool***| ***(Optional)*** |
-| `retentionPolicyDays` | ***int***| ***(Optional)*** |
+| `retentionPolicyDays` | ***int64***| ***(Optional)*** |
 | `version` | ***string***||
 ## StorageAccountStatus
 

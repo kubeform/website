@@ -37,7 +37,7 @@ Appears on:[StorageDefaultObjectAccessControl](#storagedefaultobjectaccesscontro
 | `email` | ***string***| ***(Optional)*** |
 | `entity` | ***string***||
 | `entityID` | ***string***| ***(Optional)*** |
-| `generation` | ***int***| ***(Optional)*** |
+| `generation` | ***int64***| ***(Optional)*** |
 | `object` | ***string***| ***(Optional)*** |
 | `projectTeam` | ***[[]StorageDefaultObjectAccessControlSpecProjectTeam](#storagedefaultobjectaccesscontrolspecprojectteam)***| ***(Optional)*** |
 | `role` | ***string***||

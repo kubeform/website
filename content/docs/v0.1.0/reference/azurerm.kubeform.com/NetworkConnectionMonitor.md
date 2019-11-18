@@ -30,7 +30,7 @@ Appears on:[NetworkConnectionMonitor](#networkconnectionmonitor), [NetworkConnec
 | `id` | ***string***||
 | `autoStart` | ***bool***| ***(Optional)*** |
 | `destination` | ***[[]NetworkConnectionMonitorSpecDestination](#networkconnectionmonitorspecdestination)***||
-| `intervalInSeconds` | ***int***| ***(Optional)*** |
+| `intervalInSeconds` | ***int64***| ***(Optional)*** |
 | `location` | ***string***||
 | `name` | ***string***||
 | `networkWatcherName` | ***string***||
@@ -44,7 +44,7 @@ Appears on:[NetworkConnectionMonitorSpec](#networkconnectionmonitorspec)
 | Field | Type | Description |
 | ------ | ----- | ----------- |
 | `address` | ***string***| ***(Optional)*** |
-| `port` | ***int***||
+| `port` | ***int64***||
 | `virtualMachineID` | ***string***| ***(Optional)*** |
 ## NetworkConnectionMonitorSpecSource
 
@@ -52,7 +52,7 @@ Appears on:[NetworkConnectionMonitorSpec](#networkconnectionmonitorspec)
 
 | Field | Type | Description |
 | ------ | ----- | ----------- |
-| `port` | ***int***| ***(Optional)*** |
+| `port` | ***int64***| ***(Optional)*** |
 | `virtualMachineID` | ***string***||
 ## NetworkConnectionMonitorStatus
 
