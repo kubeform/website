@@ -9,7 +9,7 @@
       <div class="columns">
         <div class="column is-6">
           <!-- hero content start -->
-          <div class="hero-area-content d-table">
+          <div class="hero-area-content d-table" data-aos="fade-up">
             <div class="hero-content-inner d-table-cell">
               <h4>{{$p.name}}</h4>
               <h1>
@@ -48,7 +48,7 @@
         </div>
         <div class="column is-6">
           <!-- hero image start -->
-          <div class="hero-area-img">
+          <div class="hero-area-img" data-aos="fade-up" data-aos-duration="1000">
             <img src="{{ $p.heroImage.src }}" alt="{{ $p.heroImage.alt }}" class="img" />
           </div>
           <!-- hero image end -->
@@ -99,7 +99,7 @@
     <div class="columns">
       <div class="column is-8 is-offset-2 has-text-centered">
         <!-- section-title start -->
-        <div class="section-title is-main-title">
+        <div class="section-title is-main-title" data-aos="fade-up">
           <h2>Product Features</h2>
           {{ if $p.summary }}
           <p>
@@ -114,7 +114,7 @@
       {{ range $f := $p.features }}
       <!-- single feature area start -->
       <div class="column is-6">
-      <div class="single-product-feature-wrapper">
+      <div class="single-product-feature-wrapper" data-aos="fade-up">
         <div class="product-feature-icon">
           <img src="{{ $f.icon.src }}" alt="{{ $f.icon.alt }}" />
         </div>
