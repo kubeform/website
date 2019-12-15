@@ -7,9 +7,9 @@
   <div class="hero-features d-table">
     <!-- hero features text start -->
     <div class="hero-features-content d-table-cell has-text-centered">
-      <h1>{{ $p.name }} Features</h1>
-      <p>{{ $p.summary }}</p>
-      <div class="hero-area-button">
+      <h1 data-aos="fade-up">{{ $p.name }} Features</h1>
+      <p data-aos="fade-up" data-aos-duration="500">{{ $p.summary }}</p>
+      <div class="hero-area-button" data-aos="fade-up" data-aos-duration="700">
         <a
           href="/docs/{{ $p.latestVersion }}/setup/"
           class="button kd-button kd-primary"
@@ -32,7 +32,7 @@
       <div class="columns">
         <div class="column is-5 is-offset-1">
           <div class="feature-wrapper d-table">
-            <div class="feature-content pr-140 d-table-cell">
+            <div class="feature-content pr-140 d-table-cell" data-aos="fade-up">
               <h2>{{ $f.title }}</h2>
               <p>
                 {{ $f.description }}
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="column is-5">
-          <div class="single-feature-image">
+          <div class="single-feature-image" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="{{ $f.image.src }}"
               alt="{{ $f.image.alt }}"
@@ -53,7 +53,7 @@
       {{ else }}
       <div class="columns reverse-row-order">
         <div class="column is-5 is-offset-1">
-          <div class="single-feature-image">
+          <div class="single-feature-image" data-aos="fade-up">
             <img
               src="{{ $f.image.src }}"
               alt="{{ $f.image.alt }}"
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="column is-5">
-          <div class="feature-wrapper d-table">
+          <div class="feature-wrapper d-table" data-aos="fade-up" data-aos-duration="1000">
             <div class="feature-content pr-45 d-table-cell">
               <h2>{{ $f.title }}</h2>
               <p>

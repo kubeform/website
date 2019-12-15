@@ -50,6 +50,8 @@
     -->
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bulma Carousel CSS -->
     <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css" />
     <!-- Bulma tooltip CSS -->
@@ -379,14 +381,14 @@
       <div class="container section">
         <div class="columns">
           <div class="column">
-            <div class="section-title has-text-centered">
+            <div class="section-title has-text-centered" data-aos="fade-up">
               <h2>What Our Customers Say</h2>
             </div>
           </div>
         </div>
         <div class="columns is-centered">
           <div class="column is-8">
-            <div class="carousel-wrapper carousel" id="carousel-demo">
+            <div class="carousel-wrapper carousel" id="carousel-demo" data-aos="fade-up">
               {{ range $user := $.Site.Data.testimonials }}
               <!-- single testimonial start -->
               <div class="carousel-inner">
@@ -427,9 +429,9 @@
     <div class="logo-carusal-area section-padding">
       <div class="container section">
         <div class="columns is-centered">
-          <div class="column is-10 is-offset-1 has-text-centered">
+          <div class="column is-10 has-text-centered">
             <!-- brand logo start -->
-            <div class="brand-logo-wrapper mt-10">
+            <div class="brand-logo-wrapper mt-10" data-aos="fade-up">
                 {{ range $customer := $.Site.Data.customers }}
                   {{ if $customer.show }}
                     <a class="single-brand-logo">
@@ -453,7 +455,7 @@
     <!-- call to action area start -->
     {{ block "cta-install" . }}
     {{ $p := (index .Site.Data.products .Site.Params.product_key) }}
-    <section class="cta-area section-padding pt-0">
+    <section class="cta-area section-padding pt-0" data-aos="fade-up">
       <div class="container section">
         <div class="cta-padding">
           <div class="columns">
@@ -492,8 +494,8 @@
     <footer class="footer-area">
       <div class="footer-top">
         <div class="container section">
-          <div class="columns">
-            <div class="column is-4">
+          <div class="columns is-mobile is-multiline">
+            <div class="column is-full-mobile is-one-third-desktop is-one-third-widescreen is-one-third-tablet" data-aos="fade-up">
               <div class="single-footer-widget">
                 <!-- logo start -->
                 <div class="footer-logo">
@@ -558,7 +560,7 @@
               </div>
             </div>
 
-            <div class="column is-2">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="500">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -574,7 +576,7 @@
               </div>
             </div>
 
-            <div class="column is-2">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="600">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -590,7 +592,7 @@
               </div>
             </div>
 
-            <div class="column is-2">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="700">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -605,7 +607,7 @@
               </div>
             </div>
 
-            <div class="column is-2">
+            <div class="column is-half-mobile" data-aos="fade-up" data-aos-duration="800">
               <div class="single-footer-widget">
                 <!-- footer menu start -->
                 <div class="footer-menu">
@@ -665,6 +667,8 @@
 
     <!-- Bulma Carousel JS -->
     <script src="/assets/js/bulma-carousel.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- download js  -->
     <script src="https://unpkg.com/downloadjs@1.4.7/download.min.js"></script>
     <!-- clipboard js  -->

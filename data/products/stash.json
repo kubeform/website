@@ -5,8 +5,8 @@
   "summary": "",
   "published": true,
   "website": {
-    "domainKey": "domain_appscode",
-    "path": "/products/stash/"
+    "domainKey": "domain_stash",
+    "path": ""
   },
   "heroImage": {
     "src": "/assets/images/products/stash/stash-hero.png",
