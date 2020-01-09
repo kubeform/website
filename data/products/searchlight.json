@@ -1,9 +1,11 @@
 {
   "key": "searchlight",
   "name": "Searchlight",
+  "fullname": "Searchlight by AppsCode",
   "tagline": "Alerts for Kubernetes",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_appscode",
     "path": "/products/searchlight/"

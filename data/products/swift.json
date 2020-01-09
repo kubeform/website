@@ -1,9 +1,11 @@
 {
   "key": "swift",
   "name": "Swift",
+  "fullname": "Swift by AppsCode",
   "tagline": "Ajax friendly Helm Tiller Proxy",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_appscode",
     "path": "/products/swift/"

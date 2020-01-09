@@ -1,9 +1,11 @@
 {
   "key": "guard",
   "name": "Guard",
+  "fullname": "Guard by AppsCode",
   "tagline": "Kubernetes Authentication WebHook Server",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_appscode",
     "path": "/products/guard/"

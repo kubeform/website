@@ -1,13 +1,17 @@
 {
   "key": "stash",
   "name": "Stash",
+  "fullname": "Stash by AppsCode",
   "tagline": "Backup your Kubernetes Stateful Applications",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_stash",
-    "path": ""
+    "path": "",
+    "themeColor": "#5E2DEA"
   },
+  "keywords": "kubernetes appscode backup disaster recovery volume",
   "heroImage": {
     "src": "/assets/images/products/stash/stash-hero.png",
     "alt": "Stash"
@@ -282,7 +286,7 @@
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/stashed/stash",
     "linkedin": "https://www.linkedin.com/company/appscode",
-    "twitter": "https://twitter.com/AppsCodeHQ",
+    "twitter": "https://twitter.com/KubeStash",
     "youtube": "https://www.youtube.com/c/appscodeinc"
   },
   "description": {

@@ -1,13 +1,17 @@
 {
   "key": "kubevault",
   "name": "KubeVault",
+  "fullname": "KubeVault by AppsCode",
   "tagline": "Tools for running HashiCorp <strong>Vault</strong> on <strong>Kubernetes</strong>",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_kubevault",
-    "path": ""
+    "path": "",
+    "themeColor": "#326CE5"
   },
+  "keywords": "kubernetes appscode vault secret csi security",
   "heroImage": {
     "src": "/assets/images/products/kubevault/kubevault-hero.png",
     "alt": "KubeVault"

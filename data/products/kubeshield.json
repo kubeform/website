@@ -1,9 +1,11 @@
 {
   "key": "kubeshield",
   "name": "Kubeshield",
-  "tagline": "Tools for running HashiCorp Vault on Kubernetes",
+  "fullname": "Kubeshield by AppsCode",
+  "tagline": "Secure Kubernetes for Everyone",
   "summary": "",
   "published": false,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_kubeshield",
     "path": ""
