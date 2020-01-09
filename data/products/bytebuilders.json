@@ -1,9 +1,11 @@
 {
   "key": "bytebuilders",
   "name": "ByteBuilders",
+  "fullname": "ByteBuilders by AppsCode",
   "tagline": "Cloud reimagined <br />for the age of Kubernetes",
   "summary": "Deploy, manage, upgrade Kubernetes on any cloud and automate deployment, <br />scaling, and management of containerized applications.",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_bytebuilders",
     "path": ""

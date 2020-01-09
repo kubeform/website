@@ -1,13 +1,17 @@
 {
   "key": "kubeform",
   "name": "Kubeform",
+  "fullname": "Kubeform by AppsCode",
   "tagline": "Provision cloud resources <br /> using <strong>Kubernetes</strong> CRDs <br />& <strong>Terraform</strong>",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_kubeform",
-    "path": ""
+    "path": "",
+    "themeColor": "#592217"
   },
+  "keywords": "kubernetes appscode terraform kubeform crd",
   "heroImage": {
     "src": "/assets/images/products/kubeform/kubeform-hero.png",
     "alt": "Kubeform"

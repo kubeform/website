@@ -1,13 +1,17 @@
 {
   "key": "pharmer",
   "name": "Pharmer",
+  "fullname": "Pharmer by AppsCode",
   "tagline": "Kubernetes Cluster Manager using Kubeadm & Cluster API",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_pharmer",
-    "path": ""
+    "path": "",
+     "themeColor": "#8E44AD"
   },
+  "keywords": "kubernetes appscode cluster management upgrades",
   "heroImage": {
     "src": "/assets/images/products/pharmer/pharmer-hero.png",
     "alt": "Pharmer"

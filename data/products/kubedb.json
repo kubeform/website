@@ -1,13 +1,17 @@
 {
   "key": "kubedb",
   "name": "KubeDB",
+  "fullname": "KubeDB by AppsCode",
   "tagline": "Run production-grade databases easily on <strong>Kubernetes</strong>",
   "summary": "KubeDB by AppsCode simplifies and automates routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair for various popular databases on private and public clouds",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_kubedb",
-    "path": ""
+    "path": "",
+    "themeColor": "#4D4DCB"
   },
+  "keywords": "kubernetes appscode databsse high availability postgres elasticsearch etcd memecached mongodb mysql percona xtradb redis",
   "heroImage": {
     "src": "/assets/images/products/kubedb/kubedb-hero.png",
     "alt": "KubeDB"
