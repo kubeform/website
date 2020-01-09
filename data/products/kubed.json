@@ -1,9 +1,11 @@
 {
   "key": "kubed",
   "name": "Kubed",
+  "fullname": "Kubed by AppsCode",
   "tagline": "Kubernetes cluster manager daemon",
   "summary": "",
   "published": true,
+  "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_appscode",
     "path": "/products/kubed/"

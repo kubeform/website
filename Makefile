@@ -35,4 +35,4 @@ release: gen-prod
 
 .PHONY: check-links
 check-links:
-	liche -r public -d http://localhost:1313 -c 10 -p -l
+	liche -r public -d http://localhost:1313 -c 10 -p -l -x '^http://localhost:9090$$'

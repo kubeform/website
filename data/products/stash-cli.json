@@ -1,8 +1,10 @@
 {
   "key": "stash-cli",
   "name": "Stash kubectl Plugin",
+  "fullname": "Stash kubectl Plugin",
   "tagline": "kubectl plugin for Stash",
   "published": true,
+  "author": "AppsCode Inc.",
   "repoURL": "https://github.com/stashed/cli",
   "starRepo": "stashed/stash",
   "docRepo": "stashed/cli",

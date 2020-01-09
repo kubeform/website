@@ -7,47 +7,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#2D9AED" />
-    <title>{{$p.name}} Home</title>
-    <meta name="description" content="{{ $.Site.Data.products.appscode.summary | plainify }}">
-    <meta name="author" content="AppsCode Inc.">
-    <meta name="keywords" content="application monitoring, attic, build docker image, cloud app, cloud deployment, cloud hosting, container applications, continuous deployment, deployment automation, git hosting, kubernetes autoscaling, nagios, network monitor, repository hosting, source code repository">
+    <meta name="theme-color" content="{{ $p.website.themeColor }}">
+    <title>{{$p.fullname}}</title>
+    <meta name="description" content="{{ $p.summary | plainify }}">
+    <meta name="author" content="{{ $p.author }}">
+    <meta name="keywords" content="{{ $p.keywords }}">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/products/appscode/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/products/appscode/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/products/appscode/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/products/appscode/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/products/appscode/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/products/appscode/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/products/appscode/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/products/appscode/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/products/appscode/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/products/appscode/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/products/appscode/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/products/appscode/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/products/appscode/icons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/products/appscode/icons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/products/{{ $p.key }}/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/products/{{ $p.key }}/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/products/{{ $p.key }}/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/products/{{ $p.key }}/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/products/{{ $p.key }}/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/products/{{ $p.key }}/icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/images/products/appscode/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#592217">
+    <meta name="msapplication-TileImage" content="/assets/images/products/{{ $p.key }}/icons/ms-icon-144x144.png">
     <!-- twitter -->
-    <!--
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@KubeDB">
-    <meta name="twitter:title" content="KubeDB">
-    <meta name="twitter:creator" content="@KubeDB">
-    <meta name="twitter:description" content="{{ $.Site.Data.products.kubedb.summary | plainify }}">
-    <meta name="twitter:image:src" content="/assets/images/products/kubedb/kubedb-1280x640.png">
-    -->
+    <meta name="twitter:site" content="@{{ strings.TrimPrefix `https://twitter.com/` $p.socialLinks.twitter }}">
+    <meta name="twitter:title" content="{{ $p.name }}">
+    <meta name="twitter:creator" content="@{{ strings.TrimPrefix `https://twitter.com/` $p.socialLinks.twitter }}">
+    <meta name="twitter:description" content="{{ $p.summary | plainify }}">
+    <meta name="twitter:image:src" content="/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <!-- facebook -->
-    <!--
-    <meta property="og:url" content="{{ $.Site.Params.domain_kubedb }}">
-    <meta property="og:title" content="KubeDB">
-    <meta property="og:description" content="{{ $.Site.Data.products.kubedb.summary | plainify }}">
-    <meta property="og:site_name" content="KubeDB">
-    <meta property="og:image" content="/assets/images/products/kubedb/kubedb-1280x640.png">
+    <meta property="og:url" content="{{ $.Site.Params.domain_stash }}">
+    <meta property="og:title" content="{{ $p.name }}">
+    <meta property="og:description" content="{{ $p.summary | plainify }}">
+    <meta property="og:site_name" content="{{ $p.name }}">
+    <meta property="og:image" content="/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <meta property="og:type" content="article">
-    -->
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
     <!-- AOS CSS -->
