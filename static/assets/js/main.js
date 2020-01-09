@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // AOS Animation 
-  AOS.init();
+  AOS.init({
+    once: true
+  });
   
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
