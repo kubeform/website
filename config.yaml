@@ -29,6 +29,10 @@ params:
   youtube_url: https://www.youtube.com/c/AppsCodeInc
   contact_email: support@appscode.com
   contact_phone: +1(650)241-8486
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 menu:
   main:
   - name: Clouds
