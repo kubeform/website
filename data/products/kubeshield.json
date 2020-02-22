@@ -8,8 +8,10 @@
   "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_kubeshield",
-    "path": ""
+    "path": "",
+    "themeColor": "#4D4DCB"
   },
+  "keywords": "kubernetes appscode kubeshield security scanner",
   "heroImage": {
     "src": "/assets/images/products/kubeshield/kubeshield-hero.png",
     "alt": "Kubeshield"

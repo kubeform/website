@@ -1168,7 +1168,7 @@ p.spam-message {
 
 .payment-method-area {
   position: relative;
-  background-image: url(../images/shape/shape-1.webp);
+  background-image: url(../images/shape/shape-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -1176,7 +1176,7 @@ p.spam-message {
 }
 
 .payment-method-area:after {
-  background-image: url(../images/shape/shape-2.webp);
+  background-image: url(../images/shape/shape-2.png);
   content: "";
   left: 0;
   top: 0;
