@@ -129,10 +129,11 @@
   ],
   "versions": [
       { "version": "master", "hostDocs": false, "show": true },
-      { "version": "0.1.0", "hostDocs": true, "show": true },
-      { "version": "0.2.0", "hostDocs": true, "show": true }
+      { "version": "v0.3.0", "hostDocs": true, "show": true },
+      { "version": "0.2.0", "hostDocs": true, "show": true },
+      { "version": "0.1.0", "hostDocs": true, "show": true }
   ],
-  "latestVersion": "0.2.0",
+  "latestVersion": "v0.3.0",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubevault",
