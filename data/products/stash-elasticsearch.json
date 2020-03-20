@@ -3,6 +3,7 @@
   "name": "Elasticsearch",
   "fullname": "Stash Elasticsearch Addon",
   "tagline": "Elasticsearch backup and restore plugin for Stash by AppsCode",
+  "summary": "Elasticsearch backup and restore plugin for Stash by AppsCode",
   "published": true,
   "author": "AppsCode Inc.",
   "repoURL": "https://github.com/stashed/elasticsearch",

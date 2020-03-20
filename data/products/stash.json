@@ -3,7 +3,7 @@
   "name": "Stash",
   "fullname": "Stash by AppsCode",
   "tagline": "Backup your Kubernetes Stateful Applications",
-  "summary": "",
+  "summary": "Stash by AppsCode is a cloud native data backup and recovery solution for Kubernetes workloads, volumes and databases",
   "published": true,
   "author": "AppsCode Inc.",
   "website": {

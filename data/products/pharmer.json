@@ -3,7 +3,7 @@
   "name": "Pharmer",
   "fullname": "Pharmer by AppsCode",
   "tagline": "Kubernetes Cluster Manager using Kubeadm & Cluster API",
-  "summary": "",
+  "summary": "Kubernetes Cluster Manager using Kubeadm & Cluster API",
   "published": true,
   "author": "AppsCode Inc.",
   "website": {

@@ -3,7 +3,7 @@
   "name": "KubeVault",
   "fullname": "KubeVault by AppsCode",
   "tagline": "Tools for running HashiCorp <strong>Vault</strong> on <strong>Kubernetes</strong>",
-  "summary": "",
+  "summary": "Tools for running HashiCorp <strong>Vault</strong> on <strong>Kubernetes</strong>",
   "published": true,
   "author": "AppsCode Inc.",
   "website": {
