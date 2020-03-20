@@ -285,6 +285,7 @@
   ],
   "versions": [
     { "version": "master", "hostDocs": false, "show": true },
+    { "version": "v0.9.0-rc.6", "hostDocs": true, "show": true, "info": { "catalog": "v0.3.0", "cli": "v0.3.1" } },
     { "version": "v0.9.0-rc.4", "hostDocs": true, "show": true, "info": { "catalog": "v0.2.0", "cli": "v0.3.0" } },
     { "version": "v0.9.0-rc.2", "hostDocs": true, "show": true, "info": { "catalog": "v0.1.0", "cli": "v0.2.0" } },
     { "version": "v0.9.0-rc.1", "hostDocs": true, "show": true, "info": { "catalog": "v0.1.0", "cli": "v0.1.0" } },
@@ -308,7 +309,7 @@
     { "version": "0.5.1", "hostDocs": false },
     { "version": "0.4.2", "hostDocs": false, "show": true }
   ],
-  "latestVersion": "v0.9.0-rc.4",
+  "latestVersion": "v0.9.0-rc.6",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/stashed/stash",
@@ -348,6 +349,14 @@
       "mappings": [
         {
           "versions": [
+            "v0.9.0-rc.6"
+          ],
+          "subProjectVersions": [
+            "v0.3.1"
+          ]
+        },
+        {
+          "versions": [
             "v0.9.0-rc.4"
           ],
           "subProjectVersions": [
@@ -379,7 +388,8 @@
           "versions": [
             "v0.9.0-rc.1",
             "v0.9.0-rc.2",
-            "v0.9.0-rc.4"
+            "v0.9.0-rc.4",
+            "v0.9.0-rc.6"
           ],
           "subProjectVersions": [
             "5.6",
@@ -409,7 +419,8 @@
           "versions": [
             "v0.9.0-rc.1",
             "v0.9.0-rc.2",
-            "v0.9.0-rc.4"
+            "v0.9.0-rc.4",
+            "v0.9.0-rc.6"
           ],
           "subProjectVersions": [
             "3.4",
@@ -425,7 +436,9 @@
             "4.1",
             "4.1.4",
             "4.1.7",
-            "4.1.13"
+            "4.1.13",
+            "4.2",
+            "4.2.3"
           ]
         }
       ]
@@ -437,7 +450,8 @@
           "versions": [
             "v0.9.0-rc.1",
             "v0.9.0-rc.2",
-            "v0.9.0-rc.4"
+            "v0.9.0-rc.4",
+            "v0.9.0-rc.6"
           ],
           "subProjectVersions": [
             "5.7.25",
@@ -454,7 +468,8 @@
           "versions": [
             "v0.9.0-rc.1",
             "v0.9.0-rc.2",
-            "v0.9.0-rc.4"
+            "v0.9.0-rc.4",
+            "v0.9.0-rc.6"
           ],
           "subProjectVersions": [
             "9.6",
@@ -471,7 +486,8 @@
       "mappings": [
         {
           "versions": [
-            "v0.9.0-rc.4"
+            "v0.9.0-rc.4",
+            "v0.9.0-rc.6"
           ],
           "subProjectVersions": [
             "5.7"

@@ -29,19 +29,23 @@
     <link rel="manifest" href="/assets/images/products/{{ $p.key }}/icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/images/products/{{ $p.key }}/icons/ms-icon-144x144.png">
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{ $p.name }}">
+    <meta itemprop="description" content="{{ $p.summary | plainify }}">
+    <meta itemprop="image" content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <!-- twitter -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{ strings.TrimPrefix `https://twitter.com/` $p.socialLinks.twitter }}">
-    <meta name="twitter:title" content="{{ $p.name }}">
+    <meta name="twitter:title" content="{{$p.fullname}}">
     <meta name="twitter:creator" content="@{{ strings.TrimPrefix `https://twitter.com/` $p.socialLinks.twitter }}">
     <meta name="twitter:description" content="{{ $p.summary | plainify }}">
-    <meta name="twitter:image:src" content="/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x1280.png">
+    <meta name="twitter:image:src" content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <!-- facebook -->
-    <meta property="og:url" content="{{ $.Site.Params.domain_stash }}">
-    <meta property="og:title" content="{{ $p.name }}">
+    <meta property="og:url" content="{{ $.Site.BaseURL }}">
+    <meta property="og:title" content="{{$p.fullname}}">
     <meta property="og:description" content="{{ $p.summary | plainify }}">
     <meta property="og:site_name" content="{{ $p.name }}">
-    <meta property="og:image" content="/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x1280.png">
+    <meta property="og:image" content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <meta property="og:type" content="article">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
