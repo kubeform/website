@@ -35,7 +35,9 @@
     { "version": "4.1", "hostDocs": true, "show": true },
     { "version": "4.1.4", "hostDocs": true, "show": true },
     { "version": "4.1.7", "hostDocs": true, "show": true },
-    { "version": "4.1.13", "hostDocs": true, "show": true }
+    { "version": "4.1.13", "hostDocs": true, "show": true },
+    { "version": "4.2", "hostDocs": true, "show": true },
+    { "version": "4.2.3", "hostDocs": true, "show": true }
   ],
-  "latestVersion": "4.1.13"
+  "latestVersion": "4.2.3"
 }
