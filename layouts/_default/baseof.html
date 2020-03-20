@@ -30,7 +30,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/images/products/{{ $p.key }}/icons/ms-icon-144x144.png">
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="{{ $p.name }}">
+    <meta itemprop="name" content="{{ $p.fullname }}">
     <meta itemprop="description" content="{{ $p.summary | plainify }}">
     <meta itemprop="image" content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <!-- twitter -->
@@ -44,7 +44,7 @@
     <meta property="og:url" content="{{ $.Site.BaseURL }}">
     <meta property="og:title" content="{{$p.fullname}}">
     <meta property="og:description" content="{{ $p.summary | plainify }}">
-    <meta property="og:site_name" content="{{ $p.name }}">
+    <meta property="og:site_name" content="{{ $p.fullname }}">
     <meta property="og:image" content="{{ $.Site.BaseURL }}/assets/images/products/{{ $p.key }}/{{ $p.key }}-1280x640.png">
     <meta property="og:type" content="article">
     <!-- Font Awesome CSS -->

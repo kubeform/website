@@ -3,7 +3,7 @@
   "name": "Guard",
   "fullname": "Guard by AppsCode",
   "tagline": "Kubernetes Authentication WebHook Server",
-  "summary": "",
+  "summary": "Kubernetes Authentication WebHook Server",
   "published": true,
   "author": "AppsCode Inc.",
   "website": {
