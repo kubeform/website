@@ -3,7 +3,7 @@
   "name": "Kubed",
   "fullname": "Kubed by AppsCode",
   "tagline": "Kubernetes cluster manager daemon",
-  "summary": "",
+  "summary": "Kubernetes cluster manager daemon",
   "published": true,
   "author": "AppsCode Inc.",
   "website": {

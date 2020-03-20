@@ -1,8 +1,8 @@
 {
   "key": "appscode",
   "name": "AppsCode",
-  "fullname": "AppsCode",
-  "tagline": "GitHub for Kubernetes",
+  "fullname": "AppsCode Inc.",
+  "tagline": "Cloud Native Data Platform",
   "summary": "Accelerating the transition to Containers by building a Kubernetes-native Data Platform",
   "published": false,
   "author": "AppsCode Inc.",
