@@ -28,7 +28,7 @@
       <div class="column is-6">
         <div class="hero-area-img" data-aos="fade-up" data-aos-duration="1000">
           <img
-            src="/assets/images/support-page/support-img.webp"
+            src="/assets/images/support-page/support-img.png"
             alt=""
             class="img"
           />
@@ -127,7 +127,7 @@
                 <li>
                   <span class="tooltip is-tooltip-primary is-tooltip-multiline" data-tooltip="We are able to accomodate a different chat software, if your organization provides it.">
                     Dedicated Private  <br />
-                    chat (via Slack)
+                    chat (via Discord)
                   </span>
                 </li>
                 <li>
@@ -261,36 +261,22 @@
         </div>
         <!-- pricing column end -->
         <!-- pricing column start -->
-        <div class="column has-text-centered" data-aos="fade-up" data-aos-duration="600">
-          <div class="single-pricing-table silver">
-            <div class="discount-text is-hide" id="standardPriceDiscount">Save 33%</div>
+        <div class="column has-text-centered" data-aos="fade-up" data-aos-duration="800">
+          <div class="single-pricing-table plutinum">
             <!-- pricing heading start -->
             <div class="pricing-heading">
               <!-- pricing title start -->
-              <div class="pricing-top d-table">
+              <div class="pricing-top kd-red d-table">
                 <div class="pricing-top-inner d-table-cell">
-                <h4>Standard</h4>
-                <div class="package-price" id="standardPrice"></span></div>
+                <h4>Platinum</h4>
+                <div class="package-price"></div>
               </div>
               </div>
               <!-- pricing title end -->
 
-              <!-- pricing type start -->
-              <div class="pricing-type">
-                <div class="control">
-                  <div class="select is-multiple custom-arrow-down">
-                    <select id="standardPriceOptions" onchange="showStandardPrice()">
-                      <option value="y2y">Annual plan, prepaid</option>
-                      <option value="m2m">Monthly plan</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <!-- pricing type end -->
-
               <!-- pricing button start -->
               <div class="pricing-button">
-                <a href="/meet-expert/" class="button kd-button kd-primary">Contact Sales</a>
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button kd-button kd-red">Contact Sales</a>
               </div>
               <!-- pricing button end -->
             </div>
@@ -298,129 +284,7 @@
 
             <!-- pricing body start -->
             <div class="pricing-body">
-              <!-- pricing content -->
-              <ul>
-                <li data-col_name="Recommended for">
-                  <span>
-                    Recommended if you want <br />
-                    guaranteed support by the <br />
-                    developer
-                  </span>
-                </li>
-                <li data-col_name="Response Time">
-                  <span>
-                    <br />
-                    General guidance: <br />
-                    < 48 business hours  <br />
-                    <br />
-                    System impaired:  <br />
-                    < 24 business hours <br />
-                    <br />
-                    <br />
-                  </span>
-                </li>
-                <li data-col_name="Support Coverage">
-                  <span>
-                    Business hours <br />
-                    M-F: 9-5 pm
-                  </span>
-                </li>
-                <li data-col_name="Emergency patches">
-                  <span>
-                    Yes <br />
-                    (at most bi-weekly)
-                  </span>
-                </li>
-                <li data-col_name="Unlimited Incidents">
-                  <span>Yes</span>
-                </li>
-                <li data-col_name="Contacts for Ticketing">
-                  <span>2</span>
-                </li>
-                <li data-col_name="Community support">
-                  <span
-                    >Included <br />
-                    (Public Slack & GitHub issues)</span
-                  >
-                </li>
-                <li data-col_name="Remote Hands (Debug via Zoom)">
-                  <span>
-                    Yes <br />
-                    (first 1 hr/month FREE, <br />
-                    addt’l charged at $200/hr)
-                  </span>
-                </li>
-                <li data-col_name="Production Runbook">
-                  <span>Yes</span>
-                </li>
-                <li data-col_name="Dedicated Private chat (via Slack)">
-                  <span>Yes</span>
-                </li>
-                <li data-col_name="Phone support">
-                  <span>X</span>
-                </li>
-                <li data-col_name="Architectural Guidance">
-                  <span>
-                    General <br />
-                    <br />
-                    <br />
-                  </span>
-                </li>
-                <li data-col_name="Professional Services">
-                  <span>Additional fees</span>
-                </li>
-              </ul>
-              <!-- pricing content -->
-              <!-- pricing button start -->
-              <div class="pricing-button">
-                <a href="/meet-expert/" class="button kubedb-transparent-btn">Contact Sales</a>
-              </div>
-              <!-- pricing button end -->
-            </div>
-            <!-- pricing body end -->
-          </div>
-        </div>
-        <!-- pricing column end -->
-        <!-- pricing column start -->
-        <div class="column has-text-centered" data-aos="fade-up" data-aos-duration="700">
-          <div class="single-pricing-table gold">
-            <!-- pricing heading start -->
-            <div class="discount-text" id="goldPriceDiscount">Save 20%</div>
-            <div class="pricing-heading">
-              <!-- pricing title start -->
-              <div class="pricing-top kd-orange d-table">
-                <div class="pricing-top-inner d-table-cell">
-                  <div class="round-shape">BEST VALUE!</div>
-                <h4>Gold</h4>
-                <div class="package-price" id="goldPrice"></div>
-              </div>
-              </div>
-              <!-- pricing title end -->
-
-              <!-- pricing type start -->
-              <div class="pricing-type">
-                <div class="control">
-                  <div class="select is-multiple custom-arrow-down">
-                    <select id="goldPriceOptions" onchange="showGoldPrice()">
-                      <option value="y2y">Annual plan, prepaid</option>
-                      <option value="m2m">Monthly plan</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <!-- pricing type end -->
-
-              <!-- pricing button start -->
-              <div class="pricing-button">
-                <a href="/meet-expert/" class="button kd-button kd-orange">Contact Sales</a>
-              </div>
-              <!-- pricing button end -->
-            </div>
-            <!-- pricing heading end -->
-
-            <!-- pricing body start -->
-            <div class="pricing-body">
-              <!-- pricing content -->
+                            <!-- pricing content -->
               <ul>
                 <li data-col_name="Recommended for">
                   <span>
@@ -443,13 +307,13 @@
                 </li>
                 <li data-col_name="Support Coverage">
                   <span>
-                    24x5x365 <br />
+                    24x7x365 <br />
                   </span>
                 </li>
                 <li data-col_name="Emergency patches">
                   <span>
                     Yes <br />
-                    (at most bi-weekly)
+                    (as required)
                   </span>
                 </li>
                 <li data-col_name="Unlimited Incidents">
@@ -467,7 +331,7 @@
                 <li data-col_name="Remote Hands (Debug via Zoom)">
                   <span>
                     Yes <br />
-                    (first 2 hrs/month FREE, <br />
+                    (First month 2 hrs FREE, <br />
                     addt’l charged at $200/hr)
                   </span>
                 </li>
@@ -478,114 +342,7 @@
                   <span>Yes</span>
                 </li>
                 <li data-col_name="Phone support">
-                  <span>X</span>
-                </li>
-                <li data-col_name="Architectural Guidance">
-                  <span>
-                    Contextual to your <br />
-                    use-cases <br />
-                    <br />
-                  </span>
-                </li>
-                <li data-col_name="Professional Services">
-                  <span>Additional fees</span>
-                </li>
-              </ul>
-              <!-- pricing content -->
-              <!-- pricing button start -->
-              <div class="pricing-button">
-                <a href="/meet-expert/" class="button kd-button kd-orange">Contact Sales</a>
-              </div>
-              <!-- pricing button end -->
-            </div>
-            <!-- pricing body end -->
-          </div>
-        </div>
-        <!-- pricing column end -->
-        <!-- pricing column start -->
-        <div class="column has-text-centered" data-aos="fade-up" data-aos-duration="800">
-          <div class="single-pricing-table plutinum">
-            <!-- pricing heading start -->
-            <div class="pricing-heading">
-              <!-- pricing title start -->
-              <div class="pricing-top kd-red d-table">
-                <div class="pricing-top-inner d-table-cell">
-                <h4>Platinum</h4>
-                <div class="package-price"></div>
-              </div>
-              </div>
-              <!-- pricing title end -->
-
-              <!-- pricing button start -->
-              <div class="pricing-button">
-                <a href="/meet-expert/" class="button kd-button kd-red">Contact Sales</a>
-              </div>
-              <!-- pricing button end -->
-            </div>
-            <!-- pricing heading end -->
-
-            <!-- pricing body start -->
-            <div class="pricing-body">
-              <!-- pricing content -->
-              <ul>
-                <li data-col_name="Recommended for">
-                  <span>
-                    Recommended if you have <br />
-                    business and/or mission <br />
-                    critical workloads.
-                    <br />
-                  </span>
-                </li>
-                <li data-col_name="Response Time">
-                  <span>
-                    General guidance: <br />
-                    < 48 business hours  <br />
-                    <br />
-                    System impaired:  <br />
-                    < 24 business hours <br />
-                    <br />
-                    Production system impaired: <br />
-                    < 2 hours
-                  </span>
-                </li>
-                <li data-col_name="Support Coverage">
-                  <span>
-                    24x7x365 <br />
-                  </span>
-                </li>
-                <li data-col_name="Emergency patches">
-                  <span>
-                    Yes <br />
-                    (as required)
-                  </span>
-                </li>
-                <li data-col_name="Unlimited Incidents">
-                  <span>Yes</span>
-                </li>
-                <li data-col_name="Contacts for Ticketing">
-                  <span>10</span>
-                </li>
-                <li data-col_name="Community support">
-                  <span
-                    >Included <br />
-                    (Public Slack & GitHub issues)</span
-                  >
-                </li>
-                <li data-col_name="Remote Hands (Debug via Zoom)">
-                  <span>
-                    Included <br />
-                    (as negotiated) <br />
-                    <br />
-                  </span>
-                </li>
-                <li data-col_name="Production Runbook">
-                  <span>Yes</span>
-                </li>
-                <li data-col_name="Dedicated Private chat (via Slack)">
-                  <span>Yes</span>
-                </li>
-                <li data-col_name="Phone support">
-                  <span>Yes</span>
+                  <span>Yes ☎</span>
                 </li>
                 <li data-col_name="Architectural Guidance">
                   <span>
@@ -601,7 +358,7 @@
               <!-- pricing content -->
               <!-- pricing button start -->
               <div class="pricing-button">
-                <a href="/meet-expert/" class="button medium-btn red-transparent-btn">Contact Sales</a>
+                <a href="{{ $.Site.Params.domain_appscode }}/contact/" class="button medium-btn red-transparent-btn">Contact Sales</a>
               </div>
               <!-- pricing button end -->
             </div>
@@ -616,7 +373,10 @@
           <div class="pricing-description">
             <ul>
               <li>
-                <span>* </span>Every support comes with license for 1 production Kubernetes cluster and unlimited non-production clusters. If you serve user traffic from a Kubernetes cluster or run workloads that are used to support your users, it qualifies as a production cluster. For each additional production Kubernetes cluster, add 50% of the base package price. There are no limits on how many nodes you can have per Kubernetes cluster.
+                <span>* </span>Every support comes with license for 1 production Kubernetes cluster and unlimited non-production clusters. If you serve user traffic from a Kubernetes cluster or run workloads that are used to support your users, it qualifies as a production cluster. Each additional production Kubernetes cluster is priced proportional to the base package price. There are no limits on how many nodes you can have per Kubernetes cluster.
+              </li>
+              <li>
+                <span>☎ </span>Additional conditions apply. Please contact us for further details.
               </li>
             </ul>
           </div>
@@ -708,7 +468,7 @@
     <div class="columns">
       <div class="column is-5 is-offset-1">
         <div class="faq-image" data-aos="fade-up">
-          <img src="/assets/images/support-page/faq.webp" alt="" class="img" />
+          <img src="/assets/images/support-page/faq.png" alt="" class="img" />
         </div>
       </div>
       <div class="column is-5 is-offset-1">
