@@ -1,0 +1,57 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "*.*"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set up Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: ^1.14
+        id: go
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - name: Install Hugo
+        run: |
+          curl -fsSL -o hugo_extended.deb https://github.com/gohugoio/hugo/releases/download/v0.71.1/hugo_extended_0.71.1_Linux-64bit.deb
+          sudo dpkg -i hugo_extended.deb
+
+      - name: Install Hugo Tools
+        run: |
+          curl -fsSL -o hugo-tools https://github.com/appscodelabs/hugo-tools/releases/download/v0.2.12/hugo-tools-linux-amd64
+          chmod +x hugo-tools
+          sudo mv hugo-tools /usr/local/bin/hugo-tools
+
+      - name: Install Firebase CLI
+        run: |
+          npm i -g firebase-tools
+
+      - name: QA
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        if: startsWith(github.event.ref, 'refs/tags/') && (contains(github.ref, '-alpha.') || contains(github.ref, '-beta.'))
+        run: |
+          npm install
+          make docs
+          make qa
+
+      - name: Release
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        if: startsWith(github.event.ref, 'refs/tags/') && (contains(github.ref, '-alpha.') || contains(github.ref, '-beta.')) == false
+        run: |
+          npm install
+          make docs
+          make release
