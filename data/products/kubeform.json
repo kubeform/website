@@ -36,8 +36,8 @@
   "docRepo": "kubeform/docs",
   "badges": [
     {
-      "url": "github/stars/kubeform/kubeform",
-      "alt": "GitHub Stars",
+      "url": "kubeform",
+      "alt": "GitHub",
       "logo": "github"
     },
     {
