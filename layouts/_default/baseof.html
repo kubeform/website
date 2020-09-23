@@ -348,9 +348,14 @@
 
                 <div class="navbar-item">
                   <div class="buttons main-menu-button">
-                    {{ range $idx, $badge := $p.badges }}
-                      {{if gt $idx 0}} &nbsp;&nbsp;&nbsp; {{end}}
-                      <img style="height:24px" alt="{{ $badge.alt }}" src="https://img.shields.io/{{ $badge.url }}?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo={{ $badge.logo }}">
+                    {{ range where $p.badges "logo" "github" }}
+                      <img style="height:24px" alt="{{ .alt }} Stars" src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo=github&label=stars&query=%24.stars&url=https://github-stars.appscode.workers.dev/user/{{ .url }}">
+                      &nbsp;&nbsp;&nbsp;
+                      <img style="height:24px" alt="{{ .alt }} Forks" src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo={{ .logo }}&label=forks&query=%24.forks&url=https://github-stars.appscode.workers.dev/user/{{ .url }}">
+                    {{ end }}
+                    {{ range where $p.badges "logo" "docker" }}
+                      &nbsp;&nbsp;&nbsp;
+                      <img style="height:24px" alt="{{ .alt }}" src="https://img.shields.io/{{ .url }}?style=flat&labelColor=1B3D4B&color=06A64F&logoColor=white&logo={{ .logo }}&label=pulls">
                     {{ end }}
                   </div>
                 </div>
