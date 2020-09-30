@@ -23,9 +23,7 @@
     "kubedb",
     "stash",
     "kubevault",
-    "voyager",
-    "guard",
-    "pharmer"
+    "kubeform"
   ],
   "mainMenu": {
     "c0": [
@@ -42,6 +40,28 @@
     ],
     "c2": [
       "pharmer",
+      "kubeform"
+    ]
+  },
+  "ossMenu": {
+    "c0": [
+      "voyager",
+      "guard",
+      "kubed"
+    ],
+    "c1": [
+      "pharmer",
+      "swift",
+      "searchlight"
+    ]
+  },
+  "productMenu": {
+    "c0": [
+      "kubedb",
+      "stash",
+      "kubevault"
+    ],
+    "c1": [
       "kubeform"
     ]
   },

@@ -8,7 +8,8 @@
   "author": "AppsCode Inc.",
   "website": {
     "domainKey": "domain_bytebuilders",
-    "path": ""
+    "path": "",
+    "themeColor": ""
   },
   "heroImage": {
     "src": "/assets/images/products/bytebuilders/bytebuilders-hero.gif",

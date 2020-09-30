@@ -111,34 +111,10 @@
                     <!-- dropdown menu start -->
                     <div class="ac-megamenu">
                       <div class="columns">
-                        <div class="column is-8">
+                        <div class="column is-6">
                           <div class="columns">
-                            <div class="column is-6 br-1">
-                              {{ range $item := $.Site.Data.config.mainMenu.c0 }}
-                              {{ $p := (index $.Site.Data.products $item) }}
-                              <!-- single menu item start -->
-                              <a
-                                href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
-                                class="single-product-item is-{{ $p.key }}"
-                              >
-                                <div class="menu-header">
-                                  <div class="menu-logo">
-                                    <img
-                                      src="{{ $p.icon.src }}"
-                                      alt="{{ $p.icon.alt }}"
-                                    />
-                                  </div>
-                                  <h5>{{ $p.name }}</h5>
-                                </div>
-                                <div class="menu-body">
-                                  <p>{{ $p.tagline | plainify }}</p>
-                                </div>
-                              </a>
-                              <!-- single menu item end -->
-                              {{ end }}
-                            </div>
-                            <div class="column is-6 br-1">
-                              {{ range $item := $.Site.Data.config.mainMenu.c1 }}
+                            <div class="column is-12 br-1">
+                              {{ range $item := $.Site.Data.config.productMenu.c0 }}
                               {{ $p := (index $.Site.Data.products $item) }}
                               <!-- single menu item start -->
                               <a
@@ -163,7 +139,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="column is-4">
+                        <div class="column is-6">
                           <div class="columns">
                             <div class="column is-12">
                               {{ if $.Site.Data.products.bytebuilders.published }}
@@ -194,7 +170,7 @@
                               <!-- single menu item end -->
                               {{ end }}
 
-                              {{ range $item := $.Site.Data.config.mainMenu.c2 }}
+                              {{ range $item := $.Site.Data.config.productMenu.c1 }}
                               {{ $p := (index $.Site.Data.products $item) }}
                               <!-- single menu item start -->
                               <a
@@ -220,12 +196,13 @@
                           </div>
                         </div>
                       </div>
-                      {{ if $.Site.Data.products.bytebuilders.published }}
+                        <!--
+                        {{ if $.Site.Data.products.bytebuilders.published }}
                         <div class="columns has-text-centered">
                           <div class="column">
                             <div class="menu-bottom">
                               <p>
-                                Explore apps and integrations for AppsCode products:
+                                Explore AppsCode products:
                                 <a href="{{.Site.Params.domain_marketplace}}">
                                   Visit the Marketplace
                                   <i
@@ -238,6 +215,76 @@
                           </div>
                         </div>
                       {{end }}
+                      -->
+                    </div>
+                    <!-- dropdown menu end -->
+                  </div>
+
+                  <div class="navbar-item has-dropdown ac-is-hoverable">
+                    <a class="navbar-link">
+                      Open Source
+                    </a>
+
+                    <!-- dropdown menu start -->
+                    <div class="ac-megamenu">
+                      <div class="columns">
+                        <div class="column is-6">
+                          <div class="columns">
+                            <div class="column is-12 br-1">
+                              {{ range $item := $.Site.Data.config.ossMenu.c0 }}
+                              {{ $p := (index $.Site.Data.products $item) }}
+                              <!-- single menu item start -->
+                              <a
+                                href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
+                                class="single-product-item is-{{ $p.key }}"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="{{ $p.icon.src }}"
+                                      alt="{{ $p.icon.alt }}"
+                                    />
+                                  </div>
+                                  <h5>{{ $p.name }}</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>{{ $p.tagline | plainify }}</p>
+                                </div>
+                              </a>
+                              <!-- single menu item end -->
+                              {{ end }}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column is-6">
+                          <div class="columns">
+                            <div class="column is-12">
+                              {{ range $item := $.Site.Data.config.ossMenu.c1 }}
+                              {{ $p := (index $.Site.Data.products $item) }}
+                              <!-- single menu item start -->
+                              <a
+                                href="{{ index $.Site.Params $p.website.domainKey}}{{ $p.website.path }}"
+                                class="single-product-item is-{{ $p.key }}"
+                              >
+                                <div class="menu-header">
+                                  <div class="menu-logo">
+                                    <img
+                                      src="{{ $p.icon.src }}"
+                                      alt="{{ $p.icon.alt }}"
+                                    />
+                                  </div>
+                                  <h5>{{ $p.name }}</h5>
+                                </div>
+                                <div class="menu-body">
+                                  <p>{{ $p.tagline | plainify }}</p>
+                                </div>
+                              </a>
+                              <!-- single menu item end -->
+                              {{ end }}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <!-- dropdown menu end -->
                   </div>
