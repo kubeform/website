@@ -37,8 +37,8 @@
   "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
   "badges": [
     {
-      "url": "github/stars/kubedb/cli",
-      "alt": "GitHub Stars",
+      "url": "kubedb",
+      "alt": "GitHub",
       "logo": "github"
     },
     {
@@ -157,21 +157,82 @@
     }
   ],
   "versions": [
-      { "version": "master", "hostDocs": false, "show": true },
-      { "version": "v0.13.0-rc.0", "hostDocs": true, "show": true },
-      { "version": "0.12.0", "hostDocs": true, "show": true },
-      { "version": "0.11.0", "hostDocs": true, "show": true },
-      { "version": "0.10.0", "hostDocs": true, "show": true },
-      { "version": "0.9.0", "hostDocs": true, "show": true },
-      { "version": "0.9.0-rc.2", "hostDocs": true },
-      { "version": "0.9.0-rc.1", "hostDocs": true },
-      { "version": "0.9.0-rc.0", "hostDocs": true },
-      { "version": "0.8.0", "hostDocs": true, "show": true },
-      { "version": "0.8.0-rc.0", "hostDocs": true },
-      { "version": "0.8.0-beta.2", "hostDocs": true },
-      { "version": "0.8.0-beta.0", "hostDocs": true },
-      { "version": "0.7.1", "hostDocs": false },
-      { "version": "0.6.0", "hostDocs": false, "show": true }
+    {
+      "version": "master",
+      "hostDocs": false,
+      "show": true
+    },
+    {
+      "version": "v2020.09.04-beta.0",
+      "hostDocs": true
+    },
+    {
+      "version": "v2020.07.10-beta.0",
+      "hostDocs": true
+    },
+    {
+      "version": "v0.13.0-rc.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.12.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.11.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.10.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.9.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.9.0-rc.2",
+      "hostDocs": true
+    },
+    {
+      "version": "0.9.0-rc.1",
+      "hostDocs": true
+    },
+    {
+      "version": "0.9.0-rc.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.8.0-rc.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0-beta.2",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0-beta.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.7.1",
+      "hostDocs": false
+    },
+    {
+      "version": "0.6.0",
+      "hostDocs": false,
+      "show": true
+    }
   ],
   "latestVersion": "v0.13.0-rc.0",
   "socialLinks": {
@@ -192,19 +253,19 @@
   "stripeProductID": "prod_FARWKSytMzmLb9",
   "plans": {
     "Community": {
-      "price": "0"
-    },
-    "Standard_M2M": {
-      "price": "599"
-    },
-    "Standard_Y2Y": {
-      "price": "399"
+      "price": 0
     },
     "Golden_M2M": {
-      "price": "999"
+      "price": 999
     },
     "Golden_Y2Y": {
-      "price": "799"
+      "price": 799
+    },
+    "Standard_M2M": {
+      "price": 599
+    },
+    "Standard_Y2Y": {
+      "price": 399
     }
   }
 }
