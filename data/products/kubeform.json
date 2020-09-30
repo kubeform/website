@@ -127,9 +127,20 @@
     }
   ],
   "versions": [
-    { "version": "master", "hostDocs": false, "show": true },
-    { "version": "v0.0.1", "hostDocs": true, "show": false },
-    { "version": "v0.1.0", "hostDocs": true, "show": true }
+    {
+      "version": "master",
+      "hostDocs": false,
+      "show": true
+    },
+    {
+      "version": "v0.0.1",
+      "hostDocs": true
+    },
+    {
+      "version": "v0.1.0",
+      "hostDocs": true,
+      "show": true
+    }
   ],
   "latestVersion": "v0.1.0",
   "socialLinks": {
@@ -150,7 +161,7 @@
   "stripeProductID": "prod_FARWKSytMzmLb9",
   "plans": {
     "Community": {
-      "price": "0"
+      "price": 0
     }
   }
 }
