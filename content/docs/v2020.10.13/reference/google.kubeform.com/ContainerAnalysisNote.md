@@ -1,0 +1,62 @@
+---
+title: ContainerAnalysisNote
+menu:
+  docs_v2020.10.13:
+    identifier: containeranalysisnote-google.kubeform.com
+    name: ContainerAnalysisNote
+    parent: google.kubeform.com-reference
+    weight: 1
+menu_name: docs_v2020.10.13
+section_menu_id: reference
+info:
+  version: v2020.10.13
+---
+
+## ContainerAnalysisNote
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `apiVersion` | string | `google.kubeform.com/v1alpha1` |
+|    `kind` | string | `ContainerAnalysisNote` |
+| `metadata` | ***[Kubernetes meta/v1.ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#objectmeta-v1-meta)***|Refer to the Kubernetes API documentation for the fields of the `metadata` field.|
+| `spec` | ***[ContainerAnalysisNoteSpec](#containeranalysisnotespec)***||
+| `status` | ***[ContainerAnalysisNoteStatus](#containeranalysisnotestatus)***||
+## ContainerAnalysisNoteSpec
+
+Appears on:[ContainerAnalysisNote](#containeranalysisnote), [ContainerAnalysisNoteStatus](#containeranalysisnotestatus)
+
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `providerRef` | ***[Kubernetes core/v1.LocalObjectReference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#localobjectreference-v1-core)***||
+| `id` | ***string***||
+| `attestationAuthority` | ***[[]ContainerAnalysisNoteSpecAttestationAuthority](#containeranalysisnotespecattestationauthority)***||
+| `name` | ***string***||
+| `project` | ***string***| ***(Optional)*** |
+## ContainerAnalysisNoteSpecAttestationAuthority
+
+Appears on:[ContainerAnalysisNoteSpec](#containeranalysisnotespec)
+
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `hint` | ***[[]ContainerAnalysisNoteSpecAttestationAuthorityHint](#containeranalysisnotespecattestationauthorityhint)***||
+## ContainerAnalysisNoteSpecAttestationAuthorityHint
+
+Appears on:[ContainerAnalysisNoteSpecAttestationAuthority](#containeranalysisnotespecattestationauthority)
+
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `humanReadableName` | ***string***||
+## ContainerAnalysisNoteStatus
+
+Appears on:[ContainerAnalysisNote](#containeranalysisnote)
+
+| Field | Type | Description |
+| ------ | ----- | ----------- |
+| `observedGeneration` | ***int64***| ***(Optional)*** Resource generation, which is updated on mutation by the API Server.|
+| `output` | ***[ContainerAnalysisNoteSpec](#containeranalysisnotespec)***| ***(Optional)*** |
+| `state` | ***kubeform.dev/kubeform/apis/base/v1alpha1.State***| ***(Optional)*** |
+| `phase` | ***[Phase](#phase)***| ***(Optional)*** |
+## Phase(`string` alias)
+
+Appears on:[ContainerAnalysisNoteStatus](#containeranalysisnotestatus)
+
+---
