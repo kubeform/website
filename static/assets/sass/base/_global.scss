@@ -52,7 +52,6 @@ h6 a {
 pre {
   margin-bottom: 15px;
   padding: 10px 15px;
-
 }
 footer li a {
   font-family: $font-paragraph;
@@ -97,7 +96,7 @@ h6 {
   background-color: $primary-color;
   color: $white-color !important;
 }
-.ac-primary{
+.ac-primary {
   background-color: $primary-color;
   color: $white-color !important;
 }
@@ -107,23 +106,25 @@ h6 {
 .kubedb-primary-bg {
   background-color: $primary-color;
 }
-.tooltip.is-tooltip-primary::before{
-  background-color:#32325D;
+.tooltip.is-tooltip-primary::before {
+  background-color: #32325d;
   color: $white-color;
+  line-height: 1.5;
   min-width: 200px;
   padding: 15px;
   font-weight: 400;
   font-style: normal;
 }
-.tooltip.is-tooltip-primary:not(.is-loading)::after{
-  border-color: #32325D transparent transparent transparent;
+.tooltip.is-tooltip-primary:not(.is-loading)::after {
+  border-color: #32325d transparent transparent transparent;
 }
 /* button style */
 .button {
   height: auto;
 }
 
-.kd-button, .ac-button {
+.kd-button,
+.ac-button {
   border: none;
   border-radius: 4px;
   padding: 12px 40px;
@@ -173,7 +174,24 @@ h6 {
 .section-padding {
   padding: 120px 0;
 }
-
+.section-padding-100{
+  padding: 100px 0;
+}
+.section-padding-90{
+  padding: 90px 0;
+}
+.section-padding-80{
+  padding: 80px 0;
+}
+.section-padding-70{
+  padding: 70px 0;
+}
+.section-padding-60{
+  padding: 60px 0;
+}
+.section-padding-50{
+  padding: 50px 0;
+}
 .container.section {
   padding-top: 0;
   padding-bottom: 0;

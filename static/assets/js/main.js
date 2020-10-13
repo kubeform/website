@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // AOS Animation
   AOS.init({
-    once: true
+    once: true,
   });
 
   // Get all "navbar-burger" elements
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
     // Add a click event on each of them
-    $navbarBurgers.forEach(el => {
+    $navbarBurgers.forEach((el) => {
       el.addEventListener("click", () => {
         // Get the target from the "data-target" attribute
         const target = el.dataset.target;
@@ -40,13 +40,13 @@ window.addEventListener("scroll", fixNav);
 
 // mega menu active class
 var navbarItems = document.querySelectorAll(".navbar-item");
-navbarItems.forEach(navbarItem => {
-  navbarItem.addEventListener("click", function() {
+navbarItems.forEach((navbarItem) => {
+  navbarItem.addEventListener("click", function () {
     var megamenues = document.querySelectorAll(
       ".navbar-item > .ac-megamenu , .navbar-item > .ac-dropdown"
     );
     // remove is-active class from all the megamenus except the navbar item that was clicked
-    megamenues.forEach(megamenu => {
+    megamenues.forEach((megamenu) => {
       // toggle classes
       if (megamenu.parentElement === navbarItem)
         megamenu.classList.toggle("is-active");
@@ -60,23 +60,35 @@ bulmaCarousel.attach("#carousel-demo", {
   slidesToScroll: 1,
   slidesToShow: 1,
   infinite: true,
-  autoplay: false
+  autoplay: false,
+});
+
+//bulma carousel
+bulmaCarousel.attach("#hero-area-carousel", {
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  infinite: true,
+  // When I use autoplay true, it's internaly occured error 
+  autoplay: false,
+  pagination: true,
+  loop: true,
+  autoplaySpeed: 1500,
 });
 
 // For FAQ Collaps Page
 const accordionItem = document.querySelectorAll(".accordion-item");
-const onClickAccordionHeader = e => {
+const onClickAccordionHeader = (e) => {
   if (e.currentTarget.parentNode.classList.contains("active")) {
     e.currentTarget.parentNode.classList.remove("active");
   } else {
-    Array.prototype.forEach.call(accordionItem, e => {
+    Array.prototype.forEach.call(accordionItem, (e) => {
       e.classList.remove("active");
     });
     e.currentTarget.parentNode.classList.add("active");
   }
 };
 const init = () => {
-  Array.prototype.forEach.call(accordionItem, e => {
+  Array.prototype.forEach.call(accordionItem, (e) => {
     e.querySelector(".accordion-header").addEventListener(
       "click",
       onClickAccordionHeader,
@@ -90,15 +102,15 @@ document.addEventListener("DOMContentLoaded", init);
 // go the the section smoothly when click on a table-of-content item
 const goToASectionSmoothly = () => {
   const tocItems = document.querySelectorAll("#TableOfContents a");
-  tocItems.forEach(item => {
-    item.addEventListener("click", e => {
+  tocItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
       e.preventDefault();
       // go to the target section smoothly
       const targetEl = document.querySelector(e.currentTarget.hash);
       const pos = targetEl.offsetTop;
       window.scrollTo({
         top: pos,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     });
   });
@@ -118,7 +130,7 @@ const spyScrolling = () => {
       ) {
         const id = allHeaders[s].id;
         if (id) {
-          document.querySelectorAll("#TableOfContents a").forEach(a => {
+          document.querySelectorAll("#TableOfContents a").forEach((a) => {
             if (`#${id}` === a.hash) {
               a.classList.add("active");
             } else {
@@ -151,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // docs page header link create
-  Array.from(allHeaders).forEach(el => {
+  Array.from(allHeaders).forEach((el) => {
     const id = el.id;
     const anchorTag = document.createElement("a");
     anchorTag.setAttribute("href", "#" + id);
@@ -170,27 +182,27 @@ document.addEventListener("DOMContentLoaded", () => {
     el.appendChild(anchorTag);
 
     //insert hash tag when click anchorTag
-    anchorTag.addEventListener("click", e => {
+    anchorTag.addEventListener("click", (e) => {
       e.preventDefault();
       const targetEl = document.querySelector(e.currentTarget.hash);
       window.history.pushState(id, "title", "#" + id);
       const pos1 = targetEl.offsetTop - 35;
       window.scrollTo({
         top: pos1,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     });
   });
 
   //docs page heading content on reload
-  setTimeout(function() {
+  setTimeout(function () {
     let getHash = location.hash;
     if (getHash) {
       const targetE2 = document.querySelector(getHash);
       const pos2 = targetE2.offsetTop - 35;
       scrollTo({
         top: pos2,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   }, 0);
@@ -198,13 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // tabs active class add script - setup | install page
 const tabItems = document.querySelectorAll(".nav-item .nav-link");
-tabItems.forEach(tab => {
-  tab.addEventListener("click", e => {
+tabItems.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
     e.preventDefault();
     const el = e.currentTarget;
 
     // add .active class to the clicked item, remove .active from others
-    document.querySelectorAll(".nav-item .nav-link").forEach(navLink => {
+    document.querySelectorAll(".nav-item .nav-link").forEach((navLink) => {
       navLink === el
         ? navLink.classList.add("active")
         : navLink.classList.remove("active");
@@ -214,7 +226,7 @@ tabItems.forEach(tab => {
     const elHref = el.getAttribute("href");
     const tabPaneTarget = document.querySelector(elHref);
 
-    document.querySelectorAll(".tab-pane").forEach(tabPane => {
+    document.querySelectorAll(".tab-pane").forEach((tabPane) => {
       tabPane === tabPaneTarget
         ? tabPane.classList.add("show")
         : tabPane.classList.remove("show");
@@ -224,7 +236,7 @@ tabItems.forEach(tab => {
 
 // code download and copy function //
 var codeHeading = document.querySelectorAll(".code-block-heading");
-Array.from(codeHeading).forEach(heading => {
+Array.from(codeHeading).forEach((heading) => {
   const pre = heading.nextElementSibling;
   const code = pre.querySelector("code");
   const codeContent = code.textContent;
@@ -241,7 +253,7 @@ Array.from(codeHeading).forEach(heading => {
   // download js //
   var downloadBtn = heading.querySelector(".download-here");
   if (downloadBtn) {
-    downloadBtn.addEventListener("click", function() {
+    downloadBtn.addEventListener("click", function () {
       return download(codeContent, `${fileName}.${fileType}`, "text/plain");
     });
   }
@@ -250,7 +262,7 @@ Array.from(codeHeading).forEach(heading => {
   var copyBtn = heading.querySelector(".copy-here");
   if (copyBtn) {
     new ClipboardJS(copyBtn);
-    copyBtn.addEventListener("click", function() {
+    copyBtn.addEventListener("click", function () {
       copyBtn.setAttribute("title", "copied!");
       setTimeout(() => {
         copyBtn.setAttribute("title", "copy");
@@ -260,12 +272,12 @@ Array.from(codeHeading).forEach(heading => {
 });
 
 // scroll to top
-var basicScrollTop = function() {
+var basicScrollTop = function () {
   // The button
   var btnTop = document.querySelector("#goTop");
   if (btnTop) {
     // Reveal the button
-    var btnReveal = function() {
+    var btnReveal = function () {
       if (window.scrollY >= 300) {
         btnTop.classList.add("is-visible");
       } else {
@@ -273,9 +285,9 @@ var basicScrollTop = function() {
       }
     };
     // Smooth scroll top
-    var TopscrollTo = function() {
+    var TopscrollTo = function () {
       if (window.scrollY != 0) {
-        setTimeout(function() {
+        setTimeout(function () {
           window.scrollTo(0, window.scrollY - 30);
           TopscrollTo();
         }, 5);
@@ -287,3 +299,51 @@ var basicScrollTop = function() {
   }
 };
 basicScrollTop();
+
+// custom accordion
+function acAccordion(actionBtn) {
+  let accordionHeadingAll = document.querySelectorAll(actionBtn);
+  // Create event listeners for each accordion heading
+  Array.from(accordionHeadingAll).forEach((accordionHeading) => {
+    accordionHeading.addEventListener("click", function () {
+      let singleAcc = accordionHeading.closest(".single-accordion-item");
+
+      let isOpen = singleAcc.classList.contains("open");
+
+      // select all accordion
+      let accordionItems = document.querySelectorAll(".single-accordion-item");
+      Array.from(accordionItems).forEach((accordionItem) => {
+        // close all item
+        accordionItem.className = "single-accordion-item closed";
+        let icon = accordionItem.querySelector(".icon .fa");
+        if (icon) {
+          icon.classList.replace("fa-minus", "fa-plus");
+        }
+        let accordionBody = accordionItem.querySelector(".accordion-body");
+        accordionBody.style.maxHeight = null;
+      });
+
+      // get single element icon
+      let icon = singleAcc.querySelector(".icon .fa");
+      if (isOpen) {
+        singleAcc.className = "single-accordion-item closed";
+        let accordionBody = singleAcc.querySelector(".accordion-body");
+        accordionBody.style.maxHeight = null;
+        if (icon) {
+          icon.classList.replace("fa-minus", "fa-plus");
+        }
+      } else {
+        singleAcc.className = "single-accordion-item open";
+        let accordionBody = singleAcc.querySelector(".accordion-body");
+        accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+        if (icon) {
+          icon.classList.replace("fa-plus", "fa-minus");
+        }
+      }
+    });
+  });
+}
+
+acAccordion(".accordion-heading h3");
+acAccordion(".accordion-heading .icon");
+// accordion end
