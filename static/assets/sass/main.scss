@@ -9,6 +9,10 @@
 @import "base/_mixins";
 @import "base/_base";
 
+// Components SCSS
+@import "components/buttons";
+@import "components/ac-accordion.scss";
+
 // Theme SCSS
 // @import "themes/_guard";
 // @import "themes/_kubeci";
@@ -22,6 +26,10 @@
 // @import "themes/_swift";
 // @import "themes/_voyager";
 @import "themes/_kubeform";
+
+// Page SCSS
+@import "page/_features-plan";
+@import "page/_gallery-page";
 
 //Responsive SCSS
 @import "layouts/_responsive";

@@ -47,11 +47,33 @@
           <!-- hero content end -->
         </div>
         <div class="column is-6">
+          {{ with $p.heroImage }}
           <!-- hero image start -->
           <div class="hero-area-img" data-aos="fade-up" data-aos-duration="1000">
-            <img src="{{ $p.heroImage.src }}" alt="{{ $p.heroImage.alt }}" class="img" />
+            <img src="{{ .src }}" alt="{{ .alt }}" class="img" />
           </div>
           <!-- hero image end -->
+          {{ end }}
+          {{ with $p.heroSlider }}
+          <!-- hero slider start -->
+          <div class="image-carousel-wrapper carousel">
+            <!-- shape start  -->
+            <img class="shape-1" src="/assets/images/slider/s-1.png" alt="">
+            <img class="shape-2" src="/assets/images/slider/s-2.png" alt="">
+            <img class="shape-3" src="/assets/images/slider/s-3.png" alt="">
+            <!-- shape end  -->
+            <!-- carousel start  -->
+            <div class="carousel-inner" id="hero-area-carousel">
+              {{ range . }}
+              <div class="single-slider-wrapper">
+               <a href="#"><img src="{{ .src }}" alt="{{ .alt }}"></a>
+              </div>
+              {{ end }}
+            </div>
+            <!-- carousel end -->
+          </div>
+          <!-- hero slider end -->
+          {{ end }}
         </div>
       </div>
     </div>

@@ -1,0 +1,24 @@
+{{/*
+    Usage: Render of a table of Stash addons
+    Format: {{% catalogtable "addon1" "addon2" "addon3" %}}
+*/}}
+
+<table>
+<thead>
+<tr>
+<th>Addons</th>
+<th>Usage</th>
+<th>Available Versions</th>
+</tr>
+</thead>
+<tbody>
+{{- range $p := sort (index .Params) }}
+{{- $versions := sort (index $.Page.Params "info" $p) -}}
+<tr>
+<td><a href="{{ printf `/docs/%s/addons/%s/README` (index $.Page.Params `info` `version`) $p }}">stash-{{ lower $p }}</a></td>
+<td>Stash {{ title $p }} plugin</td>
+<td><code>{{ index $versions 0 }}</code>{{ range after 1 $versions }}, <code>{{.}}</code>{{ end }}</td>
+</tr>
+{{- end }}
+</tbody>
+</table>
