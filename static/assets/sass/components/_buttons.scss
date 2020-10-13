@@ -1,0 +1,12 @@
+.button {
+  &.ac-button {
+    border-radius: 4px;
+    &.is-secondary {
+      background: $green-color;
+      color: #fff;
+      &:hover{
+        background-color: darken($green-color, .2%);
+      }
+    }
+  }
+}

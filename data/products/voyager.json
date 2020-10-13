@@ -35,8 +35,8 @@
   "docRepo": "voyagermesh/docs",
   "badges": [
     {
-      "url": "github/stars/voyagermesh/voyager",
-      "alt": "GitHub Stars",
+      "url": "voyagermesh",
+      "alt": "GitHub",
       "logo": "github"
     },
     {

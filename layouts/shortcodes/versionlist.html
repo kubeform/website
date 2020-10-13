@@ -1,0 +1,14 @@
+{{/*
+    Usage: List all versions of a sub project.
+    Format: {{% versionlist "project-key" "link format used with printf" %}}
+*/}}
+
+{{ $p := .Get 0 }}
+{{ $fmt := .Get 1 }}
+{{ with sort (index $.Page.Params "info" $p) }}
+<ul>
+	{{- range $v := . }}
+	<li><a href="{{printf $fmt $v}}">{{ $v }}</a></li>
+	{{- end }}
+</ul>
+{{ end }}
