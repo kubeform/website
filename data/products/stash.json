@@ -12,10 +12,20 @@
     "themeColor": "#5E2DEA"
   },
   "keywords": "kubernetes appscode backup disaster recovery volume",
-  "heroImage": {
-    "src": "/assets/images/products/stash/stash-hero.png",
-    "alt": "Stash"
-  },
+  "heroSlider": [
+    {
+      "src": "/assets/images/products/stash/slider/applications.jpg",
+      "alt": "Supported Applications"
+    },
+    {
+      "src": "/assets/images/products/stash/slider/platforms.jpg",
+      "alt": "Supported Platforms"
+    },
+    {
+      "src": "/assets/images/products/stash/slider/storage.jpg",
+      "alt": "Supported Storage"
+    }
+  ],
   "logo": {
     "src": "/assets/images/products/stash/stash.png",
     "alt": "Stash"
@@ -58,7 +68,7 @@
         "alt": "http"
       },
       "summary": "",
-      "description": "Backup your data in Kubernetes native way. Stash uses Custom Resorece Definition (CRD) to specify targets and behaviors of backup and restore process. Schedule a backup for your workloads in the same way you deployed them into Kubernetes."
+      "description": "Backup your data in Kubernetes native way. Stash uses Custom Resource Definition (CRD) to specify targets and behaviors of backup and restore process. Schedule a backup for your workloads in the same way you deployed them into Kubernetes."
     },
     {
       "title": "Restic",

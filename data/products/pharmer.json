@@ -36,8 +36,8 @@
   "docRepo": "pharmer/docs",
   "badges": [
     {
-      "url": "github/stars/pharmer/pharmer",
-      "alt": "GitHub Stars",
+      "url": "pharmer",
+      "alt": "GitHub",
       "logo": "github"
     },
     {
