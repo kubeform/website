@@ -133,16 +133,21 @@
       "show": true
     },
     {
-      "version": "v0.0.1",
-      "hostDocs": true
+      "version": "v2020.10.13",
+      "hostDocs": true,
+      "show": true
     },
     {
       "version": "v0.1.0",
       "hostDocs": true,
       "show": true
+    },
+    {
+      "version": "v0.0.1",
+      "hostDocs": true
     }
   ],
-  "latestVersion": "v0.1.0",
+  "latestVersion": "v2020.10.13",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubeform/kubeform",
