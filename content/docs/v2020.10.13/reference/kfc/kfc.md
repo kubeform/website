@@ -12,6 +12,8 @@ url: /docs/v2020.10.13/reference/kfc/
 aliases:
 - /docs/v2020.10.13/reference/kfc/kfc/
 info:
+  community: v0.2.0
+  installer: v0.2.0
   version: v2020.10.13
 ---
 

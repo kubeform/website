@@ -14,6 +14,8 @@ url: /docs/v2020.10.13/welcome/changelog-v2020.10.13/
 aliases:
 - /docs/v2020.10.13/CHANGELOG-v2020.10.13/
 info:
+  community: v0.2.0
+  installer: v0.2.0
   version: v2020.10.13
 ---
 

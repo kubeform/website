@@ -14,6 +14,8 @@ aliases:
 - /docs/v2020.10.13/
 - /docs/v2020.10.13/README/
 info:
+  community: v0.2.0
+  installer: v0.2.0
   version: v2020.10.13
 ---
 

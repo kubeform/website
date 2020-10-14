@@ -13,6 +13,8 @@ url: /docs/v2020.10.13/welcome/contributing/
 aliases:
 - /docs/v2020.10.13/CONTRIBUTING/
 info:
+  community: v0.2.0
+  installer: v0.2.0
   version: v2020.10.13
 ---
 
