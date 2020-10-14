@@ -135,7 +135,11 @@
     {
       "version": "v2020.10.13",
       "hostDocs": true,
-      "show": true
+      "show": true,
+      "info": {
+        "community": "v0.2.0",
+        "installer": "v0.2.0"
+      }
     },
     {
       "version": "v0.1.0",

@@ -13,6 +13,8 @@ url: /docs/v2020.10.13/welcome/acknowledgement/
 aliases:
 - /docs/v2020.10.13/acknowledgement/
 info:
+  community: v0.2.0
+  installer: v0.2.0
   version: v2020.10.13
 ---
 
