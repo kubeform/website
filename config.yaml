@@ -14,7 +14,7 @@ params:
   domain_kubedb: https://kubedb.com
   domain_kubevault: https://kubevault.com
   domain_kubeform: https://kubeform.com
-  domain_pharmer: https://pharmer.cloud
+  domain_pharmer: https://pharmer.io
   domain_kubeci: https://kube.ci
   domain_kubeshield: https://kubeshield.com
   domain_bytebuilders: https://byte.builders
