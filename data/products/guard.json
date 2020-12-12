@@ -93,6 +93,16 @@
       "show": true
     },
     {
+      "version": "v0.7.1",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "v0.7.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
       "version": "v0.6.2",
       "hostDocs": true,
       "show": true
@@ -173,7 +183,7 @@
       "hostDocs": false
     }
   ],
-  "latestVersion": "v0.6.2",
+  "latestVersion": "v0.7.1",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/appscode/guard",
