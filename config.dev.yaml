@@ -10,6 +10,7 @@ params:
   product_key: kubeform
   main_menu_dropdown_item: clouds
   domain_appscode: https://appscode-v3-hugo.web.app
+  domain_voyagermesh: https://voyagermesh-v1-hugo.web.app
   domain_stash: https://stashed-v1-hugo.web.app
   domain_kubedb: https://kubedb-v2-hugo.web.app
   domain_kubevault: https://kubevault-v1-hugo.web.app

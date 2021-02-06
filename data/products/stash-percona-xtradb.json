@@ -48,6 +48,11 @@
       "show": true
     },
     {
+      "version": "5.7.0-v1",
+      "hostDocs": true,
+      "show": true
+    },
+    {
       "version": "5.7",
       "hostDocs": true,
       "show": true

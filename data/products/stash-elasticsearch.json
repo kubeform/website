@@ -28,6 +28,16 @@
       "show": true
     },
     {
+      "version": "7.3.2-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "7.3.2-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
       "version": "7.3.2-v4",
       "hostDocs": true,
       "show": true
@@ -73,6 +83,16 @@
     {
       "version": "7.3.2-beta.20200708",
       "hostDocs": true
+    },
+    {
+      "version": "7.2.0-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "7.2.0-v5",
+      "hostDocs": true,
+      "show": true
     },
     {
       "version": "7.2.0-v4",
@@ -122,6 +142,16 @@
       "hostDocs": true
     },
     {
+      "version": "6.8.0-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "6.8.0-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
       "version": "6.8.0-v4",
       "hostDocs": true,
       "show": true
@@ -167,6 +197,16 @@
     {
       "version": "6.8.0-beta.20200708",
       "hostDocs": true
+    },
+    {
+      "version": "6.5.3-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "6.5.3-v5",
+      "hostDocs": true,
+      "show": true
     },
     {
       "version": "6.5.3-v4",
@@ -216,6 +256,16 @@
       "hostDocs": true
     },
     {
+      "version": "6.4.0-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "6.4.0-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
       "version": "6.4.0-v4",
       "hostDocs": true,
       "show": true
@@ -261,6 +311,16 @@
     {
       "version": "6.4.0-beta.20200708",
       "hostDocs": true
+    },
+    {
+      "version": "6.3.0-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "6.3.0-v5",
+      "hostDocs": true,
+      "show": true
     },
     {
       "version": "6.3.0-v4",
@@ -310,6 +370,16 @@
       "hostDocs": true
     },
     {
+      "version": "6.2.4-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "6.2.4-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
       "version": "6.2.4-v4",
       "hostDocs": true,
       "show": true
@@ -355,6 +425,16 @@
     {
       "version": "6.2.4-beta.20200708",
       "hostDocs": true
+    },
+    {
+      "version": "5.6.4-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.6.4-v5",
+      "hostDocs": true,
+      "show": true
     },
     {
       "version": "5.6.4-v4",
@@ -404,5 +484,5 @@
       "hostDocs": true
     }
   ],
-  "latestVersion": "7.3.2-v4"
+  "latestVersion": "7.3.2-v6"
 }
