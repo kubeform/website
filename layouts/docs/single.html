@@ -74,6 +74,14 @@
 <!-- documentation area start -->
 <div class="documentation-area">
   <div class="container section">
+    {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
+    {{ if not (eq $p.latestVersion $currentBranch) }}
+    <article class="message is-danger">
+        <div class="message-body">
+          You are looking at the documentation of a prior release. To read, the the documentation of the latest release, please visit <a href="/docs/latest/">here</a>.
+        </div>
+    </article>
+    {{ end }}
     <div class="columns">
       <div class="column is-3">
         <!-- left sidebar area start -->
@@ -86,8 +94,6 @@
           </div>
 
           <div class="kd-version">
-            {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
-
             <div class="dropdown">
               <div class="dropdown-trigger">
                 <button
