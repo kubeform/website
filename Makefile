@@ -1,5 +1,6 @@
 .PHONY: run
 run:
+	@yq w -i config.dev.yaml params.search_api_key --tag '!!str' $(GOOGLE_CUSTOM_SEARCH_API_KEY)
 	hugo server --config=config.dev.yaml
 
 .PHONY: docs
@@ -20,7 +21,9 @@ assets:
 .PHONY: gen
 gen:
 	rm -rf public
+	@yq w -i config.dev.yaml params.search_api_key --tag '!!str' $(GOOGLE_CUSTOM_SEARCH_API_KEY)
 	hugo --config=config.dev.yaml
+	@yq w -i config.dev.yaml params.search_api_key --tag '!!str' '_replace_'
 
 .PHONY: qa
 qa: gen
@@ -30,7 +33,9 @@ qa: gen
 .PHONY: gen-prod
 gen-prod:
 	rm -rf public
+	@yq w -i config.yaml params.search_api_key --tag '!!str' $(GOOGLE_CUSTOM_SEARCH_API_KEY)
 	hugo --minify --config=config.yaml
+	@yq w -i config.yaml params.search_api_key --tag '!!str' '_replace_'
 
 .PHONY: release
 release: gen-prod
