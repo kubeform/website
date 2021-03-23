@@ -21,7 +21,7 @@ params:
   domain_bytebuilders: https://byte.builders
   domain_marketplace: https://marketplace.byte.builders
   search_engine_ID: 015199383701854252104:kzq6dsbkp21
-  search_api_key: AIzaSyBo15AW3hatf4fO8actJUZ_d5qZJpx0rXM
+  search_api_key: _replace_
   blog_url: https://blog.byte.builders
   slack_url: https://slack.appscode.com
   github_url: https://github.com/appscode
