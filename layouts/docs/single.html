@@ -78,7 +78,13 @@
     {{ if not (eq $p.latestVersion $currentBranch) }}
     <article class="message is-danger">
         <div class="message-body">
-          You are looking at the documentation of a prior release. To read, the the documentation of the latest release, please visit <a href="/docs/latest/">here</a>.
+          {{ $url := urls.Parse (absURL .Permalink) }}
+          {{ $nurl := "/docs/latest/" }}
+          {{ $nf := replace .File.Path (print "/" $currentBranch "/") (print "/" $p.latestVersion "/") }}
+          {{ if fileExists $nf }}
+          {{ $nurl = replace $url.Path (print "/" $currentBranch) (print "/" $p.latestVersion) }}
+          {{ end }}
+          You are looking at the documentation of a prior release. To read the documentation of the latest release, please visit <a href="{{ $nurl }}">here</a>.
         </div>
     </article>
     {{ end }}
