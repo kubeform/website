@@ -1,0 +1,5 @@
+// Colour variable
+
+$swift-primary: #e67e22;
+
+@include colorize-product("swift", $swift-primary);

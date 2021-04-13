@@ -1,0 +1,5 @@
+// Colour variable
+
+$voyager-primary: #f1c40f;
+
+@include colorize-product("voyager", $voyager-primary);

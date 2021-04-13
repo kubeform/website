@@ -1,0 +1,72 @@
+.ac-accordion-wrapper {
+  &.is-marginless{
+    .single-accordion-item{
+      margin: 0;
+      padding: 0;
+      .accordion-heading {
+        padding: 10px 20px;
+        position: relative;
+        z-index: 1;
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 0;
+          width: 4px;
+          height: 100%;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+  .single-accordion-item {
+    background-color: #fff;
+    border: 1px solid #E8E9EA;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .accordion-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        color: #1C1C1C;
+      }
+      h4{
+        font-size: 14px;
+        font-weight: 700; 
+        line-height: 20px;
+      }
+      button{
+        font-size: 12px;
+        letter-spacing: .1px;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #1C1C1C;
+        line-height: 16px;
+        font-size: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+    .accordion-body {
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+      overflow: hidden;
+      padding: 0;
+      p {
+        padding-top: 3px;
+        font-size: 15px;
+        color: #393E46;
+      }
+    }
+  }
+}

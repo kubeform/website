@@ -1,0 +1,5 @@
+// Colour variable
+
+$kubevault-primary: #326ce5;
+
+@include colorize-product("kubevault", $kubevault-primary);

@@ -1,0 +1,60 @@
+.lightbox {
+  background-color: rgba($color: #000000, $alpha: .8);  
+  position: fixed;
+  display: none;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  
+  &-container {
+    position: relative;
+    max-width: 1080px;
+    margin: 7% auto;
+    display: block;    
+    padding: 0 3%;
+    height: auto;
+    z-index: 10;
+    
+    // Increasing top margin for mobile
+    @media screen and (max-width: 768px) { margin-top: 10%; }
+    @media screen and (max-width: 414px) { margin-top: 13%; }
+  }
+    
+  &-content {
+    box-shadow: 0 1px 6px fade(black, 70%);
+  }
+  
+  &-close {
+    text-transform: uppercase;
+    background: transparent;
+    position: absolute;
+    font-weight: 300;
+    font-size: 32px;
+    display: block;
+    border: none;
+    color: white;
+    top: -52px;
+    right: 3%;
+    cursor: pointer;
+  }
+}
+
+.video-container {  
+    padding-bottom: 56.25%;
+    position: relative;  
+    padding-top: 30px; 
+    overflow: hidden;
+    height: 0; 
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    height: 100%;  
+    width: 100%;  
+    left: 0;  
+    top: 0;
+}

@@ -1,0 +1,5 @@
+// Colour variable
+
+$stash-primary: #5E2DEA;
+
+@include colorize-product("stash", $stash-primary);
