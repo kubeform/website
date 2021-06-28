@@ -18,7 +18,9 @@
   body.#{$name} .subscription-form .button:hover,
   body.#{$name} .searchbar-area button,
   body.#{$name} .pagination-list li a.is-active,
-  body.#{$name} .single-product-feature-wrapper:after {
+  body.#{$name} .single-product-feature-wrapper:after,
+  body.#{$name} .assistance-card-wrapper .single-card .card-body .subscription-form .button,
+  body.#{$name} .assistance-card-wrapper .single-card .card-body .button:hover {
     background-color: #{$color};
   }
   // font-color
@@ -47,7 +49,8 @@
   body.#{$name} .subscription-form .button,
   body.#{$name} .section-title h4,
   body.#{$name} .hero-content-inner h4,
-  body.#{$name} .single-search-result h3 a {
+  body.#{$name} .single-search-result h3 a,
+  body.#{$name} .assistance-card-wrapper .single-card .card-body .button {
     color: #{$color};
   }
   // border-color
@@ -63,16 +66,21 @@
   body.#{$name} .textarea:active,
   body.#{$name} .textarea:focus,
   body.#{$name} .searchbar-area input:focus,
-  body.#{$name} .subscription-form .input:hover {
+  body.#{$name} .subscription-form .input:hover,
+  body.#{$name} .assistance-card-wrapper .single-card .card-body .subscription-form input {
     border-color: #{$color};
   }
   body.#{$name} .pricing-top:before {
     border-right-color: darken($color, 15%);
   }
+  body.#{$name} .assistance-card-wrapper .single-card .card-body .subscription-form .button:hover{
+    background-color: darken($color, 15%);
+  }
   body.#{$name} .go-to-top {
     background-color: rgba($color, 0.8);
   }
-  body.#{$name} .documentation-menu {
+  body.#{$name} .documentation-menu,
+  body.#{$name} .assistance-card-wrapper .single-card .card-body .button {
     background-color: scale-color($color, $lightness: 80%);
   }
   /*==================================================

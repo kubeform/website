@@ -239,7 +239,6 @@ body.fixed-nav .fixed-menu {
       box-shadow: 0px 4px 24px rgba(166, 171, 189, 0.3);
       border-radius: 14px;
     }
-
     .shape-1 {
       position: absolute;
       left: -70px;
@@ -263,46 +262,36 @@ body.fixed-nav .fixed-menu {
       bottom: 0px;
       z-index: -1;
     }
+  }
 
-    .carousel-inner {
-      .single-slider-wrapper {
-        padding: 0px 0px 40px;
+  .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
 
-        a {
-          display: block;
-        }
-
-        img {
-          border-radius: 14px;
-        }
-      }
-
-      .slider-navigation-previous,
-      .slider-navigation-next {
-        display: none;
-      }
-
-      .slider-pagination {
-        display: block;
-
-        .slider-page {
-          background-color: #e8e9ea;
-          box-shadow: none;
-          width: 8px;
-          height: 8px;
-          margin: 0 5px;
-
-          &:hover {
-            background-color: $primary-color;
-          }
-
-          &.is-active {
-            background-color: $primary-color;
-            transform: scale(1.1);
-          }
-        }
-      }
+  .dot {
+    border: none;
+    width: 8px;
+    height: 8px;
+    background: #e8e9ea;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: $primary-color;
+      transform: scale(1.1);
     }
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot--active {
+    background: $primary-color;
   }
 }
 
@@ -1542,17 +1531,19 @@ body.fixed-nav .documentation-menu {
     a {
       svg {
         padding-left: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
       }
 
       font-size: 16px;
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.3s ease-in-out;
     }
 
     &:hover a {
-      opacity: 1;
-      visibility: visible;
+      svg{
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
@@ -1565,22 +1556,37 @@ body.fixed-nav .documentation-menu {
 
   h2 {
     font-size: 24px;
+    a {
+      font-size: 24px;
+    }
   }
 
   h3 {
     font-size: 18px;
+    a {
+      font-size: 18px;
+    }
   }
 
   h4 {
     font-size: 16px;
+    a {
+      font-size: 16px;
+    }
   }
 
   h5 {
     font-size: 15px;
+    a {
+      font-size: 15px;
+    }
   }
 
   h6 {
     font-size: 13px;
+    a {
+      font-size: 13px;
+    }
   }
 
   .highlight {
@@ -1634,6 +1640,15 @@ blockquote {
 .full-info ol li pre {
   text-indent: 0px;
   margin-left: -30px;
+}
+
+.full-info ul li,
+.full-info ol li {
+  .highlight{
+    pre{
+      margin-left: 0px;
+    }
+  }
 }
 
 .full-info ul li:before {
@@ -2846,4 +2861,48 @@ video {
     font-size: 16px !important;
     color: #74818d !important;
   }
+}
+
+/****************************************
+Responsive Classes
+*****************************************/
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .image-carousel-wrapper {
+    .shape-1,
+    .shape-2,
+    .shape-3 {
+      display: none;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .image-carousel-wrapper {
+    .shape-1,
+    .shape-2,
+    .shape-3 {
+      display: none;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .image-carousel-wrapper {
+    .shape-1,
+    .shape-2,
+    .shape-3 {
+      display: none;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
