@@ -28,12 +28,34 @@ document.addEventListener("DOMContentLoaded", () => {
 // menu sticky
 // Not a ton of code, but hard to
 const nav = document.querySelector(".fixed-menu, .documentation-menu");
+const notificationArea = document.querySelector(".notification-area");
+const headerBottom = document.querySelector(".header-bottom-area");
+const documentationMenu = document.querySelector(".documentation-menu");
+const leftSidebar = document.querySelector(".kd-left-sidebar");
+const rightSidebar = document.querySelector(".right-sidebar-area");
+
 let topOfNav = nav.offsetTop;
 function fixNav() {
   if (window.scrollY > topOfNav) {
     document.body.classList.add("fixed-nav");
+
+    if (notificationArea.style.display === "block") {
+      if (window.innerWidth <= 550) {
+        headerBottom.style.top = "72px";
+        documentationMenu.style.top = "130px";
+      } else {
+        headerBottom.style.top = "45px";
+        documentationMenu.style.top = "103px";
+        leftSidebar.style.top = "150px";
+        rightSidebar.style.top = "150px";
+      }
+    }
   } else {
     document.body.classList.remove("fixed-nav");
+    headerBottom.style.top = "0px";
+    if(documentationMenu) documentationMenu.style.top = "56px";
+    leftSidebar.style.top = "130px";
+    rightSidebar.style.top = "140px";
   }
 }
 window.addEventListener("scroll", fixNav);
@@ -61,18 +83,6 @@ bulmaCarousel.attach("#carousel-demo", {
   slidesToShow: 1,
   infinite: true,
   autoplay: false,
-});
-
-//bulma carousel
-bulmaCarousel.attach("#hero-area-carousel", {
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  infinite: true,
-  // When I use autoplay true, it's internaly occured error 
-  autoplay: false,
-  pagination: true,
-  loop: true,
-  autoplaySpeed: 1500,
 });
 
 // For FAQ Collaps Page

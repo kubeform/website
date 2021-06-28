@@ -266,7 +266,72 @@ h6 {
   background-color: #e9e9f0;
   border: none;
 }
+// notification style start
+.notification-area {
+  cursor: pointer;
+  padding-top: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  &.notification {
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
 
+    .delete {
+      right: 15px;
+      top: 11px;
+    }
+
+    .notification-inner {
+      min-height: 45px;
+      padding: 8px 0;
+      overflow: hidden;
+
+      // position: relative;
+      p {
+        // animation: mymove 5s infinite;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 500;
+        // position: absolute;
+
+        a {
+          font-weight: 600 !important;
+          padding: 0 5px;
+          font-family: Roboto;
+        }
+      }
+    }
+  }
+
+  &.is-primary {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a651+0,1971bd+100 */
+    background: #00a651;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg,
+        #00a651 0%,
+        #1971bd 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,
+        #00a651 0%,
+        #1971bd 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,
+        #00a651 0%,
+        #1971bd 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a651', endColorstr='#1971bd', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+  }
+}
+
+// notification style end
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {

@@ -26,14 +26,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    z-index: 9;
-    top: 50px;
+    // position: sticky;
+    // z-index: 9;
+    // top: 50px;
 
     .cta-left {
       width: 30%;
-      padding: 72px 20px;
-      height: 266px;
+      padding: 30px 20px;
+      // height: 266px;
 
       &.fp-cta-bg {
         background-image: url(../images/features-plan/features-plan-cta-bg.svg);
@@ -61,14 +61,14 @@
     .cta-right {
       width: 70%;
       display: flex;
-      min-height: 266px;
+      // min-height: 266px;
 
       .single-cta {
-        padding: 20px 20px 140px 20px;
+        padding: 20px 20px 80px 20px;
         border-left: 1px solid #eceff4;
         position: relative;
         z-index: 1;
-        min-height: 265px;
+        // min-height: 265px;
 
         &.community {
           width: 30%;
@@ -119,7 +119,7 @@
 
         .bottom-content {
           position: absolute;
-          bottom: 0;
+          bottom: 20px;
           left: 0px;
           width: 100%;
         }
@@ -132,7 +132,7 @@
             ul {
               li {
                 background-color: #ffefe7;
-                width: 25%;
+                width: 33.33%;
 
                 &:nth-child(2) {
                   background-color: rgba(0, 114, 249, 0.1);
@@ -337,7 +337,7 @@
 
           &.enterprise {
             display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-columns: 33.33% 33.33% 33.34%;
             font-size: 14px;
             height: 100%;
           }
@@ -366,43 +366,95 @@
 }
 
 // assistance section start
-.single-assistance {
-  background: #ffffff;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: 0px 8px 57px rgba(0, 0, 0, 0.16);
-  }
-
-  .ass-top {
-    display: flex;
-    align-items: center;
-    padding: 40px 30px;
-    border-bottom: 1px solid #eceff4;
-
-    .ass-icon {
-      margin-right: 30px;
-      max-width: 60px;
+.assistance-card-wrapper {
+  @import url(/assets/css/calendly.css);
+  .single-card {
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 8px 57px rgba(0, 0, 0, 0.16);
     }
 
-    .ass-title {
-      h3 {
+    .card-head {
+      display: flex;
+      align-items: center;
+      padding: 40px 30px;
+      border-bottom: 1px solid #eceff4;
+
+      .ass-icon {
+        width: 56px;
+        margin-right: 28px;
+      }
+
+      .ass-title {
+        font-style: normal;
+        font-weight: 500;
         font-size: 18px;
         line-height: 120%;
-        font-weight: 500;
-        font-family: $font-paragraph;
+        color: #1c1c1c;
       }
     }
-  }
 
-  .ass-bottom {
-    padding: 20px 30px 40px;
+    .card-body {
+      padding: 30px 20px;
 
-    p {
-      color: #54657e;
-      font-size: 16px;
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 100%;
+        color: #54657e;
+        margin-bottom: 15px;
+      }
+
+      .button {
+        background: rgba(77, 77, 203, 0.1);
+        border: 1px solid #4d4dcb;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #4d4dcb;
+        font-weight: 500;
+        font-family: Roboto;
+        height: 41px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #4d4dcb;
+          color: #fff !important;
+        }
+      }
+      .subscription-form {
+        position: relative;
+        z-index: 1;
+        input {
+          border: none;
+          background-color: #e2e2e2;
+          height: 41px;
+          &:focus {
+            border: 1px solid #4d4dcb;
+            border-radius: 4px;
+          }
+        }
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          background-color: #4d4dcb;
+          color: #fff;
+          border: none;
+          z-index: 9;
+          i.fa{
+            color: #fff;
+          }
+          &:hover {
+            background-color: darken($color: #4d4dcb, $amount: 20);
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }
@@ -628,7 +680,7 @@ Responsive Classes
       .cta-left {
         width: 30%;
         padding: 50px 20px;
-        height: 266px;
+        // height: 266px;
 
         h2 {
           font-size: 26px;
