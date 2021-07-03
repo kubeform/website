@@ -12,22 +12,22 @@
     "themeColor": ""
   },
   "heroImage": {
-    "src": "/assets/images/products/swift/swift-hero.png",
+    "src": "https://cdn.appscode.com/images/products/swift/swift-hero.png",
     "alt": "Swift"
   },
   "logo": {
-    "src": "/assets/images/products/swift/swift.png",
+    "src": "https://cdn.appscode.com/images/products/swift/swift.png",
     "alt": "Swift"
   },
   "logoWhite": {
-    "src": "/assets/images/products/swift/swift-white.png",
+    "src": "https://cdn.appscode.com/images/products/swift/swift-white.png",
     "alt": "Swift"
   },
   "icon": {
-    "src": "/assets/images/products/swift/swift-icon.png",
+    "src": "https://cdn.appscode.com/images/products/swift/swift-icon.png",
     "alt": "Swift",
     "sizes": {
-      "192x192": "/assets/images/products/swift/icons/android-icon-192x192.png"
+      "192x192": "https://cdn.appscode.com/images/products/swift/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/kubepack/swift",
@@ -49,11 +49,11 @@
     {
       "title": "API Support",
       "image": {
-        "src": "/assets/images/products/swift/features/feature-1.png",
+        "src": "https://cdn.appscode.com/images/products/swift/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/swift/features/api.svg",
+        "src": "https://cdn.appscode.com/images/products/swift/features/api.svg",
         "alt": "http"
       },
       "summary": "",
@@ -62,11 +62,11 @@
     {
       "title": "gRPC Gateway",
       "image": {
-        "src": "/assets/images/products/swift/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/swift/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/swift/features/grpc.svg",
+        "src": "https://cdn.appscode.com/images/products/swift/features/grpc.svg",
         "alt": "http"
       },
       "summary": "",
@@ -75,11 +75,11 @@
     {
       "title": "JS Client",
       "image": {
-        "src": "/assets/images/products/swift/features/feature-3.png",
+        "src": "https://cdn.appscode.com/images/products/swift/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/swift/features/js.svg",
+        "src": "https://cdn.appscode.com/images/products/swift/features/js.svg",
         "alt": "http"
       },
       "summary": "",

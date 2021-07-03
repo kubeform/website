@@ -3,7 +3,7 @@
     "name": "Luca Ravazzolo",
     "job": "Product Manager",
     "email": "",
-    "profile": "/assets/images/customers/persons/luca_ravazzolo.png",
+    "profile": "https://cdn.appscode.com/images/customers/persons/luca_ravazzolo.png",
     "companyKey": "intersystems",
     "productKey": "consulting",
     "testimonial": "InterSystems was delighted to engage with AppsCode in the delicate, yet fundamental task of supporting durable, non-ephemeral workloads with Kubernetes. We needed the best-prepared, most-proficient database operator consulting in the industry. Given AppsCode's pedigree of database building operators, the decision was easy. No time was wasted and all objectives reached in an amazingly short period of time. I would recommend AppsCode consulting for any Kubernetes related work."
@@ -12,7 +12,7 @@
     "name": "Mario Kozjak",
     "job": "Solutions Architect",
     "email": "",
-    "profile": "/assets/images/customers/persons/mario_kozjak.png",
+    "profile": "https://cdn.appscode.com/images/customers/persons/mario_kozjak.png",
     "companyKey": "elpheria",
     "productKey": "voyager",
     "testimonial": "Voyager made it simple and efficient for us to protect and initiate our bare metal Kubernetes workload. Its underlying technology and extensive L4 support along with seamless SSL integration is what made us choose Voyager over others. Voyager team is also very responsive when it comes to support. Great product!"
@@ -21,7 +21,7 @@
     "name": "Manuel Ramírez López",
     "job": "DevOps Engineer",
     "email": "",
-    "profile": "/assets/images/customers/persons/manuel_ramírez_lópez.png",
+    "profile": "https://cdn.appscode.com/images/customers/persons/manuel_ramírez_lópez.png",
     "companyKey": "pricehubble",
     "productKey": "voyager",
     "testimonial": "Voyager is the easiest way to use the fast and reliable HAProxy as our ingress controller. At PriceHubble, it is the corner-stone of our blue/green deployments."
@@ -30,7 +30,7 @@
     "name": "Richer Larivière",
     "job": "DevOPS Specialist",
     "email": "",
-    "profile": "/assets/images/customers/persons/richer_larivière.png",
+    "profile": "https://cdn.appscode.com/images/customers/persons/richer_larivière.png",
     "companyKey": "devolutions",
     "productKey": "voyager",
     "testimonial": "I work with a few Kubernetes clusters and we use Voyager as our preferred ingress controller. We really like the ease of configuration. Documentation is pretty good. Also the use of HaProxy is important for us because it works really well with both L4 and L7 load balancing. One of our TCP services, Wayk Now, is able to withstand thousands of persistent connections very smoothly at the same time."
@@ -39,7 +39,7 @@
     "name": "Daniel Gormly",
     "job": "Senior Developer",
     "email": "",
-    "profile": "/assets/images/customers/persons/daniel_gormly.png",
+    "profile": "https://cdn.appscode.com/images/customers/persons/daniel_gormly.png",
     "companyKey": "birdi",
     "productKey": "voyager",
     "testimonial": "We really like using Voyager. Its straightforward and well-documented config and SSL (especially Let's Encrypt) has made our migration of services to Kubernetes a breeze. Each major version has been a very welcome update!"
@@ -48,7 +48,7 @@
     "name": "Dario Freddi",
     "job": "Founder & CEO",
     "email": "",
-    "profile": "/assets/images/customers/persons/dario_freddi.png",
+    "profile": "https://cdn.appscode.com/images/customers/persons/dario_freddi.png",
     "companyKey": "astarte",
     "productKey": "voyager",
     "testimonial": "We're using Voyager as part of most <a href=\"https://github.com/astarte-platform/astarte\">Astarte deployments</a> and it's orchestrated also by our brand new <a href=\"https://github.com/astarte-platform/astarte-kubernetes-operator\">Operator</a>. We are glad to showcase that."

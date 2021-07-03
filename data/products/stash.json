@@ -14,31 +14,31 @@
   "keywords": "kubernetes appscode backup disaster recovery volume",
   "heroSlider": [
     {
-      "src": "/assets/images/products/stash/slider/applications.jpg",
+      "src": "https://cdn.appscode.com/images/products/stash/slider/applications.jpg",
       "alt": "Supported Applications"
     },
     {
-      "src": "/assets/images/products/stash/slider/platforms.jpg",
+      "src": "https://cdn.appscode.com/images/products/stash/slider/platforms.jpg",
       "alt": "Supported Platforms"
     },
     {
-      "src": "/assets/images/products/stash/slider/storage.jpg",
+      "src": "https://cdn.appscode.com/images/products/stash/slider/storage.jpg",
       "alt": "Supported Storage"
     }
   ],
   "logo": {
-    "src": "/assets/images/products/stash/stash.png",
+    "src": "https://cdn.appscode.com/images/products/stash/stash.png",
     "alt": "Stash"
   },
   "logoWhite": {
-    "src": "/assets/images/products/stash/stash-white.png",
+    "src": "https://cdn.appscode.com/images/products/stash/stash-white.png",
     "alt": "Stash"
   },
   "icon": {
-    "src": "/assets/images/products/stash/stash-icon.png",
+    "src": "https://cdn.appscode.com/images/products/stash/stash-icon.png",
     "alt": "Stash",
     "sizes": {
-      "192x192": "/assets/images/products/stash/icons/android-icon-192x192.png"
+      "192x192": "https://cdn.appscode.com/images/products/stash/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/stashed/docs",
@@ -60,11 +60,11 @@
     {
       "title": "Declarative API",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-1.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/declarative-api.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/declarative-api.svg",
         "alt": "http"
       },
       "summary": "",
@@ -73,11 +73,11 @@
     {
       "title": "Restic",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-3.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/restic.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/restic.svg",
         "alt": "http"
       },
       "summary": "",
@@ -86,11 +86,11 @@
     {
       "title": "Backup Kubernetes Volumes",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/kub-workload.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/kub-workload.svg",
         "alt": "http"
       },
       "summary": "",
@@ -99,11 +99,11 @@
     {
       "title": "Backup Database",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/kub-workload.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/kub-workload.svg",
         "alt": "http"
       },
       "summary": "",
@@ -112,11 +112,11 @@
     {
       "title": "Volume Snapshot",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/kub-workload.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/kub-workload.svg",
         "alt": "http"
       },
       "summary": "",
@@ -125,11 +125,11 @@
     {
       "title": "Cluster Snapshot",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/kub-workload.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/kub-workload.svg",
         "alt": "http"
       },
       "summary": "",
@@ -138,11 +138,11 @@
     {
       "title": "Batch Backup",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -151,11 +151,11 @@
     {
       "title": "Templated Backup",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -164,11 +164,11 @@
     {
       "title": "Automatic Cleanup",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -177,11 +177,11 @@
     {
       "title": "Hooks",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -190,11 +190,11 @@
     {
       "title": "Multiple Platforms Support",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-4.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/platform-support.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/platform-support.svg",
         "alt": "http"
       },
       "summary": "",
@@ -203,11 +203,11 @@
     {
       "title": "Multiple Architectures Support",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-4.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/platform-support.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/platform-support.svg",
         "alt": "http"
       },
       "summary": "",
@@ -216,11 +216,11 @@
     {
       "title": "Deduplication",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -229,11 +229,11 @@
     {
       "title": "Encryption",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -242,11 +242,11 @@
     {
       "title": "Extensibility",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -255,11 +255,11 @@
     {
       "title": "kubectl Plugin",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -268,11 +268,11 @@
     {
       "title": "RBAC",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/rback.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/rback.svg",
         "alt": "http"
       },
       "summary": "",
@@ -281,11 +281,11 @@
     {
       "title": "Prometheus Monitoring",
       "image": {
-        "src": "/assets/images/products/stash/features/feature-5.png",
+        "src": "https://cdn.appscode.com/images/products/stash/features/feature-5.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/stash/features/prometheus.svg",
+        "src": "https://cdn.appscode.com/images/products/stash/features/prometheus.svg",
         "alt": "http"
       },
       "summary": "",
@@ -297,6 +297,430 @@
       "version": "master",
       "hostDocs": false,
       "show": true
+    },
+    {
+      "version": "v2021.06.23",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.14.1",
+        "community": "v0.14.1",
+        "elasticsearch": [
+          "5.6.4-v11",
+          "6.2.4-v11",
+          "6.3.0-v11",
+          "6.4.0-v11",
+          "6.5.3-v11",
+          "6.8.0-v11",
+          "7.2.0-v11",
+          "7.3.2-v11"
+        ],
+        "enterprise": "v0.14.1",
+        "installer": "v2021.06.23",
+        "mariadb": [
+          "10.5.8-v4"
+        ],
+        "mongodb": [
+          "3.4.17-v10",
+          "3.4.22-v10",
+          "3.6.13-v10",
+          "3.6.8-v10",
+          "4.0.11-v10",
+          "4.0.3-v10",
+          "4.0.5-v10",
+          "4.1.13-v10",
+          "4.1.4-v10",
+          "4.1.7-v10",
+          "4.2.3-v10",
+          "4.4.6-v1"
+        ],
+        "mysql": [
+          "5.7.25-v11",
+          "8.0.14-v11",
+          "8.0.21-v5",
+          "8.0.3-v11"
+        ],
+        "percona-xtradb": [
+          "5.7-v6"
+        ],
+        "postgres": [
+          "10.14-v9",
+          "11.9-v9",
+          "12.4-v9",
+          "13.1-v6",
+          "9.6.19-v9"
+        ]
+      }
+    },
+    {
+      "version": "v2021.6.18",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.14.0",
+        "community": "v0.14.0",
+        "elasticsearch": [
+          "5.6.4-v10",
+          "6.2.4-v10",
+          "6.3.0-v10",
+          "6.4.0-v10",
+          "6.5.3-v10",
+          "6.8.0-v10",
+          "7.2.0-v10",
+          "7.3.2-v10"
+        ],
+        "enterprise": "v0.14.0",
+        "installer": "v2021.6.18",
+        "mariadb": [
+          "10.5.8-v3"
+        ],
+        "mongodb": [
+          "3.4.17-v9",
+          "3.4.22-v9",
+          "3.6.13-v9",
+          "3.6.8-v9",
+          "4.0.11-v9",
+          "4.0.3-v9",
+          "4.0.5-v9",
+          "4.1.13-v9",
+          "4.1.4-v9",
+          "4.1.7-v9",
+          "4.2.3-v9",
+          "4.4.6"
+        ],
+        "mysql": [
+          "5.7.25-v10",
+          "8.0.14-v10",
+          "8.0.21-v4",
+          "8.0.3-v10"
+        ],
+        "percona-xtradb": [
+          "5.7-v5"
+        ],
+        "postgres": [
+          "10.14-v8",
+          "11.9-v8",
+          "12.4-v8",
+          "13.1-v5",
+          "9.6.19-v8"
+        ]
+      }
+    },
+    {
+      "version": "v2021.04.12",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.12.3",
+        "community": "v0.12.3",
+        "elasticsearch": [
+          "5.6.4-v9",
+          "6.2.4-v9",
+          "6.3.0-v9",
+          "6.4.0-v9",
+          "6.5.3-v9",
+          "6.8.0-v9",
+          "7.2.0-v9",
+          "7.3.2-v9"
+        ],
+        "enterprise": "v0.12.3",
+        "installer": "v2021.04.12",
+        "mariadb": [
+          "10.5.8-v3"
+        ],
+        "mongodb": [
+          "3.4.17-v8",
+          "3.4.22-v8",
+          "3.6.13-v8",
+          "3.6.8-v8",
+          "4.0.11-v8",
+          "4.0.3-v8",
+          "4.0.5-v8",
+          "4.1.13-v8",
+          "4.1.4-v8",
+          "4.1.7-v8",
+          "4.2.3-v8"
+        ],
+        "mysql": [
+          "5.7.25-v9",
+          "8.0.14-v9",
+          "8.0.21-v3",
+          "8.0.3-v9"
+        ],
+        "percona-xtradb": [
+          "5.7-v4"
+        ],
+        "postgres": [
+          "10.14-v7",
+          "11.9-v7",
+          "12.4-v7",
+          "13.1-v4",
+          "9.6.19-v7"
+        ]
+      }
+    },
+    {
+      "version": "v2021.04.09",
+      "hostDocs": false,
+      "info": {
+        "cli": "v0.12.2",
+        "community": "v0.12.2",
+        "elasticsearch": [
+          "5.6.4-v8",
+          "6.2.4-v8",
+          "6.3.0-v8",
+          "6.4.0-v8",
+          "6.5.3-v8",
+          "6.8.0-v8",
+          "7.2.0-v8",
+          "7.3.2-v8"
+        ],
+        "enterprise": "v0.12.2",
+        "installer": "v2021.04.09",
+        "mariadb": [
+          "10.5.8-v2"
+        ],
+        "mongodb": [
+          "3.4.17-v7",
+          "3.4.22-v7",
+          "3.6.13-v7",
+          "3.6.8-v7",
+          "4.0.11-v7",
+          "4.0.3-v7",
+          "4.0.5-v7",
+          "4.1.13-v7",
+          "4.1.4-v7",
+          "4.1.7-v7",
+          "4.2.3-v7"
+        ],
+        "mysql": [
+          "5.7.25-v8",
+          "8.0.14-v8",
+          "8.0.21-v2",
+          "8.0.3-v8"
+        ],
+        "percona-xtradb": [
+          "5.7-v3"
+        ],
+        "postgres": [
+          "10.14-v6",
+          "11.9-v6",
+          "12.4-v6",
+          "13.1-v3",
+          "9.6.19-v6"
+        ]
+      }
+    },
+    {
+      "version": "v2021.04.07",
+      "hostDocs": false,
+      "info": {
+        "cli": "v0.12.1",
+        "community": "v0.12.1",
+        "elasticsearch": [
+          "5.6.4-v7",
+          "6.2.4-v7",
+          "6.3.0-v7",
+          "6.4.0-v7",
+          "6.5.3-v7",
+          "6.8.0-v7",
+          "7.2.0-v7",
+          "7.3.2-v7"
+        ],
+        "enterprise": "v0.12.1",
+        "installer": "v0.12.1",
+        "mariadb": [
+          "10.5.8-v1"
+        ],
+        "mongodb": [
+          "3.4.17-v6",
+          "3.4.22-v6",
+          "3.6.13-v6",
+          "3.6.8-v6",
+          "4.0.11-v6",
+          "4.0.3-v6",
+          "4.0.5-v6",
+          "4.1.13-v6",
+          "4.1.4-v6",
+          "4.1.7-v6",
+          "4.2.3-v6"
+        ],
+        "mysql": [
+          "5.7.25-v7",
+          "8.0.14-v7",
+          "8.0.21-v1",
+          "8.0.3-v7"
+        ],
+        "percona-xtradb": [
+          "5.7-v2"
+        ],
+        "postgres": [
+          "10.14-v5",
+          "11.9-v5",
+          "12.4-v5",
+          "13.1-v2",
+          "9.6.19-v5"
+        ]
+      }
+    },
+    {
+      "version": "v2021.03.17",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.12.0",
+        "community": "v0.12.0",
+        "elasticsearch": [
+          "5.6.4-v7",
+          "6.2.4-v7",
+          "6.3.0-v7",
+          "6.4.0-v7",
+          "6.5.3-v7",
+          "6.8.0-v7",
+          "7.2.0-v7",
+          "7.3.2-v7"
+        ],
+        "enterprise": "v0.12.0",
+        "installer": "v0.12.0",
+        "mariadb": [
+          "10.5.8-v1"
+        ],
+        "mongodb": [
+          "3.4.17-v6",
+          "3.4.22-v6",
+          "3.6.13-v6",
+          "3.6.8-v6",
+          "4.0.11-v6",
+          "4.0.3-v6",
+          "4.0.5-v6",
+          "4.1.13-v6",
+          "4.1.4-v6",
+          "4.1.7-v6",
+          "4.2.3-v6"
+        ],
+        "mysql": [
+          "5.7.25-v7",
+          "8.0.14-v7",
+          "8.0.21-v1",
+          "8.0.3-v7"
+        ],
+        "percona-xtradb": [
+          "5.7-v2"
+        ],
+        "postgres": [
+          "10.14-v5",
+          "11.9-v5",
+          "12.4-v5",
+          "13.1-v2",
+          "9.6.19-v5"
+        ]
+      }
+    },
+    {
+      "version": "v2021.03.11",
+      "hostDocs": true,
+      "info": {
+        "catalog": "v2021.03.11",
+        "cli": "v0.11.11",
+        "community": "v0.11.11",
+        "elasticsearch": [
+          "5.6.4-v7",
+          "6.2.4-v7",
+          "6.3.0-v7",
+          "6.4.0-v7",
+          "6.5.3-v7",
+          "6.8.0-v7",
+          "7.2.0-v7",
+          "7.3.2-v7"
+        ],
+        "enterprise": "v0.11.11",
+        "installer": "v0.11.11",
+        "mariadb": [
+          "10.5.8-v1"
+        ],
+        "mongodb": [
+          "3.4.17-v6",
+          "3.4.22-v6",
+          "3.6.13-v6",
+          "3.6.8-v6",
+          "4.0.11-v6",
+          "4.0.3-v6",
+          "4.0.5-v6",
+          "4.1.13-v6",
+          "4.1.4-v6",
+          "4.1.7-v6",
+          "4.2.3-v6"
+        ],
+        "mysql": [
+          "5.7.25-v7",
+          "8.0.14-v7",
+          "8.0.21-v1",
+          "8.0.3-v7"
+        ],
+        "percona-xtradb": [
+          "5.7.0-v2"
+        ],
+        "postgres": [
+          "10.14.0-v5",
+          "11.9.0-v5",
+          "12.4.0-v5",
+          "13.1.0-v2",
+          "9.6.19-v5"
+        ]
+      }
+    },
+    {
+      "version": "v2021.03.08",
+      "hostDocs": true,
+      "info": {
+        "catalog": "v2021.03.08",
+        "cli": "v0.11.10",
+        "community": "v0.11.10",
+        "elasticsearch": [
+          "5.6.4-v7",
+          "6.2.4-v7",
+          "6.3.0-v7",
+          "6.4.0-v7",
+          "6.5.3-v7",
+          "6.8.0-v7",
+          "7.2.0-v7",
+          "7.3.2-v7"
+        ],
+        "enterprise": "v0.11.10",
+        "installer": "v0.11.10",
+        "mariadb": [
+          "10.5.8-v1"
+        ],
+        "mongodb": [
+          "3.4.17-v6",
+          "3.4.22-v6",
+          "3.6.13-v6",
+          "3.6.8-v6",
+          "4.0.11-v6",
+          "4.0.3-v6",
+          "4.0.5-v6",
+          "4.1.13-v6",
+          "4.1.4-v6",
+          "4.1.7-v6",
+          "4.2.3-v6"
+        ],
+        "mysql": [
+          "5.7.25-v7",
+          "8.0.14-v7",
+          "8.0.21-v1",
+          "8.0.3-v7"
+        ],
+        "percona-xtradb": [
+          "5.7.0-v2"
+        ],
+        "postgres": [
+          "10.14.0-v5",
+          "11.9.0-v5",
+          "12.4.0-v5",
+          "13.1.0-v2",
+          "9.6.19-v5"
+        ]
+      }
     },
     {
       "version": "v2021.01.21",
@@ -910,7 +1334,7 @@
       "hostDocs": false
     }
   ],
-  "latestVersion": "v2021.01.21",
+  "latestVersion": "v2021.06.23",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/stashed/stash",
@@ -985,6 +1409,22 @@
     "stash-elasticsearch": {
       "dir": "addons/elasticsearch/guides",
       "mappings": [
+        {
+          "versions": [
+            "v2021.03.08",
+            "v2021.03.11"
+          ],
+          "subProjectVersions": [
+            "5.6.4-v7",
+            "6.2.4-v7",
+            "6.3.0-v7",
+            "6.4.0-v7",
+            "6.5.3-v7",
+            "6.8.0-v7",
+            "7.2.0-v7",
+            "7.3.2-v7"
+          ]
+        },
         {
           "versions": [
             "v2021.01.21"
@@ -1179,6 +1619,15 @@
       "mappings": [
         {
           "versions": [
+            "v2021.03.08",
+            "v2021.03.11"
+          ],
+          "subProjectVersions": [
+            "10.5.8-v1"
+          ]
+        },
+        {
+          "versions": [
             "v2020.12.17",
             "v2021.01.21"
           ],
@@ -1191,6 +1640,25 @@
     "stash-mongodb": {
       "dir": "addons/mongodb/guides",
       "mappings": [
+        {
+          "versions": [
+            "v2021.03.08",
+            "v2021.03.11"
+          ],
+          "subProjectVersions": [
+            "3.4.17-v6",
+            "3.4.22-v6",
+            "3.6.8-v6",
+            "3.6.13-v6",
+            "4.0.3-v6",
+            "4.0.5-v6",
+            "4.0.11-v6",
+            "4.1.4-v6",
+            "4.1.7-v6",
+            "4.1.13-v6",
+            "4.2.3-v6"
+          ]
+        },
         {
           "versions": [
             "v2020.12.17",
@@ -1404,6 +1872,18 @@
       "mappings": [
         {
           "versions": [
+            "v2021.03.08",
+            "v2021.03.11"
+          ],
+          "subProjectVersions": [
+            "5.7.25-v7",
+            "8.0.3-v7",
+            "8.0.14-v7",
+            "8.0.21-v1"
+          ]
+        },
+        {
+          "versions": [
             "v2021.01.21"
           ],
           "subProjectVersions": [
@@ -1537,6 +2017,15 @@
       "mappings": [
         {
           "versions": [
+            "v2021.03.08",
+            "v2021.03.11"
+          ],
+          "subProjectVersions": [
+            "5.7.0-v2"
+          ]
+        },
+        {
+          "versions": [
             "v2020.12.17",
             "v2021.01.21"
           ],
@@ -1641,6 +2130,19 @@
     "stash-postgres": {
       "dir": "addons/postgres/guides",
       "mappings": [
+        {
+          "versions": [
+            "v2021.03.08",
+            "v2021.03.11"
+          ],
+          "subProjectVersions": [
+            "9.6.19-v5",
+            "10.14.0-v5",
+            "11.9.0-v5",
+            "12.4.0-v5",
+            "13.1.0-v2"
+          ]
+        },
         {
           "versions": [
             "v2020.12.17",

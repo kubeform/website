@@ -2,63 +2,63 @@
   "aws": {
     "key": "aws",
     "logo": {
-      "src": "/assets/images/clouds/aws.png",
+      "src": "https://cdn.appscode.com/images/clouds/aws.png",
       "alt": "Amazon Web Services"
     }
   },
   "azure": {
     "key": "azure",
     "logo": {
-      "src": "/assets/images/clouds/azure.png",
+      "src": "https://cdn.appscode.com/images/clouds/azure.png",
       "alt": "Microsoft Azure"
     }
   },
   "gce": {
     "key": "gce",
     "logo": {
-      "src": "/assets/images/clouds/gcp.png",
+      "src": "https://cdn.appscode.com/images/clouds/gcp.png",
       "alt": "Google Cloud"
     }
   },
   "digitalocean": {
     "key": "digitalocean",
     "logo": {
-      "src": "/assets/images/clouds/digitalocean.png",
+      "src": "https://cdn.appscode.com/images/clouds/digitalocean.png",
       "alt": "DigitalOcean"
     }
   },
   "linode": {
     "key": "linode",
     "logo": {
-      "src": "/assets/images/clouds/linode.png",
+      "src": "https://cdn.appscode.com/images/clouds/linode.png",
       "alt": "Linode"
     }
   },
   "openstack": {
     "key": "openstack",
     "logo": {
-      "src": "/assets/images/clouds/openstack.png",
+      "src": "https://cdn.appscode.com/images/clouds/openstack.png",
       "alt": "OpenStack"
     }
   },
   "packet": {
     "key": "packet",
     "logo": {
-      "src": "/assets/images/clouds/packet.png",
+      "src": "https://cdn.appscode.com/images/clouds/packet.png",
       "alt": "Packet"
     }
   },
   "baremetal": {
     "key": "baremetal",
     "logo": {
-      "src": "/assets/images/clouds/baremetal.png",
+      "src": "https://cdn.appscode.com/images/clouds/baremetal.png",
       "alt": "Baremetal"
     }
   },
   "docker": {
     "key": "docker",
     "logo": {
-      "src": "/assets/images/clouds/docker.png",
+      "src": "https://cdn.appscode.com/images/clouds/docker.png",
       "alt": "Docker"
     }
   }
