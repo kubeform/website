@@ -13,22 +13,22 @@
   },
   "keywords": "kubernetes appscode terraform kubeform crd",
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-hero.png",
+    "src": "/assets/images/products/kubeform/kubeform-hero.png",
     "alt": "Kubeform"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform.png",
+    "src": "/assets/images/products/kubeform/kubeform.png",
     "alt": "Kubeform"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-white.png",
+    "src": "/assets/images/products/kubeform/kubeform-white.png",
     "alt": "Kubeform"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/kubeform/kubeform-icon.png",
+    "src": "/assets/images/products/kubeform/kubeform-icon.png",
     "alt": "Kubeform",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/kubeform/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/kubeform/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/kubeform/kubeform",
@@ -45,11 +45,11 @@
     {
       "title": "Native Kubernetes Support",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-1.png",
+        "src": "/assets/images/products/kubeform/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/kubernetes.png",
+        "src": "/assets/images/products/kubeform/features/kubernetes.png",
         "alt": "http"
       },
       "summary": "",
@@ -58,11 +58,11 @@
     {
       "title": "Built on Terrafrom",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-2.png",
+        "src": "/assets/images/products/kubeform/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/terraform.png",
+        "src": "/assets/images/products/kubeform/features/terraform.png",
         "alt": "http"
       },
       "summary": "",
@@ -71,11 +71,11 @@
     {
       "title": "Infrastructure as Code",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-3.png",
+        "src": "/assets/images/products/kubeform/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/source-code.png",
+        "src": "/assets/images/products/kubeform/features/source-code.png",
         "alt": "http"
       },
       "summary": "",
@@ -84,11 +84,11 @@
     {
       "title": "Supports Multiple Cloud Platform",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-4.png",
+        "src": "/assets/images/products/kubeform/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/clouds.png",
+        "src": "/assets/images/products/kubeform/features/clouds.png",
         "alt": "http"
       },
       "summary": "",
@@ -97,11 +97,11 @@
     {
       "title": "Unleash Developer Velocity",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/feature-5.png",
+        "src": "/assets/images/products/kubeform/features/feature-5.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeform/features/speed.png",
+        "src": "/assets/images/products/kubeform/features/speed.png",
         "alt": "http"
       },
       "summary": "",
@@ -115,34 +115,20 @@
       "show": true
     },
     {
-      "version": "v2020.10.30",
+      "version": "v2021.07.01",
       "hostDocs": true,
       "show": true,
       "info": {
-        "community": "v0.3.0",
-        "installer": "v0.3.0"
+        "aws": "v0.1.0",
+        "azurerm": "v0.1.0",
+        "digitalocean": "v0.1.0",
+        "google": "v0.1.0",
+        "installer": "v2021.07.01",
+        "linode": "v0.1.0"
       }
-    },
-    {
-      "version": "v2020.10.13",
-      "hostDocs": true,
-      "show": true,
-      "info": {
-        "community": "v0.2.0",
-        "installer": "v0.2.0"
-      }
-    },
-    {
-      "version": "v0.1.0",
-      "hostDocs": true,
-      "show": true
-    },
-    {
-      "version": "v0.0.1",
-      "hostDocs": true
     }
   ],
-  "latestVersion": "v2020.10.30",
+  "latestVersion": "v2021.07.01",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubeform/kubeform",

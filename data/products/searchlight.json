@@ -12,22 +12,22 @@
     "themeColor": ""
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/searchlight/searchlight-hero.png",
+    "src": "/assets/images/products/searchlight/searchlight-hero.png",
     "alt": "Searchlight"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/searchlight/searchlight.png",
+    "src": "/assets/images/products/searchlight/searchlight.png",
     "alt": "Searchlight"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/searchlight/searchlight-white.png",
+    "src": "/assets/images/products/searchlight/searchlight-white.png",
     "alt": "Searchlight"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/searchlight/searchlight-icon.png",
+    "src": "/assets/images/products/searchlight/searchlight-icon.png",
     "alt": "Searchlight",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/searchlight/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/searchlight/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/searchlight/searchlight",
@@ -49,11 +49,11 @@
     {
       "title": "Monitor Kubernetes",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/searchlight/features/feature-1.png",
+        "src": "/assets/images/products/searchlight/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/searchlight/features/monitor-kubernetes.svg",
+        "src": "/assets/images/products/searchlight/features/monitor-kubernetes.svg",
         "alt": "http"
       },
       "summary": "",
@@ -62,11 +62,11 @@
     {
       "title": "Icinga 2",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/searchlight/features/feature-2.png",
+        "src": "/assets/images/products/searchlight/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/searchlight/features/icinga.svg",
+        "src": "/assets/images/products/searchlight/features/icinga.svg",
         "alt": "http"
       },
       "summary": "",
@@ -75,11 +75,11 @@
     {
       "title": "Notifier Support",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/searchlight/features/feature-3.png",
+        "src": "/assets/images/products/searchlight/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/searchlight/features/notifier.svg",
+        "src": "/assets/images/products/searchlight/features/notifier.svg",
         "alt": "http"
       },
       "summary": "",
