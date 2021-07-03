@@ -13,22 +13,22 @@
   },
   "keywords": "kubernetes appscode databsse high availability postgres elasticsearch etcd memecached mongodb mysql percona xtradb redis",
   "heroImage": {
-    "src": "/assets/images/products/kubedb/kubedb-hero.png",
+    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-hero.png",
     "alt": "KubeDB"
   },
   "logo": {
-    "src": "/assets/images/products/kubedb/kubedb.png",
+    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb.png",
     "alt": "KubeDB"
   },
   "logoWhite": {
-    "src": "/assets/images/products/kubedb/kubedb-white.png",
+    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-white.png",
     "alt": "KubeDB"
   },
   "icon": {
-    "src": "/assets/images/products/kubedb/kubedb-icon.png",
+    "src": "https://cdn.appscode.com/images/products/kubedb/kubedb-icon.png",
     "alt": "KubeDB",
     "sizes": {
-      "192x192": "/assets/images/products/kubedb/icons/android-icon-192x192.png"
+      "192x192": "https://cdn.appscode.com/images/products/kubedb/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/kubedb/docs",
@@ -54,11 +54,11 @@
     {
       "title": "Lower administrative burden",
       "image": {
-        "src": "/assets/images/products/kubedb/features/easy-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/easy-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/dumbbell.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/dumbbell.png",
         "alt": "http"
       },
       "summary": "",
@@ -67,11 +67,11 @@
     {
       "title": "Native Kubernetes Support",
       "image": {
-        "src": "/assets/images/products/kubedb/features/multi-cloud-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/multi-cloud-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/kubernetes.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/kubernetes.png",
         "alt": "http"
       },
       "summary": "",
@@ -80,11 +80,11 @@
     {
       "title": "Performance",
       "image": {
-        "src": "/assets/images/products/kubedb/features/performance-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/performance-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/muscle.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/muscle.png",
         "alt": "http"
       },
       "summary": "",
@@ -93,11 +93,11 @@
     {
       "title": "Availability and durability",
       "image": {
-        "src": "/assets/images/products/kubedb/features/availability-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/availability-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/last-24-hours.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/last-24-hours.png",
         "alt": "http"
       },
       "summary": "",
@@ -106,11 +106,11 @@
     {
       "title": "Security",
       "image": {
-        "src": "/assets/images/products/kubedb/features/security-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/security-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/security-lock.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/security-lock.png",
         "alt": "http"
       },
       "summary": "",
@@ -119,11 +119,11 @@
     {
       "title": "Manageability",
       "image": {
-        "src": "/assets/images/products/kubedb/features/monitoring-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/monitoring-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/prometheus.svg",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/prometheus.svg",
         "alt": "http"
       },
       "summary": "",
@@ -132,11 +132,11 @@
     {
       "title": "Cost-effectiveness",
       "image": {
-        "src": "/assets/images/products/kubedb/features/low-price-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/low-price-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/low-price.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/low-price.png",
         "alt": "http"
       },
       "summary": "",
@@ -145,11 +145,11 @@
     {
       "title": "Open Source",
       "image": {
-        "src": "/assets/images/products/kubedb/features/open-source-lg.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/open-source-lg.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubedb/features/teamwork.png",
+        "src": "https://cdn.appscode.com/images/products/kubedb/features/teamwork.png",
         "alt": "http"
       },
       "summary": "",
@@ -161,6 +161,66 @@
       "version": "master",
       "hostDocs": false,
       "show": true
+    },
+    {
+      "version": "v2021.06.23",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.4.0",
+        "cli": "v0.19.0",
+        "community": "v0.19.0",
+        "enterprise": "v0.6.0",
+        "installer": "v2021.06.23"
+      }
+    },
+    {
+      "version": "v2021.06.21-rc.0",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.4.0-rc.0",
+        "cli": "v0.19.0-rc.0",
+        "community": "v0.19.0-rc.0",
+        "enterprise": "v0.6.0-rc.0",
+        "installer": "v2021.06.21-rc.0"
+      }
+    },
+    {
+      "version": "v2021.04.16",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.3.0",
+        "cli": "v0.18.0",
+        "community": "v0.18.0",
+        "enterprise": "v0.5.0",
+        "installer": "v2021.04.16"
+      }
+    },
+    {
+      "version": "v2021.03.17",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.2.1",
+        "cli": "v0.17.1",
+        "community": "v0.17.1",
+        "enterprise": "v0.4.1",
+        "installer": "v0.17.1"
+      }
+    },
+    {
+      "version": "v2021.03.11",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.2.0",
+        "cli": "v0.17.0",
+        "community": "v0.17.0",
+        "enterprise": "v0.4.0",
+        "installer": "v0.17.0",
+        "release": "v2021.03.11"
+      }
     },
     {
       "version": "v2021.01.26",
@@ -381,7 +441,7 @@
       "hostDocs": false
     }
   ],
-  "latestVersion": "v2021.01.26",
+  "latestVersion": "v2021.06.23",
   "socialLinks": {
     "facebook": "https://facebook.com/appscode",
     "github": "https://github.com/kubedb/cli",

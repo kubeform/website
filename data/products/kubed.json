@@ -12,22 +12,22 @@
     "themeColor": ""
   },
   "heroImage": {
-    "src": "/assets/images/products/kubed/kubed-hero.png",
+    "src": "https://cdn.appscode.com/images/products/kubed/kubed-hero.png",
     "alt": "Kubed"
   },
   "logo": {
-    "src": "/assets/images/products/kubed/kubed.png",
+    "src": "https://cdn.appscode.com/images/products/kubed/kubed.png",
     "alt": "Kubed"
   },
   "logoWhite": {
-    "src": "/assets/images/products/kubed/kubed-white.png",
+    "src": "https://cdn.appscode.com/images/products/kubed/kubed-white.png",
     "alt": "Kubed"
   },
   "icon": {
-    "src": "/assets/images/products/kubed/kubed-icon.png",
+    "src": "https://cdn.appscode.com/images/products/kubed/kubed-icon.png",
     "alt": "Kubed",
     "sizes": {
-      "192x192": "/assets/images/products/kubed/icons/android-icon-192x192.png"
+      "192x192": "https://cdn.appscode.com/images/products/kubed/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/appscode/kubed",
@@ -49,11 +49,11 @@
     {
       "title": "Disaster Recovery",
       "image": {
-        "src": "/assets/images/products/kubed/features/feature-1.png",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubed/features/backup.svg",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/backup.svg",
         "alt": "http"
       },
       "summary": "",
@@ -62,11 +62,11 @@
     {
       "title": "Event Forwarder",
       "image": {
-        "src": "/assets/images/products/kubed/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubed/features/event.svg",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/event.svg",
         "alt": "http"
       },
       "summary": "",
@@ -75,11 +75,11 @@
     {
       "title": "Configuration Syncer",
       "image": {
-        "src": "/assets/images/products/kubed/features/feature-3.png",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubed/features/configuration.svg",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/configuration.svg",
         "alt": "http"
       },
       "summary": "",
@@ -88,11 +88,11 @@
     {
       "title": "Recycle Bin",
       "image": {
-        "src": "/assets/images/products/kubed/features/feature-4.png",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubed/features/recycle.svg",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/recycle.svg",
         "alt": "http"
       },
       "summary": "",
@@ -101,11 +101,11 @@
     {
       "title": "Event Notifiers",
       "image": {
-        "src": "/assets/images/products/kubed/features/feature-5.png",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/feature-5.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubed/features/event-notifiers.svg",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/event-notifiers.svg",
         "alt": "http"
       },
       "summary": "",
@@ -114,11 +114,11 @@
     {
       "title": "Janitor",
       "image": {
-        "src": "/assets/images/products/kubed/features/feature-6.png",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/kubed/features/janitor.svg",
+        "src": "https://cdn.appscode.com/images/products/kubed/features/janitor.svg",
         "alt": "http"
       },
       "summary": "",

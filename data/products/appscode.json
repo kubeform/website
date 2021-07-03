@@ -12,22 +12,22 @@
     "themeColor": ""
   },
   "heroImage": {
-    "src": "/assets/images/products/appscode/appscode-hero.png",
+    "src": "https://cdn.appscode.com/images/products/appscode/appscode-hero.png",
     "alt": "AppsCode"
   },
   "logo": {
-    "src": "/assets/images/products/appscode/appscode.png",
+    "src": "https://cdn.appscode.com/images/products/appscode/appscode.png",
     "alt": "AppsCode"
   },
   "logoWhite": {
-    "src": "/assets/images/products/appscode/appscode-white.png",
+    "src": "https://cdn.appscode.com/images/products/appscode/appscode-white.png",
     "alt": "AppsCode"
   },
   "icon": {
-    "src": "/assets/images/products/appscode/appscode-icon.png",
+    "src": "https://cdn.appscode.com/images/products/appscode/appscode-icon.png",
     "alt": "AppsCode",
     "sizes": {
-      "192x192": "/assets/images/products/appscode/icons/android-icon-192x192.png"
+      "192x192": "https://cdn.appscode.com/images/products/appscode/icons/android-icon-192x192.png"
     }
   },
   "videos": {

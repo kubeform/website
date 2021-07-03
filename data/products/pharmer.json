@@ -13,22 +13,22 @@
   },
   "keywords": "kubernetes appscode cluster management upgrades",
   "heroImage": {
-    "src": "/assets/images/products/pharmer/pharmer-hero.png",
+    "src": "https://cdn.appscode.com/images/products/pharmer/pharmer-hero.png",
     "alt": "Pharmer"
   },
   "logo": {
-    "src": "/assets/images/products/pharmer/pharmer.png",
+    "src": "https://cdn.appscode.com/images/products/pharmer/pharmer.png",
     "alt": "Pharmer"
   },
   "logoWhite": {
-    "src": "/assets/images/products/pharmer/pharmer-white.png",
+    "src": "https://cdn.appscode.com/images/products/pharmer/pharmer-white.png",
     "alt": "Pharmer"
   },
   "icon": {
-    "src": "/assets/images/products/pharmer/pharmer-icon.png",
+    "src": "https://cdn.appscode.com/images/products/pharmer/pharmer-icon.png",
     "alt": "Pharmer",
     "sizes": {
-      "192x192": "/assets/images/products/pharmer/icons/android-icon-192x192.png"
+      "192x192": "https://cdn.appscode.com/images/products/pharmer/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/pharmer/docs",
@@ -50,11 +50,11 @@
     {
       "title": "Kubeadm",
       "image": {
-        "src": "/assets/images/products/pharmer/features/feature-1.png",
+        "src": "https://cdn.appscode.com/images/products/pharmer/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/pharmer/features/kubeadm.svg",
+        "src": "https://cdn.appscode.com/images/products/pharmer/features/kubeadm.svg",
         "alt": "http"
       },
       "summary": "",
@@ -63,11 +63,11 @@
     {
       "title": "Platform Support",
       "image": {
-        "src": "/assets/images/products/pharmer/features/feature-2.png",
+        "src": "https://cdn.appscode.com/images/products/pharmer/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/pharmer/features/platform-support.svg",
+        "src": "https://cdn.appscode.com/images/products/pharmer/features/platform-support.svg",
         "alt": "http"
       },
       "summary": "",
@@ -76,11 +76,11 @@
     {
       "title": "Kubernetes Certification",
       "image": {
-        "src": "/assets/images/products/pharmer/features/feature-3.png",
+        "src": "https://cdn.appscode.com/images/products/pharmer/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "/assets/images/products/pharmer/features/kubernetes.svg",
+        "src": "https://cdn.appscode.com/images/products/pharmer/features/kubernetes.svg",
         "alt": "http"
       },
       "summary": "",
