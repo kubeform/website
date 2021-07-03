@@ -12,22 +12,22 @@
     "themeColor": ""
   },
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/service-broker/service-broker-hero.png",
+    "src": "/assets/images/products/service-broker/service-broker-hero.png",
     "alt": "ServiceBroker"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/service-broker/service-broker.png",
+    "src": "/assets/images/products/service-broker/service-broker.png",
     "alt": "ServiceBroker"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/service-broker/service-broker-white.png",
+    "src": "/assets/images/products/service-broker/service-broker-white.png",
     "alt": "ServiceBroker"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/service-broker/service-broker-icon.png",
+    "src": "/assets/images/products/service-broker/service-broker-icon.png",
     "alt": "ServiceBroker",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/service-broker/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/service-broker/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/appscode/service-broker",
@@ -49,11 +49,11 @@
     {
       "title": "KubeDB Support",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/service-broker/features/feature-1.png",
+        "src": "/assets/images/products/service-broker/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/service-broker/features/kubedb.png",
+        "src": "/assets/images/products/service-broker/features/kubedb.png",
         "alt": "http"
       },
       "summary": "",
@@ -62,11 +62,11 @@
     {
       "title": "Prometheus",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/service-broker/features/feature-2.png",
+        "src": "/assets/images/products/service-broker/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/service-broker/features/prometheus.svg",
+        "src": "/assets/images/products/service-broker/features/prometheus.svg",
         "alt": "http"
       },
       "summary": "",
@@ -75,11 +75,11 @@
     {
       "title": "Kubeapps",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/service-broker/features/feature-3.png",
+        "src": "/assets/images/products/service-broker/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/service-broker/features/kubeapps.png",
+        "src": "/assets/images/products/service-broker/features/kubeapps.png",
         "alt": "http"
       },
       "summary": "",
