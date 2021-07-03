@@ -13,22 +13,22 @@
   },
   "keywords": "kubernetes appscode ci",
   "heroImage": {
-    "src": "https://cdn.appscode.com/images/products/kubeci/kubeci-hero.png",
+    "src": "/assets/images/products/kubeci/kubeci-hero.png",
     "alt": "KubeCI"
   },
   "logo": {
-    "src": "https://cdn.appscode.com/images/products/kubeci/kubeci.png",
+    "src": "/assets/images/products/kubeci/kubeci.png",
     "alt": "KubeCI"
   },
   "logoWhite": {
-    "src": "https://cdn.appscode.com/images/products/kubeci/kubeci-white.png",
+    "src": "/assets/images/products/kubeci/kubeci-white.png",
     "alt": "KubeCI"
   },
   "icon": {
-    "src": "https://cdn.appscode.com/images/products/kubeci/kubeci-icon.png",
+    "src": "/assets/images/products/kubeci/kubeci-icon.png",
     "alt": "KubeCI",
     "sizes": {
-      "192x192": "https://cdn.appscode.com/images/products/kubeci/icons/android-icon-192x192.png"
+      "192x192": "/assets/images/products/kubeci/icons/android-icon-192x192.png"
     }
   },
   "repoURL": "https://github.com/kube-ci/docs",
@@ -50,11 +50,11 @@
     {
       "title": "Lower administrative burden",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-1.png",
+        "src": "/assets/images/products/kubeci/features/feature-1.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -63,11 +63,11 @@
     {
       "title": "Native Kubernetes Support",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-2.png",
+        "src": "/assets/images/products/kubeci/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -76,11 +76,11 @@
     {
       "title": "Performance",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-3.png",
+        "src": "/assets/images/products/kubeci/features/feature-3.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -89,11 +89,11 @@
     {
       "title": "Availability and durability",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-4.png",
+        "src": "/assets/images/products/kubeci/features/feature-4.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -102,11 +102,11 @@
     {
       "title": "Security",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-5.png",
+        "src": "/assets/images/products/kubeci/features/feature-5.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -115,11 +115,11 @@
     {
       "title": "Manageability",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-6.png",
+        "src": "/assets/images/products/kubeci/features/feature-6.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -128,11 +128,11 @@
     {
       "title": "Cost-effectiveness",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-2.png",
+        "src": "/assets/images/products/kubeci/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",
@@ -141,11 +141,11 @@
     {
       "title": "Open Source",
       "image": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/feature-2.png",
+        "src": "/assets/images/products/kubeci/features/feature-2.png",
         "alt": "http"
       },
       "icon": {
-        "src": "https://cdn.appscode.com/images/products/kubeci/features/http.png",
+        "src": "/assets/images/products/kubeci/features/http.png",
         "alt": "http"
       },
       "summary": "",

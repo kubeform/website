@@ -2,55 +2,55 @@
   "intersystems": {
     "name": "InterSystems",
     "website": "https://www.intersystems.com",
-    "logo": "https://cdn.appscode.com/images/customers/intersystems/logo.png",
+    "logo": "/assets/images/customers/intersystems/logo.png",
     "show": true
   },
   "elpheria": {
     "name": "Elpheria",
     "website": "https://www.elpheria.com",
-    "logo": "https://cdn.appscode.com/images/customers/elpheria/logo.png",
+    "logo": "/assets/images/customers/elpheria/logo.png",
     "show": true
   },
   "zebra": {
     "name": "Zebra",
     "website": "https://www.zebra.com",
-    "logo": "https://cdn.appscode.com/images/customers/zebra/logo.png",
+    "logo": "/assets/images/customers/zebra/logo.png",
     "show": true
   },
   "pricehubble": {
     "name": "PriceHubble AG",
     "website": "https://pricehubble.com",
-    "logo": "https://cdn.appscode.com/images/customers/pricehubble/logo.svg",
+    "logo": "/assets/images/customers/pricehubble/logo.svg",
     "show": true
   },
   "rungway": {
     "name": "Rungway",
     "website": "https://rungway.com",
-    "logo": "https://cdn.appscode.com/images/customers/rungway/logo.png",
+    "logo": "/assets/images/customers/rungway/logo.png",
     "show": true
   },
   "devolutions": {
     "name": "Devolutions.net",
     "website": "https://devolutions.net",
-    "logo": "https://cdn.appscode.com/images/customers/devolutions/DevolutionsBlue-LR.png",
+    "logo": "/assets/images/customers/devolutions/DevolutionsBlue-LR.png",
     "show": false
   },
   "liveramp": {
     "name": "LiveRamp",
     "website": "https://liveramp.com",
-    "logo": "https://cdn.appscode.com/images/customers/liveramp/logo.png",
+    "logo": "/assets/images/customers/liveramp/logo.png",
     "show": true
   },
   "birdi": {
     "name": "BIRDI Pty Ltd",
     "website": "https://www.birdi.com.au",
-    "logo": "https://cdn.appscode.com/images/customers/birdi/BIRDI-Logo_Retina.png",
+    "logo": "/assets/images/customers/birdi/BIRDI-Logo_Retina.png",
     "show": true
   },
   "astarte": {
     "name": "Astarte",
     "website": "http://astarte-platform.org",
-    "logo": "https://cdn.appscode.com/images/customers/astarte/astarte.png",
+    "logo": "/assets/images/customers/astarte/astarte.png",
     "show": true
   }
 }
