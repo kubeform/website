@@ -28,8 +28,10 @@ info:
 The setup section contains instructions for installing the Kubeform and its various components in Kubernetes. This section has been divided into the following sub-sections:
 
 - **Install Kubeform:** Installation instructions for Kubeform and its various components.
-  - [Community Edition](/docs/v2021.07.01/setup/install/community): Installation instructions for Kubeform Community Edition.
+  - [Overview](/docs/v2021.07.01/setup/install/overview): Installation instructions for Kubeform.
   - [Troubleshooting](/docs/v2021.07.01/setup/install/troubleshoting): Troubleshooting guide for various installation problems.
+
 - **Uninstall Kubeform:** Uninstallation instructions for Kubeform and its various components.
-  - [Community Edition](/docs/v2021.07.01/setup/uninstall/community): Uninstallation instructions for Kubeform Community Edition.
-- [Upgrading Kubeform](/docs/v2021.07.01/setup/upgrade): Instruction for updating Kubeform license and upgrading between various Kubeform versions.
+  - [Overview](/docs/v2021.07.01/setup/uninstall/overview): Uninstallation instructions for Kubeform.
+
+- [Upgrading Kubeform](/docs/v2021.07.01/setup/upgrade/): Instruction for updating Kubeform license and upgrading between various Kubeform versions.
