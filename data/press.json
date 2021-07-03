@@ -5,7 +5,7 @@
     "link": "https://www.infoworld.com/article/3214627/3-open-source-projects-that-make-kubernetes-easier.html",
     "timeToRead": "5 mins to Read",
     "image": {
-      "src": "https://cdn.appscode.com/images/press/1.png"
+      "src": "/assets/images/press/1.png"
     }
   },
   {
@@ -14,7 +14,7 @@
     "link": "https://www.dataengineeringpodcast.com/kubedb-kubernetes-database-episode-79/",
     "timeToRead": "50 mins to Listen",
     "image": {
-      "src": "https://cdn.appscode.com/images/press/2.png"
+      "src": "/assets/images/press/2.png"
     }
   },
   {
@@ -23,7 +23,7 @@
     "link": "https://thenewstack.io/cncf-introduces-c/",
     "timeToRead": "5 mins to Read",
     "image": {
-      "src": "https://cdn.appscode.com/images/press/3.png"
+      "src": "/assets/images/press/3.png"
     }
   },
   {
@@ -32,7 +32,7 @@
     "link": "https://www.youtube.com/watch?v=7NDU7KkWolE",
     "timeToRead": "10 mins to Watch",
     "image": {
-      "src": "https://cdn.appscode.com/images/press/4.png"
+      "src": "/assets/images/press/4.png"
     }
   }
 ]
